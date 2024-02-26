@@ -1,11 +1,13 @@
 链接是 http://47.100.100.139:8019/
 账号密码admin/123456
 
-数据库:
-IP:143.64.57.177
-Port：32610
-User：kettle
-Password：`{3<V'PwPgECLMgG2@X=
+大陆轮胎数据库连接信息：
+mysql
+主机139.224.197.121
+端口63306
+用户名weizhengbo
+密码Password.1
+库名dalu_iot
 
 ui设计:
 https://modao.cc/app/DAiRDp1Vs8692q5YAmcoND
