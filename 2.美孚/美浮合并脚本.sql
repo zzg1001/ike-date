@@ -1,6 +1,48 @@
-create table   meifu_analysis_platform_main_2023 as 
-select 
-	auto_id
+drop table if  exists   meifu_analysis_platform_main_2023;
+	create table if not exists  meifu_analysis_platform_main_2023 as 
+	select 
+		auto_id
+		,title
+		,is_comment
+		,webpageUrl
+		,captureWebsiteNew
+		,publishedMinute
+		,originType
+		,author
+		,summary
+		,province
+		,city
+		,originTypeThird
+		,secondTradeList
+		,originAuthorId
+		,referenceKeywordNew
+		,shareCount
+		,comments
+		,praiseNum
+		,forwardNumber
+		,favouritesCount
+		,fansNumber
+		,friendsCount
+		,gender
+		,icpProvince
+		,id
+		,publishedDay
+		,readCount
+		,subDomain
+		,titleHs
+		,topicInteractionCount
+		,weiboTopicKeyword
+		,weiboUserBeanNew
+		,zaikanCount
+		,create_date
+		,description
+		,content
+		,referenceKeyword
+		,project_name
+	from data_23q3_1 ;
+
+insert into meifu_analysis_platform_main_2023(
+		auto_id
 	,title
 	,is_comment
 	,webpageUrl
@@ -8,24 +50,19 @@ select
 	,publishedMinute
 	,originType
 	,author
- -- ,relativity
 	,summary
 	,province
 	,city
 	,originTypeThird
 	,secondTradeList
 	,originAuthorId
- -- ,verified
 	,referenceKeywordNew
 	,shareCount
 	,comments
 	,praiseNum
 	,forwardNumber
- -- ,favourites_count
 	,favouritesCount
- -- ,collectCount
 	,fansNumber
- -- ,followers_count
 	,friendsCount
 	,gender
 	,icpProvince
@@ -35,7 +72,6 @@ select
 	,subDomain
 	,titleHs
 	,topicInteractionCount
- -- ,url
 	,weiboTopicKeyword
 	,weiboUserBeanNew
 	,zaikanCount
@@ -44,4 +80,368 @@ select
 	,content
 	,referenceKeyword
 	,project_name
-from data_23q3_1 
+)
+select 
+	auto_id
+	,title
+	,is_comment
+	,webpageUrl
+	,captureWebsiteNew
+	,publishedMinute
+	,originType
+	,author
+	,summary
+	,province
+	,city
+	,originTypeThird
+	,secondTradeList
+	,originAuthorId
+	,referenceKeywordNew
+	,shareCount
+	,comments
+	,praiseNum
+	,forwardNumber
+	,favouritesCount
+	,fansNumber
+	,friendsCount
+	,gender
+	,icpProvince
+	,id
+	,publishedDay
+	,readCount
+	,subDomain
+	,titleHs
+	,topicInteractionCount
+	,weiboTopicKeyword
+	,weiboUserBeanNew
+	,zaikanCount
+	,create_date
+	,description
+	,content
+	,referenceKeyword
+	,project_name
+from data_23q3_2 ;
+
+insert into meifu_analysis_platform_main_2023(
+		auto_id
+	,title
+	,is_comment
+	,webpageUrl
+	,captureWebsiteNew
+	,publishedMinute
+	,originType
+	,author
+	,summary
+	,province
+	,city
+	,originTypeThird
+	,secondTradeList
+	,originAuthorId
+	,referenceKeywordNew
+	,shareCount
+	,comments
+	,praiseNum
+	,forwardNumber
+	,favouritesCount
+	,fansNumber
+	,friendsCount
+	,gender
+	,icpProvince
+	,id
+	,publishedDay
+	,readCount
+	,subDomain
+	,titleHs
+	,topicInteractionCount
+	,weiboTopicKeyword
+	,weiboUserBeanNew
+	,zaikanCount
+	,create_date
+	,description
+	,content
+	,referenceKeyword
+	,project_name
+)
+select 
+	auto_id
+	,title
+	,is_comment
+	,webpageUrl
+	,captureWebsiteNew
+	,publishedMinute
+	,originType
+	,author
+	,summary
+	,province
+	,city
+	,originTypeThird
+	,secondTradeList
+	,originAuthorId
+	,referenceKeywordNew
+	,shareCount
+	,comments
+	,praiseNum
+	,forwardNumber
+	,favouritesCount
+	,fansNumber
+	,friendsCount
+	,gender
+	,icpProvince
+	,id
+	,publishedDay
+	,readCount
+	,subDomain
+	,titleHs
+	,topicInteractionCount
+	,weiboTopicKeyword
+	,weiboUserBeanNew
+	,zaikanCount
+	,create_date
+	,description
+	,content
+	,referenceKeyword
+	,project_name
+from data_23q4_1 ;
+
+insert into meifu_analysis_platform_main_2023(
+		auto_id
+	,title
+	,is_comment
+	,webpageUrl
+	,captureWebsiteNew
+	,publishedMinute
+	,originType
+	,author
+	,summary
+	,province
+	,city
+	,originTypeThird
+	,secondTradeList
+	,originAuthorId
+	,referenceKeywordNew
+	,shareCount
+	,comments
+	,praiseNum
+	,forwardNumber
+	,favouritesCount
+	,fansNumber
+	,friendsCount
+	,gender
+	,icpProvince
+	,id
+	,publishedDay
+	,readCount
+	,subDomain
+	,titleHs
+	,topicInteractionCount
+	,weiboTopicKeyword
+	,weiboUserBeanNew
+	,zaikanCount
+	,create_date
+	,description
+	,content
+	,referenceKeyword
+	,project_name
+)
+select 
+	auto_id
+	,title
+	,is_comment
+	,webpageUrl
+	,captureWebsiteNew
+	,publishedMinute
+	,originType
+	,author
+	,summary
+	,province
+	,city
+	,originTypeThird
+	,secondTradeList
+	,originAuthorId
+	,referenceKeywordNew
+	,shareCount
+	,comments
+	,praiseNum
+	,forwardNumber
+	,favouritesCount
+	,fansNumber
+	,friendsCount
+	,gender
+	,icpProvince
+	,id
+	,publishedDay
+	,readCount
+	,subDomain
+	,titleHs
+	,topicInteractionCount
+	,weiboTopicKeyword
+	,weiboUserBeanNew
+	,zaikanCount
+	,create_date
+	,description
+	,content
+	,referenceKeyword
+	,project_name
+from data_23q4_2 ;
+
+insert into meifu_analysis_platform_main_2023(
+		auto_id
+	,title
+	,is_comment
+	,webpageUrl
+	,captureWebsiteNew
+	,publishedMinute
+	,originType
+	,author
+	,summary
+	,province
+	,city
+	,originTypeThird
+	,secondTradeList
+	,originAuthorId
+	,referenceKeywordNew
+	,shareCount
+	,comments
+	,praiseNum
+	,forwardNumber
+	,favouritesCount
+	,fansNumber
+	,friendsCount
+	,gender
+	,icpProvince
+	,id
+	,publishedDay
+	,readCount
+	,subDomain
+	,titleHs
+	,topicInteractionCount
+	,weiboTopicKeyword
+	,weiboUserBeanNew
+	,zaikanCount
+	,create_date
+	,description
+	,content
+	,referenceKeyword
+	,project_name
+)
+select 
+	auto_id
+	,title
+	,is_comment
+	,webpageUrl
+	,captureWebsiteNew
+	,publishedMinute
+	,originType
+	,author
+	,summary
+	,province
+	,city
+	,originTypeThird
+	,secondTradeList
+	,originAuthorId
+	,referenceKeywordNew
+	,shareCount
+	,comments
+	,praiseNum
+	,forwardNumber
+	,favouritesCount
+	,fansNumber
+	,friendsCount
+	,gender
+	,icpProvince
+	,id
+	,publishedDay
+	,readCount
+	,subDomain
+	,titleHs
+	,topicInteractionCount
+	,weiboTopicKeyword
+	,weiboUserBeanNew
+	,zaikanCount
+	,create_date
+	,description
+	,content
+	,referenceKeyword
+	,project_name
+from data_23q4_3 ;
+
+insert into meifu_analysis_platform_main_2023(
+		auto_id
+	,title
+	,is_comment
+	,webpageUrl
+	,captureWebsiteNew
+	,publishedMinute
+	,originType
+	,author
+	,summary
+	,province
+	,city
+	,originTypeThird
+	,secondTradeList
+	,originAuthorId
+	,referenceKeywordNew
+	,shareCount
+	,comments
+	,praiseNum
+	,forwardNumber
+	,favouritesCount
+	,fansNumber
+	,friendsCount
+	,gender
+	,icpProvince
+	,id
+	,publishedDay
+	,readCount
+	,subDomain
+	,titleHs
+	,topicInteractionCount
+	,weiboTopicKeyword
+	,weiboUserBeanNew
+	,zaikanCount
+	,create_date
+	,description
+	,content
+	,referenceKeyword
+	,project_name
+)
+select 
+	auto_id
+	,title
+	,is_comment
+	,webpageUrl
+	,captureWebsiteNew
+	,publishedMinute
+	,originType
+	,author
+	,summary
+	,province
+	,city
+	,originTypeThird
+	,secondTradeList
+	,originAuthorId
+	,referenceKeywordNew
+	,shareCount
+	,comments
+	,praiseNum
+	,forwardNumber
+	,favouritesCount
+	,fansNumber
+	,friendsCount
+	,gender
+	,icpProvince
+	,id
+	,publishedDay
+	,readCount
+	,subDomain
+	,titleHs
+	,topicInteractionCount
+	,weiboTopicKeyword
+	,weiboUserBeanNew
+	,zaikanCount
+	,create_date
+	,description
+	,content
+	,referenceKeyword
+	,project_name
+from data_23q4_4 ;
