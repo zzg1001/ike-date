@@ -13,7 +13,7 @@ cursor = conn.cursor()
 
 # 删除表格
 cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023;")
-
+print(f'插入的表data_23q3_1,季度是:3')
 # 创建表格
 create_table_query = '''
 CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023 AS
@@ -76,7 +76,7 @@ table_list = ['data_23q2_1'
 
 # 循环插入数据
 for table in table_list:
-    print(f'插入的季度是:{table[8]}')
+    print(f'插入的表{table},季度是:{table[8]}')
     insert_query = f'''
     INSERT INTO meifu_analysis_platform_main_2023 (
         auto_id,
