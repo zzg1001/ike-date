@@ -1,4 +1,5 @@
 import pymysql
+import time
 
 # 连接到数据库
 conn = pymysql.connect(
@@ -18,6 +19,7 @@ create_table_query = '''
 CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023 AS
 SELECT
     auto_id,
+    '3' quarter,
     title,
     is_comment,
     webpageUrl,
@@ -57,22 +59,28 @@ SELECT
     project_name
 FROM data_23q3_1;
 '''
+start_time = time.time()  # 记录开始时间
 cursor.execute(create_table_query)
+end_time = time.time()  # 记录结束时间
+execution_time = end_time - start_time
+print(f"创建表格执行时间：{execution_time}秒")
 
 # 列表中的表名
-table_list = ['data_23q2_1', 
-              'data_23q3_2',
-              'data_23q3_3',
-              'data_23q4_1',
-              'data_23q4_2',
-              'data_23q4_3',
-              'data_23q4_4']
+table_list = ['data_23q2_1'
+              , 'data_23q3_2'
+              , 'data_23q3_3'
+              , 'data_23q4_1'
+              , 'data_23q4_2'
+              , 'data_23q4_3'
+              , 'data_23q4_4']
 
 # 循环插入数据
 for table in table_list:
+    print(f'插入的季度是:{table[8]}')
     insert_query = f'''
     INSERT INTO meifu_analysis_platform_main_2023 (
         auto_id,
+        quarter,
         title,
         is_comment,
         webpageUrl,
@@ -113,6 +121,7 @@ for table in table_list:
     )
     SELECT
         auto_id,
+        {table[8]} quarter,
         title,
         is_comment,
         webpageUrl,
@@ -152,7 +161,11 @@ for table in table_list:
         project_name
     FROM {table};
     '''
+    start_time = time.time()  # 记录开始时间
     cursor.execute(str(insert_query))
+    end_time = time.time()  # 记录结束时间
+    execution_time = end_time - start_time
+    print(f"插入数据执行时间：{execution_time}秒")
 
 # 提交更改并关闭连接
 conn.commit()
