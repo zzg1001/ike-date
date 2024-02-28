@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023 AS
 SELECT
     auto_id,
     '3' quarter,
-    REGEXP_REPLACE(title, '<[^>]+>', '')  title,
+    REGEXP_REPLACE(title, '<[^>]+>', '') title,
     is_comment,
     webpageUrl,
     captureWebsiteNew,
@@ -54,7 +54,7 @@ SELECT
     zaikanCount,
     create_date,
     description,
-    content,
+    REGEXP_REPLACE(content, '<[^>]+>', '')  content,
     referenceKeyword,
     project_name
 FROM data_23q3_1;
@@ -115,7 +115,7 @@ for table in table_list:
         zaikanCount,
         create_date,
         description,
-        REGEXP_REPLACE(content, '<[^>]+>', '')  content,
+        content,
         referenceKeyword,
         project_name
     )
