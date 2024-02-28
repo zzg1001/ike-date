@@ -1,4 +1,6 @@
 import time
+import sys
+
 from sqlalchemy import create_engine
 from sqlalchemy import text
 
@@ -76,3 +78,4 @@ print(f"Create table query execution time: {execution_time} seconds")
 
 # 关闭数据库连接
 connection.close()
+sys.exit()
