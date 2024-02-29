@@ -12,11 +12,11 @@ conn = pymysql.connect(
 cursor = conn.cursor()
 
 # 删除表格
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023;")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_2;")
 print(f'插入的表data_23q3_1,季度是:3')
 # 创建表格
 create_table_query = '''
-CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023 AS
+CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023_2 AS
 SELECT
     CONCAT(YEAR(publishedMinute), '-Q', QUARTER(publishedMinute)) quarter,
     REGEXP_REPLACE(title, '<[^>]+>', '') title,
@@ -173,6 +173,7 @@ SELECT
     project_name
 FROM data_23q3_1;
 '''
+
 start_time = time.time()  # 记录开始时间
 cursor.execute(create_table_query)
 end_time = time.time()  # 记录结束时间
@@ -192,7 +193,7 @@ table_list = ['data_23q2_1'
 for table in table_list:
     print(f'插入的表{table},季度是:{table[8]}')
     insert_query = f'''
-    INSERT INTO meifu_analysis_platform_main_2023 (
+    INSERT INTO meifu_analysis_platform_main_2023_2 (
         quarter,
         title,
         is_comment,
@@ -254,7 +255,7 @@ for table in table_list:
         shareCount,
         comments,
         praiseNum,
-        forwardNumber,
+        forwardNumber,  
         favouritesCount,
         fansNumber,
         friendsCount,
