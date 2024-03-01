@@ -8,3 +8,20 @@ vpn账号
 https://116.228.159.166:4433
 账号：dw_yk
 密码：yike123456!!
+
+
+迁移后的报表地址：http://172.16.31.187:37799/webroot/decision
+帆软账号
+# repeort 10: 172.16.31.184:8080
+repeort 11:172.16.31.187:37799
+webroot
+decision
+用户名: yike
+密码:W6-dzt
+
+
+数据库：ODS_SRM
+数据库连接：（SQlserver）
+IP：172.16.31.42:1433
+用户名：DW_YK
+密码：DW_YK
