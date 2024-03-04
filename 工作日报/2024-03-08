@@ -1,0 +1,14 @@
+2024-03-04:
+1.美孚的数据验证问题:在爬去各个平台的title与content是否与,真正网站上是否保持一致.
+一共四8个平台的数据验证.
+抖音:https://www.iesdouyin.com/share/video/7250791085730057476 抖音 content数据不一致
+抖音:https://www.iesdouyin.com/share/video/7250560753646701883 抖音 content没有评论数据库有
+今日头条,懂车帝.西瓜视频.新浪微博.汽车之家.微信.快手:没有数据.
+小红书:标题不一致
+      https://www.xiaohongshu.com/discovery/item/64a57d0700000000340160a9
+      https://www.xiaohongshu.com/discovery/item/64b533d1000000000f00cfc0
+      https://www.xiaohongshu.com/discovery/item/64bd1ee3000000001201cb25
+百度贴吧:https://tieba.baidu.com/p/8593773250
+        http://tieba.baidu.com/p/8611011545
+        https://tieba.baidu.com/p/8612975880
+        http://tieba.baidu.com/p/8613807914
