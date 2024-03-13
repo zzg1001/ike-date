@@ -23,7 +23,6 @@ category1 = '''  ( case
 	WHEN commentContent regexp 'castrol'      then null
 	WHEN commentContent regexp '磁护'      then '磁护'
 	WHEN commentContent regexp '极护'      then '极护'
-	WHEN commentContent regexp '极净'      then '极净'
 	WHEN commentContent regexp '嘉护'      then 'GTX'
 	WHEN commentContent regexp 'GTX'      then 'GTX'
 	WHEN commentContent regexp '黑嘉'      then 'GTX'
@@ -92,7 +91,6 @@ category0 = '''  ( case
 	WHEN content regexp 'castrol'  then null
 	WHEN content regexp '磁护'      then '磁护'
 	WHEN content regexp '极护'      then '极护'
-	WHEN content regexp '极净'      then '极净'
 	WHEN content regexp '嘉护'      then 'GTX'
 	WHEN content regexp 'GTX'      then 'GTX'
 	WHEN content regexp '黑嘉'      then 'GTX'
@@ -155,146 +153,6 @@ category0 = '''  ( case
 	ELSE NULL
 	END 
 ) '''
-
-brand0 = '''  ( CASE
-
-		WHEN content regexp '道达尔'    then '道达尔'
-		WHEN content regexp '快驰'    then '道达尔'
-		WHEN content regexp 'castrol'    then '嘉实多'
-		WHEN content regexp '磁护'    then '嘉实多'
-		WHEN content regexp '极护'    then '嘉实多'
-		WHEN content regexp '极净'    then '嘉实多'
-		WHEN content regexp '嘉护'    then '嘉实多'
-		WHEN content regexp 'GTX'    then '嘉实多'
-		WHEN content regexp '黑嘉'    then '嘉实多'
-		WHEN content regexp '嘉实多极护'    then '嘉实多'
-		WHEN content regexp 'EDGE'    then '嘉实多'
-		WHEN content regexp 'edge'    then '嘉实多'
-		WHEN content regexp '嘉实多磁护'    then '嘉实多'
-		WHEN content regexp 'magnatec'    then '嘉实多'
-		WHEN content regexp '嘉实多'    then '嘉实多'
-		WHEN content regexp 'Shell'    then '壳牌'
-		WHEN content regexp '黄壳'    then '壳牌'
-		WHEN content regexp '黄喜力'    then '壳牌'
-		WHEN content regexp '灰壳'    then '壳牌'
-		WHEN content regexp '蓝壳'    then '壳牌'
-		WHEN content regexp '壳牌喜力'    then '壳牌'
-		WHEN content regexp '港壳'    then '壳牌'
-		WHEN content regexp '港灰'    then '壳牌'
-		WHEN content regexp '红壳'    then '壳牌'
-		WHEN content regexp '白壳'    then '壳牌'
-		WHEN content regexp '金壳'    then '壳牌'
-		WHEN content regexp '紫壳'    then '壳牌'
-		WHEN content regexp '壳牌先锋'    then '壳牌'
-		WHEN content regexp '壳牌锐净'    then '壳牌'
-		WHEN content regexp '壳牌喜力'    then '壳牌'
-		WHEN content regexp '超级喜力'    then '壳牌'
-		WHEN content regexp '恒护'    then '壳牌'
-		WHEN content regexp '极净'    then '壳牌'
-		WHEN content regexp '超凡喜力'    then '壳牌'
-		WHEN content regexp '壳牌'    then '壳牌'
-		WHEN content regexp '昆仑机油'    then '昆仑'
-		WHEN content regexp '昆仑润滑'    then '昆仑'
-		WHEN content regexp '昆仑天润'    then '昆仑'
-		WHEN content regexp '昆仑之星'    then '昆仑'
-		WHEN content regexp '昆仑'    then '昆仑'
-		WHEN content regexp '龙蟠1号'    then '龙蟠'
-		WHEN content regexp '龙蟠机油'    then '龙蟠'
-		WHEN content regexp '龙蟠1号'    then '龙蟠1号'
-		WHEN content regexp '龙蟠机油'    then '龙蟠1号'
-		WHEN content regexp '龙蟠润滑油'    then '龙蟠1号'
-		WHEN content regexp '龙蟠'    then '龙蟠'
-		WHEN content regexp '金美'    then '美孚'
-		WHEN content regexp '银美'    then '美孚'
-		WHEN content regexp '超金'    then '美孚'
-		WHEN content regexp 'Mobil'    then '美孚'
-		WHEN content regexp '力霸'    then '美孚'
-		WHEN content regexp '美孚1号'    then '美孚'
-		WHEN content regexp '速霸'    then '美孚'
-		WHEN content regexp '美孚速霸'    then '美孚'
-		WHEN content regexp '美1'    then '美孚'
-		WHEN content regexp '美一'    then '美孚'
-		WHEN content regexp '美孚'    then '美孚'
-		WHEN content regexp '统一机油'    then '统一'
-		WHEN content regexp '统一润滑油'    then '统一'
-		WHEN content regexp '统一润滑'    then '统一'
-		WHEN content regexp '统一'    then '统一'
-		WHEN content regexp '长城机油'    then '长城'
-		WHEN content regexp '长城润滑油'    then '长城'
-		WHEN content regexp '长城润滑'    then '长城'
-		WHEN content regexp '长城'    then '长城'
-		ELSE NULL
-    END ) '''
-
-brand1 = '''  ( CASE
-
-		WHEN commentContent regexp '道达尔'    then '道达尔'
-		WHEN commentContent regexp '快驰'    then '道达尔'
-		WHEN commentContent regexp 'castrol'    then '嘉实多'
-		WHEN commentContent regexp '磁护'    then '嘉实多'
-		WHEN commentContent regexp '极护'    then '嘉实多'
-		WHEN commentContent regexp '极净'    then '嘉实多'
-		WHEN commentContent regexp '嘉护'    then '嘉实多'
-		WHEN commentContent regexp 'GTX'    then '嘉实多'
-		WHEN commentContent regexp '黑嘉'    then '嘉实多'
-		WHEN commentContent regexp '嘉实多极护'    then '嘉实多'
-		WHEN commentContent regexp 'EDGE'    then '嘉实多'
-		WHEN commentContent regexp 'edge'    then '嘉实多'
-		WHEN commentContent regexp '嘉实多磁护'    then '嘉实多'
-		WHEN commentContent regexp 'magnatec'    then '嘉实多'
-		WHEN commentContent regexp '嘉实多'    then '嘉实多'
-		WHEN commentContent regexp 'Shell'    then '壳牌'
-		WHEN commentContent regexp '黄壳'    then '壳牌'
-		WHEN commentContent regexp '黄喜力'    then '壳牌'
-		WHEN commentContent regexp '灰壳'    then '壳牌'
-		WHEN commentContent regexp '蓝壳'    then '壳牌'
-		WHEN commentContent regexp '壳牌喜力'    then '壳牌'
-		WHEN commentContent regexp '港壳'    then '壳牌'
-		WHEN commentContent regexp '港灰'    then '壳牌'
-		WHEN commentContent regexp '红壳'    then '壳牌'
-		WHEN commentContent regexp '白壳'    then '壳牌'
-		WHEN commentContent regexp '金壳'    then '壳牌'
-		WHEN commentContent regexp '紫壳'    then '壳牌'
-		WHEN commentContent regexp '壳牌先锋'    then '壳牌'
-		WHEN commentContent regexp '壳牌锐净'    then '壳牌'
-		WHEN commentContent regexp '壳牌喜力'    then '壳牌'
-		WHEN commentContent regexp '超级喜力'    then '壳牌'
-		WHEN commentContent regexp '恒护'    then '壳牌'
-		WHEN commentContent regexp '极净'    then '壳牌'
-		WHEN commentContent regexp '超凡喜力'    then '壳牌'
-		WHEN commentContent regexp '壳牌'    then '壳牌'
-		WHEN commentContent regexp '昆仑机油'    then '昆仑'
-		WHEN commentContent regexp '昆仑润滑'    then '昆仑'
-		WHEN commentContent regexp '昆仑天润'    then '昆仑'
-		WHEN commentContent regexp '昆仑之星'    then '昆仑'
-		WHEN commentContent regexp '昆仑'    then '昆仑'
-		WHEN commentContent regexp '龙蟠1号'    then '龙蟠'
-		WHEN commentContent regexp '龙蟠机油'    then '龙蟠'
-		WHEN commentContent regexp '龙蟠1号'    then '龙蟠1号'
-		WHEN commentContent regexp '龙蟠机油'    then '龙蟠1号'
-		WHEN commentContent regexp '龙蟠润滑油'    then '龙蟠1号'
-		WHEN commentContent regexp '龙蟠'    then '龙蟠'
-		WHEN commentContent regexp '金美'    then '美孚'
-		WHEN commentContent regexp '银美'    then '美孚'
-		WHEN commentContent regexp '超金'    then '美孚'
-		WHEN commentContent regexp 'Mobil'    then '美孚'
-		WHEN commentContent regexp '力霸'    then '美孚'
-		WHEN commentContent regexp '美孚1号'    then '美孚'
-		WHEN commentContent regexp '速霸'    then '美孚'
-		WHEN commentContent regexp '美孚速霸'    then '美孚'
-		WHEN commentContent regexp '美1'    then '美孚'
-		WHEN commentContent regexp '美一'    then '美孚'
-		WHEN commentContent regexp '美孚'    then '美孚'
-		WHEN commentContent regexp '统一机油'    then '统一'
-		WHEN commentContent regexp '统一润滑油'    then '统一'
-		WHEN commentContent regexp '统一润滑'    then '统一'
-		WHEN commentContent regexp '统一'    then '统一'
-		WHEN commentContent regexp '长城机油'    then '长城'
-		WHEN commentContent regexp '长城润滑油'    then '长城'
-		WHEN commentContent regexp '长城润滑'    then '长城'
-		WHEN commentContent regexp '长城'   then '长城'
-		ELSE NULL
-    END ) '''
 
 scene0 ='''  CASE
         WHEN commentContent REGEXP '高速' THEN '高速'
@@ -453,7 +311,7 @@ CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023_2 AS
   SELECT
         CONCAT(YEAR(publishedMinute), '-Q', QUARTER(publishedMinute)) quarter,
         REGEXP_REPLACE(title, '<[^>]+>', '') title,
-        CASE WHEN title REGEXP  '美孚养护店' then '美孚养护店'  else null end as maintenance,
+        CASE WHEN title REGEXP  '美孚1号车养护' then '美孚1号车养护'  else null end as is_meifu_maintain,
         is_comment,
         webpageUrl,
         SUBSTRING_INDEX(webpageUrl,'?',1) webpageUrl_new,
@@ -500,9 +358,6 @@ CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023_2 AS
         {protection} AS protection,
         {service} AS service,
         referenceKeyword,
-         case when is_comment = '0' then {brand0} 
-             when is_comment = '1'then {brand1} else null end
-        AS brand,
         case when is_comment = '0' then {category0} 
              when is_comment = '1'then {category0} else null end
         AS category,
@@ -532,7 +387,7 @@ for table in table_list:
     INSERT INTO meifu_analysis_platform_main_2023_2 (
         quarter,
         title,
-        maintenance,
+        is_meifu_maintain,
         is_comment,
         webpageUrl,
         webpageUrl_new,
@@ -576,7 +431,6 @@ for table in table_list:
         protection,
         service,
         referenceKeyword,
-        brand,
         category,
         scene,
         commentContent,
@@ -585,7 +439,7 @@ for table in table_list:
     SELECT
         CONCAT(YEAR(publishedMinute), '-Q', QUARTER(publishedMinute)) quarter,
         REGEXP_REPLACE(title, '<[^>]+>', '') title,
-        CASE WHEN title REGEXP  '美孚养护店' then '美孚养护店'  else null end as maintenance,
+        CASE WHEN title REGEXP  '美孚1号车养护' then '美孚1号车养护'  else null end as is_meifu_maintain,
         is_comment,
         webpageUrl,
         case when captureWebsiteNew in ( '大鱼号','百家号','微信')  
@@ -633,9 +487,6 @@ for table in table_list:
         {protection} AS protection,
         {service} AS service,
         referenceKeyword,
-        case when is_comment = '0' then {brand0} 
-             when is_comment = '1'then {brand1} else null end
-        AS brand,
         case when is_comment = '0' then {category0} 
              when is_comment = '1'then {category0} else null end
         AS category,

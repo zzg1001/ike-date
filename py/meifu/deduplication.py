@@ -13,11 +13,12 @@ cursor = conn.cursor()
 
 start_time = time.time()  # 记录开始时间
 
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_5 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_5")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_4 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_4")
 # 创建表格
 cursor.execute('''create table  meifu_analysis_platform_main_2023_4 as 
-              select distinct * from meifu_analysis_platform_main_2023_3 ;''')
+              select distinct * from meifu_analysis_platform_main_2023_3 
+               where webpageUrl is not null ;''')
 
 
 end_time = time.time()  # 记录结束时间
