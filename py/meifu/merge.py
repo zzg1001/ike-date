@@ -359,7 +359,7 @@ CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023_2 AS
         {service} AS service,
         referenceKeyword,
         case when is_comment = '0' then {category0} 
-             when is_comment = '1'then {category0} else null end
+             when is_comment = '1'then {category1} else null end
         AS category,
       case when is_comment = '0' then {scene0} 
              when is_comment = '1' then {scene1} else null end 
@@ -488,7 +488,7 @@ for table in table_list:
         {service} AS service,
         referenceKeyword,
         case when is_comment = '0' then {category0} 
-             when is_comment = '1'then {category0} else null end
+             when is_comment = '1'then {category1} else null end
         AS category,
       case when is_comment = '0' then {scene0} 
              when is_comment = '1' then {scene1} else null end 

@@ -41,7 +41,6 @@ if __name__=="__main__":
                 WHEN category = '极护' THEN '嘉实多'
                 WHEN category = '极净' THEN '嘉实多'
                 WHEN category = 'GTX' THEN '嘉实多'
-                WHEN category IS NULL THEN '壳牌'
                 WHEN category = '喜力' THEN '壳牌'
                 WHEN category = '超凡喜力' THEN '壳牌'
                 WHEN category = '昆仑' THEN '昆仑'
