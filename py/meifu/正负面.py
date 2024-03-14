@@ -10,7 +10,7 @@ password='Password.1'
 database='ods_海量2023'
 port = 63306
 
-sql = text('select * from ods_海量2023.meifu_analysis_platform_main_2023_4 limit 10000')
+sql = text('select * from ods_海量2023.meifu_analysis_platform_main_2023_4 limit 100000')
 
 a = sql_test_new.dbconnect(host, username, password, database, port)
 df = a.read_select_sql(sql=sql)
