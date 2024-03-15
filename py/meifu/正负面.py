@@ -15,6 +15,10 @@ sql = text('select * from ods_海量2023.meifu_analysis_platform_main_2023_4 lim
 a = sql_test_new.dbconnect(host, username, password, database, port)
 df = a.read_select_sql(sql=sql)
 
+
+
+
+
 # df['flag'] = list(map(lambda x, y, z: y if z == 1 else x, df['content'], df['commentContent'], df['is_comment']))
 # df['sentiment_analysis'] = list(map(lambda x, y, z: SnowNLP(y).sentiments if z == 1 and pd.notna(y) else(SnowNLP(x).sentiments if pd.notna(x) else np.nan), df['content'], df['commentContent'], df['is_comment']))
 def sentiment_analysis(x, y, z):
