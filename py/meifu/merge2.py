@@ -31,6 +31,18 @@ if __name__=="__main__":
                             WHEN is_comment = 0 THEN content
                             WHEN is_comment = 1 THEN commentContent
                         END REGEXP '壳牌' THEN '壳牌'
+                   WHEN CASE
+                            WHEN is_comment = 0 THEN content
+                            WHEN is_comment = 1 THEN commentContent
+                        END REGEXP 'Mobil' THEN '美孚'
+                    WHEN CASE
+                            WHEN is_comment = 0 THEN content
+                            WHEN is_comment = 1 THEN commentContent
+                        END REGEXP '美孚' THEN '美孚'
+                    WHEN CASE
+                            WHEN is_comment = 0 THEN content
+                            WHEN is_comment = 1 THEN commentContent
+                        END REGEXP '恒久动力' THEN '美孚'
                     else null 
                 END  '''
 
