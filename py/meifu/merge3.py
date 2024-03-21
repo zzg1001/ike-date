@@ -258,15 +258,6 @@ cursor.execute(f'''
                ''')
 
 
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_6 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_6")
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_5 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_5")
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_4 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_4")
-
-
-
 end_time = time.time()  # 记录结束时间
 execution_time = end_time - start_time
 print(f"创建表格执行时间：{execution_time}秒")
