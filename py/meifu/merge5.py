@@ -47,7 +47,7 @@ cursor.execute('''      create table meifu_analysis_platform_main_2023_4 as
             friendsCount,
             gender,
             icpProvince,
-            id,
+            a.id,
             publishedDay,
             readCount,
             subDomain,
@@ -70,7 +70,7 @@ cursor.execute('''      create table meifu_analysis_platform_main_2023_4 as
               case when b.id is not null then b.sentiment_flag else a.sentiment_flag end  sentiment_flag,
              case when b.id is not null then b.shuijun else a.shuijun end shuijun ,
             project_name
-         from meifu_analysis_platform_main_2023_10 a 
+         from meifu_analysis_platform_main_2023_8 a 
          left join tmp_shuijun_and_qingan b 
               on a.id = b.id 
        
@@ -79,7 +79,16 @@ cursor.execute('''      create table meifu_analysis_platform_main_2023_4 as
                ''')
 
 
-
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_5 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_5")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_6 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_5")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_7 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_5")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_9 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_5")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_10 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_10")
 
 
 

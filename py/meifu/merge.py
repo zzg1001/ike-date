@@ -12,10 +12,8 @@ conn = pymysql.connect(
 cursor = conn.cursor()
 
 # 删除表格
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_2;")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_1;")
 print(f'插入的表data_23q3,季度是:3')
-
-
 
 category1 = '''  ( case
 	WHEN commentContent regexp '道达尔'      then '快驰'
@@ -307,7 +305,7 @@ service = ''' case
 
 # 创建表格
 create_table_query = f'''
-CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023_2 AS
+CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023_1 AS
   SELECT
         CONCAT(YEAR(publishedMinute), '-Q', QUARTER(publishedMinute)) quarter,
         REGEXP_REPLACE(title, '<[^>]+>', '') title,
@@ -384,7 +382,7 @@ for table in table_list:
 
 
     insert_query = f'''
-    INSERT INTO meifu_analysis_platform_main_2023_2 (
+    INSERT INTO meifu_analysis_platform_main_2023_1 (
         quarter,
         title,
         is_meifu_maintain,

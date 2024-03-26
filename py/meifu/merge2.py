@@ -123,11 +123,11 @@ if __name__=="__main__":
         ELSE null
     END '''
 
-    cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_3;")
-    print(f"删除表：meifu_analysis_platform_main_2023_3")
+    cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_2;")
+    print(f"删除表：meifu_analysis_platform_main_2023_2")
     
     comp = f''' 
-    create table meifu_analysis_platform_main_2023_3 as 
+    create table meifu_analysis_platform_main_2023_2 as 
     select
             `quarter`,
             title,
@@ -197,8 +197,10 @@ if __name__=="__main__":
             scene,
             commentContent,
             project_name
-         from meifu_analysis_platform_main_2023_2 a 
+         from meifu_analysis_platform_main_2023_1 a 
                   '''
+    cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_1;")
+    print(f"删除表：meifu_analysis_platform_main_2023_1")
     start_time = time.time()  # 记录开始时间
     cursor.execute(comp)
     end_time = time.time()  # 记录结束时间

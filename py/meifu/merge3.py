@@ -116,29 +116,29 @@ brand = f'''
 
 start_time = time.time()  # 记录开始时间
 
-# cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_5 ;")
-# print(f"删除表:meifu_analysis_platform_main_2023_5")
-# # 创建表格
-# cursor.execute('''create table  meifu_analysis_platform_main_2023_5 as 
-#               select distinct * from meifu_analysis_platform_main_2023_3 
-#                where webpageUrl is not null ;''')
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_3 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_3")
+# 创建表格
+cursor.execute('''create table  meifu_analysis_platform_main_2023_3 as 
+              select distinct * from meifu_analysis_platform_main_2023_2 
+               where webpageUrl is not null ;''')
 
 
 
-# cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_6 ;")
-# print(f"删除表:meifu_analysis_platform_main_2023_6")
-# cursor.execute('''create table  meifu_analysis_platform_main_2023_6 as 
-#               select a.*,b.sentiment_flag,b.shuijun from meifu_analysis_platform_main_2023_5 a 
-#                left join meifu_sentiment_flag_2023 b 
-#                  on a.id = b.id
-#                ''')
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_4 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_4")
+cursor.execute('''create table  meifu_analysis_platform_main_2023_6 as 
+              select a.*,b.sentiment_flag,b.shuijun from meifu_analysis_platform_main_2023_3 a 
+               left join meifu_sentiment_flag_2023 b 
+                 on a.id = b.id
+               ''')
 
 
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_7 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_7")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_5 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_5")
 # 创建表格
 cursor.execute(f'''
-    create table meifu_analysis_platform_main_2023_7 as 
+    create table meifu_analysis_platform_main_2023_5 as 
     select
             `quarter`,
             title,
@@ -191,15 +191,15 @@ cursor.execute(f'''
             sentiment_flag,
             shuijun,
             project_name
-         from meifu_analysis_platform_main_2023_6 a 
+         from meifu_analysis_platform_main_2023_4 a 
 
                ''')
 
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_8 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_8")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_6 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_6")
 # 创建表格
 cursor.execute(f'''
-   create table meifu_analysis_platform_main_2023_8 as 
+   create table meifu_analysis_platform_main_2023_6 as 
     select
             `quarter`,
             title,
@@ -253,11 +253,16 @@ cursor.execute(f'''
              sentiment_flag,
             shuijun,
             project_name
-         from meifu_analysis_platform_main_2023_7 a 
+         from meifu_analysis_platform_main_2023_5 a 
                
                ''')
 
-
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_3 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_3")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_4 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_4")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_5 ;")
+print(f"删除表:meifu_analysis_platform_main_2023_5")
 end_time = time.time()  # 记录结束时间
 execution_time = end_time - start_time
 print(f"创建表格执行时间：{execution_time}秒")
