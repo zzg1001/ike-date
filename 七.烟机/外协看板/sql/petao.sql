@@ -15,13 +15,14 @@ with tmp_base as(
 	,category
 	,RIGHT(REPLICATE('0', 5) + EBELP , 5)
 	,left(EINDT,4)+'-'+SUBSTRING(EINDT,5,2)
-),tmp_base_1 as(
+),
+tmp_base_1 as(
 
 	select 
-	       a.factory
+	     a.factory
 		  ,a.category
-		  ,count(*) pt_cnt
-		  ,CONVERT(varchar(7), b.delivery_date, 120)
+		  ,CONVERT(varchar(7), b.delivery_date, 120) as year_month
+			,count(*) pt_cnt
 	from Outsourcing_Dashboard.dbo.r24_temp_base b
 	join tmp_base a 
 	on a.EBELN = b.purchase_order_no 
