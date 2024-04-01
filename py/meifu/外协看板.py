@@ -21,7 +21,7 @@ def exc1(date_sql):
     sql_query = f'''
                 select 
                 *
-                into Outsourcing_Dashboard.dbo.sap_base_field_merge_wide
+                into Outsourcing_Dashboard.dbo.sap_base_field_histry_wide
                 from (
                     SELECT
                     (SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2) ) year_month 
@@ -61,7 +61,7 @@ def exc(date_sql):
 
       print(f"0执行{result}====={curr}")
       sql_query = f'''
-            insert into Outsourcing_Dashboard.dbo.sap_base_field_merge_wide
+            insert into Outsourcing_Dashboard.dbo.sap_base_field_histry_wide
                 select 
                 *
                 from (
@@ -115,14 +115,14 @@ if __name__ == "__main__":
     
 
 
-    cursor.execute('''IF OBJECT_ID('Outsourcing_Dashboard.dbo.sap_base_field_merge_wide','U')  IS NOT NULL
-                drop table Outsourcing_Dashboard.dbo.sap_base_field_merge_wide;''')
-    print(f"删除表：sap_base_field_merge_wide")
+    cursor.execute('''IF OBJECT_ID('Outsourcing_Dashboard.dbo.sap_base_field_histry_wide','U')  IS NOT NULL
+                drop table Outsourcing_Dashboard.dbo.sap_base_field_histry_wide;''')
+    print(f"删除表：sap_base_field_histry_wide")
 
     exc1('2015-09-01')
 
     start_date = datetime.date(2015, 10, 1)
-    end_date = datetime.date(2025, 3, 1)
+    end_date = datetime.date(2025, 2, 1)
 
     result = get_all_months(start_date, end_date)
 
