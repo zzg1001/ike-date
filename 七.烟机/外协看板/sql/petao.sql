@@ -38,3 +38,19 @@ tmp_base_1 as(
 )
 
 select * from tmp_base_1
+
+
+
+
+
+select 
+			factory
+			,category
+			,eindt
+		  ,peitao_cnt
+			,total_od_cnt
+		  ,peitao_rate
+from sap_base_field_merge_peitao a
+where factory= ''
+${" and eindt<='"+ym+"'"}
+${" and eindt>='"+year(ym)+"-01'"}
