@@ -14,9 +14,10 @@ cursor = conn.cursor()
 def exc1(date_sql):
     
     curr =  str(date_sql[:7])
-    date1 = date.fromisoformat(date_sql)
-    result = date1 - relativedelta(months=12) 
-    result = str(result)[:7]
+    # date1 = date.fromisoformat(date_sql)
+    # result = date1 - relativedelta(months=12) 
+    laft = int(date_sql[:4])-1
+    result = str(laft)+"-01"
     print(f"0执行{result}====={curr}")
     sql_query = f'''
                 select 
@@ -24,7 +25,7 @@ def exc1(date_sql):
                 into Outsourcing_Dashboard.dbo.sap_base_field_histry_wide
                 from (
                     SELECT
-                    (SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2) ) year_month 
+                    '{curr}' year_month 
                     ,(SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2) + '-' + SUBSTRING(EINDT, 7, 2)) eindt_date
                     ,*
                     ,GETDATE() etl_time
@@ -36,7 +37,7 @@ def exc1(date_sql):
             union all
 
             SELECT 
-                    (SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2))  year_month
+                    '{curr}' year_month
                     ,(SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2) + '-' + SUBSTRING(EINDT, 7, 2)) eindt_date
                     ,*
                     ,GETDATE() etl_time
@@ -54,19 +55,18 @@ def exc1(date_sql):
 def exc(date_sql):
       
       curr =  date_sql[:7]
-      
-      date1 = date.fromisoformat(date_sql)
-      result = date1 - relativedelta(months=12) 
-      result = str(result)[:7]
+      laft = int(date_sql[:4])-1
+      result = str(laft)+"-01"
+ 
 
-      print(f"0执行{result}====={curr}")
+      print(f"0执行{curr}====={result}")
       sql_query = f'''
             insert into Outsourcing_Dashboard.dbo.sap_base_field_histry_wide
                 select 
                 *
                 from (
                     SELECT
-                    (SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2) ) year_month 
+                    '{curr}' year_month 
                     ,(SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2) + '-' + SUBSTRING(EINDT, 7, 2)) eindt_date
                     ,*
                     ,GETDATE() etl_time
@@ -78,7 +78,7 @@ def exc(date_sql):
             union all
 
             SELECT 
-                    (SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2))  year_month
+                    '{curr}'  year_month
                     ,(SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2) + '-' + SUBSTRING(EINDT, 7, 2)) eindt_date
                     ,*
                     ,GETDATE() etl_time
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     exc1('2015-09-01')
 
     start_date = datetime.date(2015, 10, 1)
-    end_date = datetime.date(2025, 3, 1)
+    end_date = datetime.date(2024, 3, 1)
 
     result = get_all_months(start_date, end_date)
 

@@ -30,7 +30,7 @@
 
                 ) a;
 
-              insert into into Outsourcing_Dashboard.dbo.sap_base_field_merge_wide
+              insert into  Outsourcing_Dashboard.dbo.sap_base_field_merge_wide
                 select 
                  *
                 from Outsourcing_Dashboard.dbo.sap_base_field_histry_wide
