@@ -1,16 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <job>
-  <name>job_outsourcing_dashboard_assorted_commponent_lack_drill_list</name>
+  <name>job_outsourcing_dashboard_return_vender_node_drill_list</name>
   <description/>
   <extended_description/>
   <job_version/>
   <directory>/</directory>
   <created_user>-</created_user>
-  <created_date>2023/12/01 09:36:51.629</created_date>
+  <created_date>2023/12/08 16:57:21.088</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2023/12/01 09:36:51.629</modified_date>
+  <modified_date>2023/12/08 16:57:21.088</modified_date>
   <parameters>
     </parameters>
+  <connection>
+    <name>Outsourcing_Dashboard</name>
+    <server>172.16.31.42</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>Outsourcing_Dashboard</database>
+    <port>1433</port>
+    <username>dw</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2abcd</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
   <slaveservers>
     </slaveservers>
   <job-log-table>
@@ -304,8 +359,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>384</xloc>
-      <yloc>240</yloc>
+      <xloc>352</xloc>
+      <yloc>288</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -315,7 +370,7 @@
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>${Internal.Entry.Current.Directory}/trans_outsourcing_dashboard_assorted_commponent_lack_drill_list.ktr</filename>
+      <filename>${Internal.Entry.Current.Directory}/trans_outsourcing_dashboard_return_vender_node_drill_list.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -342,8 +397,26 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>544</xloc>
-      <yloc>240</yloc>
+      <xloc>496</xloc>
+      <yloc>288</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>SQL</name>
+      <description/>
+      <type>SQL</type>
+      <attributes/>
+      <sql>update return_vender_node_drill_list set retrieve_days=DATEDIFF(day,return_vender_node_start_time , return_vender_node_close_time)</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Outsourcing_Dashboard</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>640</xloc>
+      <yloc>288</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -354,8 +427,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>752</xloc>
-      <yloc>240</yloc>
+      <xloc>800</xloc>
+      <yloc>288</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
@@ -371,6 +444,15 @@
     </hop>
     <hop>
       <from>转换</from>
+      <to>SQL</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>SQL</from>
       <to>成功</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>

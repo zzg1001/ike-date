@@ -1,71 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <job>
-  <name>job_Outsouring_Dashboard_sap_base_field_wide</name>
+  <name>job_outsourcing_dashboard_assorted_commponent_lack_drill_list</name>
   <description/>
   <extended_description/>
   <job_version/>
   <directory>/</directory>
   <created_user>-</created_user>
-  <created_date>2023/11/20 15:52:47.158</created_date>
+  <created_date>2023/12/01 09:36:51.629</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2023/11/20 15:52:47.158</modified_date>
+  <modified_date>2023/12/01 09:36:51.629</modified_date>
   <parameters>
     </parameters>
-  <connection>
-    <name>Outsourcing_Dashboard</name>
-    <server>172.16.31.42</server>
-    <type>MSSQL</type>
-    <access>Native</access>
-    <database>Outsourcing_Dashboard</database>
-    <port>1433</port>
-    <username>dw</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2abcd</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>1433</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
   <slaveservers>
     </slaveservers>
   <job-log-table>
@@ -359,8 +304,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>368</xloc>
-      <yloc>256</yloc>
+      <xloc>384</xloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -370,7 +315,7 @@
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>E:\doc\工程\烟机\外协看板\ETL\trans_outsouring_dashboard_sap_base_field_wide.ktr</filename>
+      <filename>${Internal.Entry.Current.Directory}/trans_outsourcing_dashboard_assorted_commponent_lack_drill_list.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -397,8 +342,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>496</xloc>
-      <yloc>256</yloc>
+      <xloc>544</xloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -409,84 +354,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>848</xloc>
-      <yloc>256</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>SQL</name>
-      <description/>
-      <type>SQL</type>
-      <attributes/>
-      <sql>
-
-with tmp as(
-select EBELN,EBELP,max(close_time) as close_time,sum(unqualified_num) as unqualified_num from sap_base_field_wide_temp group by EBELN,EBELP
-)
-update sap_base_field_wide_temp set close_time=b.close_time,unqualified_num= b.unqualified_num
-from tmp b 
-where sap_base_field_wide_temp.EBELN=b.EBELN and sap_base_field_wide_temp.EBELP=b.EBELP;
-
-truncate table sap_base_field_wide;
-
-insert into sap_base_field_wide
-select distinct * from sap_base_field_wide_temp;
-
-update sap_base_field_wide set is_qualified = case when unqualified_num>0
-then '不合格'
-else '合格' end; 
---订单数据=收货数：订单已完成
-update sap_base_field_wide set finish_or_not=case when MENGE=WEMNG then '完成'
-when MENGE!=WEMNG and srm_order_qty=ACTUAL_DELIVERY_QTY then '完成'
---when MENGE>WEMNG and (srm_order_qty is null or ACTUAL_DELIVERY_QTY is null) then null
-else '未完成' end; 
-
---已完成订单行，节点状态是'点收节点/结束指令'，并且有点收结束时间，取订单行对应的最新点收时间做完订单行完成时间
---with tmp as(
---select  EBELN,EBELP,max(RWQUIRE_DATE) as RWQUIRE_DATE from sap_base_field_wide
---where finish_or_not='完成' and RWQUIRE_DATE is not null and CURRENT_STATUS='点收节点/结束指令' 
---group by EBELN,EBELP,RWQUIRE_DATE
---)
---update sap_base_field_wide set completion_date=b.RWQUIRE_DATE
---from tmp b
---where sap_base_field_wide.EBELN=b.EBELN and sap_base_field_wide.EBELP=b.EBELP;
-
-with tmp as(
-select EBELN,EBELP,max(close_time) as close_time from sap_base_field_wide group by EBELN,EBELP
-)
-update sap_base_field_wide set completion_date=case when MENGE=WEMNG and ACTUAL_DELIVERY_QTY=srm_order_qty then b.close_time
-when MENGE>WEMNG and ACTUAL_DELIVERY_QTY=srm_order_qty then b.close_time
-when MENGE=WEMNG and ACTUAL_DELIVERY_QTY>srm_order_qty then BUDAT
-when MENGE>WEMNG and ACTUAL_DELIVERY_QTY>srm_order_qty then null end
-from tmp b 
-where sap_base_field_wide.EBELN=b.EBELN and sap_base_field_wide.EBELP=b.EBELP;
-
-update sap_base_field_wide set completion_date=case when completion_date is not null then completion_date
-when completion_date is null then BUDAT end 
-where finish_or_not='完成';
-
-update sap_base_field_wide set overdue_or_not= case when finish_or_not='完成' and CONVERT(varchar, completion_date, 112)&lt;=EINDT then '按时'
-when finish_or_not='完成' and CONVERT(varchar, completion_date, 112)>EINDT then '逾期' 
-when finish_or_not='未完成' and CONVERT(varchar, GETDATE(), 112)&lt;=EINDT then '按时' 
-when finish_or_not='未完成' and CONVERT(varchar, GETDATE(), 112)>EINDT then '逾期' end;
-
-update sap_base_field_wide set order_num_overdue_finish_days=DATEDIFF(day, EINDT, completion_date)
-where overdue_or_not='逾期' and finish_or_not='完成';
-
-update sap_base_field_wide set order_num_overdue_days=case when overdue_or_not='逾期' and completion_date is not null then DATEDIFF(day, EINDT, completion_date)
-when overdue_or_not='逾期' and completion_date is null then DATEDIFF(day, EINDT, GETDATE()) end;
-
-delete from sap_base_field_wide where factory='新场' and ROUND(unit_price,0)=1;</sql>
-      <useVariableSubstitution>F</useVariableSubstitution>
-      <sqlfromfile>F</sqlfromfile>
-      <sqlfilename/>
-      <sendOneStatement>F</sendOneStatement>
-      <connection>Outsourcing_Dashboard</connection>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>640</xloc>
-      <yloc>256</yloc>
+      <xloc>752</xloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
@@ -502,15 +371,6 @@ delete from sap_base_field_wide where factory='新场' and ROUND(unit_price,0)=1
     </hop>
     <hop>
       <from>转换</from>
-      <to>SQL</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>SQL</from>
       <to>成功</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>

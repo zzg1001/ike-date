@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>trans_outsourcing_dashboard_match_rate_r24</name>
+    <name>SRM</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -427,20 +427,130 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2023/11/30 15:00:15.241</created_date>
+    <created_date>2023/11/23 14:37:55.152</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2023/11/30 15:00:15.241</modified_date>
+    <modified_date>2023/11/23 14:37:55.152</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <connection>
+    <name>lps</name>
+    <server>172.16.31.14</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>lpsdb</database>
+    <port>3306</port>
+    <username>lps_ro2</username>
+    <password>Encrypted 2be98afc86aa7be94b826bc7f8fc0fc8e</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
     <name>ODS_HANA</name>
     <server>172.16.31.42</server>
     <type>MSSQL</type>
     <access>Native</access>
     <database>ODS_HANA</database>
+    <port>1433</port>
+    <username>dw</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2abcd</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ODS_SRM</name>
+    <server>172.16.31.42</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>ODS_SRM</database>
     <port>1433</port>
     <username>dw</username>
     <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2abcd</password>
@@ -602,8 +712,28 @@
   </connection>
   <order>
     <hop>
+      <from>LPS</from>
+      <to>排序记录</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>SRM </from>
+      <to>排序记录 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>排序记录 2</from>
+      <to>记录集连接</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>排序记录</from>
+      <to>记录集连接</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
       <from>ODS_HANA</from>
-      <to>排序记录 4</to>
+      <to>排序记录 3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -612,113 +742,63 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
+      <from>记录集连接</from>
+      <to>排序记录 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
       <from>排序记录 4</from>
       <to>记录集连接 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Report0624</from>
-      <to>排序记录 3</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>ODS_HANA 2</from>
-      <to>排序记录 4 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Report0624 2</from>
-      <to>排序记录 3 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>排序记录 4 2</from>
-      <to>记录集连接 2 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>排序记录 3 2</from>
-      <to>记录集连接 2 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>记录集连接 2 2</from>
-      <to>match_rate_r24_numerator</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>ODS_HANA 4</from>
-      <to>排序记录 4 3</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>ODS_HANA 5</from>
-      <to>排序记录 4 4</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Report0624 3</from>
-      <to>排序记录 3 3</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>排序记录 3 3</from>
-      <to>记录集连接 2 3</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>排序记录 4 4</from>
-      <to>记录集连接 2 3</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>记录集连接 2 3</from>
-      <to>过滤记录</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>过滤记录</from>
-      <to>排序记录 4 3 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>排序记录 4 3</from>
-      <to>记录集连接 2 4</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>排序记录 4 3 2</from>
-      <to>记录集连接 2 4</to>
+      <from>outsourcing_mapping_vender</from>
+      <to>排序记录 5</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>记录集连接 2</from>
-      <to>字段选择</to>
+      <to>排序记录 6</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>记录集连接 2 4</from>
-      <to>字段选择 2</to>
+      <from>排序记录 6</from>
+      <to>记录集连接 3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>字段选择</from>
-      <to>追加流</to>
+      <from>排序记录 5</from>
+      <to>记录集连接 3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>字段选择 2</from>
-      <to>追加流</to>
+      <from>记录集连接 3</from>
+      <to>排序记录 7</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>追加流</from>
-      <to>match_rate_r24</to>
+      <from>Report0624</from>
+      <to>排序记录 8</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>排序记录 7</from>
+      <to>记录集连接 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>排序记录 8</from>
+      <to>记录集连接 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>记录集连接 4</from>
+      <to>return_vender_node_drill_list</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>ODS_HANA</name>
+    <name>LPS</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -728,86 +808,26 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>ODS_HANA</connection>
-    <sql>with m as ----投产决策报表中有的物料号，并且能够匹配供方
-(
-select 
-material_code1,
---primary_vendor,
-v.factory,
-SUBSTRING(primary_vendor, 1, CHARINDEX('/', primary_vendor)-1) as factory_code
-from Purchase_Dashboard.dbo.report_production_decision d 
-join Outsourcing_Dashboard.dbo.outsourcing_mapping_vender v on SUBSTRING(primary_vendor, 1, CHARINDEX('/', primary_vendor)-1) = v.factory_code
-where material_code1 is not null
-)
-, n as ( ---通过询价库找到所需要的物料号,WBS号，wbs号的创建日期，一个wbs号可能对应多个物料号
-select 
-case when m.MATNR like '0%' then SUBSTRING(m.MATNR, PATINDEX('%[^0]%', m.MATNR), len(m.MATNR)-PATINDEX('%[^0]%', m.MATNR)+1)
-else m.MATNR end as MATNR,
---a.AUFNR,
---a.PROJN,
-c.POSID_EDIT PSPEL,
-c.ERDAT
-from RESB m
-join AFPO a on m.AUFNR = a.AUFNR 
-join PRPS c ON a.PROJN = c.PSPNR ----通过关联取到WBS号
-join (select MATNR from  MARC where EKGRP='203' group by MATNR)  b on m.MATNR=b.MATNR
-where m.WERKS='2000'  and (m.DUMPS&lt;&gt;'X' or m.DUMPS is null)
-and a.DAUAT='ZP12'
-)
-select m.factory_code,m.material_code1, 
-m.factory, b.PSPEL
-,b.ERDAT
-from  m 
-join (select * from n group by MATNR,PSPEL,ERDAT) b on m.material_code1 = b.MATNR</sql>
-    <limit/>
-    <lookup/>
-    <execute_each_row>N</execute_each_row>
-    <variables_active>N</variables_active>
-    <lazy_conversion_active>N</lazy_conversion_active>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>144</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>ODS_HANA 2</name>
-    <type>TableInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>ODS_HANA</connection>
-    <sql>with a as (
-select 
-case when m.MATNR like '0%' then SUBSTRING(m.MATNR, PATINDEX('%[^0]%', m.MATNR), len(m.MATNR)-PATINDEX('%[^0]%', m.MATNR)+1)
-else m.MATNR end as MATNR,
---a.AUFNR,
---a.PROJN,
-c.POSID_EDIT PSPEL,
-c.ERDAT
-from RESB m
-join AFPO a on m.AUFNR = a.AUFNR 
-join PRPS c ON a.PROJN = c.PSPNR ----通过关联取到WBS号
-join (select MATNR from  MARC where EKGRP='203' group by MATNR)  b on m.MATNR=b.MATNR
-where m.WERKS='2000'  and (m.DUMPS&lt;&gt;'X' or m.DUMPS is null)
-and a.DAUAT='ZP12'
-)
-select * from a 
-group by MATNR,PSPEL,ERDAT
+    <connection>lps</connection>
+    <sql>select
+
+task_num,   #物流任务号
+notice_num,   #单据号
+notice_line_num,  #单据行号
+node_name,  #节点名
+start_time,
+close_time,
+sub_send_time,  #送出时间
+sub_back_time,  #送回时间
+order_num,  #订单号
+case when `status`=0 then '初始化'
+when `status`=1 then '开始'
+when `status`=2 then '异常'
+when `status`=3 then '已结束' end as node_status,
+trim(leading '0' from order_line_num) as order_line_num,  #订单行号
+datediff(close_time,start_time) as fetch_holdup_date,
+datediff(sub_back_time,sub_send_time) as fetch_return_holdup_date
+from t_logistical_node_pur_migo
 </sql>
     <limit/>
     <lookup/>
@@ -823,13 +843,13 @@ group by MATNR,PSPEL,ERDAT
       </output>
     </remotesteps>
     <GUI>
-      <xloc>496</xloc>
-      <yloc>672</yloc>
+      <xloc>112</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>ODS_HANA 4</name>
+    <name>ODS_HANA</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -840,8 +860,18 @@ group by MATNR,PSPEL,ERDAT
       <schema_name/>
     </partitioning>
     <connection>ODS_HANA</connection>
-    <sql>select POSID_EDIT wbs_code,ERDAT from ODS_HANA.dbo.PRPS c   --获取WBS的创建日期</sql>
-    <limit/>
+    <sql>select 
+distinct
+a.EINDT,  --预计交货期
+a.EBELN,
+a.EBELP,
+case when b.LIFNR like '0%' then SUBSTRING(b.LIFNR, PATINDEX('%[^0]%', b.LIFNR), len(b.LIFNR)-PATINDEX('%[^0]%', b.LIFNR)+1)
+else b.LIFNR end as LIFNR_new,
+c.IDNLF    --批次号
+from EKET a
+join EKKO b on a.EBELN=b.EBELN
+join EKPO c on a.EBELN=c.EBELN and a.EBELP=c.EBELP</sql>
+    <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
@@ -855,8 +885,8 @@ group by MATNR,PSPEL,ERDAT
       </output>
     </remotesteps>
     <GUI>
-      <xloc>528</xloc>
-      <yloc>352</yloc>
+      <xloc>352</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -871,17 +901,17 @@ group by MATNR,PSPEL,ERDAT
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Outsourcing_Dashboard</connection>
-    <sql>select
+    <connection>Report0624</connection>
+    <sql>select 
+
+wbs_code,
 material_code,
-prod_order_no,
-factory purchase_order_vendor_desc,
-wbs_code
-from Outsourcing_Dashboard.dbo.r24_temp_base
-where  (order_type_code  = 'ZP12' and purchase_group_code ='203' and purchase_order_current_point = '在途' and factory is not null)
-or prod_order_no is not NULL 
---group by material_code,purchase_order_vendor_desc</sql>
-    <limit/>
+purchase_order_no,
+purchase_order_line,
+purchase_group_code
+from r24_temp_base
+where purchase_group_code='203' and receive_status is not null</sql>
+    <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
@@ -895,13 +925,13 @@ or prod_order_no is not NULL
       </output>
     </remotesteps>
     <GUI>
-      <xloc>128</xloc>
-      <yloc>256</yloc>
+      <xloc>832</xloc>
+      <yloc>416</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Report0624 2</name>
+    <name>SRM </name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -911,15 +941,26 @@ or prod_order_no is not NULL
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Report0624</connection>
-    <sql>select
-wbs_code ,
-material_code,
-prod_order_no,
-purchase_order_vendor_desc
-from Report0624.dbo.r24_temp_base
-where  (order_type_code  = 'ZP12' and purchase_group_code ='203' and purchase_order_current_point = '在途')
-or prod_order_no is not NULL </sql>
+    <connection>ODS_SRM</connection>
+    <sql>select 
+
+a.ORDER_NUM as order_num1,
+a.ORDER_ITEM_NUM,
+a.ITEM_CD,    --物料编码
+a.ITEM_DESC,   --物料名称
+a.ORDER_QTY,     --采购数量
+b.GR_qty,
+c.CURRENT_STATUS,
+c.ACTUAL_DELIVERY_QTY,
+d.dn_hd_num as notice_num,   ---装运单编码
+c.line_num as notice_line,
+case when d.DN_HD_NUM like '%-Q%'  then '急件'
+else '一般零件' end as DN_HD_NUM
+from srm_poc_order_item a
+join srm_poc_order_item_extra b on a.ID=b.ORDER_ITEM_ID
+join srm_poc_delivery_note_item c on a.ID=c.ORDER_ITEM_ID  --and c.current_status='收货节点/结束指令'
+join srm_poc_delivery_note_hd d on c.DN_HD_ID=d.ID
+where a.DELETE_FLAG=0 and c.DELETE_FLAG=0 and d.DELETE_FLAG=0</sql>
     <limit/>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -934,13 +975,54 @@ or prod_order_no is not NULL </sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>496</xloc>
-      <yloc>816</yloc>
+      <xloc>112</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>match_rate_r24</name>
+    <name>outsourcing_mapping_vender</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>Outsourcing_Dashboard</connection>
+    <sql>SELECT
+  serial_number
+, factory
+, order_suffix
+, factory_code
+, consignment
+, outsourcing
+, purchase_group
+FROM outsourcing_mapping_vender
+--where factory_code!='200144'</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>return_vender_node_drill_list</name>
     <type>TableOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -952,7 +1034,7 @@ or prod_order_no is not NULL </sql>
     </partitioning>
     <connection>Outsourcing_Dashboard</connection>
     <schema/>
-    <table>match_rate_r24</table>
+    <table>return_vender_node_drill_list</table>
     <commit>1000</commit>
     <truncate>Y</truncate>
     <ignore_errors>N</ignore_errors>
@@ -969,36 +1051,92 @@ or prod_order_no is not NULL </sql>
     <return_field/>
     <fields>
       <field>
-        <column_name>production_vender</column_name>
-        <stream_name>production_vender</stream_name>
+        <column_name>logistics_task_num</column_name>
+        <stream_name>task_num</stream_name>
       </field>
       <field>
-        <column_name>production_material_code</column_name>
-        <stream_name>production_material_code</stream_name>
+        <column_name>return_vender_node_start_time</column_name>
+        <stream_name>start_time</stream_name>
+      </field>
+      <field>
+        <column_name>return_vender_node_send_time</column_name>
+        <stream_name>sub_send_time</stream_name>
+      </field>
+      <field>
+        <column_name>return_vender_node_back_time</column_name>
+        <stream_name>sub_back_time</stream_name>
+      </field>
+      <field>
+        <column_name>order_num</column_name>
+        <stream_name>order_num1</stream_name>
+      </field>
+      <field>
+        <column_name>order_line_num</column_name>
+        <stream_name>ORDER_ITEM_NUM</stream_name>
+      </field>
+      <field>
+        <column_name>logistics_fetch_stuck_date</column_name>
+        <stream_name>fetch_holdup_date</stream_name>
+      </field>
+      <field>
+        <column_name>logistics_fetch_back_stuck_date</column_name>
+        <stream_name>fetch_return_holdup_date</stream_name>
+      </field>
+      <field>
+        <column_name>material_code</column_name>
+        <stream_name>item_cd</stream_name>
+      </field>
+      <field>
+        <column_name>material_name</column_name>
+        <stream_name>item_desc</stream_name>
+      </field>
+      <field>
+        <column_name>purchase_quality</column_name>
+        <stream_name>order_qty</stream_name>
+      </field>
+      <field>
+        <column_name>point_receive_quality</column_name>
+        <stream_name>ACTUAL_DELIVERY_QTY</stream_name>
+      </field>
+      <field>
+        <column_name>CURRENT_STATUS</column_name>
+        <stream_name>CURRENT_STATUS</stream_name>
+      </field>
+      <field>
+        <column_name>is_emergency</column_name>
+        <stream_name>DN_HD_NUM</stream_name>
+      </field>
+      <field>
+        <column_name>delivery_date</column_name>
+        <stream_name>EINDT</stream_name>
+      </field>
+      <field>
+        <column_name>batch</column_name>
+        <stream_name>IDNLF</stream_name>
       </field>
       <field>
         <column_name>factory</column_name>
         <stream_name>factory</stream_name>
       </field>
       <field>
+        <column_name>outsourcing</column_name>
+        <stream_name>outsourcing</stream_name>
+      </field>
+      <field>
+        <column_name>return_vender_node_close_time</column_name>
+        <stream_name>close_time</stream_name>
+      </field>
+      <field>
+        <column_name>node_name</column_name>
+        <stream_name>node_name</stream_name>
+      </field>
+      <field>
+        <column_name>node_status</column_name>
+        <stream_name>node_status</stream_name>
+      </field>
+      <field>
         <column_name>wbs_code</column_name>
         <stream_name>wbs_code</stream_name>
-      </field>
-      <field>
-        <column_name>ERDAT</column_name>
-        <stream_name>ERDAT</stream_name>
-      </field>
-      <field>
-        <column_name>r24_material_code</column_name>
-        <stream_name>r24_material_code</stream_name>
-      </field>
-      <field>
-        <column_name>order_num</column_name>
-        <stream_name>order_num</stream_name>
-      </field>
-      <field>
-        <column_name>r24_vender</column_name>
-        <stream_name>r24_vender</stream_name>
       </field>
     </fields>
     <attributes/>
@@ -1010,14 +1148,14 @@ or prod_order_no is not NULL </sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1168</xloc>
-      <yloc>224</yloc>
+      <xloc>1264</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>match_rate_r24_numerator</name>
-    <type>TableOutput</type>
+    <name>排序记录</name>
+    <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1026,43 +1164,29 @@ or prod_order_no is not NULL </sql>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Outsourcing_Dashboard</connection>
-    <schema>dbo</schema>
-    <table>match_rate_r24_numerator</table>
-    <commit>1000</commit>
-    <truncate>Y</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>Y</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <column_name>ERDAT</column_name>
-        <stream_name>ERDAT</stream_name>
+        <name>notice_num</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
       </field>
       <field>
-        <column_name>wbs_code</column_name>
-        <stream_name>wbs_code</stream_name>
-      </field>
-      <field>
-        <column_name>material_code</column_name>
-        <stream_name>material_code</stream_name>
-      </field>
-      <field>
-        <column_name>prod_order_no</column_name>
-        <stream_name>prod_order_no</stream_name>
-      </field>
-      <field>
-        <column_name>purchase_order_vendor_desc</column_name>
-        <stream_name>purchase_order_vendor_desc</stream_name>
+        <name>notice_line_num</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
       </field>
     </fields>
     <attributes/>
@@ -1074,8 +1198,58 @@ or prod_order_no is not NULL </sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>976</xloc>
-      <yloc>720</yloc>
+      <xloc>240</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>排序记录 2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>notice_num</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>notice_line</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1099,7 +1273,7 @@ or prod_order_no is not NULL </sql>
     <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>material_code</name>
+        <name>EBELN</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -1107,7 +1281,7 @@ or prod_order_no is not NULL </sql>
         <presorted>N</presorted>
       </field>
       <field>
-        <name>wbs_code</name>
+        <name>EBELP</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -1124,58 +1298,8 @@ or prod_order_no is not NULL </sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>288</xloc>
-      <yloc>256</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>排序记录 3 2</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>wbs_code</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>material_code</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>656</xloc>
-      <yloc>816</yloc>
+      <xloc>496</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1199,7 +1323,7 @@ or prod_order_no is not NULL </sql>
     <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>material_code1</name>
+        <name>order_num</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -1207,7 +1331,7 @@ or prod_order_no is not NULL </sql>
         <presorted>N</presorted>
       </field>
       <field>
-        <name>PSPEL</name>
+        <name>order_line_num</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -1224,13 +1348,13 @@ or prod_order_no is not NULL </sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>288</xloc>
-      <yloc>128</yloc>
+      <xloc>544</xloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>排序记录 4 2</name>
+    <name>排序记录 5</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -1249,15 +1373,7 @@ or prod_order_no is not NULL </sql>
     <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>PSPEL</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>MATNR</name>
+        <name>factory_code</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -1274,13 +1390,13 @@ or prod_order_no is not NULL </sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>656</xloc>
-      <yloc>672</yloc>
+      <xloc>624</xloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>排序记录 4 3</name>
+    <name>排序记录 6</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -1299,7 +1415,7 @@ or prod_order_no is not NULL </sql>
     <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>wbs_code</name>
+        <name>LIFNR_new</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -1316,8 +1432,160 @@ or prod_order_no is not NULL </sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>704</xloc>
-      <yloc>352</yloc>
+      <xloc>784</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>排序记录 7</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>ITEM_CD</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>order_num1</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>ORDER_ITEM_NUM</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>960</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>排序记录 8</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>material_code</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>purchase_order_no</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>purchase_order_line</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>960</xloc>
+      <yloc>416</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>记录集连接</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <join_type>INNER</join_type>
+    <step1>排序记录</step1>
+    <step2>排序记录 2</step2>
+    <keys_1>
+      <key>notice_num</key>
+      <key>notice_line_num</key>
+    </keys_1>
+    <keys_2>
+      <key>notice_num</key>
+      <key>notice_line</key>
+    </keys_2>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>432</xloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1332,16 +1600,16 @@ or prod_order_no is not NULL </sql>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <join_type>LEFT OUTER</join_type>
+    <join_type>INNER</join_type>
     <step1>排序记录 4</step1>
     <step2>排序记录 3</step2>
     <keys_1>
-      <key>material_code1</key>
-      <key>PSPEL</key>
+      <key>order_num</key>
+      <key>order_line_num</key>
     </keys_1>
     <keys_2>
-      <key>material_code</key>
-      <key>wbs_code</key>
+      <key>EBELN</key>
+      <key>EBELP</key>
     </keys_2>
     <attributes/>
     <cluster_schema/>
@@ -1352,13 +1620,13 @@ or prod_order_no is not NULL </sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>464</xloc>
-      <yloc>224</yloc>
+      <xloc>656</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>记录集连接 2 2</name>
+    <name>记录集连接 3</name>
     <type>MergeJoin</type>
     <description/>
     <distribute>Y</distribute>
@@ -1369,367 +1637,13 @@ or prod_order_no is not NULL </sql>
       <schema_name/>
     </partitioning>
     <join_type>INNER</join_type>
-    <step1>排序记录 4 2</step1>
-    <step2>排序记录 3 2</step2>
+    <step1>排序记录 6</step1>
+    <step2>排序记录 5</step2>
     <keys_1>
-      <key>PSPEL</key>
-      <key>MATNR</key>
+      <key>LIFNR_new</key>
     </keys_1>
     <keys_2>
-      <key>wbs_code</key>
-      <key>material_code</key>
-    </keys_2>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>816</xloc>
-      <yloc>720</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>ODS_HANA 5</name>
-    <type>TableInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>ODS_HANA</connection>
-    <sql>with m as ----投产决策报表中有的物料号，并且能够匹配供方
-(
-select 
-material_code1,
---primary_vendor,
-v.factory,
-SUBSTRING(primary_vendor, 1, CHARINDEX('/', primary_vendor)-1) as factory_code
-from Purchase_Dashboard.dbo.report_production_decision d 
-join Outsourcing_Dashboard.dbo.outsourcing_mapping_vender v on SUBSTRING(primary_vendor, 1, CHARINDEX('/', primary_vendor)-1) = v.factory_code
-where material_code1 is not null
-)
-, n as ( ---通过询价库找到所需要的物料号,WBS号，wbs号的创建日期，一个wbs号可能对应多个物料号
-select 
-case when m.MATNR like '0%' then SUBSTRING(m.MATNR, PATINDEX('%[^0]%', m.MATNR), len(m.MATNR)-PATINDEX('%[^0]%', m.MATNR)+1)
-else m.MATNR end as MATNR,
---a.AUFNR,
---a.PROJN,
-c.POSID_EDIT PSPEL,
-c.ERDAT
-from RESB m
-join AFPO a on m.AUFNR = a.AUFNR 
-join PRPS c ON a.PROJN = c.PSPNR ----通过关联取到WBS号
-join (select MATNR from  MARC where EKGRP='203' group by MATNR)  b on m.MATNR=b.MATNR
-where m.WERKS='2000'  and (m.DUMPS&lt;&gt;'X' or m.DUMPS is null)
-and a.DAUAT='ZP12'
-)
-select m.factory_code,m.material_code1, 
-m.factory, b.PSPEL
-,b.ERDAT
-from  m 
-join (select * from n group by MATNR,PSPEL,ERDAT) b on m.material_code1 = b.MATNR
-</sql>
-    <limit/>
-    <lookup/>
-    <execute_each_row>N</execute_each_row>
-    <variables_active>N</variables_active>
-    <lazy_conversion_active>N</lazy_conversion_active>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>112</xloc>
-      <yloc>496</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Report0624 3</name>
-    <type>TableInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>Report0624</connection>
-    <sql>select
-material_code,
-prod_order_no,
-factory purchase_order_vendor_desc,
-wbs_code
-from Outsourcing_Dashboard.dbo.r24_temp_base
-where  ((order_type_code  = 'ZP12' and purchase_group_code ='203' 
-		and purchase_order_current_point = '在途' and factory is not null)
-or prod_order_no is not NULL )
---and  wbs_code like '%24151%' and purchase_order_vendor_desc  = '标皓'
---group by material_code,purchase_order_vendor_desc</sql>
-    <limit/>
-    <lookup/>
-    <execute_each_row>N</execute_each_row>
-    <variables_active>N</variables_active>
-    <lazy_conversion_active>N</lazy_conversion_active>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>112</xloc>
-      <yloc>368</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>排序记录 3 3</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>material_code</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>wbs_code</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>288</xloc>
-      <yloc>368</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>排序记录 4 4</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>material_code1</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>PSPEL</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>288</xloc>
-      <yloc>496</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>记录集连接 2 3</name>
-    <type>MergeJoin</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <join_type>LEFT OUTER</join_type>
-    <step1>排序记录 3 3</step1>
-    <step2>排序记录 4 4</step2>
-    <keys_1>
-      <key>material_code</key>
-      <key>wbs_code</key>
-    </keys_1>
-    <keys_2>
-      <key>material_code1</key>
-      <key>PSPEL</key>
-    </keys_2>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>448</xloc>
-      <yloc>496</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>过滤记录</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to>排序记录 4 3 2</send_true_to>
-    <send_false_to/>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue>material_code1</leftvalue>
-        <function>IS NULL</function>
-        <rightvalue/>
-      </condition>
-    </compare>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>592</xloc>
-      <yloc>496</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>排序记录 4 3 2</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>wbs_code</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>720</xloc>
-      <yloc>496</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>记录集连接 2 4</name>
-    <type>MergeJoin</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <join_type>LEFT OUTER</join_type>
-    <step1>排序记录 4 3 2</step1>
-    <step2>排序记录 4 3</step2>
-    <keys_1>
-      <key>wbs_code</key>
-    </keys_1>
-    <keys_2>
-      <key>wbs_code</key>
+      <key>factory_code</key>
     </keys_2>
     <attributes/>
     <cluster_schema/>
@@ -1741,13 +1655,13 @@ or prod_order_no is not NULL )
     </remotesteps>
     <GUI>
       <xloc>832</xloc>
-      <yloc>400</yloc>
+      <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>字段选择</name>
-    <type>SelectValues</type>
+    <name>记录集连接 4</name>
+    <type>MergeJoin</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1756,41 +1670,19 @@ or prod_order_no is not NULL )
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <fields>
-      <field>
-        <name>material_code</name>
-        <rename>r24_material_code</rename>
-      </field>
-      <field>
-        <name>prod_order_no</name>
-        <rename>order_num</rename>
-      </field>
-      <field>
-        <name>purchase_order_vendor_desc</name>
-        <rename>r24_vender</rename>
-      </field>
-      <field>
-        <name>PSPEL</name>
-        <rename>wbs_code</rename>
-      </field>
-      <field>
-        <name>factory_code</name>
-        <rename>production_vender</rename>
-      </field>
-      <field>
-        <name>factory</name>
-        <rename/>
-      </field>
-      <field>
-        <name>ERDAT</name>
-        <rename/>
-      </field>
-      <field>
-        <name>material_code1</name>
-        <rename>production_material_code</rename>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
+    <join_type>LEFT OUTER</join_type>
+    <step1>排序记录 7</step1>
+    <step2>排序记录 8</step2>
+    <keys_1>
+      <key>ITEM_CD</key>
+      <key>order_num1</key>
+      <key>ORDER_ITEM_NUM</key>
+    </keys_1>
+    <keys_2>
+      <key>material_code</key>
+      <key>purchase_order_no</key>
+      <key>purchase_order_line</key>
+    </keys_2>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -1800,95 +1692,8 @@ or prod_order_no is not NULL )
       </output>
     </remotesteps>
     <GUI>
-      <xloc>624</xloc>
-      <yloc>224</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>字段选择 2</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>material_code</name>
-        <rename>r24_material_code</rename>
-      </field>
-      <field>
-        <name>prod_order_no</name>
-        <rename>order_num</rename>
-      </field>
-      <field>
-        <name>purchase_order_vendor_desc</name>
-        <rename>r24_vender</rename>
-      </field>
-      <field>
-        <name>wbs_code</name>
-        <rename/>
-      </field>
-      <field>
-        <name>factory_code</name>
-        <rename>production_vender</rename>
-      </field>
-      <field>
-        <name>purchase_order_vendor_desc</name>
-        <rename>factory</rename>
-      </field>
-      <field>
-        <name>ERDAT_1</name>
-        <rename>ERDAT</rename>
-      </field>
-      <field>
-        <name>material_code</name>
-        <rename>production_material_code</rename>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>944</xloc>
-      <yloc>400</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>追加流</name>
-    <type>Append</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <head_name>字段选择</head_name>
-    <tail_name>字段选择 2</tail_name>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>944</xloc>
-      <yloc>224</yloc>
+      <xloc>1040</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
