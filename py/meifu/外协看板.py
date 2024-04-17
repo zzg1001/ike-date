@@ -27,6 +27,8 @@ def exc1(date_sql):
                     SELECT
                     '{curr}' year_month 
                     ,(SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2) + '-' + SUBSTRING(EINDT, 7, 2)) eindt_date
+                     ,0 is_curr_year
+                     ,0 is_contain
                     ,*
                     ,GETDATE() etl_time
                 from Outsourcing_Dashboard.dbo.sap_base_field_wide a
@@ -39,6 +41,8 @@ def exc1(date_sql):
             SELECT 
                     '{curr}' year_month
                     ,(SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2) + '-' + SUBSTRING(EINDT, 7, 2)) eindt_date
+                    ,case when SUBSTRING(EINDT, 1, 4)=CONVERT(varchar(4), GETDATE(), 120)  then 0 else 1 end is_curr_year
+                    ,1 is_contain
                     ,*
                     ,GETDATE() etl_time
                 from Outsourcing_Dashboard.dbo.sap_base_field_wide a
@@ -68,6 +72,8 @@ def exc(date_sql):
                     SELECT
                     '{curr}' year_month 
                     ,(SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2) + '-' + SUBSTRING(EINDT, 7, 2)) eindt_date
+                     ,0 is_curr_year
+                     ,0 is_contain
                     ,*
                     ,GETDATE() etl_time
                 from Outsourcing_Dashboard.dbo.sap_base_field_wide a
@@ -80,6 +86,8 @@ def exc(date_sql):
             SELECT 
                     '{curr}'  year_month
                     ,(SUBSTRING(EINDT, 1, 4) + '-' + SUBSTRING(EINDT, 5, 2) + '-' + SUBSTRING(EINDT, 7, 2)) eindt_date
+                     ,case when SUBSTRING(EINDT, 1, 4)=CONVERT(varchar(4), GETDATE(), 120)  then 0 else 1 end is_curr_year
+                     ,1 is_contain
                     ,*
                     ,GETDATE() etl_time
                 from Outsourcing_Dashboard.dbo.sap_base_field_wide a
