@@ -1,26 +1,18 @@
-from datetime import datetime, timedelta
+import pyodbc 
 
-def get_date_range(start_date, end_date):
-    """
-    根据给定的起始日期和结束日期,生成该时间段内的每一天日期。
-    
-    参数:
-    start_date (str) - 起始日期, 格式为 "YYYY-MM-DD"
-    end_date (str) - 结束日期, 格式为 "YYYY-MM-DD"
-    
-    返回:
-    list - 包含时间段内每一天日期的列表,格式为 "YYYY-MM-DD"
-    """
-    start = datetime.strptime(start_date, "%Y-%m-%d")
-    end = datetime.strptime(end_date, "%Y-%m-%d")
-    
-    date_range = [start + timedelta(days=x) for x in range((end - start).days + 1)]
-    return [date.strftime("%Y-%m-%d") for date in date_range]
+server = '172.16.31.42' # 数据库地址
+# 其他设置server的方法
+# server = 'localhost\sqlexpress' # 实例名
+# server = 'myserver,port' # 指定端口
+database = 'ODS_SRM' # 数据库名
+username = 'DW_YK' # 用户名
+password = 'DW_YK' # 密码
+# conn = pyodbc.connect('DRIVER={SQL Server};SERVER=172.16.31.42,1433;DATABASE=ODS_SRM;UID=DW_YK;PWD=DW_YK')
+cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+cursor = cnxn.cursor()
 
-# 示例使用
-start_date = "2024-01-01"
-end_date = "2024-01-03"
-dates = get_date_range(start_date, end_date)
-
-for date in dates:
-    print(date)
+cursor.execute("SELECT * from  Outsourcing_Dashboard.dbo.sap_base_field_wide;") 
+row = cursor.fetchone() 
+while row: 
+    print (row[0])
+    row = cursor.fetchone()
