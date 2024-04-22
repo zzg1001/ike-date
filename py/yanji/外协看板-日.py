@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 
 # 连接到SQL Server数据库
-conn = pyodbc.connect('DRIVER={SQL Server};SERVER=172.16.31.42,1433;DATABASE=ODS_SRM;UID=DW_YK;PWD=DW_YK')
+conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=172.16.31.42,1433;DATABASE=ODS_SRM;UID=DW_YK;PWD=DW_YK')
 # 创建游标对象
 cursor = conn.cursor()
 
@@ -146,6 +146,7 @@ if __name__ == "__main__":
 
     start_date = '2015-09-02'
     end_date = '2024-04-22'
+
 
     result = get_date_range(start_date, end_date)
 
