@@ -6,7 +6,7 @@ ftp_host = "172.16.31.187"
 ftp_user = "ftpuser1"
 ftp_pass = "fanruanfanruan"
 ftp_dir = "/home/ftpuser1/supplierperformance"
-ftp_file = "双环--2024-03供应商成绩单.pdf"
+ftp_file = "双环--2000-2024-03供应商成绩单.pdf"
 
 # 本地保存路径
 local_dir = r"D:\\work\\aa"

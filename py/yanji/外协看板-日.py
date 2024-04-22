@@ -144,7 +144,7 @@ if __name__ == "__main__":
 
     exc1('2015-09-01')
 
-    start_date = '2024-04-18'
+    start_date = '2015-09-02'
     end_date = '2024-04-22'
 
     result = get_date_range(start_date, end_date)
