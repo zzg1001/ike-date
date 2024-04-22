@@ -1,26 +1,32 @@
-from datetime import datetime, timedelta
+from ftplib import FTP
+import os
 
-def get_date_range(start_date, end_date):
-    """
-    根据给定的起始日期和结束日期,生成该时间段内的每一天日期。
-    
-    参数:
-    start_date (str) - 起始日期, 格式为 "YYYY-MM-DD"
-    end_date (str) - 结束日期, 格式为 "YYYY-MM-DD"
-    
-    返回:
-    list - 包含时间段内每一天日期的列表,格式为 "YYYY-MM-DD"
-    """
-    start = datetime.strptime(start_date, "%Y-%m-%d")
-    end = datetime.strptime(end_date, "%Y-%m-%d")
-    
-    date_range = [start + timedelta(days=x) for x in range((end - start).days + 1)]
-    return [date.strftime("%Y-%m-%d") for date in date_range]
+# FTP 服务器连接信息
+ftp_host = "172.16.31.187"
+ftp_user = "ftpuser1"
+ftp_pass = "fanruanfanruan"
+ftp_dir = "/home/ftpuser1/supplierperformance"
+ftp_file = "双环--2024-03供应商成绩单.pdf"
 
-# 示例使用
-start_date = "2024-01-01"
-end_date = "2024-01-03"
-dates = get_date_range(start_date, end_date)
+# 本地保存路径
+local_dir = r"D:\\work\\aa"
+local_file = os.path.join(local_dir, ftp_file)
 
-for date in dates:
-    print(date)
+# 创建本地保存目录
+os.makedirs(local_dir, exist_ok=True)
+
+# 建立 FTP 连接
+ftp = FTP(ftp_host)
+ftp.login(ftp_user, ftp_pass)
+
+# 切换到目标目录
+ftp.cwd(ftp_dir)
+
+# 读取文件内容
+with open(local_file, "wb") as local_file_obj:
+    ftp.retrbinary(f"RETR {ftp_file}", local_file_obj.write)
+
+# 关闭 FTP 连接
+ftp.quit()
+
+print(f"File downloaded successfully to: {local_file}")
