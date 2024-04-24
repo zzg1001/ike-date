@@ -1,0 +1,48 @@
+select top 1000
+	a.material_code,
+	a.stock_quantity,
+	a.stock_supply_quantity,
+	a.inv_quantity_1005,
+	new.qty 
+
+from Report0624.dbo.r24_temp_base  as a
+left join Report0624.dbo.r24_temp_note as b
+    on a.require_line=b.require_line
+    and a.require_no=b.require_no
+left join Report0624.dbo.r24_inquiry_status as c
+    on a.material_code=c.material_code
+
+left join (
+ SELECT a.ORDER_NUM,a.ORDER_ITEM_NUM,b.NODE_STATUS
+  FROM [ODS_SRM].[dbo].[srm_poc_order_item] as a ,
+  [ODS_SRM].[dbo].[srm_poc_order_item_extra] as b
+  where a.ID = b.ORDER_ITEM_ID 
+  and b.NODE_STATUS is not NULL
+  group by a.ORDER_NUM,
+  a.ORDER_ITEM_NUM,
+	  b.NODE_STATUS) as d
+	  
+  on a.purchase_order_no = d.ORDER_NUM and purchase_order_line = d.ORDER_ITEM_NUM
+
+left join (select * from
+
+[Report0624].[dbo].[r24_1050_1051] 
+
+
+where [r24_1050_1051].midlgort = 1050
+
+) as new 
+on new.rsnum = a.require_no
+and new.rspos = a.require_line
+
+
+left join (select * from r24_mrp_detail rmd where rmd.supply_no like '5%' ) as md
+	on  a.require_no = md.require_no
+      and a.require_line = md.require_line
+left join [Report0624].[dbo].[WSPjhsl] 
+	on WSPjhsl.ebeln = md.supply_no
+      and WSPjhsl.ebelp = md.supply_line
+left join [Report0624].[dbo].YSPjhsl
+	on YSPjhsl.ebeln = md.supply_no
+      and YSPjhsl.ebelp = md.supply_line
+
