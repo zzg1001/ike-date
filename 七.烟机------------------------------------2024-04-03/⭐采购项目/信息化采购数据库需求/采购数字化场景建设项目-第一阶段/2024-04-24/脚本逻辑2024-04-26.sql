@@ -1,18 +1,18 @@
 
 
 select 
-		part_code     -- '物料代码'            
-		,part_name    -- '物料技术名称'           
-		,model_specifications   '物料技术型号（规格）' 
-		,unit_code    --'技术单位'              
-		,alien_code   --'外来代码'        
-		,order_no     --'订货号'           
-		,manufacturer --'技术要求品牌(制造商)'          
-		,standard_no  --'标准号'           
-		,supplier     --'供应商'          
+		part_code              -- '物料代码'            
+		,part_name             -- '物料技术名称'           
+		,model_specifications  --'物料技术型号（规格）' 
+		,unit_code             --'技术单位'              
+		,alien_code            --'外来代码'        
+		,order_no              --'订货号'           
+		,manufacturer          --'技术要求品牌(制造商)'          
+		,standard_no           --'标准号'           
+		,supplier              -- '供应商'          
 		,item_classification_code  -- '项目分类'
-		,description  -- 'description'
-        ,''           '样本（即时要求低的从数据中台抽）'		
+		,description           -- 'description'
+        ,'' Windchill_samlple  --  '样本（即时要求低的从数据中台抽）'		
 from DWD_WINDCHILL.dbo.dws_pdm_part_info a 
 
 
