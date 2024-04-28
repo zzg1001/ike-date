@@ -50,8 +50,6 @@ try:
                 total_lines = len(lines)
                 num_batches = (total_lines + batch_size - 1) // batch_size  # 计算批次数量
 
-                data_count = 0  # 数据行计数器
-
                 for batch_index in range(num_batches):
                     start_index = batch_index * batch_size
                     end_index = min((batch_index + 1) * batch_size, total_lines)
@@ -71,28 +69,21 @@ try:
                                 try:
                                     converted_values.append(int(value))
                                 except ValueError:
-                                    converted_values.append(1 if value.lower() == 'true' else 0)  # 将布尔类型映射为整数
+                                    converted_values.append(1 if value.lower() == 'true' else 0)
                             elif data_type == 'float':
                                 converted_values.append(float(value))
                             elif data_type in ['numeric', 'decimal']:
-                                if value == '':
-                                    converted_values.append(None)  # 将空字符串转换为NULL
-                                else:
-                                    converted_values.append(float(value))  # 保持原始逻辑，将非空值转换为浮点数
-                            elif data_type in ['binary', 'varbinary'] and value == '':
-                                converted_values.append(None)  # 将空字符串转换为NULL
+                                converted_values.append(float(value) if value else None)
+                            elif data_type in ['binary', 'varbinary']:
+                                converted_values.append(None if value == '' else value.encode('utf-8'))
                             else:
                                 converted_values.append(value)
 
                         values_list.append(converted_values)
 
-                        # data_count += 1  # 数据行计数器加一
-                        # print(f"表{table_name}:数据行{data_count}: {converted_values}")  # 打印每条数据的序列号
-
                     # 构建插入语句
                     placeholders = ', '.join(['?' for _ in converted_values])
                     sql = f"INSERT INTO [{table_name}] VALUES ({placeholders})"
-                    # 打印每条数据
 
                     try:
                         start_time = time.time()  # 记录插入开始时间
@@ -101,7 +92,7 @@ try:
                         cursor.executemany(sql, values_list)
                         conn.commit()  # 提交事务
 
-                        end_time = time.time()  # 记录插入结束时间                        # 计算插入所需时间
+                        end_time = time.time()  # 记录插入结束时间
                         time_taken = end_time - start_time
                         print(f"表{table_name}: 批次{batch_index + 1}/{num_batches} - 插入时间: {time_taken}秒")
 
@@ -111,8 +102,6 @@ try:
                         error_message = f"插入数据时发生错误：表名 - {table_name}，错误信息 - {str(e)}"
                         print(error_message)
                         failed_tables += 1
-
-                        # 将异常信息写入日志文件
                         logging.error(f"插入数据时发生错误：表名 - {table_name}，错误信息 - {str(e)}")
 
         except pyodbc.Error as e:
