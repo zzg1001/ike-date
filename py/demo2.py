@@ -46,7 +46,7 @@ try:
             # 读取.dat文件并插入到数据库表中
             with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
                 lines = file.readlines()
-                batch_size = 250
+                batch_size = 10000
                 total_lines = len(lines)
                 num_batches = (total_lines + batch_size - 1) // batch_size  # 计算批次数量
 
@@ -89,6 +89,8 @@ try:
                         start_time = time.time()  # 记录插入开始时间
 
                         # 执行批量插入操作
+                        cursor.fast_executemany = True
+
                         cursor.executemany(sql, values_list)
                         conn.commit()  # 提交事务
 
