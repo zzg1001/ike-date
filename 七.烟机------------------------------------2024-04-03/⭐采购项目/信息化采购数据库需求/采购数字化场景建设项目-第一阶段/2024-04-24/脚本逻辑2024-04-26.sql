@@ -26,6 +26,9 @@ from DWD_WINDCHILL.dbo.dws_pdm_part_info a
            ,d.EKNAM    as purchase_group_desc      --'采购组描述'
             ,c.MAABC   as purchase_importance_tpye --'采购重要度分类'
             ,c.PLIFZ   as purchase_cycle           --'计划周期（天）'
+			,material_desc  as material_desc
+			,plant_code     as plant_code
+			,stock_quantity as stock_quantity
            ,b.sap_unit as sap_unit                 --'计划单位'
            ,''         as sap_price
       from ODS_HANA.dbo.MAKT a
@@ -41,36 +44,13 @@ from DWD_WINDCHILL.dbo.dws_pdm_part_info a
  left join ODS_HANA.dbo.T024 d 
         on c.EKGRP = d.EKGRP
  left join (
-			    SELECT 
-                             distinct 
-			          a.material_code,
-			          a.stock_quantity,
-			        --  a.stock_supply_quantity,
-			          a.inv_quantity_1005
-			       --   new.qty 
-			     FROM Report0624.dbo.r24_temp_base AS a
-			LEFT JOIN Report0624.dbo.r24_temp_note AS b
-			       ON a.require_line = b.require_line
-			      AND a.require_no = b.require_no
-			LEFT JOIN Report0624.dbo.r24_inquiry_status AS c
-			       ON a.material_code = c.material_code
-			LEFT JOIN (
-						    SELECT a.ORDER_NUM, a.ORDER_ITEM_NUM, b.NODE_STATUS
-						     FROM ODS_SRM.dbo.srm_poc_order_item AS a
-						     JOIN ODS_SRM.dbo.srm_poc_order_item_extra AS b
-						       ON a.ID = b.ORDER_ITEM_ID 
-						    WHERE b.NODE_STATUS IS NOT NULL
-						 GROUP BY a.ORDER_NUM, a.ORDER_ITEM_NUM, b.NODE_STATUS
-			          ) AS d
-			       ON a.purchase_order_no = d.ORDER_NUM 
-			      AND a.purchase_order_line = d.ORDER_ITEM_NUM
-			LEFT JOIN (
-					    SELECT * 
-					    FROM Report0624.dbo.r24_1050_1051 
-					    WHERE r24_1050_1051.midlgort = 1050
-			          ) AS new
-			       ON new.rsnum = a.require_no
-			      AND new.rspos = a.require_line
+			  SELECT material_code
+					,material_desc
+					,plant_code
+					,stock_quantity
+  FROM Report0624.dbo.r24_stock_detail
+  where plant_code = 2000
+
              ) e
            on a.MATNR = e.material_code
 
