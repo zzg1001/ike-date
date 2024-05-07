@@ -1,0 +1,140 @@
+
+select 
+ ''              as 'Employee Name'
+,a.LOGIN_ID      as 'Logon ID'
+,a.EMP_ID        as 'Employee ID'
+,a.EMAIL_ADDRESS as 'Email Address'
+,b.NAME          as 'Country/Region'
+,a.CUSTOM17      as 'Custom 17 - Name'
+,g.VALUE         as 'Org Unit 1 - Name'
+,a.CTRY_CODE     as 'Org Unit 1 - Code'
+,c.VALUE         as 'Org Unit 2 - Name'
+,f.LI_SHORT_CODE as 'Org Unit 2 - Code'
+,d.LI_SHORT_CODE as 'Org Unit 4 - Code'
+,e.LI_SHORT_CODE as 'Org Unit 3 - Name'
+,e.LI_SHORT_CODE as 'Org Unit 3 - Code'
+from ct_employee a
+left join ct_country_lang b 
+ on a.CTRY_CODE  = b.CTRY_CODE 
+left join ct_list_item_lang c 
+ on a.ORG_UNIT_2 = c.li_key
+ left join ct_list_item d 
+ on d.LI_KEY = a.ORG_UNIT_4
+ left join  ct_list_item e 
+ on e.LI_KEY = a.ORG_UNIT_3
+ left join  ct_list_item f 
+ on f.LI_KEY = a.ORG_UNIT_2
+   left join  ct_list_item_lang g 
+ on g.LI_KEY = a.ORG_UNIT_1
+where a.EMP_KEY ='4579'
+
+select * from ct_employee where EMP_KEY ='2336'
+
+
+select * from fendi.dbo.ct_currency_lang where CRN_KEY ='34'
+select * from ct_currency where ALPHA_CODE ='CNY'
+select * from fendi.dbo.ct_delegation
+
+select count( EMP_KEY)  from ct_employee
+select * from ct_employee
+
+
+select * from fendi.dbo.ct_employee_role_map where EMP_KEY='4579'
+select * from fendi.dbo.ct_expense_code
+select * from fendi.dbo.ct_expense_code_lang
+select  * from fendi.dbo.ct_expense_comment
+
+select * from fendi.dbo.ct_expense_type
+
+select * from fendi.dbo.ct_expense_type_lang where name like '%Domestic Airfare%'
+
+select 
+ a.FIRST_NAME+a.LAST_NAME 
+,a.EMAIL_ADDRESS 
+,a.CTRY_CODE 
+,e.name exp_name
+from ct_employee a 
+left join ct_report b 
+ on a.EMP_KEY = b.EMP_KEY
+  left join ct_report_entry c 
+ on b.RPT_KEY = c.RPT_KEY 
+ left join fendi.dbo.ct_expense_type d 
+   on c.EXP_KEY  = d.EXP_KEY 
+   left join fendi.dbo.ct_expense_type_lang e 
+   on c.EXP_KEY  = e.EXP_KEY 
+  
+ where a.EMP_KEY='4579'
+ 
+ 
+ select * from fendi.dbo.ct_report_entry_tax
+
+ select * from fendi.dbo.ct_report_ar_map
+ 
+ 
+ select * from ct_audit where NEW_VALUE ='99999999' 
+ select 
+  a.LI_KEY
+ ,a.LI_CODE
+ ,a.LI_SHORT_CODE
+ ,b.value
+ ,a.IS_DELETED 
+ ,a.LAST_MODIFIED
+from ct_list_item a 
+left join fendi.dbo.ct_list_item_lang b 
+on a.LI_KEY = b.LI_KEY 
+where a.LI_KEY ='4758'
+ 
+  select *  from ct_list_item where LI_KEY='4758'
+
+ select * from fendi.dbo.ct_list_item_lang
+ select * from ct_list_item_map
+ 
+  select * from fendi.dbo.ct_authorized_approver_config
+  
+  select * from ct_workflow_process 
+  
+  select * from ct_workflow_subject_emp_map a 
+  left join ct_workflow_subject b 
+  on a.SUBJECT_CODE = b.SUBJECT_CODE  
+   where a.EMP_KEY='4579'
+  
+  select *from ct_workflow_subject
+  
+  select * from ct_ar_segment
+  select * from ct_ar_allocation
+  
+select * from ct_report
+
+select a.* from fendi.dbo.ct_report_entry a 
+left join fendi.dbo.ct_expense_type b 
+   on a.EXP_KEY  = b.EXP_KEY 
+   
+   select count(DISTINCT) from ct_report_entry
+   
+   select * from ct_report_entry a where a.RPE_KEY='47289'
+  
+   select * from fendi.dbo.ct_workflow_rule where STEP_KEY ='2324'
+   select * from ct_workflow_subject_emp_map WHERE WSE_KEY='2223'
+   select  * from fendi.dbo.ct_workflow_emp_auth_map where AUTH_EMP_KEY='2324'
+   select  * from fendi.dbo.ct_workflow_emp_auth_map WHERE WSE_KEY='2233' 
+   select * from CT_WORKFLOW_SUBJECT_EMP_MAP WHERE WSE_KEY='2223'
+      select * from CT_WORKFLOW_SUBJECT_EMP_MAP WHERE EMP_KEY='2336'   
+
+   select * from fendi.dbo.ct_employee_role_map 
+   where ROLE_CODE= 'MANAGER'  
+   ORDER by  HIER_NODE_KEY   
+   
+   select * from fendi.dbo.ct_role where  ROLE_CODE= 'CO_APPROVER' 
+   select * from fendi.dbo.ct_role_lang where  ROLE_CODE= 'CO_APPROVER' 
+   
+   select * from fendi.dbo.ct_workflow_subject_role_map where SUBJECT_CODE='CO_REPORT'
+   
+    select * from ct_currency_lang where name='China, Yuan Renminbi'
+   select * from ct_workflow_subject where SUBJECT_CODE='CO_REPORT'   
+   select * from fendi.dbo.ct_workflow_subject_lang  where SUBJECT_CODE='CO_REPORT' 
+   select * from ct_list_item where li_key ='4758'
+   select * from fendi.dbo.ct_list_item_lang where li_key ='4758'
+select * from fendi.dbo.ct_list_item_map
+
+
+select * from ct_report_entry

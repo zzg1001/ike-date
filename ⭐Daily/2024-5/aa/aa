@@ -50,3 +50,16 @@ select * from fendi.dbo.ct_authorized_approver_config
 
 select EXPENSE_AUDIT_REQUIRED ,* from ct_employee 
 select * from fendi.dbo.ct_report_entry
+
+
+ select 
+  a.LI_KEY
+ ,a.LI_CODE
+ ,a.LI_SHORT_CODE
+ ,b.value
+ ,a.IS_DELETED 
+ ,a.LAST_MODIFIED
+from ct_list_item a 
+left join fendi.dbo.ct_list_item_lang b 
+on a.LI_KEY = b.LI_KEY 
+where a.LI_KEY ='4758'
