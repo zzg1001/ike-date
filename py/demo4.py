@@ -30,11 +30,10 @@ def search_keyword_in_files(directory, keyword):
     return result, total_count
 
 # 指定目录和关键词
-directory = r'C:\\Users\\22492\\Desktop\\fendi\\已完成工作\\原数据'
-keyword = 'Expens'
-
+directory = r'/Users/zhangzuogong/Desktop/test/原数据'
+keyword = '|CTRIPTESTUSER@fendi.com|'
 # 指定结果文件路径
-result_file_path = r'C:\\Users\\22492\\Desktop\\mmm\\rs.txt'
+result_file_path = r'/Users/zhangzuogong/Desktop/test/rs.txt'
 
 # 在目录中搜索关键词（不区分大小写）
 search_results, total_results = search_keyword_in_files(directory, keyword)
