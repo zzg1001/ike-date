@@ -2,7 +2,7 @@
             a.MATNR    as part_code -- 物料code
            ,a.MAKTX    as part_name -- 物料计划名称
            ,''         as makt      -- 物料计划描述（长文本）
-           ,'2000'     as makt      -- makt
+           ,'2000'     as plant_code -- makt
            ,c.EKGRP    as purchase_group_code      -- 采购组
            ,d.EKNAM    as purchase_group_desc      --'采购组描述'
             ,c.MAABC   as purchase_importance_tpye --'采购重要度分类'
