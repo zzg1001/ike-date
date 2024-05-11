@@ -1,0 +1,28 @@
+select 
+ ''              as 'Employee Name'
+,a.LOGIN_ID      as 'Logon ID'
+,a.EMP_ID        as 'Employee ID'
+,a.EMAIL_ADDRESS as 'Email Address'
+,b.NAME          as 'Country/Region'
+,a.CUSTOM17      as 'Custom 17 - Name'
+,g.VALUE         as 'Org Unit 1 - Name'
+,a.CTRY_CODE     as 'Org Unit 1 - Code'
+,c.VALUE         as 'Org Unit 2 - Name'
+,f.LI_SHORT_CODE as 'Org Unit 2 - Code'
+,d.LI_SHORT_CODE as 'Org Unit 4 - Code'
+,e.LI_SHORT_CODE as 'Org Unit 3 - Name'
+,e.LI_SHORT_CODE as 'Org Unit 3 - Code'
+from ct_employee a
+left join ct_country_lang b 
+ on a.CTRY_CODE  = b.CTRY_CODE 
+left join ct_list_item_lang c 
+ on a.ORG_UNIT_2 = c.li_key
+ left join ct_list_item d 
+ on d.LI_KEY = a.ORG_UNIT_4
+ left join  ct_list_item e 
+ on e.LI_KEY = a.ORG_UNIT_3
+ left join  ct_list_item f 
+ on f.LI_KEY = a.ORG_UNIT_2
+   left join  ct_list_item_lang g 
+ on g.LI_KEY = a.ORG_UNIT_1
+where a.EMP_KEY ='4579'
