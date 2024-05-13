@@ -1,34 +1,56 @@
 select 
- ''              as 'Employee Name'
-,a.LOGIN_ID      as 'Logon ID'
-,a.EMP_ID        as 'Employee ID'
-,a.EMAIL_ADDRESS as 'Email Address'
-,b.NAME          as 'Country/Region'
-,a.CUSTOM17      as 'Custom 17 - Name'
-,g.VALUE         as 'Org Unit 1 - Name'
-,a.CTRY_CODE     as 'Org Unit 1 - Code'
-,c.VALUE         as 'Org Unit 2 - Name'
-,f.LI_SHORT_CODE as 'Org Unit 2 - Code'
-,d.LI_SHORT_CODE as 'Org Unit 4 - Code'
-,e.LI_SHORT_CODE as 'Org Unit 3 - Name'
-,e.LI_SHORT_CODE as 'Org Unit 3 - Code'
+LAST_NAME +','+FIRST_NAME   as 'Employee Name'
+,a.LOGIN_ID           as 'Logon ID'
+,a.EMP_ID             as 'Employee ID'
+,a.EMAIL_ADDRESS      as 'Email Address'
+,b.NAME               as 'Country/Region'
+,a.CUSTOM17           as 'Custom 17 - Name'
+,c1.VALUE             as 'Org Unit 1 - Name'
+,c2.LI_SHORT_CODE     as 'Org Unit 1 - Code'
+,d1.VALUE             as 'Org Unit 2 - Name'
+,d2.LI_SHORT_CODE     as 'Org Unit 2 - Code'
+,e1.VALUE             as 'Org Unit 3 - Name'
+,e2.LI_SHORT_CODE     as 'Org Unit 3 - Code'
+,f1.VALUE             as 'Org Unit 4 - Name'
+,f2.LI_SHORT_CODE     as 'Org Unit 4 - Code'
+,g1.VALUE             as 'Org Unit 5 - Name'
+,g2.LI_SHORT_CODE     as 'Org Unit 5 - Code'
+,h1.VALUE             as 'Org Unit 6 - Name'
+,h2.LI_SHORT_CODE     as 'Org Unit 6 - Code'
 from ct_employee a
 left join ct_country_lang b 
- on a.CTRY_CODE  = b.CTRY_CODE 
-left join ct_list_item_lang c 
- on a.ORG_UNIT_2 = c.li_key
- left join ct_list_item d 
- on d.LI_KEY = a.ORG_UNIT_4
- left join  ct_list_item e 
- on e.LI_KEY = a.ORG_UNIT_3
- left join  ct_list_item f 
- on f.LI_KEY = a.ORG_UNIT_2
-   left join  ct_list_item_lang g 
- on g.LI_KEY = a.ORG_UNIT_1
-where a.EMP_KEY ='4579'
+       on a.CTRY_CODE  = b.CTRY_CODE 
+left join ct_list_item_lang c1 
+       on a.ORG_UNIT_1 = c1.LI_KEY 
+left join ct_list_item c2 
+       on a.ORG_UNIT_1 = c2.LI_KEY 
+left join ct_list_item_lang d1 
+       on a.ORG_UNIT_2 = d1.LI_KEY 
+left join ct_list_item d2 
+       on a.ORG_UNIT_2 = d2.LI_KEY 
+left join ct_list_item_lang e1 
+       on a.ORG_UNIT_3 = e1.LI_KEY 
+left join ct_list_item e2 
+       on a.ORG_UNIT_3 = e2.LI_KEY 
+left join ct_list_item_lang f1 
+       on a.ORG_UNIT_4 = f1.LI_KEY 
+left join ct_list_item f2 
+       on a.ORG_UNIT_4 = f2.LI_KEY 
+left join ct_list_item_lang g1 
+       on a.ORG_UNIT_5 = g1.LI_KEY 
+left join ct_list_item g2 
+       on a.ORG_UNIT_5 = g2.LI_KEY 
+left join ct_list_item_lang h1 
+       on a.ORG_UNIT_6 = h1.LI_KEY 
+left join ct_list_item h2 
+       on a.ORG_UNIT_6 = h2.LI_KEY 
+    where a.EMP_KEY ='2336'
 
 
-      select 
+
+
+
+       select 
               a.EMP_KEY
               ,d.LAST_NAME+','+d.FIRST_NAME as 'Default Cash Advance Approver'
               ,d.EMP_ID                     as 'Default Cash Advance Approver ID'
@@ -37,11 +59,14 @@ where a.EMP_KEY ='4579'
          join fendi.dbo.ct_workflow_subject_emp_map b 
            on a.EMP_KEY = b.EMP_KEY 
           and b.SUBJECT_CODE='CASH_ADVANCE' 
+         join fendi.dbo.ct_workflow_subject_role_map bm 
+           on b.SUBJECT_CODE = bm.SUBJECT_CODE
+          and bm.ROLE_CODE= 'MANAGER' 
          join fendi.dbo.ct_workflow_emp_auth_map c 
            on b.WSE_KEY = c.WSE_KEY 
     left join fendi.dbo.ct_employee d
            on c.AUTH_EMP_KEY = d.EMP_KEY
-        where a.EMP_KEY = '2413'
+        where a.EMP_KEY = '2336'
 
 
         
@@ -55,14 +80,17 @@ where a.EMP_KEY ='4579'
          join fendi.dbo.ct_workflow_subject_emp_map b 
            on a.EMP_KEY = b.EMP_KEY 
           and b.SUBJECT_CODE='REPORT' 
+         join fendi.dbo.ct_workflow_subject_role_map bm 
+           on b.SUBJECT_CODE = bm.SUBJECT_CODE
+          and bm.ROLE_CODE= 'MANAGER' 
          join fendi.dbo.ct_workflow_emp_auth_map c 
            on b.WSE_KEY = c.WSE_KEY 
     left join fendi.dbo.ct_employee d
            on c.AUTH_EMP_KEY = d.EMP_KEY
-        where a.EMP_KEY = '2413'
+        where a.EMP_KEY = '2336'
         
         
-         select 
+      select 
               a.EMP_KEY
               ,d.LAST_NAME+','+d.FIRST_NAME as 'Default Travel Request Approver'
               ,d.EMP_ID                     as 'Default Travel Request Approver ID'
@@ -71,9 +99,53 @@ where a.EMP_KEY ='4579'
          join fendi.dbo.ct_workflow_subject_emp_map b 
            on a.EMP_KEY = b.EMP_KEY 
           and b.SUBJECT_CODE='REQUEST' 
+         join fendi.dbo.ct_workflow_subject_role_map bm 
+           on b.SUBJECT_CODE = bm.SUBJECT_CODE
+          and bm.ROLE_CODE= 'REQ_MANAGER' 
          join fendi.dbo.ct_workflow_emp_auth_map c 
            on b.WSE_KEY = c.WSE_KEY 
     left join fendi.dbo.ct_employee d
            on c.AUTH_EMP_KEY = d.EMP_KEY
-        where a.EMP_KEY = '4523'
+        where a.EMP_KEY = '2336'
         
+        
+        
+        
+        
+       select 
+              a.EMP_KEY
+              ,d.LAST_NAME+','+d.FIRST_NAME as 'Default Travel Request Approver'
+              ,d.EMP_ID                     as 'Default Travel Request Approver ID'
+             
+         from fendi.dbo.ct_employee a
+         join fendi.dbo.ct_workflow_subject_emp_map b 
+           on a.EMP_KEY = b.EMP_KEY 
+          and b.SUBJECT_CODE='REQUEST' 
+         join fendi.dbo.ct_workflow_subject_role_map bm 
+           on b.SUBJECT_CODE = bm.SUBJECT_CODE
+          and bm.ROLE_CODE= 'REQ_MANAGER' 
+         join fendi.dbo.ct_workflow_emp_auth_map c 
+           on b.WSE_KEY = c.WSE_KEY 
+    left join fendi.dbo.ct_employee d
+           on c.AUTH_EMP_KEY = d.EMP_KEY
+        where a.EMP_KEY = '2336'
+        
+        
+        
+              select 
+              a.EMP_KEY
+              ,d.LAST_NAME+','+d.FIRST_NAME as 'Default Authorization Request Approver'
+              ,d.EMP_ID                     as 'Default Authorization Request Approver ID'
+             
+         from fendi.dbo.ct_employee a
+         join fendi.dbo.ct_workflow_subject_emp_map b 
+           on a.EMP_KEY = b.EMP_KEY 
+          and b.SUBJECT_CODE='REPORT' 
+         join fendi.dbo.ct_workflow_subject_role_map bm 
+           on b.SUBJECT_CODE = bm.SUBJECT_CODE
+          and bm.ROLE_CODE= 'AUTH_APPROVER' 
+         join fendi.dbo.ct_workflow_emp_auth_map c 
+           on b.WSE_KEY = c.WSE_KEY 
+    left join fendi.dbo.ct_employee d
+           on c.AUTH_EMP_KEY = d.EMP_KEY
+        where a.EMP_KEY = '2336'
