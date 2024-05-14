@@ -31,7 +31,7 @@ def search_keyword_in_files(directory, keyword):
 
 # 指定目录和关键词
 directory = r'/Users/zhangzuogong/Desktop/test/原数据'
-keyword = '*Entertainment'
+keyword = 'cards'
 # 指定结果文件路径
 result_file_path = r'/Users/zhangzuogong/Desktop/test/rs.txt'
 
