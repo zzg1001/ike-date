@@ -5,7 +5,7 @@
                ,b.LAST_NAME+','+b.FIRST_NAME as 'Approver Name'
                ,b.EMP_ID                     as 'Approver ID'
                ,c.DESCRIPTION                as 'Approver Type'
-               ,d.LIST_LEVEL                 as 'Limit Currency'
+               ,d.LIST_LEVEL                 as 'LEVEL'
                ,h.name                       as 'Limit Currency'
                ,''                           as 'Approval Limit' -- 没有 CT_AUTHORIZED_APPROVER
           from ct_workflow_subject_emp_map a 
