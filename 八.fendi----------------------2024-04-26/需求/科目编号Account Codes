@@ -5,7 +5,7 @@
           ,a.REPORT_ID                   as 'Report ID'
           ,a.name                        as 'Report Name'
           ,''                            as 'Report Type'
-          ,''                            as 'Report Type Code'
+          ,a.REPORT_TYPE                 as 'Report Type Code'
           ,d.REQUEST_ID                  as 'Request ID'
           ,e.ACCOUNT_CODE                as 'Account Code'
           ,f.name                        as 'Expense Type'
