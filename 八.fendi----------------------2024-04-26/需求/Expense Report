@@ -60,4 +60,4 @@
     left join ct_payment_type_lang k 
           on k.PAT_KEY = ad.PAT_KEY
      left join ct_cash_advance_entry n 
-          on n.RPE_KEY = n.RPE_KEY
+          on n.RPE_KEY = ad.RPE_KEY
