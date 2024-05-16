@@ -35,18 +35,15 @@
      left join fendi.dbo.ct_report_entry ay
           on a.RPT_KEY = ay.RPT_KEY
      left join fendi.dbo.ct_employee b
-            on b.EMP_KEY = b.EMP_KEY
+            on b.EMP_KEY = a.EMP_KEY
      left join fendi.dbo.ct_report_ar_map c  
             on a.RPT_KEY = c.RPT_KEY
           join fendi.dbo.ct_authorization_request d
             on c.AR_KEY = d.AR_KEY
-     left join ct_acct_node_exp_type_map e 
+     left join (select distinct ACCOUNT_CODE ,EXP_KEY from ct_acct_node_exp_type_map where ACCT_CODE_TYPE = 1 )e 
             on ay.EXP_KEY = e.EXP_KEY 
-           and e.ACCT_CODE_TYPE = 1
      left join fendi.dbo.ct_expense_type_lang f
             on f.exp_key = ay.exp_key
-     left join ct_account_node an
-       on e.NODE_KEY = an.NODE_KEY 
      left join ct_list_item_map g 
             on g.LI_KEY = a.CUSTOM5 
      left join ct_payment_type_lang p
@@ -64,7 +61,7 @@
      left join fendi.dbo.ct_list_item_lang k
           on a.ORG_UNIT_4 = k.LI_KEY
      left join ct_ledger m 
-       on m.LEDGER_KEY = an.LEDGER_KEY
+       on m.LEDGER_KEY = b.LEDGER_KEY
      left join ct_list_item_map n 
             on a.ORG_UNIT_4 = n.LI_KEY 
      left join ct_list_item_map o 
