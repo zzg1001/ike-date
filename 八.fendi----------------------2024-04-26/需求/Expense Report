@@ -2,6 +2,7 @@
 				a.name                as '费用报告名称 '
 				,b.name               as '策略'
 				,a.report_id          as '费用报告 ID'
+				,a.CREATION_DATE      as '费用报告日期'
 				,ar.IS_USER_REVIEWED  as '审批状态'
                 ,c.name               as '币种'
                 ,d.last_name +','+ d.first_name as '员工姓名'
@@ -61,3 +62,4 @@
           on k.PAT_KEY = ad.PAT_KEY
      left join ct_cash_advance_entry n 
           on n.RPE_KEY = ad.RPE_KEY
+          

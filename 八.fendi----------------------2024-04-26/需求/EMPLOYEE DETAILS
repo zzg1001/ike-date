@@ -42,6 +42,7 @@ SELECT
 	h2.LI_SHORT_CODE AS 'Org Unit 6 - Code' 
 FROM
 	ct_employee a
+       left join fendi.dbo.ct_ledger bl on a.LEDGER_KEY = bl.LEDGER_KEY 
 	LEFT JOIN ct_country_lang b ON a.CTRY_CODE  = b.CTRY_CODE
 	LEFT JOIN ct_list_item_lang c1 ON a.ORG_UNIT_1 = c1.LI_KEY
 	LEFT JOIN ct_list_item c2 ON a.ORG_UNIT_1 = c2.LI_KEY
@@ -112,7 +113,7 @@ FROM
 	LEFT JOIN fendi.dbo.ct_employee d ON c.AUTH_EMP_KEY = d.EMP_KEY 
 	) dd ON dd.EMP_KEY = a.EMP_KEY
 
-
+------------------------------------------------------
 
 select 
 LAST_NAME +','+FIRST_NAME   as 'Employee Name'
