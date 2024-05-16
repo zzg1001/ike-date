@@ -9,14 +9,20 @@ log_file = '/Users/zhangzuogong/Desktop/aaa/err.log'
 logging.basicConfig(filename=log_file, level=logging.ERROR, format='%(asctime)s - %(message)s')
 
 # SQL Server连接配置
-server = '139.196.89.86'  # 数据库地址
+# server = '139.196.89.86'  # 数据库地址
+# database = 'fendi'  # 数据库名
+# username = 'fendi'  # 用户名
+# password = 'Password.1'  # 密码
+# driver = '{ODBC Driver 17 for SQL Server}'
+
+server = '172.16.10.129'  # 数据库地址
 database = 'fendi'  # 数据库名
 username = 'fendi'  # 用户名
 password = 'Password.1'  # 密码
 driver = '{ODBC Driver 17 for SQL Server}'
 
 # 原始目录路径和文件扩展名
-source_directory = '/Users/zhangzuogong/Desktop/sss'
+source_directory = '/Users/zhangzuogong/Desktop/test/原数据'
 extension = '.dat'
 
 # 建立数据库连接
