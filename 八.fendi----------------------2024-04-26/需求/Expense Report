@@ -2,6 +2,7 @@
 				a.name                as '费用报告名称 '
 				,b.name               as '策略'
 				,a.report_id          as '费用报告 ID'
+				,a.CREATION_DATE      as '费用报告日期'
 				,ar.IS_USER_REVIEWED  as '审批状态'
                 ,c.name               as '币种'
                 ,d.last_name +','+ d.first_name as '员工姓名'
@@ -31,13 +32,13 @@
                 ,a.CA_RETURNS_AMOUNT              as '员工应付到公司卡的金额'
                 ,a.TOTAL_PERSONAL_AMOUNT           as '由员工支付的总额'
             from fendi.dbo.ct_report a 
-            join fendi.dbo.ct_report_entry ad 
+       left join fendi.dbo.ct_report_entry ad 
               on a.RPT_KEY = ad.RPT_KEY 
        left join fendi.dbo.ct_expense_type_lang exp_type
           on exp_type.exp_key = ad.exp_key
        left join fendi.dbo.ct_policy_lang b
              on a.POL_KEY = b.POL_KEY 
-        join fendi.dbo.ct_report_ar_map ap  
+      left  join fendi.dbo.ct_report_ar_map ap  
           on a.RPT_KEY = ap.RPT_KEY
    left join  fendi.dbo.ct_authorization_request ar 
           on ap.AR_KEY = ar.AR_KEY
@@ -60,6 +61,5 @@
     left join ct_payment_type_lang k 
           on k.PAT_KEY = ad.PAT_KEY
      left join ct_cash_advance_entry n 
-          on n.RPE_KEY = n.RPE_KEY
-          
+          on n.RPE_KEY = ad.RPE_KEY
           
