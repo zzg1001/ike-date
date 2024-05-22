@@ -53,6 +53,7 @@ from DWD_WINDCHILL.dbo.dws_pdm_part_info a
 
              ) e
            on a.MATNR = e.material_code
+		    where c.EKGRP in ('201','211','214','215','204','205')
 
 
 
@@ -93,6 +94,8 @@ from DWD_WINDCHILL.dbo.dws_pdm_part_info a
 left join ODS_SRM.dbo.srm_inq_supplier_confirm_head_field b 
       on a.form_num  = b.CONFIRM_NUM 
       and b.DELETED = 0
+
+
 
 
 
