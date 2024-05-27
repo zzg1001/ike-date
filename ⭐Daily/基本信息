@@ -17,3 +17,9 @@ Zj690!@#
 
 
 ssh -p 63022 itadmin@139.224.197.121  Zj690!@#
+
+本地烟机地址sqlserver
+server = '139.196.89.86'
+database = 'yanji_bl'
+username = 'yanji_备料'
+password = 'Password.1'
