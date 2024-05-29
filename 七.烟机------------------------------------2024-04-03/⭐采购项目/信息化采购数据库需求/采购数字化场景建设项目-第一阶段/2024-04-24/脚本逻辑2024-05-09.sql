@@ -1,7 +1,8 @@
+
 select 
 a.part_code
 ,a.part_name
-,makt
+,m.ltext makt
 ,plant
 ,purchase_group_code
 ,purchase_group_desc
@@ -95,6 +96,8 @@ left join (
 				from DWD_WINDCHILL.dbo.dws_pdm_part_info a 
           ) b
        on a.part_code = b.part_code
+left join  [ODS_HANA].[dbo].[LTXT_purchase] m 
+       on a.part_code = m.matnr
 left join (
 
 			
@@ -139,6 +142,3 @@ left join (
 			      and b.DELETED = 0
       ) c
       on  a.part_code = c.part_code
-
-
-
