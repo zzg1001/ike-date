@@ -14,10 +14,10 @@ cursor = conn.cursor()
 
 start_time = time.time()  # 记录开始时间
 
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_7 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_7")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2024_7 ;")
+print(f"删除表:meifu_analysis_platform_main_2024_7")
 # 创建表格
-cursor.execute('''   create table meifu_analysis_platform_main_2023_7 as 
+cursor.execute('''   create table meifu_analysis_platform_main_2024_7 as 
        select
             `quarter`,
             title,
@@ -26,16 +26,13 @@ cursor.execute('''   create table meifu_analysis_platform_main_2023_7 as
             is_comment,
             webpageUrl,
             webpageUrl_new,
-            captureWebsiteNew,
             publishedMinute,
             originType,
             author,
             summary,
-            summary_new,
             province,
             city,
             originTypeThird,
-            secondTradeList,
             originAuthorId,
             referenceKeywordNew,
             shareCount,
@@ -71,13 +68,13 @@ cursor.execute('''   create table meifu_analysis_platform_main_2023_7 as
               sentiment_flag,
               shuijun,
             case when is_comment = 0 then row_number()over(PARTITION by webpageUrl order by cpf_cnt desc) else null end r 
-         from meifu_analysis_platform_main_2023_6   ''')
+         from meifu_analysis_platform_main_2024_6   ''')
 
 
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_8 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_8")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2024_8 ;")
+print(f"删除表:meifu_analysis_platform_main_2024_8")
 # 创建表格
-cursor.execute('''   create table meifu_analysis_platform_main_2023_8 as 
+cursor.execute('''   create table meifu_analysis_platform_main_2024_8 as 
     select 
           `quarter`,
             title,
@@ -86,16 +83,13 @@ cursor.execute('''   create table meifu_analysis_platform_main_2023_8 as
             is_comment,
             webpageUrl,
             webpageUrl_new,
-            captureWebsiteNew,
             publishedMinute,
             originType,
             author,
             summary,
-            summary_new,
             province,
             city,
             originTypeThird,
-            secondTradeList,
             originAuthorId,
             referenceKeywordNew,
             shareCount,
@@ -130,15 +124,15 @@ cursor.execute('''   create table meifu_analysis_platform_main_2023_8 as
             sentiment_flag,
             shuijun,
             project_name
-            from meifu_analysis_platform_main_2023_7 a
+            from meifu_analysis_platform_main_2024_7 a
             where r = 1 or r is null
                
                ''')
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_6 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_6")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2024_6 ;")
+print(f"删除表:meifu_analysis_platform_main_2024_6")
 
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_7 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_7")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2024_7 ;")
+print(f"删除表:meifu_analysis_platform_main_2024_7")
 
 end_time = time.time()  # 记录结束时间
 execution_time = end_time - start_time

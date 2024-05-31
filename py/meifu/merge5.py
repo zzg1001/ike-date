@@ -14,10 +14,10 @@ cursor = conn.cursor()
 
 start_time = time.time()  # 记录开始时间
 
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_4 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_4")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2024_4 ;")
+print(f"删除表:meifu_analysis_platform_main_2024_4")
 # 创建表格
-cursor.execute('''      create table meifu_analysis_platform_main_2023_4 as 
+cursor.execute('''      create table meifu_analysis_platform_main_2024_4 as 
     select 
           `quarter`,
             title,
@@ -26,16 +26,13 @@ cursor.execute('''      create table meifu_analysis_platform_main_2023_4 as
             is_comment,
             webpageUrl,
             webpageUrl_new,
-            captureWebsiteNew,
             publishedMinute,
             originType,
             author,
             summary,
-            summary_new,
             province,
             city,
             originTypeThird,
-            secondTradeList,
             originAuthorId,
             referenceKeywordNew,
             shareCount,
@@ -70,7 +67,7 @@ cursor.execute('''      create table meifu_analysis_platform_main_2023_4 as
               case when b.id is not null then b.sentiment_flag else a.sentiment_flag end  sentiment_flag,
              case when b.id is not null then b.shuijun else a.shuijun end shuijun ,
             project_name
-         from meifu_analysis_platform_main_2023_8 a 
+         from meifu_analysis_platform_main_2024_8 a 
          left join tmp_shuijun_and_qingan b 
               on a.id = b.id 
        
@@ -79,16 +76,16 @@ cursor.execute('''      create table meifu_analysis_platform_main_2023_4 as
                ''')
 
 
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_5 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_5")
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_6 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_5")
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_7 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_5")
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_9 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_5")
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_10 ;")
-print(f"删除表:meifu_analysis_platform_main_2023_10")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2024_5 ;")
+print(f"删除表:meifu_analysis_platform_main_2024_5")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2024_6 ;")
+print(f"删除表:meifu_analysis_platform_main_2024_5")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2024_7 ;")
+print(f"删除表:meifu_analysis_platform_main_2024_5")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2024_9 ;")
+print(f"删除表:meifu_analysis_platform_main_2024_5")
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2024_10 ;")
+print(f"删除表:meifu_analysis_platform_main_2024_10")
 
 
 
