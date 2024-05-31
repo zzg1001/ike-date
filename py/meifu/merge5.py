@@ -26,6 +26,7 @@ cursor.execute('''      create table meifu_analysis_platform_main_2024_4 as
             is_comment,
             webpageUrl,
             webpageUrl_new,
+           captureWebsiteName,
             publishedMinute,
             originType,
             author,
