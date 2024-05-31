@@ -12,8 +12,8 @@ conn = pymysql.connect(
 cursor = conn.cursor()
 
 # 删除表格
-cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2023_1;")
-print(f'插入的表data_23q3,季度是:3')
+cursor.execute("DROP TABLE IF EXISTS meifu_analysis_platform_main_2024_1;")
+print(f'插入的表24q1_mobil')
 
 category1 = '''  ( case
 	WHEN commentContent regexp '道达尔'      then '快驰'
@@ -305,7 +305,7 @@ service = ''' case
 
 # 创建表格
 create_table_query = f'''
-CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023_1 AS
+CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2024_1 AS
   SELECT
         CONCAT(YEAR(publishedMinute), '-Q', QUARTER(publishedMinute)) quarter,
         REGEXP_REPLACE(title, '<[^>]+>', '') title,
@@ -313,19 +313,14 @@ CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023_1 AS
         is_comment,
         webpageUrl,
         SUBSTRING_INDEX(webpageUrl,'?',1) webpageUrl_new,
-        captureWebsiteNew,
+        captureWebsiteName,
         publishedMinute,
         originType,
         author,
         summary,
-         case when captureWebsiteNew not in('新浪微博','微博头条') 
-             then SUBSTRING(summary, 1, LOCATE('<', summary) - 1) 
-             else captureWebsiteNew end 
-             as summary_new,
         province,
         city,
         originTypeThird,
-        secondTradeList,
         originAuthorId,
         referenceKeywordNew,
         shareCount,
@@ -364,7 +359,7 @@ CREATE TABLE IF NOT EXISTS meifu_analysis_platform_main_2023_1 AS
         as scene,
         REGEXP_REPLACE(commentContent, '<[^>]+>', '')  commentContent,
         project_name
-FROM data_23q3;
+FROM 24q1_mobil;
 '''
 
 start_time = time.time()  # 记录开始时间
@@ -374,7 +369,7 @@ execution_time = end_time - start_time
 print(f"创建表格执行时间：{execution_time}秒")
 
 # 列表中的表名
-table_list = ['data_23q1_1','data_23q1_2','data_23q2_1','data_23q2_2','data_23q4','23q4_shell']
+table_list = ['24q1_castrol','24q1_other','24q1_shell']
 
 # 循环插入数据
 for table in table_list:
@@ -382,23 +377,21 @@ for table in table_list:
 
 
     insert_query = f'''
-    INSERT INTO meifu_analysis_platform_main_2023_1 (
+    INSERT INTO meifu_analysis_platform_main_2024_1 (
         quarter,
         title,
         is_meifu_maintain,
         is_comment,
         webpageUrl,
         webpageUrl_new,
-        captureWebsiteNew,
+        captureWebsiteName,
         publishedMinute,
         originType,
         author,
         summary,
-        summary_new,
         province,
         city,
         originTypeThird,
-        secondTradeList,
         originAuthorId,
         referenceKeywordNew,
         shareCount,
@@ -440,21 +433,15 @@ for table in table_list:
         CASE WHEN title REGEXP  '美孚1号车养护' then '美孚1号车养护'  else null end as is_meifu_maintain,
         is_comment,
         webpageUrl,
-        case when captureWebsiteNew in ( '大鱼号','百家号','微信')  
-            then SUBSTRING_INDEX(webpageUrl,'?',1) else webpageUrl end webpageUrl_new,
-        captureWebsiteNew,
+       SUBSTRING_INDEX(webpageUrl,'?',1) webpageUrl_new,
+       captureWebsiteName,
         publishedMinute,
         originType,
         author,
         summary,
-        case when captureWebsiteNew not in('新浪微博','微博头条') 
-             then SUBSTRING(summary, 1, LOCATE('<', summary) - 1) 
-             else captureWebsiteNew end 
-             as summary_new,
         province,
         city,
         originTypeThird,
-        secondTradeList,
         originAuthorId,
         referenceKeywordNew,
         shareCount,
