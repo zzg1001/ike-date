@@ -1,9 +1,16 @@
-					select sum(bbb.in_time_cp_dlv)      as an_finish_od      -- 按时完成
+					
+         
+
+					select sum(bbb.in_time_cp_dlv)      as an_finish_od         -- 按时完成
 						  ,sum(bbb.overdue_cp_dlv)      as overdue_finish_od -- 逾期完成
 						  ,sum(bbb.overdue_icp_dlv)     as overdue_nf_od     -- 逾期未完成
 						  ,sum(case when bbb.non_overdue_icp_dlv = 1 and bbb.dlv_date is null and bbb.schedule_finish_date > getdate() and abs(datediff(day, schedule_finish_date, getdate())) <= ccc.D2 then 1 else 0 end) as under_overdue_od                                -- 临近逾期
 						  ,sum(bbb.non_overdue_icp_dlv) - sum(case when bbb.non_overdue_icp_dlv = 1 and bbb.dlv_date is null  and bbb.schedule_finish_date > getdate() and abs(datediff(day, schedule_finish_date, getdate())) <= ccc.D2 then 1 else 0 end)  as noverdue_nf_od -- 未逾期未完成
-					      ,sum(emergent) as emergent_num --紧急订单
+					         ,sum(emergent) as emergency_od_cnt --紧急订单
+					         ,sum(case when emergent=1 then bbb.in_time_cp_dlv else 0 end) as an_j_finish_cnt    -- 紧急订单完成
+					          ,sum(case when emergent=1 then bbb.overdue_cp_dlv else 0 end) as overdue_j_finish_cnt -- 紧急逾期订单完成
+
+
 					
 					from (
 								 select prod_order_no
