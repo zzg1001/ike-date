@@ -15,12 +15,14 @@ a.part_code
 ,sap_price
 ,b.part_name
 ,model_specifications
+,source
 ,unit_code
 ,alien_code
 ,order_no
 ,manufacturer
 ,standard_no
 ,supplier
+,status_indication
 ,item_classification_code
 ,description
 ,Windchill_sample
