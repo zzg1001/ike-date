@@ -369,7 +369,7 @@ execution_time = end_time - start_time
 print(f"创建表格执行时间：{execution_time}秒")
 
 # 列表中的表名
-table_list = ['24q1_castrol','24q1_other','24q1_shell']
+table_list = ['24q1_castrol','24q1_other','24q1_shell','24_q2_1_mobil','24_q2_3_castrol','24_q2_4_other','24_q2_2_shell']
 
 # 循环插入数据
 for table in table_list:
