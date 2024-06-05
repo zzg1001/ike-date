@@ -13,7 +13,6 @@ a.part_code
 ,stock_quantity
 ,sap_unit
 ,sap_price
-,b.part_name
 ,model_specifications
 ,source
 ,unit_code
@@ -32,7 +31,6 @@ a.part_code
 ,valid_end_date
 ,actual_purchase_name
 ,inquiry_cd
-
 from (
 				     select 
 				     
@@ -146,3 +144,4 @@ left join (
 			      and b.DELETED = 0
       ) c
       on  a.part_code = c.part_code
+      
