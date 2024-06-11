@@ -89,9 +89,9 @@ with base_buy_tamp as
 		 ) a
 		 ORDER BY EINDT_MONTH
 
---采购申请--------------------------------------------- 
+--1采购申请--------------------------------------------- 
 		 
-select a.* ,min_udate
+  select a.* ,min_udate
         from ODS_HANA.dbo.EBAN a
    left join (
 			   select a.OBJECTID
@@ -106,5 +106,66 @@ select a.* ,min_udate
 			     group by  a.OBJECTID
 			 )b
 		  on a.BANFN = b.OBJECTID
+		  where a.FRGKZ='S' 
+		-- and a.EKGRP = '203'
+		  and a.EKGRP in ('201','211','214','215','204','205')
+		  and a.EBELN is null
 			 
---寻源--------------------------------------------- 
+--2寻源--------------------------------------------- 
+  select * from  ODS_SRM.dbo.srm_inq_inquiry_hd 
+   where STATUS_CD_ID not in ('INQ_HD_STATUS_REVIEWED','INQ_HD_STATUS_CLOSED','INQ_HD_STATUS_DRAFT')
+    and delete_flag =0
+
+		 
+--3订单执行（计划员）--------------------------------------------- 
+
+ select count(a.CREATED_TS) from ODS_SRM.dbo.srm_poc_order_hd a
+    left join ODS_SRM.dbo.srm_poc_order_item b
+           on a.ID = b.ORDER_ID 
+    left join ODS_SRM.dbo.srm_poc_delivery_note_item c 
+           on b.id = c.order_item_id
+        where a.DELETE_FLAG = 0
+          and c.order_item_id is null  
+    
+
+--4订单配送（供应商）--------------------------------------------- 	
+    SELECT * from ODS_SRM.dbo.srm_poc_delivery_note_hd a
+		 left join ODS_SRM.dbo.srm_poc_delivery_note_item b 
+		        on a.id = b.dn_hd_id 
+		     where a.DELETE_FLAG=0 
+		       and a.DN_STATUS='SENT_AUDITED'
+		       and b.current_status is null 
+
+
+--5物流周转（仓库）----------------------------------------------- 	
+
+ SELECT a.updated_ts 
+FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
+INNER JOIN ODS_SRM.dbo.srm_poc_delivery_note_item b
+      ON a.id = b.dn_hd_id
+WHERE a.DELETE_FLAG = 0
+  AND a.DN_STATUS = 'SENT_AUDITED'
+  AND EXISTS (
+    SELECT 1
+    FROM ODS_SRM.dbo.srm_poc_delivery_note_item
+    WHERE order_num = b.order_num
+    AND current_status = '点收节点/结束指令'
+  )
+  AND NOT EXISTS (
+    SELECT 1
+    FROM ODS_SRM.dbo.srm_poc_delivery_note_item
+    WHERE order_num = b.order_num
+    AND current_status = '收货节点/结束指令'
+  )
+--6质检----------------------------------------------------------- 
+
+select count(1) from  ODS_SRM.dbo.insp_lot where ud_flag=0
+
+--7.开票----------------------------------------------------------- 
+
+ 
+    SELECT count(1) from ODS_SRM.dbo.srm_poc_md_hd a
+     left join ODS_SRM.dbo.srm_poc_md_item b 
+            on a.id = b.MD_HD_ID 
+            where b.INVOICE_QTY<> b.QTY --INVOICE_QTY(开票数）不等于QTY（收货数）
+	  
