@@ -91,9 +91,11 @@ with base_buy_tamp as
 
 --1采购申请--------------------------------------------- 
 		 
-  select a.* ,min_udate
+  select a.EBELN
+         ,a.EBELP 
+         ,CONVERT(VARCHAR(10), CONVERT(datetime, min_udate, 112), 120)min_udate
         from ODS_HANA.dbo.EBAN a
-   left join (
+    join (
 			   select a.OBJECTID
 			         ,min(b.UDATE) min_udate
 			    from ODS_HANA.dbo.CDPOS a
