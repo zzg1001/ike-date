@@ -77,11 +77,11 @@ from (
            )a 
 left join (
 				select 
-						CASE 
+						REPLACE(CASE 
 								        WHEN PATINDEX('%[^0]%', part_code  ) > 0 
 								        THEN SUBSTRING(part_code  , PATINDEX('%[^0]%', part_code  ), LEN(part_code ))
 								        ELSE  part_code
-						  END AS part_code           
+						  END ,'sh', '') AS part_code           
 						,part_name             -- '物料技术名称'           
 						,model_specifications  --'物料技术型号（规格）' 
 						,unit_code             --'技术单位'              
@@ -96,6 +96,7 @@ left join (
 						,description           -- 'description'
 				        ,'' Windchill_sample  --  '样本（即时要求低的从数据中台抽）'		
 				from DWD_WINDCHILL.dbo.dws_pdm_part_info a 
+			      where is_new=1
           ) b
        on a.part_code = b.part_code
 left join  [ODS_HANA].[dbo].[LTXT_purchase] m 

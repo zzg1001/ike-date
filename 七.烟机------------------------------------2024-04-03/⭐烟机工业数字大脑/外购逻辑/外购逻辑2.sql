@@ -90,28 +90,45 @@ with base_buy_tamp as
 		 ORDER BY EINDT_MONTH
 
 --1采购申请--------------------------------------------- 
+
+-- CREATE NONCLUSTERED INDEX CDPOS_index
+-- ON ODS_HANA.dbo.CDPOS  (OBJECTID,tabname,VALUE_NEW,CHANGENR)
+
+
+-- CREATE NONCLUSTERED INDEX CDHDR_index
+-- ON ODS_HANA.dbo.CDHDR  (OBJECTID,CHANGENR,UDATE)
 		 
-  select a.EBELN
-         ,a.EBELP 
-         ,CONVERT(VARCHAR(10), CONVERT(datetime, min_udate, 112), 120)min_udate
-        from ODS_HANA.dbo.EBAN a
-    join (
-			   select a.OBJECTID
-			         ,min(b.UDATE) min_udate
-			    from ODS_HANA.dbo.CDPOS a
-			         join ODS_HANA.dbo.CDHDR b 
-			           on a.OBJECTID = b.OBJECTID
-			          and a.tabname='EBAN' 
-			          and a.fname='FRGKZ'
-			          and a.VALUE_NEW='s'
-			          and b.CHANGENR=a.CHANGENR
-			     group by  a.OBJECTID
-			 )b
-		  on a.BANFN = b.OBJECTID
-		  where a.FRGKZ='S' 
-		-- and a.EKGRP = '203'
-		  and a.EKGRP in ('201','211','214','215','204','205')
-		  and a.EBELN is null
+  
+ SELECT 
+	 EBELN
+	 ,EBELP
+	 ,min_udate
+	 ,GETDATE() etl_time
+	 from(
+		 select a.EBELN
+		         ,a.EBELP 
+		         ,CONVERT(VARCHAR(10), CONVERT(datetime, min_udate, 112), 120)min_udate
+		        from ODS_HANA.dbo.EBAN a
+		    join (
+					   select a.OBJECTID
+					         ,min(b.UDATE) min_udate
+					    from ODS_HANA.dbo.CDPOS a
+					         join ODS_HANA.dbo.CDHDR b 
+					           on a.OBJECTID = b.OBJECTID
+					          and a.tabname='EBAN' 
+					          and a.fname='FRGKZ'
+					          and a.VALUE_NEW='s'
+					          and b.CHANGENR=a.CHANGENR
+					     group by  a.OBJECTID
+					 )b
+				  on a.BANFN = b.OBJECTID
+				  where a.FRGKZ='S' 
+				-- and a.EKGRP = '203'
+				  and a.EKGRP in ('201','211','214','215','204','205')
+				  and a.EBELN is null
+	     )a
+	     where min_udate >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+	       and min_udate<=CONVERT(DATE, GETDATE()) 
 			 
 --2寻源--------------------------------------------- 
   select * from  ODS_SRM.dbo.srm_inq_inquiry_hd 
@@ -121,53 +138,79 @@ with base_buy_tamp as
 		 
 --3订单执行（计划员）--------------------------------------------- 
 
- select count(a.CREATED_TS) from ODS_SRM.dbo.srm_poc_order_hd a
-    left join ODS_SRM.dbo.srm_poc_order_item b
-           on a.ID = b.ORDER_ID 
-    left join ODS_SRM.dbo.srm_poc_delivery_note_item c 
-           on b.id = c.order_item_id
-        where a.DELETE_FLAG = 0
-          and c.order_item_id is null  
+     select 
+             a.ORDER_NUM
+            ,b.ORDER_ITEM_NUM  
+            ,CONVERT(DATE, a.CREATED_TS) CREATED_TS
+            ,GETDATE() etl_time
+       from ODS_SRM.dbo.srm_poc_order_hd a
+       join ODS_SRM.dbo.srm_poc_order_item b
+         on a.ID = b.ORDER_ID 
+       join ODS_SRM.dbo.srm_poc_delivery_note_item c 
+         on b.id = c.order_item_id
+      where a.DELETE_FLAG = 0
+        and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+	    and CONVERT(DATE, a.CREATED_TS)<=CONVERT(DATE, GETDATE()) 	 
+         -- and c.order_item_id is null  
     
 
 --4订单配送（供应商）--------------------------------------------- 	
-    SELECT * from ODS_SRM.dbo.srm_poc_delivery_note_hd a
-		 left join ODS_SRM.dbo.srm_poc_delivery_note_item b 
+            SELECT b.order_num
+                  ,b.order_item_num
+                  ,CONVERT(DATE, a.CREATED_TS) CREATED_TS
+              from ODS_SRM.dbo.srm_poc_delivery_note_hd a
+	          join ODS_SRM.dbo.srm_poc_delivery_note_item b 
 		        on a.id = b.dn_hd_id 
 		     where a.DELETE_FLAG=0 
 		       and a.DN_STATUS='SENT_AUDITED'
-		       and b.current_status is null 
+			   and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+	           and CONVERT(DATE, a.CREATED_TS)<=CONVERT(DATE, GETDATE()) 	
+		      -- and b.current_status is null 
 
 
 --5物流周转（仓库）----------------------------------------------- 	
 
- SELECT a.updated_ts 
-FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
-INNER JOIN ODS_SRM.dbo.srm_poc_delivery_note_item b
-      ON a.id = b.dn_hd_id
+	    
+SELECT a.updated_ts 
+      ,b.ORDER_NUM
+      ,b.ORDER_ITEM_NUM  
+ FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
+ JOIN (select dn_hd_id
+              ,ORDER_NUM
+              ,ORDER_ITEM_NUM  
+         from ODS_SRM.dbo.srm_poc_delivery_note_item
+     group by dn_hd_id
+              ,ORDER_NUM
+              ,ORDER_ITEM_NUM ) b
+   ON a.id = b.dn_hd_id
 WHERE a.DELETE_FLAG = 0
   AND a.DN_STATUS = 'SENT_AUDITED'
+  and CONVERT(DATE, a.updated_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+  and CONVERT(DATE, a.updated_ts)<=CONVERT(DATE, GETDATE()) 	
   AND EXISTS (
-    SELECT 1
-    FROM ODS_SRM.dbo.srm_poc_delivery_note_item
-    WHERE order_num = b.order_num
-    AND current_status = '点收节点/结束指令'
-  )
+			  SELECT 1
+			    FROM ODS_SRM.dbo.srm_poc_delivery_note_item
+			   WHERE order_num = b.order_num
+			     AND current_status = '点收节点/结束指令'
+             )
   AND NOT EXISTS (
-    SELECT 1
-    FROM ODS_SRM.dbo.srm_poc_delivery_note_item
-    WHERE order_num = b.order_num
-    AND current_status = '收货节点/结束指令'
-  )
+             SELECT 1
+               FROM ODS_SRM.dbo.srm_poc_delivery_note_item
+              WHERE order_num = b.order_num
+                AND current_status = '收货节点/结束指令'
+                 )
 --6质检----------------------------------------------------------- 
 
 select count(1) from  ODS_SRM.dbo.insp_lot where ud_flag=0
 
 --7.开票----------------------------------------------------------- 
 
- 
-    SELECT count(1) from ODS_SRM.dbo.srm_poc_md_hd a
+   SELECT CONVERT(DATE, a.created_ts ) created_ts 
+              ,b.MD_HD_NUM
+              ,b.MD_ITEM_NUM
+          from ODS_SRM.dbo.srm_poc_md_hd a
      left join ODS_SRM.dbo.srm_poc_md_item b 
             on a.id = b.MD_HD_ID 
-            where b.INVOICE_QTY<> b.QTY --INVOICE_QTY(开票数）不等于QTY（收货数）
-	  
+            where b.INVOICE_QTY<> b.QTY 
+             and CONVERT(DATE, a.created_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+             and CONVERT(DATE, a.created_ts)<=CONVERT(DATE, GETDATE()) 
