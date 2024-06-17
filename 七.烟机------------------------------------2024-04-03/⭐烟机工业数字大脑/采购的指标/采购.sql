@@ -1,9 +1,9 @@
 
 -----------------年度采购总金额-------------------
 SELECT SUM(contract_amount) as contract_amount
-  FROM [LeanProduction_Dashboard].[dbo].[purchase_dashboard_base_contract_info]
+  FROM LeanProduction_Dashboard.dbo.purchase_dashboard_base_contract_info
   where sponsor_dept_code = '59TKR0X9'
-and contract_year between '${year_begin}' and '${year_end}'
+and contract_year = year(GETDATE())
 
 -------------采购计划完成率-------------------------------------
 SELECT aaa.计划编号,bbb.dept_name 部门,aaa.金额,aaa.执行类型 FROM 
@@ -99,42 +99,47 @@ SELECT a.amount,a.status FROM
     )
 ) a
 -----------------准入供应商数量----------------------------------------
- select count(distinct supplier_id) 
+ select count(distinct supplier_id) preparation_cont
   from ODS_SRM.dbo.srm_mgt_access
  where created_ts >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
    and created_ts<=CONVERT(DATE, GETDATE()) 
 
-------------------供应商合同签订金额（柱状图）-----部门采购金额TOPS------------------
+------------------供应商合同签订金额-----部门采购金额TOPS------------------
+
   
-      select 
-           SUM(contract_amount)/10000 contract_amount_sum
-          ,sponsor_dept_code
+
+ TRUNCATE table ODS_HANA.dbo.digital_brain_purchase_department_amount_index;
+insert INTO  ODS_HANA.dbo.digital_brain_purchase_department_amount_index
+   select 
+           SUM(contract_amount)/10000 contract_amount
+          ,sponsor_dept_desc
           ,contract_year  year_b 
           ,CONVERT(VARCHAR(7), CONVERT(DATE,approved_date_time ) , 120) moth_year
-      from Purchase_Office_Dashboard.dbo.ads_company_contract_info 
+          ,GETDATE() etl_time
+      from Purchase_Office_Dashboard.dbo.ads_company_contract_info a
      where contract_state_desc = '审批通过' 
        AND CONVERT(DATE,approved_date_time )
      BETWEEN CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'   
        AND CONVERT(DATE, GETDATE())  
       AND contract_year=YEAR( GETDATE())
-    GROUP BY sponsor_dept_code
+    GROUP BY sponsor_dept_desc
              ,contract_year
-             ,CONVERT(VARCHAR(7), CONVERT(DATE,approved_date_time ) , 120) 
-    
-    
+             ,CONVERT(VARCHAR(7), CONVERT(DATE,approved_date_time ) , 120)  
+   
+    union 
      select 
-           SUM(contract_amount)/10000 contract_amount_sum
-           ,sponsor_dept_code
+           SUM(contract_amount)/10000 contract_amount
+           ,sponsor_dept_desc
           ,contract_year  year_b 
           ,CONVERT(VARCHAR(7), CONVERT(DATE,approved_date_time ) , 120)  moth_year
+           ,GETDATE() etl_time
       from Purchase_Office_Dashboard.dbo.ads_company_contract_info 
      where contract_state_desc = '审批通过' 
        AND YEAR(approved_date_time )=YEAR( GETDATE())-1
       AND contract_year=YEAR( GETDATE())-1
-    GROUP BY ,sponsor_dept_code
+    GROUP BY sponsor_dept_desc
              ,contract_year
              ,CONVERT(VARCHAR(7), CONVERT(DATE,approved_date_time ) , 120) 
-
 
 
 ---------------------------------------分级供应商金额占比------------------------------------------
@@ -174,16 +179,20 @@ SELECT a.amount,a.status FROM
 
                          select c.pur_type_name
                                 ,sum(contract_amount)  contract_amount
+                                ,d.category_type_name
                            from ODS_SRM.dbo.ct_contract_purchase_plan a
                            join ODS_SRM.dbo.srm_purch_plan_item b 
                              on a.plan_code = b.pur_plan_item_code
                             and a.is_deleted = 0
                            join ODS_SRM.dbo.srm_purch_catalog c 
                              on b.pur_category_id = c.id
+                           join ODS_SRM.dbo.purchase_plan_department_category_mapping d 
+                             on d.purchase_category_num = b.pur_category_code 
+                            and d.plan_department =  b.organizing_dept_name
                           where CONVERT(DATE,a.create_date_time ) >= CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'   
                             AND CONVERT(DATE,a.create_date_time ) <=CONVERT(DATE, GETDATE()) 
-                          GROUP by c.pur_type_name 
-
+                          GROUP by c.pur_type_name
+                                  ,d.category_type_name 
 
 
 

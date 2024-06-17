@@ -205,12 +205,22 @@ select count(1) from  ODS_SRM.dbo.insp_lot where ud_flag=0
 
 --7.开票----------------------------------------------------------- 
 
-   SELECT CONVERT(DATE, a.created_ts ) created_ts 
-              ,b.MD_HD_NUM
-              ,b.MD_ITEM_NUM
-          from ODS_SRM.dbo.srm_poc_md_hd a
-     left join ODS_SRM.dbo.srm_poc_md_item b 
-            on a.id = b.MD_HD_ID 
-            where b.INVOICE_QTY<> b.QTY 
-             and CONVERT(DATE, a.created_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
-             and CONVERT(DATE, a.created_ts)<=CONVERT(DATE, GETDATE()) 
+                        select c.pur_type_name
+                                ,sum(contract_amount)  contract_amount
+                                ,d.category_type_name
+                           from ODS_SRM.dbo.ct_contract_purchase_plan a
+                           join ODS_SRM.dbo.srm_purch_plan_item b 
+                             on a.plan_code = b.pur_plan_item_code
+                            and a.is_deleted = 0
+                           join ODS_SRM.dbo.srm_purch_catalog c 
+                             on b.pur_category_id = c.id
+                           join ODS_SRM.dbo.purchase_plan_department_category_mapping d 
+                             on d.purchase_category_num = b.pur_category_code 
+                            and d.plan_department =  b.organizing_dept_name
+                          where CONVERT(DATE,a.create_date_time ) >= CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'   
+                            AND CONVERT(DATE,a.create_date_time ) <=CONVERT(DATE, GETDATE()) 
+                          GROUP by c.pur_type_name
+                                  ,d.category_type_name 
+
+
+             
