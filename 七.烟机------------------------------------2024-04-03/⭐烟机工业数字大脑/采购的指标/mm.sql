@@ -83,37 +83,40 @@ where is_deleted = 0 and is_modified = 0 and exec_dept_code in (select dept_code
 
 truncate table Purchase_Office_Dashboard.dbo.base_contract_info
 insert into Purchase_Office_Dashboard.dbo.base_contract_info
-		select A.id                                          as contract_id,
-		       contract_code_perfix + contract_serial_number as contract_code,
-		       contract_year,
-		       target_description                            as target_desc,
-		       contract_amount,
-		       sponsor_dept_code,
-		       sponsor_dept_name                             as sponsor_dept_desc,
-		       vendor                                        as vendor_code,
-		       vendor_name                                   as vendor_desc,
-		       B.type_name                                   as contract_type_desc,
-		       contract_state                                as contract_state_code,
-		       case contract_state
+		select A.id                                          as contract_id
+		       ,contract_code_perfix + contract_serial_number as contract_code
+		       ,contract_year
+		       ,target_description                            as target_desc
+		       ,contract_amount
+		       ,sponsor_dept_code
+		       ,sponsor_dept_name                             as sponsor_dept_desc
+		       ,vendor                                        as vendor_code
+		       ,vendor_name                                   as vendor_desc
+		       ,B.type_name                                   as contract_type_desc
+		       ,contract_state                                as contract_state_code
+		       ,case contract_state
 		           when 0 then '草稿'
 		           when 1 then '审批中'
 		           when 2 then '审批通过'
-		           when 3 then '已废弃' end                     as contract_state_desc,
-		       chargs                                        as batch_code,
-		       order_nums                                    as order_no_list,
-		       A.create_user_name                            as create_user_code,
-		       A.create_user_cn_name                         as create_user_name,
-		       A.create_date_time,
-		       delivery_date                                 as delivery_date_time,
-		       approved_date                                 as approved_date_time
-		       c.contract_amount                             as plan_contract_amount -- 合同计划金额
+		           when 3 then '已废弃' end                     as contract_state_desc
+		       ,chargs                                        as batch_code
+		       ,order_nums                                    as order_no_list
+		       ,A.create_user_name                            as create_user_code
+		       ,A.create_user_cn_name                         as create_user_name
+		       ,A.create_date_time
+		       ,delivery_date                                 as delivery_date_time
+		       ,approved_date                                 as approved_date_time
+		       ,c.contract_amount                             as plan_contract_amount -- 合同计划金额
        from ODS_SRM.dbo.ct_contract A
   left join ODS_SRM.dbo.ct_contract_type B 
          on A.contract_type_id = B.id
         and B.is_deleted = 0
        join ODS_SRM.dbo.ct_contract_purchase_plan c 
-         on c.contract_id = a.idand A.is_deleted = 0
+         on c.contract_id = a.id
         and c.is_deleted = 0
+       join ODS_SRM.dbo.srm_purch_plan_item d
+         on c.plan_code = d.pur_plan_item_code
+        and d.is_deleted = 0
 where purchaser_cd = '2000'
   and A.is_deleted = 0
  
@@ -153,3 +156,84 @@ from ODS_SRM.dbo.ct_contract_purchase_plan A
 where A.is_deleted = 0
   and B.is_deleted = 0
   and B.purchaser_cd = '2000'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         select A.id                                          as contract_id
+               ,contract_code_perfix + contract_serial_number as contract_code
+               ,a.contract_year
+               ,a.contract_amount                             as contract_amount
+               ,sponsor_dept_code
+               ,sponsor_dept_name                             as sponsor_dept_desc
+               ,vendor                                        as vendor_code
+               ,vendor_name                                   as vendor_desc
+               ,B.type_name                                   as contract_type_desc
+               ,contract_state                                as contract_state_code
+               ,case contract_state
+                   when 0 then '草稿'
+                   when 1 then '审批中'
+                   when 2 then '审批通过'
+                   when 3 then '已废弃' end                     as contract_state_desc
+               ,chargs                                        as batch_code
+               ,order_nums                                    as order_no_list
+               ,A.create_user_name                            as create_user_code
+               ,A.create_user_cn_name                         as create_user_name
+               ,A.create_date_time
+               ,delivery_date                                 as delivery_date_time
+               ,approved_date                                 as approved_date_time
+               ,c.contract_amount                             as plan_contract_amount -- 合同计划金额
+               ,g.supplier_level
+               ,g.SUPPLIER_ID
+       from ODS_SRM.dbo.ct_contract A
+  left join ODS_SRM.dbo.ct_contract_type B 
+         on A.contract_type_id = B.id
+        and B.is_deleted = 0
+       join ODS_SRM.dbo.ct_contract_purchase_plan c 
+         on c.contract_id = a.id
+        and c.is_deleted = 0
+       join ODS_SRM.dbo.srm_purch_plan_item d
+         on c.plan_code = d.pur_plan_item_code
+        and d.is_modified = 0
+        and d.is_deleted = 0
+  left join (select distinct purchase_category_num
+                   ,plan_department 
+              from ODS_SRM.dbo.purchase_plan_department_category_mapping
+              ) e
+         on e.purchase_category_num = d.pur_category_code 
+        and e.plan_department =  d.organizing_dept_name
+  left join ODS_SRM.dbo.srm_md_suppliercode f 
+         on a.vendor = f.compcode_cd 
+        and f.REF_SYS = 'SAP02'
+  left join (
+                      select SUPPLIER_ID
+                            ,CASE
+                                 WHEN CHARINDEX('(', supplier_level) > 0
+                                 THEN SUBSTRING(supplier_level, 1, CHARINDEX('(', supplier_level) - 1)
+                             ELSE supplier_level
+                             END AS supplier_level      
+                       from ODS_SRM.dbo.srm_mgt_access a
+                      where supplier_level is not null 
+                        and purchaser_id = 'BUYER0000000001'
+                        and supplier_type like '%外%'
+                      GROUP by SUPPLIER_ID
+                             ,CASE
+                                   WHEN CHARINDEX('(', supplier_level) > 0
+                                   THEN SUBSTRING(supplier_level, 1, CHARINDEX('(', supplier_level) - 1)
+                              ELSE supplier_level END 
+             ) g
+         on f.SRM_COMP_ID = g.SUPPLIER_ID
+      where a.purchaser_cd = '2000'
+        and A.is_deleted = 0;
+  

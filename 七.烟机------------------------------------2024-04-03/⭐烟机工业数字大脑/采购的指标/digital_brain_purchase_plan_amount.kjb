@@ -411,12 +411,15 @@ select A.id                                          as contract_id
 		       ,A.create_user_cn_name                         as create_user_name
 		       ,A.create_date_time
 		       ,delivery_date                                 as delivery_date_time
-		       ,approved_date                                 as approved_date_time
+		       ,CONVERT(DATE, approved_date)                  as approved_date_time
 		       ,c.contract_amount                             as plan_contract_amount -- 合同计划金额
 		       ,g.supplier_level
 		       ,g.SUPPLIER_ID
 		       ,g.supplier_created_date
-		       -- into ODS_HANA.dbo.digital_brain_purchase_plan_amount
+		       ,m.pur_type_name
+		       ,e.category_type_name
+		       ,GETDATE() etl_time
+		   -- into ODS_HANA.dbo.digital_brain_purchase_plan_amount
        from ODS_SRM.dbo.ct_contract A
   left join ODS_SRM.dbo.ct_contract_type B 
          on A.contract_type_id = B.id
@@ -428,7 +431,10 @@ select A.id                                          as contract_id
          on c.plan_code = d.pur_plan_item_code
         and d.is_modified = 0
         and d.is_deleted = 0
+  left join ODS_SRM.dbo.srm_purch_catalog m 
+         on d.pur_category_id = m.id
   left join (select distinct purchase_category_num
+                   ,category_type_name 
                    ,plan_department 
               from ODS_SRM.dbo.purchase_plan_department_category_mapping
               ) e
@@ -458,7 +464,9 @@ select A.id                                          as contract_id
              ) g
          on f.SRM_COMP_ID = g.SUPPLIER_ID
       where a.purchaser_cd = '2000'
-        and A.is_deleted = 0;</sql>
+        and A.is_deleted = 0
+          AND contract_year=YEAR( GETDATE())
+         </sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>
