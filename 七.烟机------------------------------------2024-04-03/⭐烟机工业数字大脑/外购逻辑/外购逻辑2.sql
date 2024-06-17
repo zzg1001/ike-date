@@ -99,11 +99,16 @@ with base_buy_tamp as
 -- ON ODS_HANA.dbo.CDHDR  (OBJECTID,CHANGENR,UDATE)
 		 
   
- SELECT 
+	      
+TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_req;
+
+insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
+	 SELECT 
 	 EBELN
 	 ,EBELP
 	 ,min_udate
 	 ,GETDATE() etl_time
+	--into ODS_HANA.dbo.digital_brain_outbuy_step_req
 	 from(
 		 select a.EBELN
 		         ,a.EBELP 
@@ -124,11 +129,32 @@ with base_buy_tamp as
 				  on a.BANFN = b.OBJECTID
 				  where a.FRGKZ='S' 
 				-- and a.EKGRP = '203'
-				  and a.EKGRP in ('201','211','214','215','204','205')
-				  and a.EBELN is null
+				  and a.EKGRP in ('201','211','214','215','204','205','203')
 	     )a
 	     where min_udate >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
 	       and min_udate<=CONVERT(DATE, GETDATE()) 
+
+
+     select
+        count(1)  -- 当前数量
+       ,sum(day_cnt)/count(1) -- 本月平均周期（
+       ,count(case when a.min_udate = CONVERT(DATE, GETDATE()) and day_cnt >1 then 1 else null end ) d -- 日新增数量
+       ,count(case when a.min_udate = CONVERT(DATE, GETDATE()) and day_cnt >1 then 1 else null end ) c -- 日消耗数量
+      from(
+
+	          select a.min_udate
+	               , b.CREATED_TS
+	               ,DATEDIFF(day, a.min_udate,b.CREATED_TS ) day_cnt
+	           from ODS_HANA.dbo.digital_brain_outbuy_step_req a
+	      left join ODS_SRM.dbo.srm_poc_order_hd b 
+	             on a.EBELN =b.ORDER_NUM 
+	            and b.DELETE_FLAG = 0
+	         
+	       ) a
+
+
+	            
+
 			 
 --2寻源--------------------------------------------- 
   select * from  ODS_SRM.dbo.srm_inq_inquiry_hd 
@@ -136,25 +162,98 @@ with base_buy_tamp as
     and delete_flag =0
 
 		 
---3订单执行（计划员）--------------------------------------------- 
+--3订单执行（计划员）=================================--------------------------------------------- 
+        
+        
+drop table  ODS_HANA.dbo.digital_brain_outbuy_step_delivery;
 
-     select 
+
+TRUNCATE table ODS_HANA.dbo.digital_brain_outbuy_step_delivery;
+
+INSERT INTO ODS_HANA.dbo.digital_brain_outbuy_step_delivery
+select 
              a.ORDER_NUM
-            ,b.ORDER_ITEM_NUM  
-            ,CONVERT(DATE, a.CREATED_TS) CREATED_TS
+            ,b.ORDER_ITEM_NUM  action
+            ,c.order_item_id   delivery
+            ,d.order_item_id   break
+            ,e.order_item_num  quality 
+            ,f.order_item_num  md
             ,GETDATE() etl_time
+          into  ODS_HANA.dbo.digital_brain_outbuy_step_delivery
        from ODS_SRM.dbo.srm_poc_order_hd a
        join ODS_SRM.dbo.srm_poc_order_item b
          on a.ID = b.ORDER_ID 
-       join ODS_SRM.dbo.srm_poc_delivery_note_item c 
-         on b.id = c.order_item_id
-      where a.DELETE_FLAG = 0
-        and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
-	    and CONVERT(DATE, a.CREATED_TS)<=CONVERT(DATE, GETDATE()) 	 
-         -- and c.order_item_id is null  
+      left join (  
+                   SELECT b.order_item_id
+                         ,b.order_item_num 
+                         ,min(a.updated_ts) 
+				     FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
+				     join ODS_SRM.dbo.srm_poc_delivery_note_item b
+				       ON a.id = b.dn_hd_id
+				    WHERE  a.DN_STATUS = 'SENT_AUDITED'
+	                  and CONVERT(DATE, a.updated_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+	                  and CONVERT(DATE, a.updated_ts)<=CONVERT(DATE, GETDATE()) 
+	                group by b.order_item_id
+	                     ,b.order_item_num 
+	                )c
+          on b.id = c.order_item_id
+	  left join ( 
+	            	  SELECT b.order_item_id 
+				      FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
+				      join ODS_SRM.dbo.srm_poc_delivery_note_item b
+				        ON a.id = b.dn_hd_id
+				   WHERE  a.DN_STATUS = 'SENT_AUDITED'
+	                 and CONVERT(DATE, a.updated_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+	                 and CONVERT(DATE, a.updated_ts)<=CONVERT(DATE, GETDATE()) 
+				     AND EXISTS (
+						  SELECT 1
+						    FROM ODS_SRM.dbo.srm_poc_delivery_note_item
+						   WHERE order_num = b.order_num
+						     AND current_status = '点收节点/结束指令'
+			             )
+			           AND NOT EXISTS (
+			             SELECT 1
+			               FROM ODS_SRM.dbo.srm_poc_delivery_note_item
+			              WHERE order_num = b.order_num
+			                AND current_status = '收货节点/结束指令'
+			                 )
+	                group by b.order_item_id 
+		        )d
+         on b.id = d.order_item_id
+
+    left join (select distinct order_item_num 
+    	        from ODS_SRM.dbo.insp_lot 
+    	        where ud_flag=0
+    	     )e 
+           on e.order_item_num = d.ORDER_ITEM_NUM  
+    left join (  
+		    	  SELECT 
+		              distinct order_item_num
+		          from ODS_SRM.dbo.srm_poc_md_hd a
+		     left join ODS_SRM.dbo.srm_poc_md_item b 
+		            on a.id = b.MD_HD_ID 
+		            where b.INVOICE_QTY<> b.QTY 
+		             and CONVERT(DATE, a.created_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+		             and CONVERT(DATE, a.created_ts)<=CONVERT(DATE, GETDATE()) 
+               )f 
+           on f.order_item_num = e.order_item_num 
+       where a.DELETE_FLAG = 0
+         and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+	     and CONVERT(DATE, a.CREATED_TS)<=CONVERT(DATE, GETDATE()) 	 
+         
+
+
+select 
+COUNT(1) 
+,count(order_item_id)
+,count(order_item_n)
+,count(quality)
+,count(md)
+from ODS_HANA.dbo.digital_brain_outbuy_step_delivery a
+
     
 
---4订单配送（供应商）--------------------------------------------- 	
+--4订单配送（供应商）---------------==============---------------------------------- 	
             SELECT b.order_num
                   ,b.order_item_num
                   ,CONVERT(DATE, a.CREATED_TS) CREATED_TS
@@ -199,28 +298,41 @@ WHERE a.DELETE_FLAG = 0
               WHERE order_num = b.order_num
                 AND current_status = '收货节点/结束指令'
                  )
+
+
+
+
+
+      select   a.order_item_id
+               ,count(1)                                                                 as flag0_cnt
+               ,count(case when current_status = '点收节点/结束指令' then 1
+                    when current_status = '收货节点/结束指令' then 0 else 1 end )           as flag1_cnt
+               ,count(case when current_status = '点收节点/结束指令' then 1 else null end ) as flag2_cnt
+          from ODS_SRM.dbo.srm_poc_delivery_note_item a
+          join ODS_SRM.dbo.srm_poc_delivery_note_hd b
+            on b.id = a.dn_hd_id  
+         where b.DELETE_FLAG = 0
+           AND b.DN_STATUS = 'SENT_AUDITED'
+           and CONVERT(DATE, a.updated_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+           and CONVERT(DATE, a.updated_ts)<=CONVERT(DATE, GETDATE()) 
+         group by order_item_id,b.updated_ts
+         order by order_item_id,b.updated_ts
+
+    
 --6质检----------------------------------------------------------- 
 
 select count(1) from  ODS_SRM.dbo.insp_lot where ud_flag=0
 
 --7.开票----------------------------------------------------------- 
 
-                        select c.pur_type_name
-                                ,sum(contract_amount)  contract_amount
-                                ,d.category_type_name
-                           from ODS_SRM.dbo.ct_contract_purchase_plan a
-                           join ODS_SRM.dbo.srm_purch_plan_item b 
-                             on a.plan_code = b.pur_plan_item_code
-                            and a.is_deleted = 0
-                           join ODS_SRM.dbo.srm_purch_catalog c 
-                             on b.pur_category_id = c.id
-                           join ODS_SRM.dbo.purchase_plan_department_category_mapping d 
-                             on d.purchase_category_num = b.pur_category_code 
-                            and d.plan_department =  b.organizing_dept_name
-                          where CONVERT(DATE,a.create_date_time ) >= CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'   
-                            AND CONVERT(DATE,a.create_date_time ) <=CONVERT(DATE, GETDATE()) 
-                          GROUP by c.pur_type_name
-                                  ,d.category_type_name 
+       SELECT  order_num
+              ,order_item_num
+          from ODS_SRM.dbo.srm_poc_md_hd a
+     left join ODS_SRM.dbo.srm_poc_md_item b 
+            on a.id = b.MD_HD_ID 
+            where b.INVOICE_QTY<> b.QTY 
+             and CONVERT(DATE, a.created_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+             and CONVERT(DATE, a.created_ts)<=CONVERT(DATE, GETDATE()) 
 
 
              
