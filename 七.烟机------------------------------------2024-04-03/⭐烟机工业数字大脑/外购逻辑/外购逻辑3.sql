@@ -91,14 +91,6 @@ with base_buy_tamp as
 
 --1采购申请--------------------------------------------- 
 
--- CREATE NONCLUSTERED INDEX CDPOS_index
--- ON ODS_HANA.dbo.CDPOS  (OBJECTID,tabname,VALUE_NEW,CHANGENR)
-
-
--- CREATE NONCLUSTERED INDEX CDHDR_index
--- ON ODS_HANA.dbo.CDHDR  (OBJECTID,CHANGENR,UDATE)
-		 
-  
 	      
 TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_req;
 
@@ -168,12 +160,13 @@ insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
       
 with tamp_1 as (
               select 
-                    b.order_item_id
+                    b.id
                     ,DATEDIFF(day, a.CREATED_TS,c.max_updated) day_cnt
                     ,CONVERT(DATE, a.CREATED_TS) create_date    -- 订单行首次审批通过时间
                     ,CONVERT(DATE, c.max_updated) max_updated -- 订单行创建装运单时间（最晚）
                from ODS_SRM.dbo.srm_poc_order_hd a
                join ODS_SRM.dbo.srm_poc_order_item b
+                 on a.ID = b.ORDER_ID 
                left join (
                 select order_item_id
                                   ,MAX(a.updated_ts)  max_updated
@@ -182,8 +175,7 @@ with tamp_1 as (
                                ON a.id = b.dn_hd_id
                             group by order_item_id
                          )c 
-                 on b.order_item_id = c.order_item_id
-                 on a.ID = b.ORDER_ID 
+                 on b.id = c.order_item_id
                 and b.DELETE_FLAG = 0
               where a.DELETE_FLAG = 0
                 and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
@@ -196,7 +188,6 @@ select count(1) -- 当前数量
       ,count(case when create_date = CONVERT(DATE, GETDATE()) and day_cnt = 0 then 1 else null end ) d -- 日消耗数量
   from tamp_1
 
-
 -----------------------------------
 
 -- 订单配送（供应商）
@@ -204,33 +195,32 @@ with tamp_2 as (
 
                  
 
-                   select  case when a.DN_STATUS = 'SENT_AUDITED'   then order_item_id else null    end delivery_req
-                          ,case when current_status = '点收节点/结束指令' then a.updated_ts  else null   end create_date
-                          ,case when current_status = '点收节点/结束指令' then DATEDIFF(day,a.updated_ts,b.updated_ts)  else null   end day_cnt
+                   select  case when a.DN_STATUS = 'SENT_AUDITED'   then order_item_id else null       end delivery_req
+                          ,case when current_status = '点收节点/结束指令' then a.CREATED_TS  else null   end create_date
+                          ,case when current_status = '点收节点/结束指令' then DATEDIFF(day,a.CREATED_TS,b.updated_ts)  else null   end day_cnt
                      FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
                      join ODS_SRM.dbo.srm_poc_delivery_note_item b
                        ON a.id = b.dn_hd_id
                     WHERE a.delete_flag = 0
                       and b.delete_flag = 0
-                      and CONVERT(DATE, a.updated_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
-                      and CONVERT(DATE, a.updated_ts)<=CONVERT(DATE, GETDATE())
+                      and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+                      and CONVERT(DATE, a.CREATED_TS)<=CONVERT(DATE, GETDATE())
 
                 )
-     select count( delivery_req)
-            ,sum(day_cnt)/count(create_date)
-            ,count( case when create_date = CONVERT(DATE, GETDATE()) then delivery_req else null end )   -- 日新增数量
-            ,count(case when create_date = CONVERT(DATE, GETDATE()) and day_cnt=0 then 1 else null end ) -- 日消耗数量
+     select count(DISTINCT  delivery_req)
+            ,sum( case when CONVERT(VARCHAR(7),create_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end )/count(case when CONVERT(VARCHAR(7),create_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),120) then day_cnt else null end )
+            ,count(DISTINCT case when create_date = CONVERT(DATE, GETDATE()) then delivery_req else null end )   -- 日新增数量
+            ,count(DISTINCT case when create_date = CONVERT(DATE, GETDATE()) and day_cnt=0 then 1 else null end ) -- 日消耗数量
        from tamp_2
 
 
 
 -----------------------------------
 
--- 物流周转（仓库）
-with tamp_3 as (
 
-                 
-                    SELECT 
+-- 物流周转（仓库）
+
+                   SELECT 
                            b.order_item_id 
                           ,a.dn_hd_num
                           ,b.line_num
@@ -255,23 +245,53 @@ with tamp_3 as (
                             AND current_status = '收货节点/结束指令'
                              )
 
+                
+
+
+
+with tamp_3 as (
+
+                 
+                    SELECT 
+                           b.order_item_id 
+                          ,a.dn_hd_num
+                          ,b.line_num
+                      FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
+                      join ODS_SRM.dbo.srm_poc_delivery_note_item b
+                        ON a.id = b.dn_hd_id
+                    WHERE  a.delete_flag = 0
+                      and b.delete_flag =0
+                      and a.DN_STATUS = 'SENT_AUDITED'
+                      and CONVERT(DATE, a.updated_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+                      and CONVERT(DATE, a.updated_ts)<=CONVERT(DATE, GETDATE()) 
+
                 )
                ,tamp_3_1 as (
       
-                     select notice_num 
-                          ,notice_line_num 
-                          ,max(case when node_code = 'CHECK' then a.close_time else null end) chech_time
-                          ,max(case when node_code = 'MIGO'  then a.close_time else null end) migo_time
-                     from ODS_LPS.dbo.ods_logistics_pur_info a
-                    where node_code in ('CHECK','MIGO')
-                    group by notice_num 
-                            ,notice_line_num 
+                            select
+                              notice_num
+                               ,notice_line_num 
+                               ,DATEDIFF(day,chech_time,migo_time) day_cnt  
+                               ,chech_time 
+                               ,migo_time                            
+                            from(
+                                select notice_num 
+                                      ,notice_line_num 
+                                      ,max(case when node_code = 'CHECK' then a.close_time else null end) chech_time
+                                      ,max(case when node_code = 'MIGO'  then a.close_time else null end) migo_time
+                                 from ODS_LPS.dbo.ods_logistics_pur_info a
+                                where node_code in ('CHECK','MIGO')
+                                group by notice_num 
+                                        ,notice_line_num 
+
+                                  )
+                    
                       )
 
                
 
           select count( order_item_id)
-                ,sum(DATEDIFF(day,chech_time,migo_time))/count(migo_time)
+                ,sum(case when CONVERT(VARCHAR(7),chech_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)/count(case when CONVERT(VARCHAR(7),chech_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)
                 ,count(case when CONVERT(DATE, chech_time) = CONVERT(DATE, GETDATE()) then 1 else null end ) -- 日新增数量
                 ,count(case when CONVERT(DATE, migo_time) = CONVERT(DATE, GETDATE()) and DATEDIFF(day,chech_time,migo_time)=0 then 1 else null end )  -- 日消耗数量
     
