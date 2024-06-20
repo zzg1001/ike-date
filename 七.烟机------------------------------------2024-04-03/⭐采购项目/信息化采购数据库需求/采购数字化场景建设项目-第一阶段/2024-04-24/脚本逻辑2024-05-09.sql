@@ -110,28 +110,28 @@ left join (
 				             ,'' Windchill_sample  --  '样本（即时要求低的从数据中台抽）'
 
 	               from (
-				select 
-						CASE 
-								        WHEN PATINDEX('%[^0]%', part_code  ) > 0 
-								        THEN SUBSTRING(part_code  , PATINDEX('%[^0]%', part_code  ), LEN(part_code ))
-								        ELSE  part_code
-						  END AS part_code
-						,part_name windchill_part_name  -- '物料技术名称'           
-						,model_specifications  --'物料技术型号（规格）' 
-						,unit_code             --'技术单位'              
-						,alien_code            --'外来代码'        
-						,order_no              --'订货号'           
-						,manufacturer          --'技术要求品牌(制造商)'          
-						,standard_no           --'标准号'           
-						,supplier              -- '供应商' 
-						,source                -- '来源'   
-						,status_indication     -- '状态标识'      
-						,item_classification_code  -- '项目分类'
-						,description           -- 'description'
-				        ,'' Windchill_sample  --  '样本（即时要求低的从数据中台抽）'		
-				from DWD_WINDCHILL.dbo.dws_pdm_part_info 
-				)a
-          ) b
+							select 
+									CASE 
+													WHEN PATINDEX('%[^0]%', part_code  ) > 0 
+													THEN SUBSTRING(part_code  , PATINDEX('%[^0]%', part_code  ), LEN(part_code ))
+													ELSE  part_code
+									END AS part_code
+									,part_name windchill_part_name  -- '物料技术名称'           
+									,model_specifications  --'物料技术型号（规格）' 
+									,unit_code             --'技术单位'              
+									,alien_code            --'外来代码'        
+									,order_no              --'订货号'           
+									,manufacturer          --'技术要求品牌(制造商)'          
+									,standard_no           --'标准号'           
+									,supplier              -- '供应商' 
+									,source                -- '来源'   
+									,status_indication     -- '状态标识'      
+									,item_classification_code  -- '项目分类'
+									,description           -- 'description'
+									,'' Windchill_sample  --  '样本（即时要求低的从数据中台抽）'		
+							from DWD_WINDCHILL.dbo.dws_pdm_part_info 
+							)a
+                        ) b
        on a.part_code = b.part_code
 left join  [ODS_HANA].[dbo].[LTXT_purchase] m 
        on a.part_code = m.matnr
