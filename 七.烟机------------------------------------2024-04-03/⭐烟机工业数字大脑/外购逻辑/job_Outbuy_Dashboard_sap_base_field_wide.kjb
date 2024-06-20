@@ -370,7 +370,7 @@
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>E:\doc\工程\烟机\外协看板\ETL\trans_outbuy_dashboard_sap_base_field_wide.ktr</filename>
+      <filename>${Internal.Entry.Current.Directory}/trans_outbuy_dashboard_sap_base_field_wide.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>

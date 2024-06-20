@@ -379,7 +379,8 @@ with base_buy_tamp as
 					  ,delivery_days_30
 					  ,overdue_or_not,BUDAT
 				from Outsourcing_Dashboard.dbo.sap_base_buy_field_wide
-				where  (LOEKZ &lt;&gt;'L' or LOEKZ is null)
+				where purchase_flag = 0
+                and (LOEKZ &lt;&gt;'L' or LOEKZ is null)
 				and BUKRS='2000' and FRGKE='S'
 				and CONVERT(date, EINDT, 112) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
 				and CONVERT(date, EINDT, 112) &lt;=CONVERT(DATE, GETDATE()) 
@@ -394,7 +395,8 @@ with base_buy_tamp as
 					   ,overdue_or_not
 					   ,BUDAT
 				from Outsourcing_Dashboard.dbo.sap_base_buy_field_wide
-				where  (LOEKZ &lt;&gt;'L' or LOEKZ is null)
+				where  purchase_flag = 0
+                and (LOEKZ &lt;&gt;'L' or LOEKZ is null)
 				and BUKRS='2000' and FRGKE='S'
 				and CONVERT(date, EINDT, 112) &lt; CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
 				and CONVERT(date, EINDT, 112) >=  CAST(YEAR(GETDATE())-1 AS VARCHAR(4)) + '-01-01'  

@@ -6,6 +6,7 @@
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
     <directory>/</directory>
     <parameters>
     </parameters>
@@ -430,7 +431,7 @@
     <created_date>2024/06/04 15:30:22.421</created_date>
     <modified_user>-</modified_user>
     <modified_date>2024/06/04 15:30:22.421</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -503,10 +504,6 @@
     <data_tablespace/>
     <index_tablespace/>
     <attributes>
-      <attribute>
-        <code>EXTRA_OPTION_MSSQL.zeroDateTimeBehavior</code>
-        <attribute>convertToNull</attribute>
-      </attribute>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
         <attribute>N</attribute>
@@ -683,7 +680,7 @@
     <hop>
       <from>outsourcing_mapping_vender</from>
       <to>排序记录 6</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>sap</from>
@@ -778,18 +775,12 @@
       <schema_name/>
     </partitioning>
     <connection>ODS_HANA</connection>
-    <sql>--select 
---distinct
---e.LIFNR,
---e.NAME1,
---f.PRDAT,
---c.INFNR
---rom EKPO c
---join EINE f on c.INFNR=f.INFNR
+    <sql>select distinct INFNR,EBELN,EBELP,min(PRDAT) as PRDAT 
 
-select distinct INFNR,EBELN,EBELP,min(PRDAT) as PRDAT from EINE where EKGRP in
+from EINE where EKGRP in
 (
-'201'
+'203'
+,'201'
 ,'205'
 ,'207'
 ,'208'
@@ -801,9 +792,7 @@ select distinct INFNR,EBELN,EBELP,min(PRDAT) as PRDAT from EINE where EKGRP in
 ,'216'
 
 )
-and WERKS = '2000' group by  INFNR,EBELN,EBELP
-
---加工厂号</sql>
+and WERKS = '2000' group by  INFNR,EBELN,EBELP</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -831,7 +820,7 @@ and WERKS = '2000' group by  INFNR,EBELN,EBELP
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -854,7 +843,7 @@ and WERKS = '2000' group by  INFNR,EBELN,EBELP
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -877,7 +866,7 @@ and WERKS = '2000' group by  INFNR,EBELN,EBELP
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -900,7 +889,7 @@ and WERKS = '2000' group by  INFNR,EBELN,EBELP
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
     </row-meta>
@@ -1076,7 +1065,8 @@ left join (select ORDER_NUM,PURCHASE_GRP,min(CREATED_TS) as CREATED_TS from srm_
 where  a.PLANT='2000' and a.DELETE_FLAG=0 and c.DELETE_FLAG=0  and d.DELETE_FLAG=0  
 and f.PURCHASE_GRP  in
 (
-'201'
+'203'
+,'201'
 ,'205'
 ,'207'
 ,'208'
@@ -1116,7 +1106,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1139,7 +1129,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1162,7 +1152,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1185,7 +1175,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1208,7 +1198,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1231,7 +1221,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1254,7 +1244,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1277,7 +1267,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1300,7 +1290,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1323,7 +1313,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1346,7 +1336,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1369,7 +1359,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1392,7 +1382,7 @@ and f.PURCHASE_GRP  in
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
     </row-meta>
@@ -1861,6 +1851,19 @@ c.ADPRI,
 d.BUDAT,
 d.ELIKZ,
 c.NETPR/c.PEINH as purchase_price,
+case when  b.EKGRP in
+(
+'201'
+,'205'
+,'207'
+,'208'
+,'210'
+,'212'
+,'214'
+,'215'
+,'211'
+,'216'
+) then 0 else 1 end purchase_flag
 null as overdue_or_not,
 null as finish_or_not,
 null as order_num_overdue_days,
@@ -1882,7 +1885,8 @@ join EKPO c on a.EBELN=c.EBELN and a.EBELP=c.EBELP
 left join (select EBELN,EBELP,max(BUDAT) BUDAT,max(ELIKZ) as ELIKZ  from ODS_HANA.dbo.EKBE where ELIKZ = 'X' group by EBELN,EBELP) d  on a.EBELN=d.EBELN and a.EBELP=d.EBELP
 where  ISDATE(a.EINDT) = 1 and b.BUKRS='2000' and b.EKGRP in
 (
-'201'
+ '203'
+,'201'
 ,'205'
 ,'207'
 ,'208'
@@ -3294,7 +3298,7 @@ and c.RETPO is null --and d.ELIKZ='X'</sql>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <join_type>INNER</join_type>
+    <join_type>LEFT OUTER</join_type>
     <step1>排序记录 5</step1>
     <step2>排序记录 6</step2>
     <keys_1>
