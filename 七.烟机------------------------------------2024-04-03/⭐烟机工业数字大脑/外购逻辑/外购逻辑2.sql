@@ -107,11 +107,13 @@ insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
 	 EBELN
 	 ,EBELP
 	 ,min_udate
+     ,DATEDIFF(day,min_udate,BEDAT) day_cnt
 	 ,GETDATE() etl_time
 	--into ODS_HANA.dbo.digital_brain_outbuy_step_req
 	 from(
 		 select a.EBELN
 		         ,a.EBELP 
+				 ,CONVERT(VARCHAR(10), CONVERT(datetime, BEDAT, 112), 120) BEDAT
 		         ,CONVERT(VARCHAR(10), CONVERT(datetime, min_udate, 112), 120)min_udate
 		        from ODS_HANA.dbo.EBAN a
 		    join (

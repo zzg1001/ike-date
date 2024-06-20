@@ -95,16 +95,19 @@ with base_buy_tamp as
 TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_req;
 
 insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
+
 	 SELECT 
-	 EBELN
-	 ,EBELP
-	 ,min_udate
+	  min_udate
+	 ,DATEDIFF(day,min_udate,BEDAT) day_cnt
+	 ,BEDAT
+	 ,case when a.EBELN is not null then a.EBELN else null end EBELN
 	 ,GETDATE() etl_time
 	--into ODS_HANA.dbo.digital_brain_outbuy_step_req
 	 from(
-		 select a.EBELN
-		         ,a.EBELP 
-		         ,CONVERT(VARCHAR(10), CONVERT(datetime, min_udate, 112), 120)min_udate
+		 select 
+		          b.min_udate
+		          ,a.EBELN 
+				 ,CONVERT(VARCHAR(10), CONVERT(datetime, d.BEDAT, 112), 120) BEDAT
 		        from ODS_HANA.dbo.EBAN a
 		    join (
 					   select a.OBJECTID
@@ -119,6 +122,11 @@ insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
 					     group by  a.OBJECTID
 					 )b
 				  on a.BANFN = b.OBJECTID
+				 left join ( select distinct BANFN,BNFPO,EBELN from ODS_HANA.dbo.EKPO) c 
+				   on a.BANFN = c.BANFN 
+				  and a.BNFPO = c.BNFPO 
+				 left join ODS_HANA.dbo.EKKO d 
+				   on d.EBELN = c.EBELN
 				  where a.FRGKZ='S' 
 				-- and a.EKGRP = '203'
 				  and a.EKGRP in ('201','211','214','215','204','205','203')
@@ -129,30 +137,16 @@ insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
 
      select
         count(1)  -- 当前数量
-       ,sum(day_cnt)/count(case when EBELN is not null then 1 else 0 end) -- 本月平均周期（
-       ,count(case when a.min_udate = CONVERT(DATE, GETDATE()) then 1 else null end ) d -- 日新增数量
-       ,count(case when a.min_udate = CONVERT(DATE, GETDATE()) and day_cnt = 0 then 1 else null end ) c -- 日消耗数量
-      from(
-
-	          select a.min_udate
-	               , b.CREATED_TS
-	               ,DATEDIFF(day, a.min_udate,b.CREATED_TS ) day_cnt
-	           from ODS_HANA.dbo.digital_brain_outbuy_step_req a
-	      left join ODS_SRM.dbo.srm_poc_order_hd b 
-	             on a.EBELN =b.ORDER_NUM 
-	            and b.DELETE_FLAG = 0
-	         
-	       ) a
+	   ,sum( case when CONVERT(VARCHAR(7),BEDAT, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end )/count(case when CONVERT(VARCHAR(7),BEDAT, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),120) then EBELN else null end )
+       ,count(case when a.min_udate = CONVERT(DATE, GETDATE()) then 1 else null end ) -- 日新增数量
+       ,count(case when a.min_udate = CONVERT(DATE, GETDATE()) and day_cnt = 0 then 1 else null end )  -- 日消耗数量
+      from ODS_HANA.dbo.digital_brain_outbuy_step_req a
 
 
-	            
-
-			 
 --2寻源--------------------------------------------- 
   select * from  ODS_SRM.dbo.srm_inq_inquiry_hd 
    where STATUS_CD_ID not in ('INQ_HD_STATUS_REVIEWED','INQ_HD_STATUS_CLOSED','INQ_HD_STATUS_DRAFT')
     and delete_flag =0
-
 		 
 --3订单执行（计划员）=================================--------------------------------------------- 
 
@@ -167,6 +161,7 @@ insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
                     ,CONVERT(DATE, a.CREATED_TS) create_date    -- 订单行首次审批通过时间
                     ,CONVERT(DATE, c.max_updated) max_updated -- 订单行创建装运单时间（最晚）
                     ,GETDATE() etl_time
+                 --   into ODS_HANA.dbo.digital_brain_outbuy_step_ord
                from ODS_SRM.dbo.srm_poc_order_hd a
                join ODS_SRM.dbo.srm_poc_order_item b
                  on a.ID = b.ORDER_ID 
@@ -204,6 +199,7 @@ select count(1) -- 当前数量
                    select  case when a.DN_STATUS = 'SENT_AUDITED'   then order_item_id else null       end delivery_req
                           ,case when current_status = '点收节点/结束指令' then a.CREATED_TS  else null   end create_date
                           ,case when current_status = '点收节点/结束指令' then DATEDIFF(day,a.CREATED_TS,b.updated_ts)  else null   end day_cnt
+                        -- into srm_poc_delivery_note_hd
                      FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
                      join ODS_SRM.dbo.srm_poc_delivery_note_item b
                        ON a.id = b.dn_hd_id
@@ -215,8 +211,8 @@ select count(1) -- 当前数量
                 
      select count(DISTINCT  delivery_req)
             ,sum( case when CONVERT(VARCHAR(7),create_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end )/count(case when CONVERT(VARCHAR(7),create_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),120) then day_cnt else null end )
-            ,count(DISTINCT case when create_date = CONVERT(DATE, GETDATE()) then delivery_req else null end )   -- 日新增数量
-            ,count(DISTINCT case when create_date = CONVERT(DATE, GETDATE()) and day_cnt=0 then 1 else null end ) -- 日消耗数量
+            ,count(DISTINCT case when create_date = CONVERT(DATE, GETDATE()-1) then delivery_req else null end )   -- 日新增数量
+            ,count(DISTINCT case when create_date = CONVERT(DATE, GETDATE()-1) and day_cnt=0 then 1 else null end ) -- 日消耗数量
        from ODS_HANA.dbo.digital_brain_outbuy_step_delivery
 
 
@@ -226,12 +222,12 @@ select count(1) -- 当前数量
 
 -- 物流周转（仓库）
 
-               TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_warehouse;
+              
+            TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_warehouse;
 
                  insert into ODS_HANA.dbo.digital_brain_outbuy_step_warehouse
-                 
-                    SELECT 
-                         
+                
+                        SELECT 
                           case when EXISTS (
                                     SELECT 1
                                       FROM ODS_SRM.dbo.srm_poc_delivery_note_item
@@ -249,7 +245,9 @@ select count(1) -- 当前数量
                           ,b.line_num
                           ,DATEDIFF(day,c.chech_time,c.migo_time) day_cnt 
                           ,c.chech_time 
-                          ,c.migo_time    
+                          ,c.migo_time 
+                         ,GETDATE() etl_time
+                         -- into ODS_HANA.dbo.digital_brain_outbuy_step_warehouse						 
                       FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
                       join ODS_SRM.dbo.srm_poc_delivery_note_item b
                         ON a.id = b.dn_hd_id
@@ -278,8 +276,8 @@ select count(1) -- 当前数量
 
           select count( distinct order_item_id)
                 ,sum(case when CONVERT(VARCHAR(7),chech_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)/count(case when CONVERT(VARCHAR(7),chech_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)
-                ,count(distinct case when CONVERT(DATE, chech_time) = CONVERT(DATE, GETDATE()) then order_item_id else null end ) -- 日新增数量
-                ,count(distinct case when CONVERT(DATE, migo_time) = CONVERT(DATE, GETDATE()) and day_cnt =0 then order_item_id else null end )  -- 日消耗数量
+                ,count(distinct case when CONVERT(DATE, chech_time) = CONVERT(DATE, GETDATE()-1) then order_item_id else null end ) -- 日新增数量
+                ,count(distinct case when CONVERT(DATE, migo_time) = CONVERT(DATE, GETDATE()-1) and day_cnt =0 then order_item_id else null end )  -- 日消耗数量
             from ODS_HANA.dbo.digital_brain_outbuy_step_warehouse
 
 
@@ -298,6 +296,8 @@ select count(1) -- 当前数量
                          ,DATEDIFF(day,create_date_time,ud_date_time )  day_cnt
                          ,create_date_time
                          ,quantity
+						 ,GETDATE() etl_time
+						-- into ODS_HANA.dbo.digital_brain_outbuy_step_inspection
                    from  (
                           select  order_num 
                                  ,order_item_num
@@ -315,8 +315,9 @@ select count(1) -- 当前数量
                                a.order_num 
                               ,order_item_num
                               ,0 day_cnt
-                              ,0 quantity
                               ,a.CREATED_TS create_date_time
+                              ,null ud_date_time
+                              ,0 quantity
                           from ODS_SRM.dbo.srm_poc_order_hd a
                           join ODS_SRM.dbo.srm_poc_order_item b
                             on a.ID = b.ORDER_ID 
@@ -329,8 +330,8 @@ select count(1) -- 当前数量
                 
      select   count( distinct order_item_num)
              ,sum(case when CONVERT(VARCHAR(7),create_date_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)/count(case when CONVERT(VARCHAR(7),create_date_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then quantity else null end)
-             ,count(case when CONVERT(DATE,create_date_time) = CONVERT(DATE, GETDATE()) then order_item_num else null end )  -- 日新增数量
-             ,count(case when CONVERT(DATE,create_date_time) = CONVERT(DATE, GETDATE()) and day_cnt =0 then order_item_num else null end )  -- 日消耗数量
+             ,count(distinct case when CONVERT(DATE,create_date_time) = CONVERT(DATE, GETDATE()-1) then order_item_num else null end )  -- 日新增数量
+             ,count(distinct case when CONVERT(DATE,create_date_time) = CONVERT(DATE, GETDATE()-1) and day_cnt =0 then order_item_num else null end )  -- 日消耗数量
        from  ODS_HANA.dbo.digital_brain_outbuy_step_inspection
        
 
@@ -343,25 +344,34 @@ TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_md;
 
                  insert into ODS_HANA.dbo.digital_brain_outbuy_step_md
 
-                SELECT 
-                        CASE when  b.INVOICE_QTY<> b.QTY then order_item_id else null end as md_ne
-                       ,CASE when  b.INVOICE_QTY= b.QTY then b.created_ts else null   end as md_max_date
-                       ,CASE when  b.INVOICE_QTY=b.QTY then a.created_ts else null    end as md_create_date
-                        ,CASE when  b.INVOICE_QTY=b.QTY then DATEDIFF(day,md_create_date,md_max_date) else null end as day_cnt
-                       ,CASE when  b.INVOICE_QTY=b.QTY and len(b.created_ts )>0 then order_item_id else null   end as md_eq_cnt
-                  from ODS_SRM.dbo.srm_poc_md_hd a
-             left join ODS_SRM.dbo.srm_poc_md_item b 
-                    on a.id = b.MD_HD_ID 
-                 where  CONVERT(DATE, a.created_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
-                   and CONVERT(DATE, a.created_ts)<=CONVERT(DATE, GETDATE()) 
-                )
+				   
+				select 
+				md_ne
+				,md_max_date
+				,md_create_date
+				,md_eq_cnt
+				, DATEDIFF(day,md_create_date,md_max_date) as day_cnt
+				,GETDATE() etl_time
+				-- into ODS_HANA.dbo.digital_brain_outbuy_step_md
+				from(
+					SELECT 
+							CASE when  b.INVOICE_QTY<> b.QTY then order_item_id else null end as md_ne
+						   ,CASE when  b.INVOICE_QTY= b.QTY then b.created_ts else null   end as md_max_date
+						   ,CASE when  b.INVOICE_QTY=b.QTY then a.created_ts else null    end as md_create_date
+						   ,CASE when  b.INVOICE_QTY=b.QTY and len(b.created_ts )>0 then order_item_id else null   end as md_eq_cnt
+					  from ODS_SRM.dbo.srm_poc_md_hd a
+				 left join ODS_SRM.dbo.srm_poc_md_item b 
+						on a.id = b.MD_HD_ID 
+					 where  CONVERT(DATE, a.created_ts) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+					   and CONVERT(DATE, a.created_ts)<=CONVERT(DATE, GETDATE()) 
+				   )a
+              
                          
 
-     select   count( md_ne)
-             ,sum(day_cnt)/count(md_eq_cnt)
+     select   count(distinct md_ne)
              ,sum(case when CONVERT(VARCHAR(7),md_max_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)/count(case when CONVERT(VARCHAR(7),md_max_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then md_eq_cnt else null end)
-             ,count(case when CONVERT(DATE,md_create_date) = CONVERT(DATE, GETDATE()) then 1 else null end )  -- 日新增数量
-             ,count(case when CONVERT(DATE,md_create_date) = CONVERT(DATE, GETDATE()) and day_cnt=0 then 1 else null end )  -- 日消耗数量
+             ,count(distinct case when CONVERT(DATE,md_create_date) = CONVERT(DATE, GETDATE()-1) then 1 else null end )  -- 日新增数量
+             ,count(distinct case when CONVERT(DATE,md_create_date) = CONVERT(DATE, GETDATE()-1) and day_cnt=0 then 1 else null end )  -- 日消耗数量
        from ODS_HANA.dbo.digital_brain_outbuy_step_md
 
 
