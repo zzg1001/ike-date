@@ -368,7 +368,7 @@
       <description/>
       <type>SQL</type>
       <attributes/>
-      <sql>TRUNCATE  table digital_brain_outbuy_dashboard_index;
+      <sql>TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index;
 
 with base_buy_tamp as
                 (
@@ -377,10 +377,11 @@ with base_buy_tamp as
 					  ,CONVERT(date, completion_date, 112) completion_date
 					  ,CONVERT(date, EINDT, 112) EINDT
 					  ,delivery_days_30
-					  ,overdue_or_not,BUDAT
+					  ,overdue_or_not
+					  ,BUDAT
+					  ,purchase_flag
 				from Outsourcing_Dashboard.dbo.sap_base_buy_field_wide
-				where purchase_flag = 0
-                and (LOEKZ &lt;&gt;'L' or LOEKZ is null)
+				where  (LOEKZ &lt;&gt;'L' or LOEKZ is null)
 				and BUKRS='2000' and FRGKE='S'
 				and CONVERT(date, EINDT, 112) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
 				and CONVERT(date, EINDT, 112) &lt;=CONVERT(DATE, GETDATE()) 
@@ -394,16 +395,16 @@ with base_buy_tamp as
 					   ,delivery_days_30
 					   ,overdue_or_not
 					   ,BUDAT
+					   ,purchase_flag
 				from Outsourcing_Dashboard.dbo.sap_base_buy_field_wide
-				where  purchase_flag = 0
-                and (LOEKZ &lt;&gt;'L' or LOEKZ is null)
+				where  (LOEKZ &lt;&gt;'L' or LOEKZ is null)
 				and BUKRS='2000' and FRGKE='S'
 				and CONVERT(date, EINDT, 112) &lt; CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
 				and CONVERT(date, EINDT, 112) >=  CAST(YEAR(GETDATE())-1 AS VARCHAR(4)) + '-01-01'  
 				and overdue_or_not = '逾期' and finish_or_not = '未完成'
                )
 			   
-        INSERT INTO  digital_brain_outbuy_dashboard_index
+        INSERT INTO  Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index
          select 
 				 count(1)                                                                                                             as total_od_cnt                 -- 总订单数
 				,count(case when finish_or_not = '完成'   and completion_date&lt;=EINDT  then 1 else null end )                          as an_finish_od_cnt             -- 按时完成订单行数
@@ -413,9 +414,11 @@ with base_buy_tamp as
 				,count(case when finish_or_not = '完成' and overdue_or_not ='按时' and ADPRI = 'J' then 1 else null end )             as an_j_finish_cnt              -- 按时完成紧急订单行数
 				,count(case when finish_or_not = '完成' and overdue_or_not ='逾期' and ADPRI = 'J' then 1 else null end )             as overdue_j_finish_cnt         -- 按时完成紧急订单行数
 				,count(case when finish_or_not &lt;&gt; '完成' then 1 else null end )                                                       as total_nf_od_cnt              -- 现有订单总行数  
-                ,GETDATE() etl_time
-			--	into digital_brain_outbuy_dashboard_index
-			from base_buy_tamp</sql>
+                ,purchase_flag
+			    ,GETDATE() etl_time
+			--	into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index
+			from base_buy_tamp
+		   group by purchase_flag</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>

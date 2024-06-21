@@ -86,11 +86,11 @@ with base_buy_tamp as
      from(		   
          select  EINDT_MONTH
 		        ,count(1) as od_cont
-				,count(case when finish_or_not = '完成'   and overdue_or_not = '逾期' and BUDAT<=LastDayOfMonth then 1 else null end ) as overdue_f_od_cnt  -- 逾期完成订单行数
+				,count(case when finish_or_not = '完成'   and overdue_or_not = '逾期' and BUDAT<=LastDayOfMonth then 1 else null end ) as overdue_f_od_cnt   -- 逾期完成订单行数
 		    	,count(case when finish_or_not = '完成' and overdue_or_not ='按时' then 1 else null end )                              as an_finish_cnt      -- 按时完成订单行数
 				,count(case when finish_or_not = '未完成' and overdue_or_not = '逾期' then 1 else null end )                           as nf_overdue_od_cnt  -- 未完成已未逾期
 				,count(case when finish_or_not = '完成' and overdue_or_not ='按时' and ADPRI = 'J' then 1 else null end )              as an_j_finish_cnt    -- 按时完成紧急订单行数
-				,count(case when ADPRI = 'J' then 1 else null end )                                                                   as j_cnt              -- 紧急订单行数 
+				,count(case when ADPRI = 'J' then 1 else null end )                                                                    as j_cnt              -- 紧急订单行数 
 				,purchase_flag
 			from base_buy_tamp
 			group by EINDT_MONTH
@@ -153,9 +153,11 @@ insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
 
 
 --2寻源--------------------------------------------- 
-  select * from  ODS_SRM.dbo.srm_inq_inquiry_hd 
+  select * from  ODS_SRM.dbo.srm_inq_inquiry_hd a
    where STATUS_CD_ID not in ('INQ_HD_STATUS_REVIEWED','INQ_HD_STATUS_CLOSED','INQ_HD_STATUS_DRAFT')
     and delete_flag =0
+	and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+    and CONVERT(DATE, a.CREATED_TS)<=CONVERT(DATE, GETDATE())  
 		 
 --3订单执行（计划员）=================================--------------------------------------------- 
 

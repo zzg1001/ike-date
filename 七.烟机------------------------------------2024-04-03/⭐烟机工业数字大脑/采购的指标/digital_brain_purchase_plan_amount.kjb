@@ -25,10 +25,6 @@
     <index_tablespace/>
     <attributes>
       <attribute>
-        <code>EXTRA_OPTION_MSSQL.zeroDateTimeBehavior</code>
-        <attribute>convertToNull</attribute>
-      </attribute>
-      <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
         <attribute>N</attribute>
       </attribute>
@@ -416,7 +412,7 @@ select A.id                                          as contract_id
 		       ,g.supplier_level
 		       ,g.SUPPLIER_ID
 		       ,g.supplier_created_date
-		       ,m.pur_type_name
+		       ,e.category_type pur_type_name
 		       ,e.category_type_name
 		       ,GETDATE() etl_time
 		   -- into ODS_HANA.dbo.digital_brain_purchase_plan_amount
@@ -436,7 +432,8 @@ select A.id                                          as contract_id
   left join (select distinct purchase_category_num
                    ,category_type_name 
                    ,plan_department 
-              from ODS_SRM.dbo.purchase_plan_department_category_mapping
+                   ,category_type
+               from ODS_SRM.dbo.purchase_plan_department_category_mapping
               ) e
          on e.purchase_category_num = d.pur_category_code 
         and e.plan_department =  d.organizing_dept_name
@@ -465,7 +462,7 @@ select A.id                                          as contract_id
          on f.SRM_COMP_ID = g.SUPPLIER_ID
       where a.purchaser_cd = '2000'
         and A.is_deleted = 0
-          AND contract_year=YEAR( GETDATE())
+          -- AND contract_year=YEAR( GETDATE())
          </sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
