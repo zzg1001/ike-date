@@ -1,4 +1,4 @@
 关键词 "Pending Expense Cash Advance Administrator" 在以下文件中找到了 1 条匹配项：
-文件：C:\\Users\\22492\\Desktop\\aaa\\原数据\ct_status_lang.dat
+文件：/Users/zhangzuogong/IdeaProjects/ike-date/八.fendi----------------------2024-04-26/aaa/原数据/ct_status_lang.dat
 匹配行：C_PECA|en|Y|[91mPending Expense Cash Advance Administrator[0m|Pending Expense Cash Advance Administrator|Cash Advance is pending Expense Cash Advance Administrator||2005-06-21 15:48:00
 
