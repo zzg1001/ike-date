@@ -1,0 +1,2 @@
+1|en|Y|The Payment Request quantity on the line item exceeds the total quantity received to date.  Please correct the Payment Request or update receipt in purchasing system.||2018-03-18 00:11:00
+2|en|Y|One or more Line Item totals of Payment Requests associated to this Purchase Order has triggered an overage.  Please check all Line Item associations to make sure they are correct, as well as the line item totals between the PO and Payment Request.  If you cannot correct this, please send to Purchasing.||2018-03-18 00:11:00

@@ -1,0 +1,20 @@
+AUTH_APRV|en|Y|Authorized Approver||2005-06-21 15:48:00
+CONFIG|en|Y|Configuration Hierarchy||2005-06-21 15:47:00
+EMP_CL|en|Y|Employee||2005-06-21 15:50:00
+EXPCO_APRV|en|Y|Expense Cost Object Approver||2009-01-16 21:35:00
+EXP_BDGT|en|Y|Expense Budget Approver||2012-06-23 01:46:00
+EXP_CL|en|Y|Expense||2005-06-21 15:50:00
+INV_PAY|en|Y|Invoice Payment||2010-08-21 08:48:00
+INV_ROUTNG|en|Y|Invoice Routing||2012-01-21 02:43:00
+INV_VENDOR|en|Y|Invoice Vendor Employee Access||2012-09-15 02:11:00
+LEDGER|en|Y|Ledger Hierarchy||2005-06-21 15:48:00
+PMTCO_APRV|en|Y|Payment Cost Object Approver||2009-01-16 21:35:00
+PMT_CL|en|Y|Payment||2005-06-21 15:51:00
+PURAU_APRV|en|Y|Purchase Request Authorized Approver||2013-01-19 03:40:00
+PURCO_APRV|en|Y|Purchase Request Cost Object Approver||2013-01-19 03:40:00
+REQCO_APRV|en|Y|Request Cost Object Approver||2013-02-15 16:02:00
+REQ_BDGT|en|Y|Request Budget Approver||2013-02-15 16:02:00
+REQ_CL|en|Y|Request||2010-12-18 04:20:00
+SEC_BI_EXP|en|Y|Reporting Secondary - Expense||2015-02-07 02:41:00
+TAX|en|Y|Tax||2005-06-21 15:50:00
+TRAVELALL|en|Y|Travel Allowance||2005-06-21 15:50:00

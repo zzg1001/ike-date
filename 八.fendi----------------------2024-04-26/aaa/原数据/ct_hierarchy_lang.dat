@@ -1,0 +1,38 @@
+5|en|Y|Employee||2008-10-21 08:36:00
+6|en|Y|Expense Reports||2008-10-21 08:36:00
+7|en|Y|Vendor Payments||2005-06-21 15:47:00
+8|en|Y|Reporting||2005-06-21 15:47:00
+9|en|Y|Tax||2005-06-21 15:50:00
+10|en|Y|Travel Allowance||2005-06-21 15:50:00
+11|en|Y|Expense Authorized Approver||2005-06-21 15:51:00
+12|en|Y|Payment Authorized Approver||2005-06-21 15:52:00
+1013|en|Y|Ledger Account Code Hierarchy - Store||2017-10-12 03:10:00
+1014|en|Y|Ledger Payment Hierarchy - Store||2017-10-12 03:10:00
+1015|en|Y|Expense Cost Object Approver||2009-01-16 21:35:00
+1016|en|Y|Payment Cost Object Approver||2009-01-16 21:35:00
+1017|en|Y|Invoice Payment||2010-08-21 08:48:00
+1018|en|Y|Requests||2013-02-15 16:02:00
+1023|en|Y|Request Authorized Approver||2011-04-16 04:10:00
+1024|en|Y|Invoice Routing||2012-01-21 02:43:00
+1025|en|Y|Expense Budget Approver||2012-06-23 01:46:00
+1026|en|Y|Request Budget Approver||2012-06-23 01:46:00
+1027|en|Y|Request Cost Object Approver||2013-02-15 16:02:00
+1028|en|Y|Invoice Vendor Employee Access||2012-09-15 02:11:00
+1029|en|Y|Purchase Request Authorized Approver||2013-01-19 03:40:00
+1030|en|Y|Purchase Request Cost Object Approver||2013-01-19 03:40:00
+1032|en|Y|Reporting Secondary - Expense||2015-02-07 02:41:00
+1033|en|Y|*FENDI Company Hierarchy (Emp)||2017-07-26 09:58:00
+1034|en|Y|* FENDI Shanghai Hierarchy (Exp)||2017-07-26 10:10:00
+1035|en|Y|* FENDI Shanghai Hierarchy (Alloc)||2017-07-26 10:21:00
+1036|en|Y|* FENDI Shanghai Hierarchy (Req. Alloc)||2017-07-26 10:36:00
+1037|en|Y|Ledger Account Code Hierarchy - Office - HFI||2017-10-12 03:10:00
+1038|en|Y|Ledger Payment Hierarchy - Office - HFI||2017-10-12 03:10:00
+1039|en|Y|Ledger Account Code Hierarchy - Office - RMLA||2018-12-14 01:54:00
+1040|en|Y|Ledger Payment Hierarchy - Office - RMLA||2018-12-14 01:54:00
+1041|en|Y|Ledger Account Code Hierarchy - Office - VMM||2017-10-12 03:10:00
+1042|en|Y|Ledger Payment Hierarchy - Office - VMM||2017-10-12 03:10:00
+1045|en|Y|*FENDI Hierarchy (Req. Head)||2017-07-27 14:48:00
+1049|en|Y|Ledger Account Code Hierarchy - zNot Used SAP||2017-10-12 03:10:00
+1050|en|Y|Ledger Payment Hierarchy - zNot Used SAP||2017-10-12 03:10:00
+1053|en|Y|Ledger Account Code Hierarchy - Office - VIC||2018-12-14 01:54:00
+1054|en|Y|Ledger Payment Hierarchy - Office - VIC||2018-12-14 01:54:00

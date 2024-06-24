@@ -1,0 +1,220 @@
+AA_HIER_RPT_FIELDS|Not Applicable||2005-06-21 15:52:00
+AR_ATTENDEE_TOTALS|com.concur.om.RdalRuleAttendeeTotalsPeer||2007-10-09 18:23:00
+AR_AUTH_ATN_ARE_TOTL|com.concur.om.RdalAuthReqRuleAttendeeTotalsPeer||2008-03-14 17:20:00
+AR_AUTH_ATN_RPE_AMT|com.concur.om.RdalAuthorizedReportEntryAmountPerAttnPeer||2008-04-14 21:47:00
+AR_AUTH_ATN_RPE_TOTL|com.concur.om.RdalAuthorizedReportEntryAttendeeTotalsPeer||2008-03-14 17:20:00
+AR_AUTH_REQ_ATTN|com.concur.om.RdalAuthReqEntryAttendeePeer||2008-03-14 17:20:00
+AR_BUDGET_AMOUNTS|com.concur.om.RdalRuleBudgetAmountsPeer||2013-01-19 03:40:00
+AR_BUDGET_SERVICE|com.concur.midtier.data.dao.request.rule.RuleExternalBudgetDAO||2017-09-29 22:37:00
+AR_CA_FIELDS|com.concur.om.RdalRuleCashAdvancePeer||2011-11-19 02:34:00
+AR_EMPLOYEE_FIELDS|com.concur.om.RdalRuleEmployeePeer||2005-06-21 15:48:00
+AR_ENTRYALLOC_FIELDS|com.concur.om.RdalRuleEntryAllocationPeer||2005-06-21 15:50:00
+AR_ENTRYGRP_FLDS|com.concur.om.RdalRuleEntriesGrpPeer||2012-02-18 03:14:00
+AR_ENTRY_ATTENDEE|com.concur.om.RdalEntryAttendeePeer||2005-06-21 15:48:00
+AR_ENTRY_EXP_CAT|com.concur.om.RdalRuleEntryExpenseCategoryPeer||2008-03-14 17:20:00
+AR_ENTRY_FIELDS|com.concur.om.RdalRuleEntryPeer||2005-06-21 15:48:00
+AR_ENTRY_RESV_FIELDS|com.concur.om.RdalRuleTravelReservationPeer||2006-09-28 21:11:00
+AR_ENTRY_SPD_CAT|com.concur.om.RdalRuleEntryExpenseSpendCategoryPeer||2013-08-24 02:15:00
+AR_EXCEPTION_FIELDS|com.concur.om.RdalRuleExceptionInfoPeer||2005-06-21 15:48:00
+AR_LI_ATN|com.concur.midtier.invoice.dao.rule.RuleLineItemAttendeeDAO||2015-09-19 03:32:00
+AR_LI_ATN_TOTALS|com.concur.midtier.invoice.dao.rule.RuleLineItemAttendeeTotalsDAO||2015-09-19 03:32:00
+AR_REQ_AGC_FIELDS|com.concur.om.RdalRuleARAgencyPeer||2012-06-23 01:46:00
+AR_REQ_ALLOC_FIELDS|com.concur.om.RdalRuleAREntryAllocationPeer||2011-01-22 03:48:00
+AR_REQ_BDGT_AMOUNTS|com.concur.om.RdalRuleARBudgetAmountsPeer||2013-04-05 08:58:00
+AR_REQ_ENTRY_ATN|com.concur.om.RdalRuleAREntryAttendeePeer||2012-05-19 01:32:00
+AR_REQ_ENTRY_ATN_TOT|com.concur.midtier.data.dao.request.rule.RuleAREntryAttendeeTotalsDAO||2013-09-21 02:02:00
+AR_REQ_ENTRY_FIELDS|com.concur.om.RdalRuleAREntryPeer||2010-12-18 04:20:00
+AR_REQ_ENT_ATN_SINGL|com.concur.midtier.data.dao.request.rule.RuleAREntryAttendeeTotalsSingleRequestDAO||2018-08-01 20:47:00
+AR_REQ_EX_FIELDS|com.concur.om.RdalRuleARHeaderExceptionPeer||2010-08-21 08:48:00
+AR_REQ_FIELDS|com.concur.om.RdalRuleARHeaderPeer||2010-08-21 08:48:00
+AR_REQ_SUMMARY_FLDS|com.concur.om.RdalRuleARHeaderPeer||2012-06-23 01:46:00
+AR_REQ_TR_RES_FIELDS|com.concur.om.RdalRuleReqTravelReservationExceptionPeer||2022-11-29 20:03:00
+AR_RPT_FIELDS_SAVE|com.concur.om.RdalRuleReportPeer||2005-06-21 15:48:00
+AR_RPT_FIELDS_SUBMIT|com.concur.om.RdalRuleReportPeer||2005-06-21 15:48:00
+AR_RPT_SUMMARY_FLDS|com.concur.om.RdalRuleRelatedReportsPeer||2005-06-21 15:50:00
+AR_SEGMENTGRP_FLDS|com.concur.om.RdalRuleSegmentGrpPeer||2012-02-18 03:14:00
+AR_SEGMENT_FIELDS|com.concur.om.RdalRuleSegmentPeer||2010-08-21 08:48:00
+AR_TAS_ADJUST|com.concur.om.RdalRuleTasAdjustmentsPeer||2021-10-05 23:58:00
+AR_TAS_ITIN|com.concur.om.RdalRuleTasItineraryPeer||2021-08-03 22:39:00
+AR_TAS_LIMITS|com.concur.om.RdalRuleTasILimitsPeer||2023-07-21 18:28:00
+AR_TA_DAY|com.concur.om.RdalRuleTaDayPeer||2009-10-16 20:15:00
+AR_TA_FIXED_REIMB|com.concur.om.RdalRuleTaFixedReimbursablePeer||2009-10-16 20:15:00
+AR_TA_ITIN|com.concur.om.RdalRuleTaItineraryPeer||2009-10-16 20:15:00
+AR_TA_ITIN_RPT|com.concur.om.RdalRuleTaItineraryReportPeer||2010-01-15 21:11:00
+AR_TRAVEL_ALLOWANCE|com.concur.om.RdalRuleEntryPeer||2008-05-14 19:51:00
+AR_TR_ENTRY_FIELDS|com.concur.om.RdalRuleTravelRequestEntryPeer||2005-06-21 15:50:00
+AR_TR_FIELDS|com.concur.om.RdalRuleTravelRequestPeer||2005-06-21 15:50:00
+AR_TR_RES_EX_FIELDS|com.concur.om.RdalRuleTravelReservationExceptionPeer||2020-12-09 00:44:00
+AUTH_APPROV_FIELDS|Not Applicable||2005-06-21 15:48:00
+BILLTO_FIELDS|com.concur.om.invoice.RdalRuleBillToPeer||2013-06-15 03:06:00
+CAR_FIELDS|com.concur.om.RdalRuleCarDataPeer||2011-05-21 03:42:00
+COPY_ATTENDEE_FIELDS|Not Applicable||2010-10-16 03:56:00
+COPY_EMPLOYEE_FIELDS|Not Applicable||2005-06-21 15:48:00
+COPY_ENTRY_FIELDS|Not Applicable||2005-06-21 15:48:00
+COPY_PMT_HDR_FIELDS|com.concur.om.RdalFieldDataObjectPaymentHeaderPeer||2005-06-21 15:52:00
+COPY_PO_HDR_FIELDS|Not Applicable||2012-10-20 02:14:00
+COPY_PO_LI_FIELDS|Not Applicable||2012-10-20 02:14:00
+COPY_PUR2PO_HDR|Not Applicable||2013-04-27 02:22:00
+COPY_PUR2PO_ITEM|Not Applicable||2013-04-27 02:22:00
+COPY_PURCHREQ_FIELDS|Not Applicable||2013-02-23 03:55:00
+COPY_PUR_ITEM2ALLOC|Not Applicable||2016-03-19 02:27:00
+COPY_REPORT_FIELDS|Not Applicable||2005-06-21 15:48:00
+COPY_REQALLOC_FIELDS|Not Applicable||2011-01-22 03:48:00
+COPY_REQENTRY_FIELDS|Not Applicable||2011-04-16 04:10:00
+COPY_REQ_FIELDS|Not Applicable||2010-09-18 04:39:00
+COPY_TR_FIELDS|Not Applicable||2005-06-21 15:50:00
+COPY_TR_RES_FIELDS|Not applicable||2020-09-22 00:33:00
+COPY_VEN2PUR_FIELDS|Not Applicable||2013-05-18 01:39:00
+CREDIT_CARD_FIELDS|com.concur.om.RdalRuleCreditCardDataPeer||2006-12-05 18:56:00
+EFT_EXT_BCH_FLDS|Not applicable||2007-06-19 18:32:00
+EFT_EXT_EMP_FLDS|Not applicable||2007-06-19 18:32:00
+EFT_EXT_JNL_FLDS|Not applicable||2007-06-19 18:32:00
+EFT_EXT_PA_FLDS|Not applicable||2007-06-19 18:32:00
+EFT_EXT_RPT_FLDS|Not applicable||2007-06-19 18:32:00
+ER_APPROV_REQ_FIELDS|Not Applicable||2005-06-21 15:50:00
+ER_APPR_REQ_FIELDS|Not Applicable||2011-03-19 02:57:00
+ER_CASHADV_FIELDS|Not Applicable||2005-06-21 15:50:00
+ER_COM_CARD_FIELDS|Not Applicable||2005-06-21 15:50:00
+ER_EMPLOYEE_FIELDS|Not Applicable||2005-06-21 15:50:00
+ER_ENTRY_ATTENDEE|Not Applicable||2005-06-21 15:53:00
+ER_ENTRY_FIELDS|Not Applicable||2005-06-21 15:50:00
+ER_REPORT_FIELDS|Not Applicable||2005-06-21 15:50:00
+ER_REP_STAT_FIELDS|Not Applicable||2005-06-21 15:51:00
+ER_REQ_EMP_FIELDS|Not Applicable||2011-03-19 02:57:00
+ER_REQ_ENTRY_ATN|Not Applicable||2012-05-19 01:32:00
+ER_REQ_ENTRY_FIELDS|Not Applicable||2011-03-19 02:57:00
+ER_REQ_FIELDS|Not Applicable||2011-03-19 02:57:00
+ER_REQ_SEG_FIELDS|Not Applicable||2011-03-19 02:57:00
+ER_TRAVEL_REQ_FIELDS|Not Applicable||2005-06-21 15:50:00
+ER_TR_ATN_FIELDS|Not Applicable||2008-04-14 21:47:00
+EXP_ACC_EXT_ALC_FLDS|Not applicable||2005-06-21 15:53:00
+EXP_ACC_EXT_CAV_FLDS|Not applicable||2005-06-21 15:53:00
+EXP_ACC_EXT_CRC_FLDS|Not applicable||2005-06-21 15:53:00
+EXP_ACC_EXT_EMP_FLDS|Not applicable||2005-06-21 15:53:00
+EXP_ACC_EXT_JNL_FLDS|Not applicable||2005-06-21 15:53:00
+EXP_ACC_EXT_RPE_FLDS|Not applicable||2005-06-21 15:53:00
+EXP_ACC_EXT_RPT_FLDS|Not applicable||2005-06-21 15:53:00
+HIER_EMPLOYEE_FIELDS|Not Applicable||2005-06-21 15:50:00
+HIER_ENTRY_FIELDS|Not Applicable||2005-06-21 15:50:00
+HIER_EXP_ALLOC_FLDS|Not Applicable||2005-06-21 15:50:00
+HIER_REPORT_FIELDS|Not Applicable||2005-06-21 15:50:00
+HIER_REQ_ALLOC_FLDS|Not Applicable||2012-06-23 01:46:00
+HIER_REQ_FIELDS|Not Applicable||2011-04-16 04:10:00
+LEDGER_ALLOC_FIELDS|Not Applicable||2005-06-21 15:50:00
+LEDGER_ENTRY_FIELDS|Not Applicable||2005-06-21 15:48:00
+LEDGER_REPORT_FIELDS|Not Applicable||2005-06-21 15:48:00
+PF_BARCODE_FIELDS|Not Applicable||2006-04-13 19:26:00
+PF_FORMDATA_FIELDS|Not Applicable||2006-04-13 19:26:00
+PF_LISTDATA_ALLOC|Not Applicable||2009-06-19 20:36:00
+PF_LISTDATA_FIELDS|Not Applicable||2006-04-13 19:26:00
+PF_LISTDATA_GROUPING|Not Applicable||2008-09-22 21:11:00
+PF_PMTBARCODE_FLDS|Not Applicable||2015-11-21 04:23:00
+PF_PMTFORMDATA_FLDS|Not Applicable||2015-11-21 04:23:00
+PF_PMTLISTDATA_ALLOC|Not Applicable||2015-11-21 04:23:00
+PF_PMTLISTDATA_FLDS|Not Applicable||2015-11-21 04:23:00
+PF_PMTLISTDATA_GRP|Not Applicable||2015-11-21 04:23:00
+PF_PMTSUMMARY_FLDS|Not Applicable||2015-11-21 04:23:00
+PF_RQFORMDATA_FIELDS|Not Applicable||2010-12-18 04:20:00
+PF_RQLISTDATA_ALLOC|Not Applicable||2011-02-26 03:38:00
+PF_RQLISTDATA_CSH|Not Applicable||2012-03-24 01:57:00
+PF_RQLISTDATA_CSHGR|Not Applicable||2012-03-24 01:57:00
+PF_RQLISTDATA_EXC|Not Applicable||2011-12-17 05:38:00
+PF_RQLISTDATA_EXCGR|Not Applicable||2011-12-17 05:38:00
+PF_RQLISTDATA_FIELDS|Not Applicable||2010-12-18 04:20:00
+PF_RQLISTDATA_GROUP|Not Applicable||2011-11-19 02:34:00
+PF_RQLISTSEG_FIELDS|Not Applicable||2010-12-18 04:20:00
+PF_SUMMARYDAT_FIELDS|Not Applicable||2008-09-22 21:11:00
+PMT_ACC_EXT_ALC_FLDS|Not applicable||2005-06-21 15:53:00
+PMT_ACC_EXT_EMP_FLDS|Not applicable||2005-06-21 15:53:00
+PMT_ACC_EXT_JNL_FLDS|Not applicable||2005-06-21 15:53:00
+PMT_ACC_EXT_REQ_FLDS|Not applicable||2005-06-21 15:53:00
+PMT_ACC_EXT_RLI_FLDS|Not applicable||2005-06-21 15:53:00
+PMT_ALLOC_FIELDS|com.concur.om.RdalRuleReqLineItemAllocationPeer||2005-06-21 15:52:00
+PMT_CAV|Not applicable||2005-06-21 15:53:00
+PMT_CAV_SHIP_TO|Not applicable||2005-11-03 19:11:00
+PMT_EMP_FIELDS|com.concur.om.RdalFieldDataObjectPaymentEmployeePeer||2005-06-21 15:52:00
+PMT_EXCEPT_FIELDS|com.concur.om.RdalRulePmtExceptionInfoPeer||2005-06-21 15:52:00
+PMT_HDR_FIELDS|com.concur.om.RdalFieldDataObjectPaymentHeaderPeer||2005-06-21 15:52:00
+PMT_HIER_ALLO_FIELDS|Not Applicable||2005-06-21 15:52:00
+PMT_HIER_LINE_FIELDS|Not Applicable||2005-06-21 15:52:00
+PMT_HIER_PO_ALLO_FLD|Not Applicable||2011-06-18 03:48:00
+PMT_HIER_PO_FIELDS|Not Applicable||2011-05-21 03:42:00
+PMT_HIER_PO_LI_FLDS|Not Applicable||2011-05-21 03:42:00
+PMT_HIER_PR_ALLO_FLD|Not Applicable||2013-01-19 03:40:00
+PMT_HIER_PUR_REQ_FLD|Not Applicable||2013-01-19 03:40:00
+PMT_HIER_REQ_FIELDS|Not Applicable||2005-06-21 15:52:00
+PMT_INVLIT_FIELDS|com.concur.om.RdalFieldDataObjectPaymentInvoiceLineItemsPeer||2005-06-21 15:52:00
+PMT_POLI_RCT_LTD_MCH|com.concur.om.invoice.RdalRulePurchaseOrderLineItemReceiptLtdPeer||2015-07-11 03:08:00
+PMT_POLI_RCT_MCH|com.concur.om.invoice.RdalRulePurchaseOrderLineItemReceiptPeer||2015-07-11 03:08:00
+PMT_PO_HDR_MTCH|com.concur.om.invoice.RdalRulePurchaseOrderHeaderPeer||2011-05-21 03:42:00
+PMT_PO_LI_MTCH|com.concur.om.invoice.RdalRulePurchaseOrderLineItemPeer||2011-05-21 03:42:00
+PMT_PO_LTD_HDR_MTCH|com.concur.om.invoice.RdalRulePurchaseOrderLtdPeer||2011-05-21 03:42:00
+PMT_PO_LTD_LI_MTCH|com.concur.om.invoice.RdalRulePurchaseOrderLineItemLtdPeer||2011-05-21 03:42:00
+PMT_PO_VEN_MTCH|com.concur.om.invoice.RdalRulePurchaseOrderVendorPeer||2011-05-21 03:42:00
+PMT_PRLI_RCT_LTD_MCH|com.concur.om.invoice.RdalRulePaymentRequestLineItemReceiptLtdPeer||2015-07-11 03:08:00
+PMT_PRLI_RCT_MCH|com.concur.om.invoice.RdalRulePaymentRequestLineItemReceiptPeer||2015-07-11 03:08:00
+PMT_PR_HDR_MTCH|com.concur.om.invoice.RdalRulePaymentRequestHeaderPeer||2011-05-21 03:42:00
+PMT_PR_LI_MTCH|com.concur.om.invoice.RdalRulePaymentRequestLineItemPeer||2011-05-21 03:42:00
+PMT_PR_LTD_HDR_MTCH|com.concur.om.invoice.RdalRulePaymentRequestLtdPeer||2011-05-21 03:42:00
+PMT_PR_LTD_LI_MTCH|com.concur.om.invoice.RdalRulePaymentRequestLineItemLtdPeer||2011-05-21 03:42:00
+PMT_PR_VEN_MTCH|com.concur.om.invoice.RdalRulePaymentRequestVendorPeer||2011-05-21 03:42:00
+PMT_VAV|Not applicable||2005-06-21 15:53:00
+PMT_VEN|Not applicable||2005-06-21 15:53:00
+PMT_VEN_ADR_FLDS|Not applicable||2005-06-21 15:53:00
+PMT_VEN_EXT_VEN_FLDS|Not applicable||2005-06-21 15:53:00
+PMT_VEN_R_FIELDS|com.concur.om.RdalFieldDataObjectPaymentVendorPeer||2005-06-21 15:52:00
+PMT_VEN_S_FIELDS|com.concur.om.RdalFieldDataObjectPaymentVendorAddr2Peer||2005-06-21 15:52:00
+PO_ALLOC_FIELDS|com.concur.om.invoice.RdalRulePurchaseOrderAllocationPeer||2013-06-15 03:06:00
+PO_EXT_HDR_FLDS|Not applicable||2016-05-14 02:46:00
+PO_HEADER_FIELDS|com.concur.om.invoice.RdalRulePurchaseOrderPeer||2013-06-15 03:06:00
+PO_ITEM_FIELDS|com.concur.om.invoice.RdalRulePurchaseOrderItemPeer||2013-06-15 03:06:00
+PROC_EMPLOYEE_FIELDS|com.concur.om.RdalRuleEmployeePeer||2005-06-21 15:48:00
+PROC_ENTRYALLOC_FLDS|com.concur.om.RdalRuleEntryAllocationPeer||2005-06-21 15:50:00
+PROC_ENTRY_ATTENDEE|Not Applicable||2005-06-21 15:53:00
+PROC_ENTRY_FIELDS|com.concur.om.RdalRuleEntryPeer||2005-06-21 15:48:00
+PROC_REPORT_FIELDS|com.concur.om.RdalRuleReportPeer||2005-06-21 15:48:00
+PURCH_ALLOC_FIELDS|com.concur.om.invoice.RdalRulePurchaseRequestAllocationPeer||2013-03-23 02:05:00
+PURCH_DETAIL_FIELDS|com.concur.om.invoice.RdalRulePurchaseRequestPeer||2013-03-23 02:05:00
+PURCH_EXCEPT_FIELDS|com.concur.om.invoice.RdalRulePurchaseRequestExceptionPeer||2014-01-18 04:19:00
+PURCH_ITEM_FIELDS|com.concur.om.invoice.RdalRulePurchaseRequestItemPeer||2013-03-23 02:05:00
+REQ_EXT_ALC_FLDS|Not Applicable||2012-06-23 01:46:00
+REQ_EXT_AR_REQ_FLDS|Not Applicable||2012-02-18 03:14:00
+REQ_EXT_CAV_FLDS|Not Applicable||2012-06-23 01:46:00
+REQ_EXT_EMP_FLDS|Not Applicable||2012-06-23 01:46:00
+REQ_EXT_ENTRY_FLDS|Not Applicable||2012-06-23 01:46:00
+REQ_EXT_SEG_FLDS|Not Applicable||2012-06-23 01:46:00
+SHIPTO_FIELDS|com.concur.om.invoice.RdalRuleShipToPeer||2013-06-15 03:06:00
+TRAD_ENTRY_FIELDS|com.concur.om.RdalRuleTravelRequestEntryPeer||2005-06-21 15:50:00
+TRAD_REQUEST_FIELDS|com.concur.om.RdalRuleTravelRequestPeer||2005-06-21 15:50:00
+VALIDATION_RULE_DATA|com.concur.om.RdalRuleValdationRuleDataPeer||2008-06-19 18:38:00
+VALIDATION_RULE_LIST|com.concur.om.RdalRuleValdationRuleListPeer||2008-06-19 18:38:00
+VAT_EMPLOYEE_FIELDS|com.concur.om.RdalRuleEmployeePeer||2005-06-21 15:48:00
+VAT_ENTRY_2_FIELDS|com.concur.om.RdalRuleEntry2Peer||2013-05-18 01:39:00
+VAT_ENTRY_ATTENDEE|com.concur.om.RdalEntryAttendeePeer||2005-06-21 15:48:00
+VAT_ENTRY_FIELDS|com.concur.om.RdalRuleEntryPeer||2005-06-21 15:48:00
+VAT_ENTRY_TAX2_FLDS|com.concur.om.RdalRuleEntryTax2Peer||2013-05-18 01:39:00
+VAT_ENTRY_TAX_FIELDS|com.concur.om.RdalRuleEntryTaxPeer||2012-05-19 01:32:00
+VAT_REPORT_FIELDS|com.concur.om.RdalRuleReportPeer||2005-06-21 15:48:00
+WF_AR_ENTRY_FIELDS|com.concur.om.RdalRuleAREntryPeer||2010-09-18 04:39:00
+WF_AR_EX_FIELDS|com.concur.om.RdalRuleARHeaderExceptionPeer||2010-08-21 08:48:00
+WF_AR_FIELDS|com.concur.om.RdalRuleARHeaderPeer||2010-08-21 08:48:00
+WF_AR_SEGMENT_FIELDS|com.concur.om.RdalRuleSegmentPeer||2010-08-21 08:48:00
+WF_AUTHREQ_XCT_FLDS|com.concur.om.RdalRuleAuthReqExceptionInfoPeer||2009-09-18 20:16:00
+WF_AUTH_REQ_ATTN|com.concur.om.RdalAuthReqEntryAttendeePeer||2008-03-14 17:20:00
+WF_CASHADV_FIELDS|com.concur.om.RdalRuleCashAdvancePeer||2005-06-21 15:48:00
+WF_EMPLOYEE_FIELDS|com.concur.om.RdalRuleEmployeePeer||2005-06-21 15:48:00
+WF_ENTRYALLOC_FIELDS|com.concur.om.RdalRuleEntryAllocationPeer||2005-06-21 15:50:00
+WF_ENTRY_ATTENDEE|com.concur.om.RdalEntryAttendeePeer||2005-06-21 15:48:00
+WF_ENTRY_FIELDS|com.concur.om.RdalRuleEntryPeer||2005-06-21 15:48:00
+WF_EXCEPTION_FIELDS|com.concur.om.RdalRuleExceptionInfoPeer||2005-06-21 15:48:00
+WF_PREV_APPROVER|com.concur.om.RdalRulePreviousApproversPeer||2021-02-03 23:22:00
+WF_PREV_NOADHOC_APPR|com.concur.om.RdalRulePrevApprsNoAdhocPeer||2021-02-03 23:22:00
+WF_REPORT_APPROVALS|com.concur.om.RdalRuleReportApprovalsPeer||2021-02-03 23:22:00
+WF_REPORT_FIELDS|com.concur.om.RdalRuleReportPeer||2005-06-21 15:48:00
+WF_REQ_ALLOC_FIELDS|com.concur.om.RdalRuleAREntryAllocationPeer||2011-01-22 03:48:00
+WF_REQ_ENTRY_ATN|com.concur.om.RdalRuleAREntryAttendeePeer||2012-05-19 01:32:00
+WF_REQ_TR_RES_FIELDS|com.concur.om.RdalRuleReqTravelReservationExceptionPeer||2022-11-29 20:03:00
+WF_RPT_SUMMARY_FLDS|com.concur.om.RdalRuleRelatedReportsPeer||2005-06-21 15:50:00
+WF_TR_ENTRY_FIELDS|com.concur.om.RdalRuleTravelRequestEntryPeer||2005-06-21 15:50:00
+WF_TR_FIELDS|com.concur.om.RdalRuleTravelRequestPeer||2005-06-21 15:50:00
+WF_TR_RES_EX_FIELDS|com.concur.om.RdalRuleTravelReservationExceptionPeer||2020-12-09 00:44:00

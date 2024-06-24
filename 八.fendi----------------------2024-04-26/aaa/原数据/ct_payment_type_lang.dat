@@ -1,0 +1,15 @@
+1000|en|Y|Test|Test Payment Type||2011-03-25 16:47:00
+1001|en|Y|Cash/Personal Card|Payment in cash or by personal card||2013-06-19 17:00:00
+1002|en|Y|CBCP NOT for Yodlee|Company Paid Corporate Card||2016-04-12 13:43:00
+1003|en|Y|Company Paid (Agency)|Company Paid||2017-10-26 15:28:00
+1004|en|Y|Emplyee Paid|Emplyee Paid||2017-08-02 08:35:00
+CASH|en|Y|Employee Paid|Employee Paid||2017-10-26 15:28:00
+CBCP|en|Y|CBCP For Yodlee|CBCP For Yodlee||2016-04-12 13:42:00
+COMP|en|Y|Company|Company Pseudo Payment Type - used in CT_JOURNAL Only||2005-06-21 15:48:00
+COPD|en|Y|Company Paid|Payment by company check||2005-06-21 15:48:00
+CRTN|en|Y|Cash Advance Return|Cash Advance Return Pseudo Payment Type||2005-06-21 15:48:00
+EMPL|en|Y|Employee|Employee Pseudo Payment Type - used in CT_JOURNAL Only||2005-06-21 15:48:00
+IBCP|en|Y|IBCP|Company-paid (authorized expenses) corporate card||2005-11-03 19:11:00
+IBIP|en|Y|IBIP|Employee-paid corporate card||2005-11-03 19:11:00
+PCCD|en|Y|Pending Card Transaction|Payment in cash||2012-01-21 02:43:00
+PERS|en|Y|Personal|Employee personal card||2005-11-03 19:11:00

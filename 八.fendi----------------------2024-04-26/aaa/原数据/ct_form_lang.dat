@@ -1,0 +1,232 @@
+1|en|Y|Default Employee Information||2005-06-21 15:49:00
+2|en|Y|Default Report Information||2005-06-21 15:49:00
+3|en|Y|*Default||2012-10-24 12:01:00
+4|en|Y|VendorList*||2012-10-24 12:02:00
+5|en|Y|Required Fields||2005-06-21 15:50:00
+6|en|Y|Attendees*||2012-10-24 12:01:00
+7|en|Y|Mileage||2013-05-08 11:14:00
+8|en|Y|System Form||2005-06-21 15:50:00
+9|en|Y|Default Allocation Form||2005-06-21 15:51:00
+10|en|Y|Default Authorization Request Information||2008-03-14 17:20:00
+11|en|Y|Default Category Form||2005-06-21 15:51:00
+12|en|Y|Default Airfare Expense Category Form||2005-06-21 15:51:00
+13|en|Y|Default Car Rental Expense Category Form||2005-06-21 15:51:00
+14|en|Y|Default Lodging Expense Category Form||2005-06-21 15:51:00
+15|en|Y|Payment Request Header Form||2013-10-18 19:22:00
+16|en|Y|Payment Req Line Item wo/tax||2017-03-12 03:34:00
+17|en|Y|Payment Request Allocation Form||2005-11-03 19:11:00
+18|en|Y|Payment Vendor Form||2005-11-03 19:11:00
+1019|en|Y|Airfare*||2017-02-06 11:03:00
+1020|en|Y|Default Attendee Form||2007-07-26 21:29:00
+1021|en|Y|Default Expense Detail View||2009-04-17 20:08:00
+1022|en|Y|Default Car Form||2010-02-19 21:13:00
+1024|en|Y|Personal Car Form-1024||2010-02-19 21:13:00
+1025|en|Y|UK Personal Car Form||2011-09-22 10:56:00
+1027|en|Y|UK Company Car Form||2011-09-22 10:56:00
+1028|en|Y|Default Request Header Form||2010-08-21 08:48:00
+1029|en|Y|Default Air Segment Form||2010-08-21 08:49:00
+1030|en|Y|Default Car Rental Segment Form||2010-08-21 08:49:00
+1031|en|Y|Default Hotel Segment Form||2010-08-21 08:49:00
+1032|en|Y|Default Limo Segment Form||2010-08-21 08:49:00
+1033|en|Y|Default Rail Segment Form||2010-08-21 08:49:00
+1034|en|Y|Default Taxi Segment Form||2010-08-21 08:49:00
+1035|en|Y|Default Segment Form||2010-08-21 08:49:00
+1036|en|Y|Default Parking Segment Form||2010-08-21 08:49:00
+1037|en|Y|03 VendorList*+NumberDays*||2011-03-25 15:25:00
+1038|en|Y|03 VendorList*+Depart/Arrive*+VATDE*||2011-03-28 15:36:00
+1039|en|Y|NoReceipt||2012-10-24 12:02:00
+1040|en|Y|VendorName*||2012-10-24 12:02:00
+1041|en|Y|NoVendor||2012-10-24 12:03:00
+1042|en|Y|Miscellaneous*+Comments*||2012-10-24 12:03:00
+1043|en|Y|08 Miscellaneous*+Comments*+VATDE*||2011-03-28 15:37:00
+1044|en|Y|CustomList*Relocation||2012-10-24 12:03:00
+1045|en|Y|Default Request Allocation Form||2010-12-18 04:20:00
+1046|en|Y|Default Request Exception Form||2010-12-18 04:20:00
+1047|en|Y|Default Attendee Detail View||2011-01-22 03:48:00
+1048|en|Y|Central Reconciliation Travel Related Invoice Columns||2012-07-14 02:05:00
+1049|en|Y|Central Reconciliation Travel Related Invoice Header||2012-07-14 02:05:00
+1050|en|Y|Default Dining Segment Form||2011-03-19 02:58:00
+1051|en|Y|Default Event Segment Form||2011-03-19 02:58:00
+1052|en|Y|Default PO Header Form||2011-03-19 02:58:00
+1053|en|Y|Default PO Line Item Form||2011-03-19 02:58:00
+1054|en|Y|BusinessPurpose*||2012-10-24 12:01:00
+1055|en|Y|Attendees*+BusinessPurpose*||2012-10-24 12:01:00
+1056|en|Y|03 VendorList*+From/To||2011-03-25 15:19:00
+1057|en|Y|04 VendorName*+From/To||2011-03-25 15:23:00
+1058|en|Y|04 VendorName*+NumberDays*||2011-03-25 15:26:00
+1059|en|Y|VendorList*+BusinessPurpose*||2012-10-24 12:02:00
+1060|en|Y|VendorName*+BusinessPurpose*||2012-10-24 12:02:00
+1061|en|Y|Copy of 06 NoReceipt||2011-03-25 16:04:00
+1062|en|Y|BusinessPurpose*-NoVendor||2013-05-08 11:20:00
+1063|en|Y|Copy of 04 VendorName*+BusinessPurpose*||2011-03-28 15:06:00
+1064|en|Y|VendorList*+BusinessPurpose*+Invoice||2012-10-24 12:02:00
+1065|en|Y|08 Miscellaneous*+Comments*+VATUK*||2011-03-28 15:36:00
+1066|en|Y|10 Checkbox Non-Business Calls||2011-12-06 13:03:00
+1067|en|Y|11 Default+VATUK*||2011-03-30 17:00:00
+1068|en|Y|CustomList*Transport||2012-10-24 12:03:00
+1069|en|Y|Default Request Entry Form||2011-10-22 01:49:00
+1070|en|Y|BusinessPurpose*+Invoice||2012-10-24 12:01:00
+1071|en|Y|11 Default+VATDE*||2011-05-25 09:27:00
+1072|en|Y|02 Attendees*+VATDEMeals/Ent*||2011-05-26 10:49:00
+1073|en|Y|02 Attendees*+VATDE*+Invoice||2011-05-25 09:54:00
+1074|en|Y|Attendees*+Invoice||2012-10-24 12:01:00
+1075|en|Y|Business Guest Attendee Form||2011-05-24 14:24:00
+1076|en|Y|00 Default+VATDEDistance*||2012-10-22 10:28:00
+1077|en|Y|02 Attendees*+VATDEGifts*||2011-05-26 10:50:00
+1078|en|Y|00 Default+VATDEStandard/Zero*||2012-10-22 10:28:00
+1079|en|Y|Default PO Allocation Form||2011-06-18 03:48:00
+1080|en|Y|03 VendorList*+Depart/Arrive*+VATFR*||2011-08-03 14:16:00
+1081|en|Y|00 Default+VATFRDues/Subscriptions*||2012-10-22 10:28:00
+1082|en|Y|00 Default+VATFRFuel*||2012-10-22 10:29:00
+1083|en|Y|00 Default+VATFRStandard/Zero*||2012-10-22 10:30:00
+1084|en|Y|00 Default No Org Units||2012-10-22 14:47:00
+1085|en|Y|00 Default+VATFRStandard/Reduced/Zero*||2012-10-22 10:29:00
+1086|en|Y|02 Attendees*+BusinessPurpose*+VATFR*||2011-08-04 09:27:00
+1087|en|Y|08 Miscellaneous*+Comments*+VATFR*||2011-08-04 09:30:00
+1088|en|Y|02 Attendees*+BusinessPurpose*+VATFREnt*||2011-08-04 09:41:00
+1089|en|Y|00 Default+VATFRStandard/Reduced*||2012-10-22 10:29:00
+1091|en|Y|Default Segment Custom Form||2011-10-22 01:49:00
+1092|en|Y|03 VendorList*+Depart/Arrive*+VAT*Airfare||2011-11-10 12:26:00
+1093|en|Y|00 Default+VAT*Domestic/International||2012-10-22 10:28:00
+1094|en|Y|11 Default+VATDues/Subscriptions*||2011-10-27 10:36:00
+1095|en|Y|00 Default+VATNewspapers/Magazines/Books*||2012-10-22 10:30:00
+1096|en|Y|00 Default+VAT*Meals||2012-10-22 10:28:00
+1097|en|Y|00 Default+VAT*MealsHotel||2012-10-22 10:28:00
+1098|en|Y|08 Miscellaneous*+Comments*+VATIE*||2011-11-16 17:06:00
+1099|en|Y|Default Request Cash Advance Form||2011-11-19 02:34:00
+1100|en|Y|Copy of 11 Default+VATFRNewspapers/Magazines/Books*||2011-12-06 16:54:00
+1101|en|Y|Copy of 02 Attendees*+BusinessPurpose*||2011-12-06 16:58:00
+1102|en|Y|02 Attendees*+BusinessPurpose*+VATR/S*||2011-12-06 17:19:00
+1103|en|Y|Default HCP Attendee Form||2011-12-17 05:38:00
+1104|en|Y|00 Default+VATPLAllVATRates||2012-10-22 10:30:00
+1105|en|Y|00 Default+VATPLMeals||2012-10-22 10:30:00
+1106|en|Y|09 CustomList*Transport+VAT*Domestic/International||2012-03-29 10:55:00
+1107|en|Y|08 Miscellaneous*+Comments*+VATR/S*||2012-03-29 11:02:00
+1108|en|Y|*Default Tax Information (Copy Only)||2012-10-22 14:41:00
+1109|en|Y|11 Default+VATUKMeals*||2012-05-22 11:40:00
+1110|en|Y|11 Default+VATUKTelecomms*||2012-05-22 15:18:00
+1111|en|Y|11 Default+VATUKOnline*||2012-05-22 15:35:00
+1113|en|Y|Central Reconciliation Employee Related Invoice Columns||2012-07-14 02:05:00
+1114|en|Y|Central Reconciliation Employee Related Invoice Header||2012-07-14 02:05:00
+1115|en|Y|Invoice||2012-10-24 12:03:00
+1116|en|Y|Attendees*+BusinessPurpose*+Deductibility||2012-10-24 12:01:00
+1117|en|Y|UK VAT - Car Rental||2012-10-22 09:38:00
+1118|en|Y|UK VAT - Meals||2012-10-22 09:38:00
+1119|en|Y|UK VAT - Online||2012-10-22 09:38:00
+1120|en|Y|UK VAT - Parking||2012-10-22 09:38:00
+1121|en|Y|UK VAT - Personal Car Mileage||2012-10-22 09:39:00
+1122|en|Y|UK VAT - Standard||2012-10-22 09:39:00
+1123|en|Y|UK VAT - Telecomms||2012-10-22 09:39:00
+1124|en|Y|VAT - Domestic/International||2012-10-22 15:37:00
+1125|en|Y|DE VAT - Distance||2012-10-22 10:44:00
+1126|en|Y|DE VAT - All Rates||2012-10-22 10:49:00
+1127|en|Y|DE VAT - Meals/Entertainment||2012-10-22 11:03:00
+1128|en|Y|DE VAT - Standard/Zero||2012-10-22 11:06:00
+1129|en|Y|FR VAT - Fuel Type||2012-10-22 12:56:00
+1130|en|Y|FR VAT - Standard/Zero||2012-10-22 12:58:00
+1131|en|Y|FR VAT - Standard/Reduced||2012-10-22 12:58:00
+1132|en|Y|FR VAT - All Rates||2012-10-22 12:59:00
+1133|en|Y|VAT - Newspaper/Magazine/Books||2012-10-22 13:43:00
+1134|en|Y|FR VAT - Airfare||2012-10-22 13:02:00
+1135|en|Y|VAT - Standard/Reduced||2012-10-22 15:05:00
+1136|en|Y|VAT - Meals||2012-10-22 15:13:00
+1137|en|Y|IE VAT - All Rates||2012-10-23 09:14:00
+1138|en|Y|PL VAT - All Rates||2012-10-23 09:25:00
+1139|en|Y|PL VAT - Meals||2012-10-23 09:25:00
+1140|en|Y|TravelAllowance||2013-05-08 11:16:00
+1141|en|Y|IT VAT - Vehicle||2012-11-30 11:07:00
+1142|en|Y|IT VAT - Standard||2012-12-03 10:01:00
+1143|en|Y|IT VAT - Newspaper/Magazine/Books||2012-12-03 10:13:00
+1144|en|Y|Default Purchase Request Header Form||2016-04-08 23:16:00
+1145|en|Y|Default Purchase Request Line Item Form - Services||2016-04-08 23:15:00
+1146|en|Y|Default Purchase Request Line Item Form - Goods||2016-04-08 23:15:00
+1147|en|Y|Default Purchase Request Allocation Form||2016-04-08 23:15:00
+1148|en|Y|Default Employee Attendee Form||2013-01-19 03:40:00
+1149|en|Y|ES VAT - Car Rental||2013-03-05 15:57:00
+1150|en|Y|Default Request Risk Summary Form||2013-03-23 02:05:00
+1151|en|Y|Airfare+Ticket+ATSC||2013-05-08 11:06:00
+1152|en|Y|AirlineFees+AFTC*||2013-05-08 11:16:00
+1153|en|Y|Attendees||2013-05-08 10:30:00
+1154|en|Y|Attendees*+BusinessPurpose*+VendorName*||2013-05-08 10:38:00
+1155|en|Y|VendorName-NoBusinessPurpose||2013-05-08 11:19:00
+1156|en|Y|VendorList||2013-05-08 10:43:00
+1157|en|Y|VendorList*-NoAllocation||2013-05-08 11:18:00
+1158|en|Y|Non-VAT Mileage||2013-05-22 08:21:00
+1159|en|Y|CustomList*Transport+VendorName*||2013-05-10 08:30:00
+1160|en|Y|Non-VAT BusinessPurpose*||2014-03-24 17:36:00
+1161|en|Y|Non-VAT City*||2013-07-09 18:06:00
+1162|en|Y|Non-VAT VendorList*||2013-05-22 08:22:00
+1163|en|Y|Non-VAT BusinessPurpose*+City*+VendorList*||2014-03-24 17:35:00
+1164|en|Y|Non-VAT Airfare||2013-06-05 16:07:00
+1165|en|Y|Non-VAT AirlineFees+AFTC*||2013-05-22 08:20:00
+1166|en|Y|CustomList*Transport-NoReceipt-NoCity||2013-05-13 14:26:00
+1167|en|Y|Non-VAT Default||2013-05-22 08:19:00
+1168|en|Y|Copy of VendorList*+BusinessPurpose*||2013-05-13 16:41:00
+1169|en|Y|Non-VAT BusinessPurpose*+VendorName*||2013-07-09 18:03:00
+1170|en|Y|Copy of Copy of VendorName*+BusinessPurpose*||2013-05-13 16:41:00
+1171|en|Y|Non-VAT Attendees*+BusinessPurpose*+City*+VendorName*||2013-07-09 17:59:00
+1172|en|Y|Non-VAT BusinessPurpose*+City*+VendorName*||2013-07-09 18:09:00
+1173|en|Y|MX VAT - Vendor Tax ID||2014-04-09 21:43:00
+1174|en|Y|Airfare+Ticket+ATSC+EntrySubtract||2013-05-14 09:40:00
+1175|en|Y|MX VAT - Airfare IVA Rates and Vendor Tax ID||2013-05-17 01:27:00
+1176|en|Y|MX VAT - Vendor Tax ID and TL||2014-04-09 21:44:00
+1177|en|Y|CA VAT - Airfare||2013-05-17 08:52:00
+1178|en|Y|Employee Attendee Form||2013-05-20 12:26:00
+1179|en|Y|Spouse Attendee Form||2013-05-20 12:27:00
+1180|en|Y|Default Report Information (Request)||2013-06-19 13:37:00
+1181|en|Y|VendorList+BusinessPurpose*||2013-06-19 15:45:00
+1182|en|Y|NonReimbursable-Personal||2013-06-19 15:47:00
+1183|en|Y|Payment Request Header Form||2013-07-08 17:51:00
+1184|en|Y|zPayment Request Line Item Form (Quan & Unit Price)||2013-10-18 19:55:00
+1185|en|Y|Payment Request Line Item Form Total (no Quantity) w/Tax||2013-10-18 19:58:00
+1186|en|Y|Payment Request Line Item Form Total (no Quantity)||2013-10-18 19:56:00
+1187|en|Y|Non-VAT VendorName*||2013-07-09 18:08:00
+1188|en|Y|Non-VAT BusinessPurpose*+City*||2014-03-24 17:35:00
+1189|en|Y|FR VAT - Car Rental||2014-01-03 11:40:00
+1190|en|Y|Default Expense Cash Advance Form||2014-01-18 04:18:00
+1193|en|Y|Mileage-No Receipt||2014-12-15 10:41:00
+1194|en|Y|Fuel for Mileage||2014-12-15 10:43:00
+1195|en|Y|Default Payment Request Attendee Detail View||2015-08-15 02:32:00
+1196|en|Y|Payment Req Line Item w/tax||2017-03-12 03:33:00
+1198|en|Y|Approve then Book Request Header Form||2016-09-02 19:51:00
+1199|en|Y|VAT Payment Request Header Form||2016-02-26 23:12:00
+1200|en|Y|Default Purchase Order Receipt||2016-05-14 02:46:00
+1201|en|Y|Multiple PO Payment Req Line Item w/tax||2017-03-12 03:32:00
+1202|en|Y|VAT Payment Req Line Item||2016-06-28 00:57:00
+1203|en|Y|VAT on line item Payment Request Header Form||2016-06-28 01:03:00
+1204|en|Y|Copy of Payment Req Line Item w/sys tax||2016-07-07 15:42:00
+1205|en|Y|Copy of Payment Req Line Item w/sys tax||2016-07-07 16:31:00
+1206|en|Y|Non-VAT Hotel-NoAllocation||2017-04-24 16:37:00
+1207|en|Y|Hotel-NoAllocation||2017-04-24 16:37:00
+1208|en|Y|VAT VendorName*||2017-05-31 11:05:00
+1209|en|Y|VAT VendorList*||2017-05-31 11:05:00
+1210|en|Y|VAT Attendees*||2017-06-05 14:54:00
+1211|en|Y|VAT Hotel-NoAllocation||2017-05-31 11:05:00
+1212|en|Y|VAT Transport*||2017-05-31 11:05:00
+1213|en|Y|VAT Relocation*||2017-05-31 11:05:00
+1214|en|Y|* FENDI Shanghai Employee Information||2017-07-26 10:02:00
+1215|en|Y|* FENDI Shanghai Expense Report||2017-08-15 11:46:00
+1216|en|Y|* FENDI Shanghai Allocation Form||2017-07-26 10:18:00
+1217|en|Y|* FENDI Shanghai Request Allocation Form||2017-07-26 10:33:00
+1218|en|Y|*FENDI Travel Request Header Form||2017-08-02 08:07:00
+1219|en|Y|*FENDI Cash Advance Form||2017-12-08 15:43:00
+1223|en|Y|* FENDI LT/Misc/Ent Segment Form||2017-08-01 10:49:00
+1224|en|Y|Copy of Default Segment Custom Form||2017-08-01 13:44:00
+1225|en|Y|*FENDI Store - Segment Custom Form||2017-08-02 04:03:00
+1226|en|Y|*FENDI Ctrip Integration Travel Request Header Form||2017-08-02 08:08:00
+1227|en|Y|*Fendi Airfare||2017-08-03 08:55:00
+1228|en|Y|*Fendi Hotel VendorList||2017-08-03 08:54:00
+1229|en|Y|*Fendi Air Segment Form||2017-08-03 09:16:00
+1230|en|Y|*FENDI CA Request Header Form||2017-08-04 04:40:00
+1231|en|Y|*FENDI Office - Segment Custom Form||2017-08-05 06:50:00
+1232|en|Y|*FENDI Airfare Segment Custom Form||2017-08-05 06:53:00
+1233|en|Y|*Fendi Dining Segment Form||2017-08-08 03:28:00
+1238|en|Y|Test Request Entry Form||2017-09-14 06:54:00
+1240|en|Y|*Fendi Hotel Itemization||2017-09-18 05:13:00
+1242|en|Y|*Fendi Ctrip Airfare||2017-09-28 03:03:00
+1244|en|Y|Copy of System Form||2017-10-12 09:33:00
+1259|en|Y| *Fendi Hotel VendorList-Domestic||2018-11-30 05:55:00
+1270|en|Y|*Fendi Hotel VendorList(16161480)||2020-09-30 13:20:00
+1272|en|Y|*Default(16161480)||2020-09-30 13:20:00
+1274|en|Y|* FENDI Shanghai Expense Report(16161480)||2020-10-01 02:20:00
+1280|en|Y|Copy of *Default||2021-10-18 02:30:00

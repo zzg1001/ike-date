@@ -1,0 +1,56 @@
+ALLOC_SAVE|en|Y|Allocation Save||2008-02-08 18:23:00
+AR_BDGT_SUBMIT|en|Y|Request Budget Submit||2019-02-14 00:01:00
+ATN_SUBMIT|en|Y|Entry Attendee Submit||2007-10-09 18:23:00
+ATN_SUBMIT_AUTH|en|Y|Entry Attendee Submit (Authorized)||2008-03-14 17:20:00
+AUTH_REQ_ATN_SUBMIT|en|Y|Authorization Request Attendee Submit||2008-03-14 17:20:00
+BDGT_SUBMIT|en|Y|Report (legacy) Budget Insight Submit||2019-02-20 22:28:00
+CR_TR_ASSIGN|en|Y|Centrally Reconciled Invoice - Request Assign||2013-02-15 16:02:00
+ENTRY_SAVE|en|Y|Entry Save||2005-06-21 15:48:00
+ENTRY_SUBMIT|en|Y|Entry Submit||2005-06-21 15:48:00
+EXIT_STEP|en|Y|Exit Workflow Step||2013-10-19 03:34:00
+EXPENSE_BDGT_SUBMIT|en|Y|Report Budget Submit||2019-02-14 00:01:00
+FI_POSTING_FAILED|en|Y|Posting Failed||2016-02-20 04:18:00
+INV_FI_POSTING_FAIL|en|Y|Financial Integration Posting Failed||2016-03-19 02:27:00
+PMT_ALLOC_SAVE|en|Y|Payment Request Allocation Save||2008-08-14 16:11:00
+PMT_ATN_SUBMIT|en|Y|Payment Request Attendee Submit||2015-09-19 03:32:00
+PMT_BDGT_SUBMIT|en|Y|Payment Request Budget Submit||2019-02-14 00:01:00
+PMT_HDR_POSTSUBMIT|en|Y|Payment Post Request Submit||2005-06-21 15:51:00
+PMT_HEADER_ASSIGN|en|N|Payment Request Manual Assign||2010-06-19 06:31:00
+PMT_HEADER_SAVE|en|Y|Payment Request Save||2005-06-21 15:51:00
+PMT_HEADER_SUBMIT|en|Y|Payment Request Submit||2005-06-21 15:51:00
+PMT_IMPORT_ASSIGN|en|Y|Payment Request Import Assign||2010-06-19 06:31:00
+PMT_LINEITEM_SAVE|en|Y|Payment Request Details Save||2005-06-21 15:51:00
+PMT_LINEITEM_SUBMIT|en|Y|Payment Request Details Submit||2005-06-21 15:51:00
+PO_HEADER_SAVE|en|Y|Purchase Order Save||2013-06-15 03:06:00
+PO_LINEITEM_SAVE|en|Y|Purchase Order Line Item Save||2013-06-15 03:06:00
+PO_TRANSMIT|en|Y|Purchase Order Transmit||2013-06-15 03:06:00
+PRPAYMNT_WF_VEN_FAIL|en|Y|PREPAYMENT WF vendor check||2023-11-16 20:05:00
+PURCHASE_BDGT_SUBMIT|en|Y|Purchase Request Budget Submit||2019-02-14 00:01:00
+PURCH_ALLOC_SAVE|en|Y|Purchase Request Distribution Save||2013-03-23 02:05:00
+PURCH_DETAIL_SAVE|en|Y|Purchase Request Save||2013-03-23 02:05:00
+PURCH_DETAIL_SUBMIT|en|Y|Purchase Request Submit||2013-03-23 02:05:00
+PURCH_ITEM_SAVE|en|Y|Purchase Request Item Save||2013-03-23 02:05:00
+REC_REQ_CREATE|en|Y|Recurring Payment Request Creation||2014-02-08 04:24:00
+REPORT_POSTSUBMIT|en|Y|Post Report Submit||2005-06-21 15:48:00
+REPORT_SAVE|en|Y|Report Save||2005-06-21 15:48:00
+REPORT_SUBMIT|en|Y|Report Submit||2005-06-21 15:48:00
+REQ_ALLOC_SAVE|en|Y|Request Allocation Save||2011-01-22 03:48:00
+REQ_ATN_SUBMIT|en|Y|Request Entry Attendee Submit||2012-05-19 01:32:00
+REQ_BDGT_SUBMIT|en|Y|Request (legacy) Budget Insight Submit||2019-02-20 22:28:00
+REQ_ENTRY_SAVE|en|Y|Request Entry Save||2010-08-21 08:48:00
+REQ_ENTRY_SUBMIT|en|Y|Request Entry Submit||2010-08-21 08:48:00
+REQ_HDR_POSTSUBMIT|en|Y|Post Request Submit||2010-08-21 08:48:00
+REQ_HEADER_SAVE|en|Y|Request Save||2010-08-21 08:48:00
+REQ_HEADER_SUBMIT|en|Y|Request Submit||2010-08-21 08:48:00
+REQ_SEGMENT_SAVE|en|Y|Segment Save||2010-08-21 08:48:00
+REQ_SEGMENT_SUBMIT|en|Y|Segment Submit||2010-08-21 08:48:00
+RL_ENTRY_SAVE|en|Y|Entry Save - Receipt Limit||2005-06-21 15:53:00
+TR_ENTRY_SAVE|en|Y|Authorization Request Category Save||2008-03-14 17:20:00
+TR_ENTRY_SUBMIT|en|Y|Authorization Request Category Submit||2008-03-14 17:20:00
+TR_POSTSUBMIT|en|Y|Post Authorization Request Submit||2008-03-14 17:20:00
+TR_SAVE|en|Y|Authorization Request Save||2008-03-14 17:20:00
+TR_SUBMIT|en|Y|Authorization Request Submit||2008-03-14 17:20:00
+WS_ALLOC_EXCP|en|Y|WS Allocation Exception||2012-04-21 03:28:00
+WS_ATTN_EXCP|en|Y|WS Attendee Exception||2012-04-21 03:28:00
+WS_ENTRY_EXCP|en|Y|WS Entry Exception||2012-04-21 03:28:00
+WS_RPT_EXCP|en|Y|WS Report Exception||2012-04-21 03:28:00

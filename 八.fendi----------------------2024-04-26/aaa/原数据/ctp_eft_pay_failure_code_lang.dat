@@ -1,0 +1,12 @@
+CANCELLED|en|Y|The Single Use vCard is Canceled||2023-11-09 20:12:00
+CARDINV|en|Y|Transaction failed due to invalid card account. Please raise a support ticket for further investigation||2023-02-08 21:33:00
+EXPIRED|en|Y|The Single Use vCard has Expired||2023-11-09 20:12:00
+GENCHKFAIL|en|Y|The Supplier Address is invalid||2011-04-16 04:10:00
+GENDECLINE|en|Y|The Payment Provider was not able to process the payment from this funding account. Please contact the Payment Provider to resolve the issue||2021-10-20 00:33:00
+GENEFTFAIL|en|Y|The Supplier Banking is invalid||2011-04-16 04:10:00
+NOVENADDR|en|Y|The Supplier Address is incomplete or missing||2011-04-16 04:10:00
+NOVENBANK|en|Y|No active vendor bank account could be found||2011-04-16 04:10:00
+NOVENCRN|en|Y|The Supplier Address is not associated with a currency||2011-04-16 04:10:00
+UEPAY|en|Y|An unexpected error occurred while processing payment||2011-04-16 04:10:00
+VCGENFAIL|en|Y|vCard creation failed at Pay Partner||2022-12-07 20:25:00
+VCMAILFAIL|en|Y|vCard Details undelivered via email to Vendor/Supplier||2022-12-07 20:25:00

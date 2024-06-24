@@ -1,0 +1,198 @@
+1000|en|Y|MANUALPAY||2005-06-21 15:48:00
+1002|en|Y|Email Reminders||2005-06-21 15:50:00
+1003|en|Y|Image Retrieval||2017-07-17 09:05:00
+1004|en|Y|Release Payment Hold||2024-01-03 11:01:00
+1005|en|Y|Consolidation||2005-06-21 15:52:00
+2006|en|Y|Approval Time Expire||2012-07-19 07:00:00
+2007|en|Y|AP/GL Extract||2005-06-21 15:55:00
+2008|en|Y|AP/GL CES Standard Extract||2012-05-19 01:32:00
+2009|en|Y|Paid To Employee||2005-06-21 15:55:00
+2010|en|Y|Employee Payable Data Entry||2012-05-19 01:32:00
+2011|en|Y|Payroll Interface||2012-05-19 01:32:00
+2012|en|Y|SAE_CASH||2012-05-19 01:32:00
+2013|en|Y|Paid to Credit Card||2005-06-21 15:55:00
+2014|en|Y|Paid to Credit Card Data Entry||2012-05-19 01:32:00
+2015|en|Y|Credit Card Remittance File||2012-05-19 01:32:00
+2016|en|Y|SAE_CARD||2012-05-19 01:32:00
+2017|en|Y|AMEX Remittance v.2 - US||2007-05-04 16:17:00
+2018|en|Y|Paid to Credit Card Data Entry||2012-05-19 01:32:00
+2019|en|Y|Credit Card Remittance File||2012-05-19 01:32:00
+2020|en|Y|SAE_CARD||2012-05-19 01:32:00
+2028|en|Y|EXCHANGE_RATE_||2012-07-19 14:00:00
+2029|en|Y|AP/GL Extract V.2.1||2012-07-19 09:00:00
+2030|en|Y|AP/GL CES Standard Extract v.2||2012-07-19 09:00:00
+2031|en|Y|Paid To Employee V.2.1||2007-05-04 16:02:00
+2032|en|Y|Employee Payable Data Entry||2012-05-19 01:32:00
+2033|en|Y|Payroll Interface||2012-05-19 01:32:00
+2034|en|Y|SAE_CASH_v2||2012-05-19 01:32:00
+2035|en|Y|Paid to Credit Card V.2.1||2007-05-04 16:01:00
+2036|en|Y|Paid to Credit Card Data Entry||2012-05-19 01:32:00
+2037|en|Y|Credit Card Remittance File||2012-05-19 01:32:00
+2038|en|Y|SAE_CARD_v2.1||2012-05-19 01:32:00
+2039|en|Y|Employee Extract to Travel||2024-01-03 11:02:00
+2040|en|Y|AP/GL 256 Extract Tax On One Line v.1.1||2007-05-04 16:08:00
+2041|en|Y|AP/GL 256 Extract Tax on One Line||2012-05-19 01:32:00
+2050|en|Y|Expense Pay Reimbursement||2011-01-22 03:48:00
+2051|en|Y|Standard Payment Request Accounting Extract (Emergency)||2007-05-04 18:11:00
+2052|en|Y|Standard Payment Request Accounting Extract||2012-05-19 01:32:00
+2053|en|Y|Standard Employee Requested Vendor Extract||2007-05-04 18:11:00
+2054|en|Y|Standard Employee Requested Vendor Extract||2012-05-19 01:32:00
+2055|en|Y|Standard Payment Request Accounting Extract (ONP)||2007-05-04 18:10:00
+2056|en|Y|Standard Payment Request Accounting Extract||2012-05-19 01:32:00
+2061|en|Y|LOCATION_||2012-07-19 14:00:00
+2071|en|Y|Attendee Detail||2012-07-19 09:00:00
+2072|en|Y|Attendee Detail||2012-05-19 01:32:00
+2073|en|Y|Attendee Detail||2012-05-19 01:32:00
+2074|en|Y|Attendee Detail||2012-05-19 01:32:00
+2075|en|Y|AMEX Remittance - US||2007-10-10 15:50:00
+2076|en|Y|Credit Card Remittance File||2012-05-19 01:32:00
+2077|en|Y|AP/GL Extract V.2||2007-10-10 15:50:00
+2078|en|Y|AP/GL CES Standard Extract v.2||2012-05-19 01:32:00
+2079|en|Y|Paid To Employee V.2||2007-10-10 15:50:00
+2080|en|Y|Employee Payable Data Entry||2012-05-19 01:32:00
+2081|en|Y|Payroll Interface||2012-05-19 01:32:00
+2082|en|Y|SAE_CASH_v2||2012-05-19 01:32:00
+2083|en|Y|Paid to Credit Card V.2||2007-10-10 15:50:00
+2084|en|Y|Paid to Credit Card Data Entry||2012-05-19 01:32:00
+2085|en|Y|SAE_CARD_v2||2012-05-19 01:32:00
+2086|en|Y|Standard Employee Direct Reimbursement Extract||2007-10-10 15:50:00
+2087|en|Y|Direct Reimbursement Extract||2012-05-19 01:32:00
+2088|en|Y|Standard Direct Reimbursement Client Pay Extract||2007-10-10 15:51:00
+2089|en|Y|Standard Direct Reimbursement Client Pay Extract||2012-05-19 01:32:00
+2095|en|Y|Attendee Detail||2012-05-19 01:32:00
+2096|en|Y|Authorization Request Expire Process||2024-01-03 11:01:00
+2099|en|Y|TRVL_ALLOWANCE_v3_||2017-02-23 15:52:00
+2100|en|Y|LIST_||2012-07-19 14:00:00
+2101|en|Y|EMPLOYEE_p00475949hzq||2024-01-03 11:01:00
+2102|en|N|EMAIL_REMINDER||2008-10-16 16:49:00
+2103|en|Y|Data Warehouse Expense Archive||2024-01-03 11:01:00
+2104|en|Y|Data Warehouse Travel Archive||2024-01-03 11:02:00
+2105|en|Y|Expense Pay Daily Funding Email||2011-01-22 03:48:00
+2106|en|Y|Expense Pay Demand Processor||2011-01-22 03:48:00
+2107|en|Y|CTE List Import||2009-03-20 20:39:00
+2108|en|Y|CTE Invoice Expense-Type Import||2009-03-20 20:39:00
+2109|en|Y|CTE Expense Expense-Type Import||2009-03-20 20:39:00
+2110|en|Y|Request Assignment Timeout||2009-08-14 20:15:00
+2111|en|Y|Invoice Pay Demand Processor||2010-08-21 08:49:00
+2112|en|Y|Invoice Pay Payment Processor||2010-09-18 04:39:00
+2113|en|Y|TRVL_ALLOWANCE_v2_||2012-01-20 08:18:00
+2114|en|Y|EXTERNAL_VALIDATION_||2012-01-20 08:19:00
+2115|en|Y|CC_SAMPLE_||2012-01-20 08:20:00
+2116|en|Y|Standard Request Extract||2013-02-15 16:02:00
+2117|en|Y|Request Extract||2013-02-15 16:02:00
+2118|en|Y|TAXABILITY_IMPORT_||2012-12-03 11:54:00
+2119|en|Y|Request Expire Process||2013-02-15 16:02:00
+2120|en|Y|CONNECTAPI||2013-06-15 03:07:00
+2121|en|Y|CTE Invoice Routing Hierarchy Mapping Import||2013-07-08 18:43:00
+2122|en|Y|Standard Travel Request Extract V.1.0.1||2013-10-07 16:12:00
+2123|en|Y|AMEX Remittance v.2 - US||2013-10-07 16:09:00
+2124|en|Y|Vat Tax Reclaim Extract v 1.o||2013-10-07 16:11:00
+2125|en|Y|ADV CUST Great Plains GL CC - IGL||2013-10-07 16:12:00
+2126|en|Y|ADV CUST Great Plains GL Cash - CGL||2013-10-07 16:12:00
+2127|en|Y|ADV QuickBooks Extract||2013-10-07 16:12:00
+2128|en|Y|Concur Invoice Positive Pay Standard Extract v1.1||2013-10-07 16:12:00
+2129|en|Y|Invoice Payment Confirmation v1.2||2015-03-12 14:26:00
+2130|en|Y|Payroll Remittance File-No Cash Advance (US)||2013-10-07 16:08:00
+2131|en|Y|Standard Payment Request Accounting Extract v2.2 (ONP)||2015-03-12 14:25:00
+2132|en|Y|Standard Payment Request Accounting Extract v2.2 (Emerg Run)||2015-03-12 14:26:00
+2133|en|Y|AP/GL Extract V.2.4.6||2013-10-15 19:18:00
+2134|en|Y|Paid To Employee V.2.4.6||2013-10-15 19:38:00
+2135|en|Y|Paid to Credit Card V.2.4.6||2013-10-15 19:30:00
+2136|en|Y|AP/GL 256 Extract Tax On One Line v.1.4.3||2013-10-07 16:10:00
+2137|en|Y|Standard Concur Pay Extract||2013-10-07 16:10:00
+2138|en|Y|ADP Canada Pay Specialist||2013-10-07 16:11:00
+2139|en|Y|Standard Employee Requested Vendor Extract v1.2||2014-01-21 22:28:00
+2140|en|Y|ADP Canada Pay@Work||2013-10-07 16:10:00
+2141|en|Y|ADP Canada PCPW||2013-10-07 16:11:00
+2142|en|Y|Attendee Detail||2012-05-19 01:32:00
+2143|en|Y|Attendee Detail||2012-05-19 01:32:00
+2144|en|Y|Attendee Detail||2012-05-19 01:32:00
+2145|en|Y|Travel Request Extract||2014-11-25 16:42:00
+2146|en|Y|Attendee Detail||2013-09-19 15:54:00
+2147|en|Y|Vat Tax Reclaim Extract v 1.o||2012-05-19 01:32:00
+2148|en|Y|Payroll_Interface-does_not_include_Cash_Advance||2015-09-09 14:00:00
+2149|en|Y|Concur Pay Extract||2016-09-07 19:35:00
+2150|en|Y|ADP CA Pay Specialist||2012-05-19 01:32:00
+2151|en|Y|ADV_CUST_Great_Plains_GL_CC||2014-03-11 13:59:00
+2152|en|Y|ADV_CUST_Great_Plains_GL_Cash||2012-05-19 01:32:00
+2153|en|Y|Financial Data IIF||2012-05-19 01:32:00
+2154|en|Y|Positive Pay Extract Output||2012-05-19 01:32:00
+2155|en|Y|Positive Pay Extract Output||2012-05-19 02:05:00
+2156|en|Y|AP/GL 256 Extract Tax on One Line 1.4.3||2016-12-22 15:45:00
+2157|en|Y|Invoice Payment Confirmation v1.1||2014-02-07 17:08:00
+2158|en|Y|Standard Payment Request Accounting Extract v.2.1||2014-05-14 17:17:00
+2159|en|Y|Standard Payment Request Accounting Extract v2.1||2012-10-30 15:24:00
+2160|en|Y|Credit Card Remittance File||2016-08-03 06:24:00
+2161|en|Y|Employee Payable Data Entry||2012-05-19 01:32:00
+2162|en|Y|Payroll Interface||2012-05-19 01:32:00
+2163|en|Y|Paid to Credit Card Data Entry||2012-05-19 01:32:00
+2164|en|Y|AP/GL CES Standard Extract v.2.4.6||2015-07-21 08:34:00
+2165|en|Y|SAE_CARD_v2.4.6||2013-10-15 19:31:00
+2166|en|Y|SAE_CASH_v2.4.6||2013-10-15 19:38:00
+2167|en|Y|Pay@Work||2015-09-09 14:05:00
+2168|en|Y|ADP Canada PCPW||2014-08-07 18:56:00
+2169|en|Y|Standard Employee Requested Vendor Extract v.1.2||2014-01-21 22:28:00
+2170|en|Y|Concur Invoice Positive Pay Standard Extract v1.1||2012-03-14 20:38:00
+2171|en|Y|EXPENSE_PAY_FEEDBACK_||2013-10-08 14:45:00
+2172|en|Y|CTE Payment Confirmation Import||2013-12-27 20:12:00
+2173|en|Y|TRX 256 Extract v1.0||2014-01-02 21:01:00
+2174|en|Y|Attendee Detail||2012-05-19 01:32:00
+2175|en|Y|TRX Extract 1.0||2014-10-20 19:35:00
+2176|en|Y|Data Dump Extract||2014-01-17 18:16:00
+2177|en|Y|Generate Recurring Invoices||2014-02-08 04:24:00
+2178|en|Y|CTE Commuter Pass Routes Import||2014-03-08 05:09:00
+2179|en|Y|Data Warehouse CC Enrichment Job||2018-04-03 10:09:00
+2180|en|Y|Data Warehouse Action Archive||2018-12-10 11:10:00
+2181|en|Y|AP/GL Extract V.2.4.6||2015-01-13 14:40:00
+2182|en|Y|Attendee Detail||2012-05-19 01:32:00
+2183|en|Y|AP/GL CES Standard Extract v.2.4.6||2013-10-23 14:06:00
+2184|en|Y|Standard Travel Request Extract V.1.0.2||2014-12-09 16:26:00
+2185|en|Y|Travel Request Extract||2015-09-17 17:57:00
+2186|en|Y|AP/GL Extract V.3.03||2024-01-03 11:01:00
+2187|en|Y|AP/GL CES Standard Extract||2024-01-03 11:01:00
+2188|en|Y|Attendee Detail||2024-01-03 11:01:00
+2189|en|Y|AP/GL Extract - Tax On One Line v.2.1||2015-08-17 19:39:00
+2190|en|Y|Attendee Detail||2013-09-19 15:54:00
+2191|en|Y|AP/GL 256 Extract Tax on One Line||2016-12-22 15:44:00
+2192|en|Y|PO Extract V.1.0||2015-01-20 00:16:00
+2193|en|Y|Purchase Order Extract V.1.0||2014-10-01 15:03:00
+2194|en|Y|PO Extract Version 1.0||2015-01-23 21:51:00
+2195|en|Y|PO Extract V.1.0||2014-10-01 15:00:00
+2196|en|Y|AP/GL Extract V.2.4.6||2013-10-15 19:18:00
+2197|en|Y|Attendee Detail||2012-05-19 01:32:00
+2198|en|Y|Attendee Detail||2012-05-19 01:32:00
+2199|en|Y|AP/GL CES Standard Extract v.2.4.6||2013-10-23 14:06:00
+2200|en|Y|AP/GL CES Standard Extract v.2.4.6||2013-10-23 14:06:00
+2201|en|Y|AP/GL Extract V.2.4.6||2015-01-13 14:40:00
+2202|en|Y|TEST||2015-04-01 23:26:00
+2203|en|Y|Standard Payment Request Accounting Extract v2.5 (ONP)||2016-04-27 14:12:00
+2204|en|Y|Standard Payment Request Accounting Extract v.2.5||2016-04-27 14:13:00
+2205|en|Y|Standard Payment Request Accounting Extract v2.3 (Emerg Run)||2015-07-28 13:30:00
+2206|en|Y|Standard Payment Request Accounting Extract v.2.3||2015-11-06 14:44:00
+2207|en|Y|AP/GL Extract V.3.03||2015-08-17 19:39:00
+2208|en|Y|Attendee Detail||2014-11-13 15:29:00
+2209|en|Y|AP/GL CES Standard Extract||2015-10-29 15:39:00
+2210|en|Y|Provider Account Number Hash Migration||2016-01-16 07:51:00
+2211|en|Y|FIPAY||2016-01-16 07:51:00
+2212|en|Y|CTE Address Import||2016-02-20 04:18:00
+2213|en|Y|Standard Payment Request Accounting Extract v2.5 (Emerg Run)||2016-04-27 14:13:00
+2214|en|Y|Standard Payment Request Accounting Extract v.2.5||2016-04-27 14:13:00
+2215|en|Y|Payroll Remittance File-No Cash Advance (US)||2013-10-07 16:08:00
+2216|en|Y|Payroll_Interface-does_not_include_Cash_Advance||2015-09-09 14:00:00
+2217|en|Y|AP/GL Extract V.3.03||2015-08-17 19:39:00
+2218|en|Y|Attendee Detail||2014-11-13 15:29:00
+2219|en|Y|AP/GL CES Standard Extract||2015-10-29 15:39:00
+2220|en|Y|Standard Payment Request Accounting Extract v2.7 (Emerg Run)||2016-08-09 15:11:00
+2221|en|Y|Standard Payment Request Accounting Extract v2.7 (ONP)||2016-08-09 15:10:00
+2222|en|Y|Attendee Detail||2016-07-12 13:51:00
+2223|en|Y|Standard Payment Request Accounting Extract v.2.7||2016-08-09 15:11:00
+2224|en|Y|Standard Payment Request Accounting Extract v.2.7||2016-08-09 15:10:00
+2225|en|Y|Attendee Detail||2016-07-12 13:51:00
+2226|en|Y|PO_Receipt_Extract||2017-06-23 14:24:00
+2227|en|Y|Standard Purchase Order Receipt Extract 1.0||2017-06-16 21:47:00
+2228|en|Y|AP/GL Extract V.3.03 - TESTUSER||2017-07-17 07:14:00
+2229|en|Y|Attendee Detail - TESTUSER||2017-07-17 07:18:00
+2230|en|Y|AP/GL CES Standard Extract - TESTUSER||2017-07-17 07:19:00
+2231|en|Y|Validation Import||2017-09-25 12:43:00
+2232|en|Y|List Import||2024-01-03 11:01:00
+2233|en|Y|EXP_PAY_CONFIRM_P00475949hzq||2024-01-03 06:00:00

@@ -1,0 +1,26 @@
+
+        select 
+              g.value +'-'+e.VALUE+'-'+d.LI_SHORT_CODE+' '+f.VALUE as 'Group'
+               ,d.LI_CODE                    as 'Group Code'
+               ,b.LAST_NAME+','+b.FIRST_NAME as 'Approver Name'
+               ,b.EMP_ID                     as 'Approver ID'
+               ,c.DESCRIPTION                as 'Approver Type'
+               ,d.LIST_LEVEL                 as 'LEVEL'
+               ,h.name                       as 'Limit Currency'
+               ,''                           as 'Approval Limit' -- 没有 CT_AUTHORIZED_APPROVER
+          from ct_workflow_subject_emp_map a 
+     left join fendi.dbo.ct_employee b
+             on b.EMP_KEY = a.EMP_KEY 
+     left join ct_workflow_subject_lang c
+            on a.SUBJECT_CODE = c.SUBJECT_CODE
+     left join ct_list_item_map d 
+            on b.ORG_UNIT_4 = d.li_key
+     left join fendi.dbo.ct_list_item_lang  e 
+            on b.ORG_UNIT_2 = e.li_key
+     left join fendi.dbo.ct_list_item_lang  f
+            on b.ORG_UNIT_3 = f.li_key
+     left join fendi.dbo.ct_list_item_lang  g
+            on b.ORG_UNIT_1 = g.li_key
+     left join  fendi.dbo.ct_currency_lang h
+          on h.CRN_KEY = b.CRN_KEY
+          where d.LI_CODE  ='CN-CN10-Admin-CN10-0000'

@@ -1,0 +1,17 @@
+BDGT_REPORT|EXP|CT_REPORT|RptKey|com.concur.om.CtReportPeer|screens/desktop/report-updates.vm|screens/desktop/report-approvals.vm|N|Y|0||2013-09-21 02:02:00|N|N
+BDGT_REQUEST|REQ|CT_AUTHORIZATION_REQUEST|ArKey|com.concur.om.CtRequestPeer|||N|Y|0||2013-09-21 02:02:00|N|N
+BUDGET_EXP|EXP|CT_REPORT|RptKey|com.concur.om.CtReportPeer|screens/desktop/report-updates.vm|screens/desktop/report-approvals.vm|N|Y|0||2018-02-03 00:10:00|N|N
+BUDGET_PMT|PMT|CTP_REQUEST|ReqKey|com.concur.om.CtpRequestPeer|screens/desktop/payment-updates.vm|screens/desktop/payment-approvals.vm|N|Y|0||2019-01-29 23:40:00|N|N
+BUDGET_PURCH|PMT|INV.PURCHASE_REQUEST|PrKey|com.concur.om.InvPurchaseRequestPeer|||N|Y|0||2019-01-29 23:40:00|N|N
+BUDGET_REQ|REQ|CT_AUTHORIZATION_REQUEST|ArKey|com.concur.om.CtRequestPeer|||N|Y|0||2019-01-29 23:40:00|N|N
+CASH_ADVANCE|EXP|CT_CASH_ADVANCE|CaKey|com.concur.om.CtCashAdvancePeer|screens/desktop/cashadv-updates.vm|screens/desktop/cashadv-approvals.vm|Y|N|0||2017-09-15 08:18:00|N|N
+CO_PAYMENT|PMT|CTP_REQUEST|ReqKey|com.concur.om.CtpRequestPeer|screens/desktop/payment-updates.vm|screens/desktop/payment-approvals.vm|N|Y|0||2013-09-21 02:02:00|N|N
+CO_PURCHASE|PMT|INV.PURCHASE_REQUEST|PrKey|com.concur.om.InvPurchaseRequestPeer|||N|Y|0||2013-09-21 02:02:00|N|N
+CO_REPORT|EXP|CT_REPORT|RptKey|com.concur.om.CtReportPeer|screens/desktop/report-updates.vm|screens/desktop/report-approvals.vm|N|Y|0||2013-09-21 02:02:00|N|N
+CO_REQUEST|REQ|CT_AUTHORIZATION_REQUEST|ArKey|com.concur.om.CtRequestPeer|||N|Y|0||2013-09-21 02:02:00|N|N
+PAYMENT|PMT|CTP_REQUEST|ReqKey|com.concur.om.CtRequestPeer|screens/desktop/payment-updates.vm|screens/desktop/payment-approvals.vm|N|N|98||2015-02-24 03:44:00|N|Y
+PURCH_ORDER|PMT|CTP_PURCHASE_ORDER|PoKey|com.concur.om.CtRequestPeer|||N|Y|98||2015-02-24 03:44:00|N|N
+PURCH_REQUEST|PMT|INV.PURCHASE_REQUEST|PrKey|com.concur.om.InvPurchaseRequestPeer|||N|N|98||2015-02-24 03:44:00|N|N
+REPORT|EXP|CT_REPORT|RptKey|com.concur.om.CtReportPeer|screens/desktop/report-updates.vm|screens/desktop/report-approvals.vm|Y|N|98||2017-09-15 08:18:00|Y|Y
+REQUEST|REQ|CT_AUTHORIZATION_REQUEST|ArKey|com.concur.om.CtRequestPeer|null|null|N|Y|98||2016-04-26 18:58:00|N|N
+TRAVEL_REQUEST|EXP|CT_TRAVEL_REQUEST|TrKey|com.concur.om.CtTravelRequestPeer|screens/desktop/travelrequest-updates.vm|screens/desktop/travelrequest-approvals.vm|Y|Y|||2017-09-15 08:18:00|N|N

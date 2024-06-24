@@ -1,0 +1,42 @@
+ALLOCINFO|en|Y|Expense Allocation||2005-06-21 15:50:00
+ATNLISTDTL|en|Y|Attendee Detail View||2011-01-22 03:48:00
+ATTNINFO|en|Y|Expense Attendee||2007-07-26 21:29:00
+CARINFO|en|Y|Expense Car||2010-02-19 21:13:00
+CC_TXN_INFO|en|Y|Credit Card Transaction Info||2010-01-15 21:11:00
+EMPINFO|en|Y|Employee||2005-06-21 15:47:00
+ENTRYINFO|en|Y|Expense Entry||2005-06-21 15:47:00
+ENTRY_TAX_INFO|en|Y|Tax||2012-05-19 01:32:00
+EXPLISTDTL|en|Y|Expense Detail View||2009-04-17 20:08:00
+PMTATNLISTDTL|en|Y|Payment Request Attendee Detail View||2015-08-15 02:32:00
+PMT_ALLOCINFO|en|Y|Payment Request Allocation||2005-06-21 15:51:00
+PMT_HDRINFO|en|Y|Payment Request Header||2005-06-21 15:51:00
+PMT_LINEITEMINFO|en|Y|Payment Request Line Item Details||2005-06-21 15:51:00
+PMT_VENDOR|en|Y|Payment Vendor||2005-06-21 15:51:00
+PO_ALLOCATION|en|Y|Purchase Order Allocation||2011-06-18 03:48:00
+PO_HEADER|en|Y|Purchase Order Header||2011-03-19 02:58:00
+PO_LINE_ITEM|en|Y|Purchase Order Line Item Details||2011-03-19 02:58:00
+PO_RECEIPT|en|Y|Purchase Order Receipt||2016-05-14 02:46:00
+PURCH_ALLOCATION|en|Y|Purchase Request Allocation||2016-04-08 23:14:00
+PURCH_DETAIL|en|Y|Purchase Request Header||2016-04-08 23:14:00
+PURCH_ITEM|en|Y|Purchase Request Line Item Details||2016-04-08 23:14:00
+REQINFO|en|Y|Request Header||2010-08-21 08:48:00
+REQXCTINFO|en|Y|Request Exceptions||2010-12-18 04:20:00
+REQ_ALLOCINFO|en|Y|Request Allocation||2010-12-18 04:20:00
+REQ_CAINFO|en|Y|Cash Advance||2014-01-18 04:19:00
+REQ_ENTRYINFO|en|Y|Request Entry||2011-04-16 04:10:00
+REQ_RISKINFO|en|Y|Request Risk Summary||2013-03-23 02:05:00
+REQ_SEG_AIRFR|en|Y|Request Air Segment||2010-11-13 04:09:00
+REQ_SEG_CARRT|en|Y|Request Car Rental Segment||2010-11-13 04:09:00
+REQ_SEG_CUSTOM|en|Y|Request Segment Custom Info||2011-10-22 01:49:00
+REQ_SEG_DININ|en|Y|Request Dining Segment||2011-03-19 02:58:00
+REQ_SEG_EVENT|en|Y|Request Event Segment||2011-03-19 02:58:00
+REQ_SEG_HOTEL|en|Y|Request Hotel Segment||2010-11-13 04:09:00
+REQ_SEG_LIMOF|en|Y|Request Limo Segment||2010-11-13 04:09:00
+REQ_SEG_MISC|en|Y|Request Segment||2010-11-13 04:09:00
+REQ_SEG_PARKG|en|Y|Request Parking Segment||2010-11-13 04:09:00
+REQ_SEG_RAILF|en|Y|Request Rail Segment||2010-11-13 04:09:00
+REQ_SEG_TAXIF|en|Y|Request Taxi Segment||2010-11-13 04:09:00
+RPTINFO|en|Y|Expense Report Header||2005-06-21 15:47:00
+TRAVELREQENTRYINFO|en|Y|Authorization Request Expense Category||2008-03-14 17:20:00
+TRAVELREQINFO|en|Y|Authorization Request Header||2008-03-14 17:20:00
+TRAVELRESINFO|en|Y|Travel Reservation||2020-09-22 00:33:00

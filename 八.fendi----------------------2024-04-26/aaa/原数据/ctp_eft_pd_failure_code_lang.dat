@@ -1,0 +1,18 @@
+FLFUND|en|Y|The Funding Account is in a Failed state
+INPOST|en|Y|The Postal Code on Supplier Address is invalid for the Request
+INSTAT|en|Y|The State/Region Field on Supplier Address is invalid for the Request
+INSUPP|en|Y|The Supplier Bank Account is Inactive
+INVCRN|en|Y|Voucher Demand cannot be created since Supplier Currency is different than the Request Currency
+INVREQ|en|Y|The Request is not in a valid state for a Payment Demand
+NOADDR|en|Y|The Supplier Address is incomplete or missing for the Request
+NOCHCK|en|Y|No Check Configuration could be found for the Request
+NOCRN|en|Y|The Supplier Address is not associated with a currency
+NOCTRY|en|Y|The Request does not have a Country associated to it
+NODUE|en|Y|The Request does not have a Due Date
+NOFUND|en|Y|No Funding Account could be found for the Request
+NOREQ|en|Y|No Request was found for the given Request Key
+NOSUPP|en|Y|No Supplier Bank Account could be found for the Request
+PMTAMT|en|Y|The Request does not have a positive Payment Amount
+UNCCHK|en|Y|The Check Configuration has not been confirmed
+VEMAIL|en|Y|No Supplier Contact Email could be found for the Request
+VENPAY|en|Y|The supplier does not support a concur pay payment method

@@ -1,0 +1,17 @@
+en|BDGT_REPORT|Report Budget Object|Y||||||||2017-07-28 11:57:00||Budget Status|Unexpensed
+en|BDGT_REQUEST|Request Budget Object|Y||||||||2013-02-15 16:02:00|||
+en|BUDGET_EXP|Budget Expense|Y||||||||2018-02-03 00:10:00||Department|Unexpensed
+en|BUDGET_PMT|Budget Payment|Y||||||||2019-01-29 23:40:00||Payment Budget|Payment
+en|BUDGET_PURCH|Budget Purchase|Y||||||||2019-01-29 23:40:00||Purchase Budget|Purchase
+en|BUDGET_REQ|Budget Request|Y||||||||2019-01-29 23:40:00||Request Budget|Request
+en|CASH_ADVANCE|Cash Advance|Y|The status of a cash advance changes|A cash advance is submitted for approval||||||2005-06-21 15:48:00|||
+en|CO_PAYMENT|Payment Request Cost Object|Y|null|null|null|null|null|null||2009-01-16 21:35:00|||
+en|CO_PURCHASE|Purchase Request Cost Object|Y||||||||2013-01-19 03:40:00|||
+en|CO_REPORT|Report Cost Object|Y|null|null|null|null|null|null||2009-01-16 21:35:00|||
+en|CO_REQUEST|Request Cost Object|Y||||||||2013-02-15 16:02:00|||
+en|PAYMENT|Payment Request|Y|Send email when the payment request status changes|Send email when a payment request is awaiting approval|Prompt for approver when submitting a payment request|Allow users to select their own approver for submitted payment requests|Display quick approval links to approvers at Concur Central|Prevent payment request submission or assignment when exception level exceeds||2010-06-19 06:31:00|||
+en|PURCH_ORDER|Purchase Order|Y|Send email when the purchase order status changes|Send email when a purchase order is awaiting approval|Prompt for approver when transmitting a purchase order|Allow users to select their own approver for transmitted purchase orders|Display quick approval links to approvers at Concur Central|Prevent purchase order transmission when exception level exceeds||2013-06-15 03:06:00|||
+en|PURCH_REQUEST|Purchase Request|Y|Send email when the purchase request status changes|Send email when a purchase request is awaiting approval|Prompt for approver when submitting a purchase request|Allow users to select their own approver for submitted purchase requests|Display quick approval links to approvers at Concur Central|Prevent purchase request submission when exception level exceeds||2013-01-19 03:40:00|||
+en|REPORT|Expense Report|Y|The status of an expense report changes|An expense report is submitted for approval|For an approver when an expense report is submitted|Allow users to select their own approver for submitted reports|Display quick approval links to approvers at Concur Central|Prevent report submission when exception level exceeds||2007-05-11 01:24:00|Allow processor to send a report back if report has not been extracted||
+en|REQUEST|Request|Y|The status of a request changes|A request is submitted for approval|For an approver when a request is submitted|Allow users to select their own approver for submitted requests|Display quick approval links to approvers at Concur Central|Prevent request submission when exception level exceeds||2013-02-15 16:02:00|||
+en|TRAVEL_REQUEST|Authorization Request|Y|The status of an authorization request changes|An authorization request is submitted for approval|For an approver when an authorization request is submitted|Allow users to select their own approver for submitted reports|Display quick approval links to approvers at Concur Central|Prevent authorization request submission when exception level exceeds||2008-03-14 17:20:00|||

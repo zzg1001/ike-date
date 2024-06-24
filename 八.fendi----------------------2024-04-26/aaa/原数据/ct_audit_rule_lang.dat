@@ -1,0 +1,241 @@
+101|en|Y|VAT Currency Consistency Check||2011-02-14 13:59:00
+102|en|Y|VAT Receipt Required Check||2011-02-14 13:59:00
+2031|en|Y|Personal Use of Corp Card||2014-04-03 08:12:00
+2034|en|Y|Duplicate Transaction Check||2005-06-21 15:55:00
+2036|en|Y|Random Audit||2005-06-21 15:55:00
+2068|en|Y|Ticket Number Mismatch||2007-02-02 05:02:00
+2089|en|Y|Electronic Receipt No CC Check||2016-01-25 17:23:00
+2091|en|Y|*No Receipt Comments Required||2017-08-21 12:37:00
+2092|en|Y|Personal Expenses||2014-12-15 11:11:00
+2093|en|Y|Exchange Rate Variance (10%)||2015-06-09 22:46:00
+2094|en|Y|Two or More Attendees Required||2016-09-12 16:17:00
+2095|en|Y|Future Dated Expenses ||2016-10-13 08:25:00
+2104|en|Y|Missing Exchange Rate||2011-03-19 02:58:00
+2105|en|Y|ATM Check||2011-09-20 15:41:00
+2106|en|Y|UK Incidentals Limit > 5GBP||2013-06-18 14:28:00
+2107|en|Y|Preferred Company Card Expenses||2013-06-18 14:28:00
+2108|en|Y|Flag Expenses Older Than X Days||2013-06-18 14:28:00
+2109|en|Y|Manager/Processor Entry Comments||2013-06-18 14:33:00
+2110|en|Y|UK Incidentals Limit > 10GBP||2013-06-18 14:28:00
+2112|en|Y|Entertainment - Clients||2015-08-13 20:14:00
+2114|en|Y|Exchange Rate Variance (5% to 10%)||2015-06-09 22:45:00
+2115|en|Y|UK Gifts > 50 GBP||2013-06-18 14:33:00
+2116|en|Y|Google Maps Mileage Adjustment (10%)||2013-06-18 14:33:00
+2117|en|Y|Hotel Invoice in Company Name||2013-11-26 14:30:00
+2118|en|Y|UK Telephone/Mobile Non-Business Calls||2013-11-25 17:24:00
+2167|en|Y|UK P11D Expenses Flag||2013-06-18 14:33:00
+2168|en|Y|Expense Pay Bank Account Status Confirmation||2014-02-24 17:33:00
+2169|en|Y|Expense Pay Bank Account Number is Blank||2014-02-24 17:32:00
+2170|en|Y|Corp Card Credit Marked as Personal||2011-09-20 15:42:00
+2171|en|Y|DE No Receipt Comments Required||2013-06-18 14:30:00
+2172|en|Y|DE No Receipt Approver/Processor||2013-06-18 14:30:00
+2173|en|Y|DE Domestic Tax Receipt Invoice Not Checked >Ý150||2013-11-26 14:29:00
+2174|en|Y|DE Domestic No Tax Receipt Invoice Checked||2013-11-29 11:41:00
+2178|en|Y|DE Gifts >Ý35 (<35)||2013-06-18 14:30:00
+2179|en|Y|DE Gifts <Ý35 (>35)||2013-06-18 14:30:00
+2180|en|Y|DE Entertainment - External (Domestic) FRGN||2013-06-18 14:29:00
+2181|en|Y|DE Entertainment - External (Foreign) DOM||2013-06-18 14:29:00
+2182|en|Y|DE Domestic Entertainment >Ý150 Invoice||2013-11-26 14:28:00
+2183|en|Y|DE Domestic Entertainment >Ý150 No Comments||2013-11-26 14:37:00
+2191|en|Y|DE Domestic Tax Receipt >Ý150||2013-06-18 14:29:00
+2245|en|Y|UK Company Car Mileage Diesel||2013-06-18 14:32:00
+2246|en|Y|Expenses on Weekend Days||2013-06-18 14:31:00
+2247|en|Y|Expenses on week end days||2017-09-17 11:09:00
+2248|en|Y|Expense Pay Bank Account Currency Check||2014-02-24 17:32:00
+2249|en|Y|FR Domestic Gifts 65 EUR||2014-01-03 14:49:00
+2250|en|Y|FR Domestic Printing & Promotional Expenses Tax Receipt||2013-06-18 14:32:00
+2251|en|Y|FR Domestic Meals > Ý150 Net of VAT (Ý165)||2014-04-29 10:50:00
+2252|en|Y|FR Domestic Meals Itemize for Alcohol/Tips||2013-06-18 14:31:00
+2253|en|Y|FR Domestic Tax Invoice Required||2013-11-26 14:29:00
+2335|en|Y|Non Reimbursable Personal||2013-06-18 14:27:00
+2894|en|Y|Required Segments or Entries||2017-08-04 02:48:00
+2973|en|Y|UK Expenses > œ250 Tax Invoice||2013-06-18 14:32:00
+3712|en|Y|* Segment Departure Date is in the Past||2017-11-01 09:45:00
+3713|en|Y|Segment Start/End Date is before or after Request Start/End Date||2012-10-31 10:19:00
+3714|en|Y|Cash Advance Warning Limit||2012-11-17 03:34:00
+3715|en|Y|Cash Advance Related Request entries||2012-11-17 03:34:00
+3770|en|Y|IT VAT Number >Ý300||2012-12-03 10:56:00
+3771|en|Y|IT Individual Meals - Within Municipality||2012-12-03 11:37:00
+3772|en|Y|IT Fixed Meals within Municipality||2012-12-03 11:41:00
+3773|en|Y|IT Undocumented Incidentals||2012-12-03 11:58:00
+3774|en|Y|IT VAT Number <Ý300 Meals & Lodging||2012-12-03 13:50:00
+3776|en|Y|Undefined Attendee Check||2012-12-15 03:49:00
+3777|en|Y|Amount Changed Post Approval||2012-12-15 03:49:00
+3866|en|Y|Airfare Preferred Vendor||2013-05-08 16:21:00
+3867|en|Y|Car Rental Preferred Vendor||2013-05-08 16:22:00
+3868|en|Y|Cash Advance Unused Balance||2013-05-08 16:25:00
+3869|en|Y|Duplicate Ticket Number (Required for Audit Service)||2013-05-08 16:44:00
+3870|en|Y|Expense Pay CC Negative Amount Marked Personal (also applicable w/o Expense Pay)||2014-01-23 16:30:00
+3871|en|Y|Expense Pay CC Net CR for unsupported feeds (also app w/o Expense Pay)||2013-05-08 16:54:00
+3872|en|Y|Expense Pay Negative Amount Due Employee (also applicable w/o Expense Pay)||2013-05-08 16:56:00
+3873|en|Y|Fully Allocated||2013-05-08 16:59:00
+3877|en|Y|IBCP Transaction marked Personal||2013-05-09 19:02:00
+3878|en|Y|Mileage Require Commute Deduction||2013-05-09 19:08:00
+3879|en|Y|* Receipt Image Required - Entry Level||2017-08-21 12:38:00
+3880|en|Y|*Receipt Image Required - Report Level||2017-08-21 12:37:00
+3881|en|Y|Travel Actual vs. Booked, Airfare||2013-05-09 19:23:00
+3882|en|Y|Travel Actual vs. Booked, Car Rental||2013-05-09 19:24:00
+3883|en|Y|Travel Actual vs. Booked, Car Rental Per Day||2013-05-09 19:27:00
+3884|en|Y|Actual vs. Booked, Room Rate Per Day||2013-05-09 19:30:00
+3885|en|Y|Travel Forced Match: E-Receipt, Travel, and Card Data||2013-05-09 19:34:00
+3886|en|Y|Travel No Matching Reservation||2013-05-09 19:37:00
+3887|en|Y|Travel No Matching Reservation (Approver/Processor Only)||2013-05-09 19:40:00
+3888|en|Y|Travel Payment Type||2013-05-09 19:44:00
+3889|en|Y|Travel Taxi with RideCharge||2013-05-09 19:48:00
+3890|en|Y|Unsubmitted Card Transactions with Aging||2013-06-21 11:04:00
+3891|en|Y|MX Tax ID Required||2013-05-14 10:08:00
+4028|en|Y|AU Tax Receipt > AUD82.50 - Insert Comment||2013-06-19 17:06:00
+4029|en|Y|AU Tax Receipt > AUD82.50 - Review Comment||2013-06-19 17:08:00
+4030|en|Y|APA 60 Days Old Expenses||2013-06-19 17:10:00
+4031|en|Y|APA Hotel Itemisation Required||2013-06-21 10:57:00
+4034|en|Y|AU Gifts <= $AUD300||2013-06-24 10:04:00
+4035|en|Y|AU Gifts > $AUD300||2013-06-24 10:12:00
+4200|en|Y|Duplicate Invoice Submit||2013-07-08 17:25:00
+4201|en|Y|Has Tracked Changes||2013-07-08 17:26:00
+4202|en|Y|Capture Processing-New Vendor - Temporary Placeholder||2014-10-31 17:40:00
+4203|en|Y|Capture Processing-No Future Date Request||2014-10-31 17:40:00
+4204|en|Y|Capture Processing-Year Old Request||2014-10-31 17:41:00
+4205|en|Y|Invoice Image Required||2015-06-05 18:41:00
+4206|en|Y|Total Invoice Amount = Request Amount||2013-07-08 17:33:00
+4207|en|Y|Vendor Image Required||2013-07-08 17:34:00
+4254|en|Y|Report over 10k||2013-08-22 17:35:00
+4282|en|Y|Amount Daily Meals Limit-Multiple Expenses ||2015-05-26 19:13:00
+4352|en|Y|Employee Audit Status||2014-02-24 17:29:00
+4433|en|Y|Missing amount on imported itinerary segment||2014-11-15 04:23:00
+4454|en|Y|Fuel for Mileage||2014-12-15 11:10:00
+4553|en|Y|MX Require XML if Receipt Status = Factura||2015-04-27 20:12:00
+4660|en|Y|MX Duplicate XML||2015-08-07 15:42:00
+4661|en|Y|SAP Connector-Invalid Account Code||2015-08-10 18:50:00
+4662|en|Y|JP Entertainment < JPY5400 per attendee||2015-08-28 20:47:00
+4687|en|Y|Policy Compliant||2015-10-13 00:26:00
+5413|en|Y|3 Way Matching PO Line Association||2016-05-13 22:35:00
+5423|en|Y|Missing Receipt Affidavit and Receipt/Tax Receipt||2016-06-29 09:39:00
+5471|en|Y|Company Card Payment Type||2016-12-14 08:39:00
+5497|en|Y|FENDI Check International Trip||2017-09-17 10:48:00
+5501|en|Y|* FENDI Request Date from Today||2018-03-22 09:39:00
+5502|en|Y|FENDI Oversea Trip Can have Local Transportation||2017-09-17 11:12:00
+5514|en|Y|* FENDI Check CA has Attachment||2021-03-17 08:30:00
+5515|en|Y|FENDI Check Travel Type associated with Travel Agency||2017-09-17 10:49:00
+5516|en|Y|* FENDI Flight: Dep. Hd./WH. Mgr.||2023-06-13 02:35:00
+5523|en|Y|FENDI Daily Meal Check Office Domestic (Amount)||2017-09-17 11:07:00
+5526|en|Y|FENDI Daily Meal Check Store Domestic T1 City (Amount)||2017-09-17 11:08:00
+5527|en|Y|FENDI Daily Meal Check Store Domestic Other City (Amount)||2017-09-17 11:08:00
+5528|en|Y|FENDI Daily Meal Check Store HongKong (Amount)||2017-09-17 11:08:00
+5529|en|Y|FENDI Daily Meal Check Office AP (Amount)||2017-09-17 11:06:00
+5530|en|Y|FENDI Daily Meal Check Office Out of AP (Amount)||2017-09-17 11:07:00
+5531|en|Y|FENDI Daily Meal Check Domestic (Seg. Type)||2017-09-17 11:06:00
+5532|en|Y|FENDI Daily Meal Check Office AP (Seg. Type)||2017-09-17 11:07:00
+5533|en|Y|FENDI Daily Meal Check Out of AP (Seg. Type)||2017-09-17 11:07:00
+5536|en|Y|FENDI Daily Meal Check Store HongKong (Seg. Type)||2017-09-17 11:08:00
+5537|en|Y|FENDI Daily Hotel Check Office AP (Amount) P&D&M||2017-09-17 11:01:00
+5538|en|Y|FENDI Daily Hotel Check Domestic (Seg. Type)||2017-09-17 11:00:00
+5539|en|Y|FENDI Daily Hotel Check Office AP (Amount) Employee||2017-09-17 11:01:00
+5540|en|Y|FENDI Daily Hotel Check Office Domestic (Amount) P&D&M||2017-09-17 11:02:00
+5541|en|Y|FENDI Daily Hotel Check Office Domestic (Amount) Employee||2017-09-17 11:01:00
+5542|en|Y|FENDI Daily Hotel Check AP (Seg. Type)||2017-09-17 11:00:00
+5543|en|Y|FENDI Daily Hotel Check Office Out of AP (Amount) P&D&M||2017-09-17 11:02:00
+5544|en|Y|FENDI Daily Hotel Check Office Out of AP (Amount) Employee||2017-09-17 11:02:00
+5545|en|Y|FENDI Daily Hotel Check Out of AP (Seg. Type)||2017-09-17 11:02:00
+5546|en|Y|FENDI Daily Hotel Check Office AP (Amount) Employee||2017-09-18 07:28:00
+5547|en|Y|* FENDI Travel Expense great than Request||2017-10-16 08:02:00
+5548|en|Y|FENDI Daily Hotel Check Office AP (Amount) P&D&M||2017-09-18 07:28:00
+5549|en|Y|FENDI Daily Hotel Check Store Domestic Other City (Amount)||2017-09-17 11:03:00
+5550|en|Y|FENDI Daily Hotel Check Store Domestic T1 City (Amount)||2017-09-17 11:03:00
+5551|en|Y|* FENDI Expense Type Check - Domestic ||2017-08-17 10:04:00
+5552|en|Y|* FENDI Expense Type Check - AP||2017-09-21 13:42:00
+5553|en|Y|* FENDI Expense Type Check - Out of AP||2017-09-21 12:47:00
+5554|en|Y|FENDI Daily Hotel Check Office Domestic (Amount) Employee||2017-09-18 07:29:00
+5555|en|Y|FENDI Daily Hotel Check Office Domestic (Amount) P&D&M||2017-09-18 07:29:00
+5556|en|Y|FENDI Daily Hotel Check Office Out of AP (Amount) Employee||2017-09-18 07:29:00
+5557|en|Y|FENDI Daily Hotel Check Office Out of AP (Amount) P&D&M||2017-09-18 07:29:00
+5558|en|Y|FENDI Daily Meal Check Office AP (Amount)||2017-09-18 08:40:00
+5559|en|Y|FENDI Daily Meal Check Office Out of AP (Amount)||2017-09-18 08:48:00
+5560|en|Y|FENDI Daily Meal Check Office Domestic (Amount)||2017-09-18 08:45:00
+5561|en|Y|* FENDI Daily Hotel Check Store Domestic (Amount) T1 City||2017-10-13 11:38:00
+5562|en|Y|FENDI Daily Hotel Check Store Domestic (Amount) Other Cities||2017-09-18 08:17:00
+5563|en|Y|* FENDI Store User No Out of AP trip||2017-10-31 01:58:00
+5564|en|Y|FENDI Daily Meal Check Store Domestic (Amount) T1 City||2017-09-18 08:58:00
+5565|en|Y|FENDI Daily Meal Check Store Domestic (Amount) Other Cities||2017-09-18 08:53:00
+5566|en|Y|FENDI Daily Meal Check Store HongKong (Amount)||2017-09-18 09:01:00
+5575|en|Y|* FENDI Check Meals & Locl Trans||2017-09-25 04:06:00
+5578|en|Y|* FENDI Flight: Oth. Employees||2017-09-18 02:57:00
+5580|en|Y|* FENDI Flight: Manager||2017-09-18 02:57:00
+5581|en|Y|* FENDI Ctrip vs AMEX||2017-09-14 07:28:00
+5583|en|Y|* FENDI Airfare Payment Check||2023-02-24 02:51:00
+5584|en|Y|* FENDI Travel Type vs Segment Type||2017-10-11 06:46:00
+5591|en|Y|* FENDI EXP over REQ||2017-09-28 02:53:00
+5592|en|Y|* FENDI Daily Hotel Check Office AP (Amount) Employee||2017-10-13 11:24:00
+5593|en|Y|* FENDI Daily Hotel Check Office AP (Amount) P&D&M||2017-10-13 11:25:00
+5594|en|Y|* FENDI Daily Hotel Check Office Domestic (Amount) Employee||2017-10-13 11:37:00
+5595|en|Y|* FENDI Daily Hotel Check Office Domestic (Amount) P&D&M||2017-10-13 11:37:00
+5596|en|Y|* FENDI Daily Hotel Check Office Out of AP (Amount) Employee||2017-10-13 11:37:00
+5597|en|Y|* FENDI Daily Hotel Check Office Out of AP (Amount) P&D&M||2017-10-13 11:37:00
+5598|en|Y|* FENDI Daily Hotel Check Store Domestic (Amount) Other Cities||2017-10-13 11:38:00
+5599|en|Y|* FENDI Daily Hotel Check Store Domestic (Amount) T1 City||2017-10-13 11:38:00
+5600|en|Y|* FENDI Daily Meal Check Office AP (Amount)||2018-11-30 02:53:00
+5601|en|Y|* FENDI Daily Meal Check Office Domestic (Amount)||2018-11-29 07:01:00
+5602|en|Y|* FENDI Daily Meal Check Office Out of AP (Amount)||2018-11-29 07:14:00
+5603|en|Y|* FENDI Daily Meal Check Store Domestic (Amount) Other Cities||2018-11-30 02:56:00
+5604|en|Y|* FENDI Daily Meal Check Store Domestic (Amount) T1 City||2018-11-30 02:56:00
+5605|en|Y|* FENDI Daily Meal Check Store AP (Amount)||2018-11-30 02:57:00
+5607|en|Y|* FENDI Hotel Tax Receipt Status||2017-09-21 12:11:00
+5610|en|Y|* FENDI Daily Hotel Check Store Domestic (Amount) HK||2017-10-13 11:38:00
+5611|en|Y|*Daily Domestic Hotel Check||2017-09-21 14:53:00
+5612|en|Y|*Daily AP Hotel Check||2017-09-21 14:53:00
+5613|en|Y|*Daily OAP Hotel Check||2017-09-21 14:54:00
+5614|en|Y|* FENDI Travel Type Check||2017-11-08 11:08:00
+5615|en|Y|*FENDI Request Has Cash Advance||2017-09-21 15:29:00
+5616|en|Y|*FENDI Cash Advance Request||2017-09-21 15:31:00
+5635|en|Y|*FENDI Apply Meal and Locl. Transportation||2017-09-25 04:07:00
+5640|en|Y|* FENDI Cross Functional Check 1||2017-11-08 11:10:00
+5641|en|Y|* FENDI Cross Functional Check 2||2017-10-13 11:19:00
+5642|en|Y|* FENDI Cross Functional Check 3||2017-10-13 11:21:00
+5643|en|Y|* FENDI Cross Functional Check 4||2017-10-13 11:21:00
+5644|en|Y|* FENDI Cross Functional Check 5||2017-10-13 11:21:00
+5645|en|Y|* FENDI Domestic No Receipt Remind||2017-09-25 13:18:00
+5646|en|Y|* FENDI 3 way Bidding documents Copy||2017-09-28 01:59:00
+5647|en|Y|* FENDI Expense type without Req||2017-12-20 02:45:00
+5650|en|Y|* Cash Advance Currency Check||2017-09-28 07:17:00
+5651|en|Y|* FENDI Non Travel Exp. Type Check - 1||2022-04-22 06:28:00
+5652|en|Y|* FENDI Non Travel Exp. Type Check - 2||2023-03-28 06:53:00
+5653|en|Y|* FENDI Store PettyCash Exp. Type Check||2017-11-03 09:54:00
+5655|en|Y|* FENDI Segment Type Check||2017-10-11 06:46:00
+5657|en|Y|* FENDI Flight: Dep. Hd./WH. Mgr.||2023-06-05 08:08:00
+5658|en|Y|* FENDI Flight: Manager, Store Mgr, Employee||2017-10-16 04:01:00
+5680|en|Y|No segment or total=0 cannot submitt||2017-11-28 10:25:00
+5681|en|Y|Travel related report require to attach the request||2022-08-12 08:41:00
+5682|en|Y|Travel Expense not allow Non-travel Expense applied||2017-12-22 00:40:00
+5683|en|Y|Expense Type Restrict||2018-01-22 08:06:00
+5692|en|Y|Expense Once/Year Check||2018-03-27 05:33:00
+5705|en|Y|Check domestic + recurring ||2018-11-30 02:51:00
+5710|en|Y|* FENDI Daily Meal Check Store Out of AP (Amount)||2018-11-30 02:57:00
+5757|en|Y|*Fendi Change Approver 1(Expense)||2019-03-06 09:18:00
+5758|en|Y|*Fendi Change Approver 2(Expense)||2019-02-27 05:55:00
+5759|en|Y|*FENDI Change Approver 1 (request)||2019-03-06 09:29:00
+5760|en|Y|*FENDI Change Approver 2 (request)||2019-02-27 05:48:00
+5807|en|Y|*FENDI Change Approver 3 (request)||2019-03-06 09:46:00
+5808|en|Y|*FENDI Change Approver 4 (request)||2019-02-26 08:15:00
+5809|en|Y|*FENDI Change Approver 5 (request)||2019-02-26 08:17:00
+5810|en|Y|*FENDI Change Approver 6 (request)||2019-02-26 08:18:00
+5819|en|Y|*Fendi Change Approver 3(Expense)||2019-03-06 09:48:00
+5820|en|Y|*Fendi Change Approver 4(Expense)||2019-02-26 09:03:00
+5821|en|Y|*Fendi Change Approver 5(Expense)||2019-02-26 09:03:00
+5822|en|Y|*Fendi Change Approver 6(Expense)||2019-02-26 09:04:00
+5825|en|Y|*Budget warning - 80%||2019-03-27 07:57:00
+5868|en|Y|*Budget warning - 100%||2019-03-27 08:00:00
+5879|en|Y|Travel Date Check in Expense Form||2019-11-13 01:34:00
+5884|en|Y|Znot* FENDI EXP over REQ(test)||2020-09-14 13:06:00
+5885|en|Y|Znot* FENDI EXP over REQ( report level test)||2020-10-01 04:46:00
+5886|en|Y|*FENDI payment type control-no comment(Employee Paid)(16161480)||2020-10-26 02:38:00
+5887|en|Y|*FENDI payment type control-with comment(Employee Paid)(16161480)||2020-10-26 02:38:00
+5888|en|Y|*FENDI expense type control-no comment(*Miscellaneous)(16161480)||2020-10-23 13:29:00
+5889|en|Y|*FENDI expense type control-with comment(*Miscellaneous)(16161480)||2020-10-23 13:29:00
+5890|en|Y|*FENDI Travel Expense great than Request no comment(16161480)||2020-10-19 03:16:00
+5891|en|Y|*FENDI Travel Expense great than Request with comment(16161480)||2020-10-19 03:17:00
+5892|en|Y|*FENDI expense over Cash advance(16161480)||2020-10-03 13:10:00
+5894|en|Y|*FENDI Travel Expense great than Request no comment(16161480)||2020-10-20 05:17:00
+5907|en|Y|*Travel/Non-Travel related Request Policy-17313966||2021-07-26 11:23:00
+5939|en|Y|*FENDI Laundry is allowed over 5 days travel||2021-10-22 02:00:00
+5965|en|Y|***Chloe Nina CN10-0050||2022-02-21 01:17:00
+5966|en|Y|***Sisley CN10-0020||2022-02-21 01:24:00
+6130|en|Y|* FENDI Flight Business Class||2023-06-13 03:00:00

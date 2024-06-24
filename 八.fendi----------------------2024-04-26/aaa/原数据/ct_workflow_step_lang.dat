@@ -1,0 +1,441 @@
+en|1000|Y|Report Submitted||2005-06-21 15:48:00
+en|1001|Y|Manager Approval||2005-06-21 15:48:00
+en|1002|Y|Approval for Processing||2005-06-21 15:48:00
+en|1003|Y|Prepayment Validation||2005-06-21 15:48:00
+en|1004|Y|Processing Payment||2005-06-21 15:48:00
+en|1005|Y|Adhoc Manager Approval||2005-06-21 15:48:00
+en|1006|Y|Cash Advance Request Submit||2005-06-21 15:48:00
+en|1007|Y|Cash Advance Approval||2005-06-21 15:48:00
+en|1008|Y|Cash Advance Reviewed||2005-06-21 15:48:00
+en|1009|Y|Authorization Request Submitted||2008-03-14 17:20:00
+en|1010|Y|Manager Approval||2005-06-21 15:50:00
+en|1011|Y|Request Authorized||2008-03-14 17:20:00
+en|1012|Y|Adhoc Manager Approval||2005-06-21 15:51:00
+en|1013|Y|Payment Request Submitted||2005-06-21 15:51:00
+en|1014|Y|Manager Approval||2005-06-21 15:51:00
+en|1015|Y|Back Office Approval||2013-10-18 20:13:00
+en|1016|Y|Vendor Approval||2005-06-21 15:51:00
+en|1017|Y|Prepayment Validation||2005-06-21 15:51:00
+en|1018|Y|Pending Payment||2005-06-21 15:51:00
+en|1019|Y|Payment Accounting Extract||2005-06-21 15:51:00
+en|1020|Y|Approval for Processing||2005-06-21 15:51:00
+en|1024|Y|Approval for Processing||2005-06-21 15:51:00
+en|2025|Y|Report Submitted||2005-06-21 15:55:00
+en|2026|Y|Manager Approval||2005-06-21 15:55:00
+en|2027|Y|Adhoc Manager Approval||2005-06-21 15:55:00
+en|2028|Y|Approval for Processing||2005-06-21 15:55:00
+en|2029|Y|Approval for Processing||2005-06-21 15:55:00
+en|2030|Y|Prepayment Validation||2005-06-21 15:55:00
+en|2031|Y|Processing Payment||2005-06-21 15:55:00
+en|2032|Y|Limit Approval||2005-11-03 19:11:00
+en|2033|Y|Report Submitted||2008-10-21 09:16:00
+en|2034|Y|Manager Approval||2008-10-21 09:16:00
+en|2035|Y|Approval for Processing||2008-10-21 09:16:00
+en|2036|Y|Prepayment Validation||2008-10-21 09:16:00
+en|2037|Y|Processing Payment||2008-10-21 09:16:00
+en|2038|Y|Adhoc Manager Approval||2008-10-21 09:16:00
+en|2039|Y|Approval for Processing||2008-10-21 09:16:00
+en|2043|Y|Cost Object Approval||2009-01-16 21:35:00
+en|2044|Y|Cost Object Approval||2009-01-16 21:35:00
+en|2045|Y|Cost Object Approval||2009-03-20 20:39:00
+en|2046|Y|Request Submitted||2010-08-21 08:48:00
+en|2047|Y|Manager Approval||2010-08-21 08:48:00
+en|2048|Y|Request Approved||2011-04-16 04:10:00
+en|2049|Y|Adhoc Manager Approval||2010-08-21 08:48:00
+en|2050|Y|Invoice pending for approval||2011-02-26 03:38:00
+en|2051|Y|Processing Payment||2012-01-22 05:27:00
+en|2052|Y|Report Submitted||2011-02-28 11:38:00
+en|2053|Y|Level 1 Approver||2011-02-28 11:40:00
+en|2054|Y|Approval for Processing||2011-02-28 11:38:00
+en|2055|Y|Prepayment Validation||2011-02-28 11:38:00
+en|2056|Y|Processing Payment||2011-02-28 11:38:00
+en|2057|Y|Adhoc Manager Approval||2011-02-28 11:38:00
+en|2058|Y|Approval for Processing||2011-02-28 11:38:00
+en|2059|Y|Level 2 Approver||2011-02-28 11:40:00
+en|2060|Y|Level 3 Approver||2011-02-28 11:40:00
+en|2061|Y|Level 4 Approver||2011-02-28 11:40:00
+en|2062|Y|Level 5 Approver||2016-04-08 22:12:00
+en|2072|Y|Adhoc Manager Approval||2011-04-16 04:10:00
+en|2073|Y|Payment Request Submitted||2011-04-16 04:10:00
+en|2074|Y|Back Office Approval||2015-08-28 17:48:00
+en|2075|Y|Vendor Approval||2011-04-16 04:10:00
+en|2076|Y|Prepayment Validation||2011-04-16 04:10:00
+en|2077|Y|Pending Payment||2011-04-16 04:10:00
+en|2078|Y|Payment Accounting Extract||2011-04-16 04:10:00
+en|2079|Y|Approval for Processing||2011-04-16 04:10:00
+en|2080|Y|Adhoc invoice approval||2012-01-22 05:27:00
+en|2081|Y|Invoice submitted||2012-01-22 05:27:00
+en|2082|Y|Prepayment Validation||2012-01-22 05:27:00
+en|2083|Y|Cost Object Approval||2012-06-23 01:46:00
+en|2084|Y|Cost Object Approval||2012-06-23 01:46:00
+en|2085|Y|Budget Object Approval||2012-11-17 03:33:00
+en|2086|Y|Budget Object Approval||2012-11-17 03:33:00
+en|2087|Y|Adhoc Manager Approval||2013-01-19 03:40:00
+en|2088|Y|Purchase Request Submitted||2013-01-19 03:40:00
+en|2089|Y|Manager Approval||2013-01-19 03:40:00
+en|2090|Y|Approval for Processing||2013-01-19 03:40:00
+en|2091|Y|Cost Object Approval||2013-01-19 03:40:00
+en|2092|Y|Vendor Approval||2013-03-23 02:06:00
+en|2093|Y|Adhoc Manager Approval||2013-05-23 09:09:00
+en|2094|Y|Approval for Processing||2013-05-23 09:09:00
+en|2095|Y|Processing Payment||2013-05-23 09:09:00
+en|2096|Y|Prepayment Validation||2013-05-23 09:09:00
+en|2097|Y|Approval for Processing||2013-05-23 09:09:00
+en|2098|Y|Authorized Approver||2013-05-23 09:09:00
+en|2099|Y|Manager Approval||2013-05-23 09:09:00
+en|2100|Y|Report Submitted||2013-05-23 09:09:00
+en|2101|Y|Cost Object Approval||2013-06-19 15:51:00
+en|2102|Y|Adhoc Manager Approval||2013-07-08 18:56:00
+en|2103|Y|Approval for Processing||2013-07-08 18:56:00
+en|2104|Y|Payment Accounting Extract||2013-07-08 18:56:00
+en|2105|Y|Pending Payment||2013-07-08 18:56:00
+en|2106|Y|Prepayment Validation||2013-07-08 18:56:00
+en|2107|Y|Vendor Approval||2013-07-08 18:56:00
+en|2108|Y|Back Office Approval||2013-07-08 18:56:00
+en|2109|Y|Approval Level 6||2016-04-08 22:33:00
+en|2110|Y|Approval Level 5||2013-07-08 18:56:00
+en|2111|Y|Approval Level 4||2013-07-08 18:56:00
+en|2112|Y|Approval Level 3||2013-07-08 18:56:00
+en|2113|Y|Approval Level 2||2013-07-08 18:56:00
+en|2114|Y|Approval Level 1||2013-07-08 18:56:00
+en|2115|Y|Payment Request Submitted||2013-07-08 18:56:00
+en|2116|Y|Approval for Processing||2013-07-20 02:10:00
+en|2117|Y|Adhoc Manager Approval||2015-08-31 05:31:00
+en|2118|Y|Approval for Processing||2015-08-31 05:31:00
+en|2119|Y|Payment Request Submitted||2015-08-31 05:31:00
+en|2120|Y|Manager Approval||2015-08-31 05:31:00
+en|2121|Y|Authorized Approver||2015-08-31 05:31:00
+en|2122|Y|Back Office Approval||2015-08-31 05:31:00
+en|2123|Y|Vendor Approval||2015-08-31 05:31:00
+en|2124|Y|Prepayment Validation||2015-08-31 05:31:00
+en|2125|Y|Pending Payment||2015-08-31 05:31:00
+en|2126|Y|Payment Accounting Extract||2015-08-31 05:31:00
+en|2127|Y|Adhoc Manager Approval||2015-10-12 19:24:00
+en|2128|Y|Request Submitted||2015-10-12 19:24:00
+en|2129|Y|Pending Agency Update||2015-10-12 19:24:00
+en|2130|Y|Manager Approval||2015-10-12 19:24:00
+en|2131|Y|Request Approved||2015-10-12 19:24:00
+en|2132|Y|Adhoc Manager Approval||2015-10-12 22:36:00
+en|2133|Y|Request Submitted||2015-10-12 22:36:00
+en|2134|Y|Manager Approval||2015-10-12 22:36:00
+en|2135|Y|Pending Booking||2015-10-12 22:36:00
+en|2136|Y|Request Approved||2015-10-12 22:36:00
+en|2137|Y|Adhoc Manager Approval||2016-04-08 22:25:00
+en|2138|Y|Approval for Processing||2016-04-08 22:25:00
+en|2139|Y|Purchase Request Submitted||2016-04-08 22:25:00
+en|2140|Y|Approval Level 1||2016-04-08 22:41:00
+en|2141|Y|Approval for Processing||2016-04-08 22:25:00
+en|2142|Y|Vendor Approval||2016-04-08 22:25:00
+en|2143|Y|Approval Level 2||2016-04-08 22:41:00
+en|2144|Y|Approval Level 3||2016-04-08 22:41:00
+en|2145|Y|Approval Level 4||2016-04-08 22:41:00
+en|2146|Y|Approval Level 5||2016-04-08 22:41:00
+en|2147|Y|Approval Level 6||2016-04-08 22:41:00
+en|2148|Y|Request Processor (approver notification)||2016-09-02 19:46:00
+en|2149|Y|Adhoc Manager Approval||2016-09-02 19:50:00
+en|2150|Y|Request Submitted||2016-09-02 19:50:00
+en|2151|Y|Manager Approval||2016-09-02 19:50:00
+en|2152|Y|Pending Booking||2016-09-02 19:50:00
+en|2153|Y|Request Processor (approver notification)||2016-09-02 19:50:00
+en|2154|Y|Request Approved||2016-09-02 19:50:00
+en|2155|Y|Adhoc Manager Approval||2017-07-26 10:59:00
+en|2156|Y|Approval for Processing||2017-07-26 10:59:00
+en|2157|Y|Report Submitted||2017-07-26 10:59:00
+en|2158|Y|HR related Expense||2017-07-26 10:59:00
+en|2159|Y|Finance Invoice Vlidation||2017-07-26 10:59:00
+en|2160|Y|President Approval||2017-07-29 15:29:00
+en|2161|Y|President Approve (>50K RMB)||2017-07-26 10:59:00
+en|2162|Y|Receipt Validation||2017-09-17 13:27:00
+en|2163|Y|Prepayment Validation||2017-07-26 10:59:00
+en|2164|Y|Processing Payment||2017-07-26 10:59:00
+en|2165|Y|Adhoc Manager Approval||2017-07-27 14:43:00
+en|2166|Y|Request Submitted||2017-07-27 14:43:00
+en|2167|Y|Budget Approval||2017-07-28 12:11:00
+en|2168|Y|President Approval||2017-07-29 09:22:00
+en|2169|Y|Pending Booking||2017-07-27 14:43:00
+en|2170|Y|Request Processor||2017-07-29 09:22:00
+en|2171|Y|Request Approved||2017-07-27 14:43:00
+en|2172|Y|Adhoc Manager Approval||2017-07-28 01:45:00
+en|2173|Y|Request Submitted||2017-07-28 01:45:00
+en|2174|Y|Manager Approval||2017-07-28 01:45:00
+en|2175|Y|President Approval||2017-09-17 11:56:00
+en|2176|Y|CFO Approval of Cash Advance||2017-09-17 11:56:00
+en|2177|Y|Request Processor||2017-09-17 11:56:00
+en|2178|Y|Request Approved||2017-07-28 01:45:00
+en|2182|Y|Manager Approval||2017-07-28 12:11:00
+en|2192|Y|Department Header Approval||2017-08-04 03:28:00
+en|2193|Y|Cash Advance Request Submit||2017-07-29 11:20:00
+en|2194|Y|Cash Advance Approval||2017-07-29 11:20:00
+en|2195|Y|Cash Advance Reviewed||2017-07-29 11:20:00
+en|2196|Y|CFO Approval of Cash Advance||2017-07-29 14:17:00
+en|2206|Y|Department Head Approval||2017-08-21 06:33:00
+en|2207|Y|President Approval||2017-09-14 02:18:00
+en|2208|Y|Department Head Approval for TR relevant||2017-11-07 04:19:00
+en|2209|Y|Payment Confirmation||2017-09-17 13:30:00
+en|2210|Y|President Approval (for Department Head)||2017-09-18 13:46:00
+en|2211|Y|Adhoc Manager Approval||2017-09-21 15:34:00
+en|2212|Y|Request Submitted||2017-09-21 15:34:00
+en|2213|Y|Department Head Approval||2017-09-21 15:34:00
+en|2214|Y|CFO Approval of Cash Advance||2017-09-21 15:34:00
+en|2215|Y|President Approval||2017-09-21 15:34:00
+en|2216|Y|Request Processor||2017-09-21 15:34:00
+en|2217|Y|Request Approved||2017-09-21 15:34:00
+en|2218|Y|Adhoc Manager Approval||2017-09-21 16:43:00
+en|2219|Y|Request Submitted||2017-09-21 16:43:00
+en|2220|Y|Department Head Approval||2017-09-21 16:43:00
+en|2221|Y|CFO Approval of Cash Advance||2017-09-21 16:43:00
+en|2222|Y|President Approval||2017-09-21 16:43:00
+en|2223|Y|Request Processor||2017-09-21 16:43:00
+en|2224|Y|Request Approved||2017-09-21 16:43:00
+en|2225|Y|Adhoc Manager Approval||2017-10-31 05:06:00
+en|2226|Y|Request Submitted||2017-10-31 05:06:00
+en|2227|Y|Department Head Approval||2017-10-31 05:06:00
+en|2228|Y|CFO Approval of Cash Advance||2017-10-31 05:06:00
+en|2229|Y|President Approval||2017-10-31 05:06:00
+en|2230|Y|Request Processor||2017-10-31 05:06:00
+en|2231|Y|Request Approved||2017-10-31 05:06:00
+en|2232|Y|Department Head Approval for CA only||2017-11-07 04:19:00
+en|2233|Y|Hold for Receipt Image||2017-11-23 06:33:00
+en|2234|Y|HRD||2018-01-23 06:04:00
+en|2235|Y|New Budget Object Approval||2018-02-03 00:10:00
+en|2236|Y|Department Head Approval for cash advance||2018-03-20 01:33:00
+en|2237|Y|Budget Object Approval||2019-01-29 23:40:00
+en|2238|Y|New Budget Object Approval||2019-01-29 23:40:00
+en|2239|Y|New Budget Object Approval||2019-01-29 23:40:00
+en|2240|Y|Adhoc Manager Approval||2019-02-19 05:22:00
+en|2241|Y|Approval for Processing||2019-02-19 05:22:00
+en|2242|Y|Payment Confirmation||2019-02-19 05:22:00
+en|2243|Y|Report Submitted||2019-02-19 05:22:00
+en|2244|Y|HR related Expense||2019-02-19 05:22:00
+en|2245|Y|Receipt Validation||2019-02-19 05:22:00
+en|2246|Y|HRD||2019-02-19 05:22:00
+en|2247|Y|Department Head Approval||2019-02-19 05:22:00
+en|2248|Y|President Approval||2019-02-19 05:22:00
+en|2249|Y|Prepayment Validation||2019-02-19 05:22:00
+en|2250|Y|Processing Payment||2019-02-19 05:22:00
+en|2251|Y|Department Head Approval (COA)||2019-02-19 05:40:00
+en|2252|Y|Department Head Change Approver 1||2019-02-19 06:15:00
+en|2253|Y|Department Head Change Approver 2||2019-02-19 06:15:00
+en|2254|Y|Adhoc Manager Approval||2019-02-19 08:47:00
+en|2255|Y|Request Submitted||2019-02-19 08:47:00
+en|2256|Y|Department Head Approval for TR relevant||2019-02-19 08:47:00
+en|2257|Y|Department Head Approval for TR relevant (COA)||2019-02-19 08:47:00
+en|2258|Y|Department Head (Change Approver1)||2019-02-19 08:47:00
+en|2259|Y|Department Head (Change Approver2)||2019-02-19 08:47:00
+en|2260|Y|Department Head Approval for cash advance||2019-02-19 08:47:00
+en|2261|Y|CFO Approval of Cash Advance||2019-02-19 08:47:00
+en|2262|Y|President Approval||2019-02-19 08:47:00
+en|2263|Y|Request Approved||2019-02-19 08:47:00
+en|2264|Y|Adhoc Manager Approval||2019-02-25 00:59:00
+en|2265|Y|Approval for Processing||2019-02-25 00:59:00
+en|2266|Y|Payment Confirmation||2019-02-25 00:59:00
+en|2267|Y|Report Submitted||2019-02-25 00:59:00
+en|2268|Y|HR related Expense||2019-02-25 00:59:00
+en|2269|Y|Receipt Validation||2019-02-25 00:59:00
+en|2270|Y|HRD||2019-02-25 00:59:00
+en|2271|Y|Department Head Approval||2019-02-25 00:59:00
+en|2272|Y|President Approval||2019-02-25 00:59:00
+en|2273|Y|Prepayment Validation||2019-02-25 00:59:00
+en|2274|Y|Processing Payment||2019-02-25 00:59:00
+en|2275|Y|Adhoc Manager Approval||2019-02-25 01:16:00
+en|2276|Y|Request Submitted||2019-02-25 01:16:00
+en|2277|Y|Department Head Approval for TR relevant||2019-02-25 01:16:00
+en|2278|Y|Department Head Approval for cash advance||2019-02-25 01:16:00
+en|2279|Y|CFO Approval of Cash Advance||2019-02-25 01:16:00
+en|2280|Y|President Approval||2019-02-25 01:16:00
+en|2281|Y|Request Approved||2019-02-25 01:16:00
+en|2282|Y|Department Head (Change Approver3)||2019-02-26 08:10:00
+en|2283|Y|Department Head (Change Approver4)||2019-02-26 08:10:00
+en|2284|Y|Department Head (Change Approver5)||2019-02-26 08:10:00
+en|2285|Y|Department Head (Change Approver6)||2019-02-26 08:10:00
+en|2286|Y|Department Head Change Approver 3||2019-02-26 08:49:00
+en|2287|Y|Department Head Change Approver 4||2019-02-26 08:49:00
+en|2288|Y|Department Head Change Approver 5||2019-02-26 08:49:00
+en|2289|Y|Department Head Change Approver 6||2019-02-26 08:49:00
+en|2290|Y|Adhoc Manager Approval||2019-03-21 02:50:00
+en|2291|Y|Request Submitted||2019-03-21 02:50:00
+en|2292|Y|Department Head Approval for TR relevant (COA)||2019-03-21 02:50:00
+en|2293|Y|Department Head (Change Approver1)||2019-03-21 02:50:00
+en|2294|Y|Department Head (Change Approver3)||2019-03-21 02:50:00
+en|2295|Y|Department Head (Change Approver4)||2019-03-21 02:50:00
+en|2296|Y|Department Head (Change Approver5)||2019-03-21 02:50:00
+en|2297|Y|Department Head (Change Approver6)||2019-03-21 02:50:00
+en|2298|Y|Department Head Approval for cash advance||2019-03-21 02:50:00
+en|2299|Y|CFO Approval of Cash Advance||2019-03-21 02:50:00
+en|2300|Y|President Approval||2019-03-21 02:50:00
+en|2301|Y|Request Approved||2019-03-21 02:50:00
+en|2302|Y|Adhoc Manager Approval||2019-03-22 06:36:00
+en|2303|Y|Approval for Processing||2019-03-22 06:36:00
+en|2304|Y|Payment Confirmation||2019-03-22 06:36:00
+en|2305|Y|Report Submitted||2019-03-22 06:36:00
+en|2306|Y|HR related Expense||2019-03-22 06:36:00
+en|2307|Y|Receipt Validation||2019-03-22 06:36:00
+en|2308|Y|HRD||2019-03-22 06:36:00
+en|2309|Y|Department Head Approval (COA)||2019-03-22 06:36:00
+en|2310|Y|Department Head Change Approver 1||2019-03-22 06:36:00
+en|2311|Y|Department Head Change Approver 3||2019-03-22 06:36:00
+en|2312|Y|Department Head Change Approver 4||2019-03-22 06:36:00
+en|2313|Y|Department Head Change Approver 5||2019-03-22 06:36:00
+en|2314|Y|Department Head Change Approver 6||2019-03-22 06:36:00
+en|2315|Y|President Approval||2019-03-22 06:36:00
+en|2316|Y|Prepayment Validation||2019-03-22 06:36:00
+en|2317|Y|Processing Payment||2019-03-22 06:36:00
+en|2318|Y|Change approver to Echo CHEN||2021-08-16 00:56:00
+en|2319|Y|Change approver to Echo CHEN||2021-08-16 01:09:00
+en|2320|Y|Physical Examination Report Check||2019-04-29 08:04:00
+en|2321|Y|VIC Approval||2021-02-02 06:00:00
+en|2322|Y|Adhoc Manager Approval||2021-08-16 00:43:00
+en|2323|Y|Request Submitted||2021-08-16 00:43:00
+en|2324|Y|Department Head Approval for TR relevant (COA)||2021-08-16 00:43:00
+en|2325|Y|Change approver to vicki.li||2021-08-16 00:43:00
+en|2326|Y|Department Head Approval for cash advance||2021-08-16 00:43:00
+en|2327|Y|CFO Approval of Cash Advance||2021-08-16 00:43:00
+en|2328|Y|President Approval||2021-08-16 00:43:00
+en|2329|Y|Request Approved||2021-08-16 00:43:00
+en|2330|Y|Change approver to Manuel Boccacani||2021-08-16 00:56:00
+en|2331|Y|Adhoc Manager Approval||2021-08-16 01:05:00
+en|2332|Y|Approval for Processing||2021-08-16 01:05:00
+en|2333|Y|Payment Confirmation||2021-08-16 01:05:00
+en|2334|Y|Report Submitted||2021-08-16 01:05:00
+en|2335|Y|Physical Examination Report Check||2021-08-16 01:05:00
+en|2336|Y|HR related Expense||2021-08-16 01:05:00
+en|2337|Y|VIC Approval||2021-08-16 01:05:00
+en|2338|Y|Receipt Validation||2021-08-16 01:05:00
+en|2339|Y|HRD||2021-08-16 01:05:00
+en|2340|Y|Department Head Approval (COA)||2021-08-16 01:05:00
+en|2341|Y|Change approver to vicki.li||2021-08-16 01:05:00
+en|2342|Y|President Approval||2021-08-16 01:05:00
+en|2343|Y|Prepayment Validation||2021-08-16 01:05:00
+en|2344|Y|Processing Payment||2021-08-16 01:05:00
+en|2345|Y|Change approver to Manuel Boccacani||2021-08-16 01:09:00
+en|2346|Y|Derek's Approval||2022-01-17 08:41:00
+en|2347|Y|Derek's Approval||2022-01-17 08:50:00
+en|2348|Y|Adhoc Manager Approval||2022-02-09 05:14:00
+en|2349|Y|Approval for Processing||2022-02-09 05:14:00
+en|2350|Y|Payment Confirmation||2022-02-09 05:14:00
+en|2351|Y|Report Submitted||2022-02-09 05:14:00
+en|2352|Y|Derek's Approval||2022-02-09 05:14:00
+en|2353|Y|HR related Expense||2022-02-09 05:14:00
+en|2354|Y|VIC Approval||2022-02-09 05:14:00
+en|2355|Y|Receipt Validation||2022-02-09 05:14:00
+en|2356|Y|Physical Examination Report Check||2022-02-09 05:14:00
+en|2357|Y|HRD||2022-02-09 05:14:00
+en|2358|Y|Department Head Approval (COA)||2022-02-09 05:14:00
+en|2359|Y|Change approver to Echo CHEN||2022-02-09 05:14:00
+en|2360|Y|Change approver to Manuel Boccacani||2022-02-09 05:14:00
+en|2361|Y|President Approval||2022-02-09 05:14:00
+en|2362|Y|Prepayment Validation||2022-02-09 05:14:00
+en|2363|Y|Processing Payment||2022-02-09 05:14:00
+en|2364|Y|Adhoc Manager Approval||2022-02-21 01:51:00
+en|2365|Y|Approval for Processing||2022-02-21 01:51:00
+en|2366|Y|Payment Confirmation||2022-02-21 01:51:00
+en|2367|Y|Report Submitted||2022-02-21 01:51:00
+en|2368|Y|Derek's Approval||2022-02-21 01:51:00
+en|2369|Y|HR related Expense||2022-02-21 01:51:00
+en|2370|Y|VIC Approval||2022-02-21 01:51:00
+en|2371|Y|Receipt Validation||2022-02-21 01:51:00
+en|2372|Y|Physical Examination Report Check||2022-02-21 01:51:00
+en|2373|Y|HRD - China||2022-02-21 02:55:00
+en|2374|Y|Department Head Approval (COA)||2022-02-21 01:51:00
+en|2375|Y|Change approver to Echo CHEN||2022-02-21 01:51:00
+en|2376|Y|Change approver to Manuel Boccacani||2022-02-21 01:51:00
+en|2377|Y|President Approval||2022-02-21 01:51:00
+en|2378|Y|Prepayment Validation||2022-02-21 01:51:00
+en|2379|Y|Processing Payment||2022-02-21 01:51:00
+en|2380|Y|HRD - China & TW||2022-02-21 02:55:00
+en|2381|Y|Adhoc Manager Approval||2022-02-21 05:45:00
+en|2382|Y|Request Submitted||2022-02-21 05:45:00
+en|2383|Y|Derek's Approval||2022-02-21 05:45:00
+en|2384|Y|Department Head Approval for TR relevant (COA)||2022-02-21 05:45:00
+en|2385|Y|Change approver to Echo CHEN||2022-02-21 05:45:00
+en|2386|Y|Change approver to Manuel Boccacani||2022-02-21 05:45:00
+en|2387|Y|Department Head Approval for cash advance||2022-04-07 08:28:00
+en|2388|Y|CFO Approval of Cash Advance||2022-02-21 05:45:00
+en|2389|Y|President Approval of Cash Advance||2023-06-07 08:31:00
+en|2390|Y|Request Approved||2022-02-21 05:45:00
+en|2391|Y|HR - China & TW Department Head Approval for cash advance||2022-02-21 05:47:00
+en|2392|Y|HR Internal Communication Report Check||2022-03-04 06:40:00
+en|2393|Y|Adhoc Manager Approval||2022-04-02 01:11:00
+en|2394|Y|Approval for Processing||2022-04-02 01:11:00
+en|2395|Y|Payment Confirmation||2022-04-02 01:11:00
+en|2396|Y|Report Submitted||2022-04-02 01:11:00
+en|2397|Y|Derek's Approval||2022-04-02 01:11:00
+en|2398|Y|HR related Expense||2022-04-02 01:11:00
+en|2399|Y|VIC Approval||2022-04-02 01:11:00
+en|2400|Y|Receipt Validation||2022-04-02 01:11:00
+en|2401|Y|HR Internal Communication Report Check||2022-04-02 01:11:00
+en|2402|Y|Physical Examination Report Check||2022-04-02 01:11:00
+en|2403|Y|HRD - China||2022-04-02 01:11:00
+en|2404|Y|HRD - China & TW||2022-04-02 01:11:00
+en|2405|Y|Department Head Approval (COA)||2022-04-02 01:11:00
+en|2406|Y|Change approver to Echo CHEN||2022-04-02 01:11:00
+en|2407|Y|Change approver to Manuel Boccacani||2022-04-02 01:11:00
+en|2408|Y|President Approval||2022-04-02 01:11:00
+en|2409|Y|Prepayment Validation||2022-04-02 01:11:00
+en|2410|Y|Processing Payment||2022-04-02 01:11:00
+en|2411|Y|Long Service Award Check||2022-04-22 08:11:00
+en|2412|Y|Gao Yang's Approval||2022-08-18 08:02:00
+en|2413|Y|Jason Wong's Approval||2022-08-25 07:37:00
+en|2414|Y|Jason Wong's Approval||2022-08-25 07:45:00
+en|2415|Y|Adhoc Manager Approval||2022-08-26 05:21:00
+en|2416|Y|Request Submitted||2022-08-26 05:21:00
+en|2417|Y|Derek's Approval||2022-08-26 05:21:00
+en|2418|Y|Department Head Approval for TR relevant (COA)||2022-08-26 05:21:00
+en|2419|Y|Jason Wong's Approval||2022-08-26 05:21:00
+en|2420|Y|Change approver to Echo CHEN||2022-08-26 05:21:00
+en|2421|Y|Change approver to Manuel Boccacani||2022-08-26 05:21:00
+en|2422|Y|Department Head Approval for cash advance||2022-08-26 05:21:00
+en|2423|Y|HR - China & TW Department Head Approval for cash advance||2022-08-26 05:21:00
+en|2424|Y|CFO Approval of Cash Advance||2022-08-26 05:21:00
+en|2425|Y|President Approval||2022-08-26 05:21:00
+en|2426|Y|Request Approved||2022-08-26 05:21:00
+en|2427|Y|Gao Yang's Approval||2022-08-26 05:24:00
+en|2428|Y|Adhoc Manager Approval||2023-05-22 01:55:00
+en|2429|Y|Approval for Processing||2023-05-22 01:55:00
+en|2430|Y|Payment Confirmation||2023-05-22 01:55:00
+en|2431|Y|Report Submitted||2023-05-22 01:55:00
+en|2432|Y|Gao Yang's Approval||2023-05-22 01:55:00
+en|2433|Y|VIC Approval||2023-05-22 01:55:00
+en|2434|Y|Receipt Validation||2023-05-22 01:55:00
+en|2435|Y|Physical Examination Report Check||2023-05-22 01:55:00
+en|2436|Y|HR related Expense||2023-05-22 01:55:00
+en|2437|Y|HR Internal Communication Report Check||2023-05-22 01:55:00
+en|2438|Y|Long Service Award Check||2023-05-22 01:55:00
+en|2439|Y|HRD - China & TW||2023-05-22 01:55:00
+en|2440|Y|Department Head Approval (COA)||2023-05-22 01:55:00
+en|2441|Y|Jason Wong's Approval||2023-05-22 01:55:00
+en|2442|Y|Change approver to Echo CHEN||2023-05-22 01:55:00
+en|2443|Y|Change approver to Manuel Boccacani||2023-05-22 01:55:00
+en|2444|Y|President Approval||2023-05-22 01:55:00
+en|2445|Y|Prepayment Validation||2023-05-22 01:55:00
+en|2446|Y|Processing Payment||2023-05-22 01:55:00
+en|2447|Y|Adhoc Manager Approval||2023-05-22 05:43:00
+en|2448|Y|Request Submitted||2023-05-22 05:43:00
+en|2449|Y|Gao Yang's Approval||2023-05-22 05:43:00
+en|2450|Y|Department Head Approval for TR relevant (COA)||2023-05-22 05:43:00
+en|2451|Y|Jason Wong's Approval||2023-05-22 05:43:00
+en|2452|Y|Change approver to Echo CHEN||2023-05-22 05:43:00
+en|2453|Y|Change approver to Manuel Boccacani||2023-05-22 05:43:00
+en|2454|Y|Department Head Approval for cash advance||2023-05-22 05:43:00
+en|2455|Y|HR - China & TW Department Head Approval for cash advance||2023-05-22 05:43:00
+en|2456|Y|CFO Approval of Cash Advance||2023-05-22 05:43:00
+en|2457|Y|President Approval||2023-05-22 05:43:00
+en|2458|Y|Request Approved||2023-05-22 05:43:00
+en|2459|Y|CFO||2023-05-22 07:26:00
+en|2460|Y|CFO||2023-05-26 00:58:00
+en|2461|Y|President Approval||2023-05-26 02:09:00
+en|2462|Y|Adhoc Manager Approval||2023-06-27 08:05:00
+en|2463|Y|Request Submitted||2023-06-27 08:05:00
+en|2464|Y|Finance Validation||2023-06-27 08:05:00
+en|2465|Y|Gao Yang's Approval||2023-06-27 08:05:00
+en|2466|Y|Department Head Approval for TR relevant (COA)||2023-06-27 08:05:00
+en|2467|Y|Jason Wong's Approval||2023-06-27 08:05:00
+en|2468|Y|Change approver to Echo CHEN||2023-06-27 08:05:00
+en|2469|Y|Change approver to Manuel Boccacani||2023-06-27 08:05:00
+en|2470|Y|Department Head Approval for cash advance||2023-06-27 08:05:00
+en|2471|Y|HR - China & TW Department Head Approval for cash advance||2023-06-27 08:05:00
+en|2472|Y|CFO Approval of Cash Advance||2023-06-27 08:05:00
+en|2473|Y|CFO||2023-06-27 08:05:00
+en|2474|Y|President Approval of Cash Advance||2023-06-27 08:05:00
+en|2475|Y|President Approval||2023-06-27 08:05:00
+en|2476|Y|Request Approved||2023-06-27 08:05:00

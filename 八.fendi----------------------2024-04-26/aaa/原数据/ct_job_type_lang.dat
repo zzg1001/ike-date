@@ -1,0 +1,84 @@
+ADV_SERVICES|en|Y|Advantage Services||2013-02-23 03:54:00
+AGCLOG_CLEANUP|en|Y|Agency proposal log clean up||2013-12-14 05:14:00
+AGENCY_PROPOSAL|en|Y|Agency proposal polling||2012-08-18 01:53:00
+ANALYSIS|en|Y|Analysis Extract||2005-06-21 15:50:00
+ANOMALY|en|Y|Anomaly and Fraud Detection||2012-08-18 01:53:00
+APPROVAL_EXPIRE|en|Y|Approval Time Expire||2005-06-21 15:52:00
+ARCHIVE|en|Y|Archive||2005-06-21 15:50:00
+ATTENDEE|en|Y|Attendee Import||2007-07-26 21:29:00
+AUTH_REQ_EXPIRE|en|Y|Authorization Request Expire||2008-03-14 17:20:00
+BILLING|en|Y|Billing||2006-04-13 21:01:00
+BRZ_PRVSNNG|en|Y|Breeze Provisioning||2010-04-16 20:15:00
+CARD_FEED|en|Y|Credit Card Feed||2005-06-21 15:48:00
+CAW_CLEAN_UP|en|Y|Audit workbench clean up||2012-03-24 01:57:00
+CAW_FIRE_RULES|en|Y|Audit workbench fire rules||2012-04-21 03:28:00
+CC_PRVR_VALID|en|Y|Card Program Validation||2013-10-19 03:34:00
+CONSOLIDATION|en|Y|Consolidation||2005-06-21 15:52:00
+CQ_EMPL_EXPORT|en|Y|Employee Export to Travel||2011-01-22 03:48:00
+CQ_EXPORT_DAILY|en|Y|Employee Daily Export to Travel||2011-01-22 03:48:00
+CTE_TASK|en|Y|CTE Admin Task||2009-03-20 20:39:00
+CWT_IMPORTER|en|Y|CWT Agency Proposals Importer||2013-10-19 03:34:00
+DATA_DUMP|en|Y|Data Dump Extract||2010-12-18 04:20:00
+DW_ACTN_ARCHIVE|en|Y|Data Warehouse Action Archive||2014-05-17 03:10:00
+DW_EXP_ARCHIVE|en|Y|Data Warehouse Expense Archive||2008-05-14 19:51:00
+DW_GEXP_ARCHIVE|en|Y|Data Warehouse Gov Exp Archive||2012-02-18 03:13:00
+DW_TRVL_ARCHIVE|en|Y|Data Warehouse Travel Archive||2008-05-14 19:51:00
+EFT_BATCH|en|Y|Expense Pay Reimbursement||2011-01-22 03:48:00
+EFT_EMAIL|en|Y|Expense Pay Daily Funding Email||2011-01-22 03:48:00
+EFT_FEED|en|Y|Expense Pay Feedback||2011-01-22 03:48:00
+EFT_PROCESS|en|Y|Expense Pay Demand Processor||2011-01-22 03:48:00
+EMAIL_REMINDER|en|Y|Email Reminder||2005-06-21 15:50:00
+EMPLOYEE|en|Y|Employee Import||2005-06-21 15:48:00
+EXCHANGE_RATE|en|Y|Exchange Rates||2005-06-21 15:48:00
+EXP_PAY_CONFIRM|en|Y|Expense Payment Confirmation||2007-03-16 18:01:00
+EXTRACT|en|Y|Accounting Extract||2005-06-21 15:48:00
+EXTRACT_OUTPUT|en|Y|Accounting Extract Output||2006-07-21 16:58:00
+GOVT_CC_LOAD|en|Y|CGE Credit Card Data Loader||2014-04-12 04:21:00
+GOVT_CC_RECON|en|Y|CGE Card Charge Reconciliation||2014-09-13 03:51:00
+GOVT_DOC_UNLOCK|en|Y|CGE Documents Unlock||2013-12-14 05:14:00
+GOVT_HHS_CANCL|en|Y|CGE HHS Reservation Cancellation||2014-07-12 03:26:00
+GOVT_HHS_EMAIL|en|Y|CGE HHS Email Warning||2014-07-12 03:26:00
+GOVT_IMG_EXPORT|en|Y|CGE Imaging Delivery Export||2014-01-18 04:19:00
+GOVT_PERDIEM|en|Y|CGE Perdiem Feed Generator||2014-09-13 03:51:00
+HK_MAINT|en|Y|Hong Kong Maintenance||2013-05-18 01:39:00
+HK_PERDIEM|en|Y|Travel Allowance Uber Job||2015-02-07 02:41:00
+HK_TRIAL|en|Y|HK Trial||2013-02-23 03:55:00
+HK_TRIAL_STAGE|en|Y|HK Trial Staging||2014-10-18 01:24:00
+IMAGE_EXTRACT|en|Y|Image Delivery Extract||2009-07-17 20:11:00
+IMAGE_SERVER|en|Y|Image Server||2005-06-21 15:50:00
+INV_EFT_BATCH|en|Y|Invoice Pay Payment Processor||2010-09-18 04:39:00
+INV_EFT_FEED|en|Y|Invoice Pay Feedback Import||2010-10-16 03:56:00
+INV_EFT_PROCESS|en|Y|Invoice Pay Demand Processor||2010-08-21 08:49:00
+LIST|en|Y|List Import||2005-06-21 15:50:00
+LOCATION|en|Y|Location||2006-08-18 04:33:00
+OID_IMPORT|en|N|OID Import||2012-01-20 07:52:00
+PAYMENT_HOLD|en|Y|Payment Hold||2005-06-21 15:50:00
+PAYMENT_NOTIF|en|Y|Vendor Payment Confirmation||2005-11-03 19:11:00
+PRVACCHASH_MIG|en|Y|Prvder Account Number Hash Mig||2016-01-16 07:51:00
+PURCHASE_ORDER|en|Y|Purchase Order Import||2012-02-18 03:13:00
+PURCH_RECEIPT|en|Y|Purchase Order Receipt Import||2013-08-24 02:15:00
+REC_INV_GEN|en|Y|Generate Recurring Invoices||2014-02-08 04:24:00
+REQUEST|en|Y|Payment Request Import||2005-06-21 15:52:00
+REQ_ASSIGN_TO|en|Y|Request Assignment Timeout||2009-08-14 20:15:00
+REQ_EXPIRE|en|Y|Request Expire||2013-02-15 16:02:00
+ROUTING_MAPPING|en|Y|Invoice Routing Mapping Import||2012-04-21 03:28:00
+RPRTNG_DB_DUMP|en|Y|Reporting DB Dump||2008-04-14 21:47:00
+STAMP_CC_GUID|en|Y|Data Warehouse CC Enrichment Job||2015-06-13 03:11:00
+SUPPLIER_QUEUE|en|Y|Supplier Queue Processing||2012-08-18 01:53:00
+SUPPORT_USR_UPD|en|Y|Update Support Portal User Data||2013-07-20 02:10:00
+SUP_HOTEL_LOAD|en|Y|Supplier Hotel Data Load||2013-06-15 03:06:00
+TAX|en|Y|Tax Import||2005-06-21 15:53:00
+TAXABILITY|en|Y|Taxability Import||2009-06-19 20:36:00
+TRVL_ALLOWANCE|en|Y|Travel Allowance Import||2005-06-21 15:51:00
+TRVL_ERBTI|en|Y|Ereceipts Batches To Instance||2013-07-20 02:10:00
+TRVL_ERCCL|en|Y|Ereceipts Central Cleanup||2013-07-20 02:10:00
+TRVL_ERICL|en|Y|Ereceipts Instance Cleanup||2013-07-20 02:10:00
+TRVL_ERIMG|en|Y|Ereceipts Instance Imaging||2013-07-20 02:10:00
+TRVL_ERITN|en|Y|Ereceipts Itinservices||2013-07-20 02:10:00
+TRVL_ERMAT|en|Y|Ereceipts Instance Matching Run||2013-07-20 02:10:00
+TRVL_ERRES|en|Y|Ereceipts Instance Result Report||2013-07-20 02:10:00
+TRVL_ERRTI|en|Y|Ereceipts Receipts To Instance||2013-07-20 02:10:00
+TRVL_PTS_FEED|en|Y|Employee Travel Points Feedback||2013-09-21 02:02:00
+UBER_IMAGE_RETR|en|Y|Uber Image Retrieval||2011-03-19 02:58:00
+VENDOR|en|Y|Payment Vendor Import||2005-06-21 15:52:00
+ZUORA_BILLING|en|Y|Zuora Billing||2009-12-11 21:13:00

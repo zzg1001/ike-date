@@ -1,0 +1,324 @@
+AUSTRALIAN|pay_single_day_trip_allowance|en|Y|Pay Single Day Trip Allowance (Y/N)|Pay the authorized single day trip allowance.||2005-06-21 15:51:00
+AUSTRALIAN|trip_duration_min_hours|en|Y|Trip Duration Minimum Hours (integer between 0 and 23)|Minimum hours in a single day trip for the trip to qualify for a partial travel allowance (only if pay_single_day_trip_allowance is set to Y).||2005-06-21 15:51:00
+AUSTRIA|add_overnight_after_deductions|en|Y|Add Overnight After Meal Deductions (Y/N)|If Y then the Overnight amount is added after meal deductions.  If N then the Overnight amount is added before meal deductions.||2014-07-12 03:26:00
+AUSTRIA|comp_rate_mixed_hrs_handling|en|Y|Company time band rate handling of mixed hours (default/domestic_alt1)|The method for handling a partial day with mixed foreign and domestic hours when time bands are in use for company rates||2011-11-19 02:33:00
+POLISH|high_hours|en|Y|High Hours (integer between 0 and 23)|Minimum hours for a single day at a domestic/foreign location to qualify for the high meals allowance; Must be greater than low_hours.||2006-08-18 04:33:00
+POLISH|international_combined_lunch_dinner_deduction_factor|en|Y|International combined lunch and dinner factor|Maximum International percentage at which provided lunch and dinner can be deducted, combined||2008-10-17 20:22:00
+AUSTRIA|comp_rate_uses_time_bands|en|Y|Company rates use time band rates (Y/N)|Company rates use time band rates||2011-07-23 01:37:00
+AUSTRIA|d_x_monthly_trip_meals_amount|en|Y|Domestic Extended Monthly Trip Amount (amount)|Meals allowance amount for domestic days in a calendar month for an extended domestic trip.||2007-11-29 20:59:00
+AUSTRIA|d_x_monthly_trip_meals_amount_custom|en|Y|Domestic Extended Monthly Trip Partial Amount (amount)|Meals allowance amount for partial domestic days in a calendar month for an extended domestic trip.||2007-11-29 20:59:00
+AUSTRIA|d_x_monthly_trip_meals_limit|en|Y|Domestic Extended Monthly Trip Days (integer)|The number of days in a given month over which the domestic extended monthly trip rules apply.||2007-11-29 20:59:00
+AUSTRIA|domestic_extended_trip_factor|en|Y|Domestic Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended domestic trip.||2007-02-02 05:02:00
+AUSTRIA|domestic_extended_trip_limit|en|Y|Domestic Extended Trip Days (integer)|The number of days over which the domestic extended trip rules apply.||2007-02-02 05:02:00
+AUSTRIA|domestic_high_hours|en|Y|Domestic High Hours (integer between 0 and 23)|Minimum hours for a single day at a domestic location to qualify for the high meals allowance; Must be greater than domestic_low_hours.||2006-08-18 04:33:00
+AUSTRIA|domestic_low_hours|en|Y|Domestic Low Hours (integer between 0 and 23)|Minimum hours for a single day at a domestic location to qualify for the low meals allowance; Must be less than domestic_high_hours.||2006-08-18 04:33:00
+AUSTRIA|domestic_low_hours_valid_first_last_day|en|Y|Apply Domestic Low Hours for First and Last Day of Trip|If checked then dom_low_hours will apply for first and last day of the trip.||2017-02-18 02:12:00
+AUSTRIA|international_extended_trip_factor_1|en|Y|International Extended Trip 1 Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended international trip 1.||2007-02-02 05:02:00
+AUSTRIA|international_extended_trip_factor_2|en|Y|International Extended Trip 2 Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended international trip 2.||2007-02-02 05:02:00
+AUSTRIA|international_extended_trip_limit_1|en|Y|International Extended Trip Days 1 (integer)|The number of days over which the international extended trip rules 1 apply.||2007-02-02 05:02:00
+AUSTRIA|international_extended_trip_limit_2|en|Y|International Extended Trip Days 2 (integer)|The number of days over which the international extended trip rules 2 apply.||2007-02-02 05:02:00
+AUSTRIA|intl_high_hours|en|Y|International High Hours (integer between 0 and 23)|Minimum hours for a partial day at an international location to qualify 2/3 of a full travel allowance; Must be greater than intl_mid_hours.||2006-08-18 04:33:00
+AUSTRIA|intl_high_meals_rate|en|Y|International High Meals Rate (percent)|Percentage factor applied to the high meals rate for international locations specified.||2006-08-18 04:33:00
+AUSTRIA|intl_low_hours|en|Y|International Low Hours (integer between 0 and 23)|Minimum hours for a partial day at an international location for which travel allowance is zero; Must be less than intl_mid_hours.||2006-08-18 04:33:00
+AUSTRIA|intl_low_meals_rate|en|Y|International Low Meals Rate (percent)|Percentage factor applied to the low meals rate for international locations specified.||2006-08-18 04:33:00
+AUSTRIA|intl_mid_hours|en|Y|International Mid Hours (integer between 0 and 23)|Minimum hours for a partial day at an international location to qualify 1/3 of a full travel allowance(mid allowance); Must be greater than intl_low_hours.||2006-08-18 04:33:00
+AUSTRIA|intl_provided_meals_factor|en|Y|International Provided Meals Limit (percent)|The maximum provided meals deduction amount for international locations specified by Austria.||2006-08-18 04:33:00
+AUSTRIA|use_24hour_day|en|Y|Use 24 hour day (domestic)|Use 24 hour day for determining the allowance amounts of domestic travel||2007-11-29 20:59:00
+AUSTRIA|use_24hour_day_international|en|Y|Use 24 hour day (international)|Use 24 hour day for determining international allowance amounts||2007-11-29 20:59:00
+AUSTRIA|use_d_x_monthly_method|en|Y|Use the alternate Domestic Extended calculation (Y/N)|Calculate the domestic extended stay allowance based on the number of domestic days in a given month ||2007-11-29 20:59:00
+AUSTRIA|use_tax_legislation_rule_for_mixed_trips|en|Y|Use Tax Legislation Rule for Mixed Trips|Use 12ths based calculation for mixed trips||2017-10-27 21:40:00
+BELGIUM|intl_high_hours|en|Y|International High Hours (integer between 0 and 23)|Minimum Hours for a partial day at an international location to qualify for 1/2 of a full allowance.||2014-01-18 04:18:00
+BELGIUM|intl_high_meals_factor|en|Y|International High Hours Rate (percent)|Percentage factor applied to the high meals rate for international locations specified.||2014-01-18 04:18:00
+BELGIUM|low_hours|en|Y|Minimum Hours of the Trip|Minimum Hours of the Trip||2006-08-18 04:33:00
+BELGIUM|mid_hours|en|Y|Middle Hours of the Trip|Middle Hours of the Trip||2006-08-18 04:33:00
+CZECH|foreign_band_four_minute|en|Y|Fourth Time Band Minutes (integer between 0 and 1440)|Upper bound of the time band.||2012-04-21 03:28:00
+CZECH|foreign_band_four_rate|en|Y|Fourth Time Band Rate (percent)|Percentage factor applied to meals allowance for a partial day at an international location.||2007-10-09 18:23:00
+CZECH|foreign_band_one_minute|en|Y|First Foreign Time Band Minutes (integer between 0 and 1440)|Upper bound of the time band.||2012-04-21 03:28:00
+CZECH|foreign_band_one_rate|en|Y|First Foreign Time Band Rate (percent)|Percentage factor applied to meals allowance for a partial day at an international location.||2007-10-09 18:23:00
+CZECH|foreign_band_three_minute|en|Y|Third Time Band Minutes (integer between 0 and 1440)|Upper bound of the time band.||2012-04-21 03:28:00
+CZECH|foreign_band_three_rate|en|Y|Third Time Band Rate (percent)|Percentage factor applied to meals allowance for a partial day at an international location.||2007-10-09 18:23:00
+CZECH|foreign_band_two_minute|en|Y|Second Foreign Time Band Minutes (integer between 0 and 1440)|Upper bound of the time band.||2012-04-21 03:28:00
+CZECH|foreign_band_two_rate|en|Y|Second Time Band Rate (percent)|Percentage factor applied to meals allowance for a partial day at an international location.||2007-10-09 18:23:00
+CZECH|intl_first_day_min_hours|en|Y|International First Day Minimum Hours (integer between 0 and 23)|Minimum hours for the first day of travel in an international location for the day to qualify for full travel allowance.||2005-06-21 15:51:00
+CZECH|intl_last_day_min_hours|en|Y|International Last Day Minimum Hours (integer between 0 and 23)|Minimum hours for the last day of travel in an international location for the day to qualify for full travel allowance.||2005-06-21 15:51:00
+CZECH|maximum_foreign_hours_for_prorating|en|Y|Maximum foreign hours allowed to receive domestic allowance|Maximum foreign hours allowed to receive domestic allowance.||2007-02-02 05:02:00
+CZECH|meal_deduction_d_band_four_minute|en|Y|Fourth Domestic Meal Deduction Minutes (integer between 0 and 1440)|Upper bound of the Domestic Meal Deduction rates||2012-04-21 03:28:00
+CZECH|meal_deduction_d_band_four_rate|en|Y|Fourth Domestic Meal Deduction Rate (percent)|Percentage factor applied to meal deductions for a partial day at an domestic location.||2007-10-09 18:23:00
+CZECH|meal_deduction_d_band_one_minute|en|Y|First Domestic Meal Deduction Minutes (integer between 0 and 1440)|Upper bound of the Domestic Meal Deduction rates; Must be less than or equal to meal_deduction_d_band_two_minute.||2012-04-21 03:28:00
+CZECH|meal_deduction_d_band_one_rate|en|Y|First Domestic Meal Deduction Rate (percent)|Percentage factor applied to meal deductions for a partial day at an domestic location.||2007-10-09 18:23:00
+CZECH|meal_deduction_d_band_three_minute|en|Y|Third Domestic Meal Deduction Minutes (integer between 0 and 1440)|Upper bound of the Domestic Meal Deduction rates; Must be less than or equal to meal_deduction_d_band_four_minute.||2012-04-21 03:28:00
+CZECH|meal_deduction_d_band_three_rate|en|Y|Third Domestic Meal Deduction Rate (percent)|Percentage factor applied to meal deductions for a partial day at an domestic location.||2007-10-09 18:23:00
+CZECH|meal_deduction_d_band_two_minute|en|Y|Second Domestic Meal Deduction Minutes (integer between 0 and 1440)|Upper bound of the Domestic Meal Deduction rates; Must be less than or equal to meal_deduction_d_band_three_minute.||2012-04-21 03:28:00
+CZECH|meal_deduction_d_band_two_rate|en|Y|Second Domestic Meal Deduction Rate (percent)|Percentage factor applied to meal deductions for a partial day at an domestic location.||2007-10-09 18:23:00
+CZECH|meal_deduction_f_band_four_minute|en|Y|Fourth Foreign Meal Deduction Time Band Minutes (integer between 0 and 1440)|Upper bound of the International Meal Deduction rates||2012-04-21 03:28:00
+CZECH|meal_deduction_f_band_four_rate|en|Y|Fourth Foreign Meal Deduction Rate (percent)|Percentage factor applied to meal deductions for a partial day at an international location.||2007-10-09 18:23:00
+CZECH|meal_deduction_f_band_one_minute|en|Y|First Foreign Meal Deduction Time Band Minutes (integer between 0 and 1440)|Upper bound of the International Meal Deduction rates; Must be less than or equal to meal_deduction_f_band_two_minute.||2012-04-21 03:28:00
+CZECH|meal_deduction_f_band_one_rate|en|Y|First Foreign Meal Deduction Rate (percent)|Percentage factor applied to meal deductions for a partial day at an international location.||2007-10-09 18:23:00
+CZECH|meal_deduction_f_band_three_minute|en|Y|Third Foreign Meal Deduction Time Band Minutes (integer between 0 and 1440)|Upper bound of the International Meal Deduction rates; Must be less than or equal to meal_deduction_f_band_four_minute.||2012-04-21 03:28:00
+CZECH|meal_deduction_f_band_three_rate|en|Y|Third Foreign Meal Deduction Rate (percent)|Percentage factor applied to meal deductions for a partial day at an international location.||2007-10-09 18:23:00
+CZECH|meal_deduction_f_band_two_minute|en|Y|Second Foreign Meal Deduction Time Band Minutes (integer between 0 and 1440)|Upper bound of the International Meal Deduction rates; Must be less than or equal to meal_deduction_f_band_three_minute.||2012-04-21 03:28:00
+CZECH|meal_deduction_f_band_two_rate|en|Y|Second Foreign Meal Deduction Rate (percent)|Percentage factor applied to meal deductions for a partial day at an international location.||2007-10-09 18:23:00
+CZECH|pocket_money_rate|en|Y|Pocket Money Rate (percent)|Percentage factor applied to meals allowance for pocket money.||2007-02-02 05:02:00
+CZECH|use_govt_meal_deduction_for_both_config|en|Y|Calculate GOVT Meals Deduction For BOTH CONFIG|To Calculate GOVT meals deduction separately for partial days for rate files with BOTH config||2018-03-18 00:11:00
+DANISH|allow_negative_allowance|en|Y|Provided Meals Adjustment (Y/N)|If the system is configured to prevent negative allowances, then the resulting meals allowance is checked.  If the provided meals calculations (above) brings the rate amount below zero, the system resets the rate to zero.||2013-02-23 03:55:00
+DANISH|create_incidentals|en|Y|Create Incidentals|Create Incidentals when Meals are Reimbursable (Y/N)||2008-07-14 20:54:00
+DANISH|incidentals_exp_key|en|Y|Incidentals ExpKey|Expense type ExpKey to be used when creating Incidentals||2008-07-14 20:54:00
+DANISH|incidentals_factor|en|Y|Incidentals Factor (percent)|Percentage factor applied to meals allowance to provide a fixed incidentals allowance when using reimbursable meals.||2005-06-21 15:51:00
+DANISH|pay_partial_day_allowance|en|Y|Pay Partial Day Allowance|Pay Partial Day Allowance (Y/N)||2008-07-14 20:54:00
+DANISH|pay_single_day_trip_allowance|en|Y|Pay Single Day Trip Allowance (Y/N)|Pay the authorized single day trip allowance.||2005-06-21 15:51:00
+DANISH|use_24hour_day|en|Y|Use 24 hour day|Use 24 hour day for determining the allowance amounts||2007-05-11 01:24:00
+FINNISH|domestic_provided_meals_factor|en|Y|Domestic Provided Meals Factor (percent)|Percentage factor applied to meals allowance for domestic provided meals.||2005-06-21 15:51:00
+FINNISH|international_provided_meals_factor|en|Y|International Provided Meals Factor (percent)|Percentage factor applied to meals allowance for international provided meals.||2005-06-21 15:51:00
+FINNISH|trip_duration_hours|en|Y|Trip Duration Hours (integer between 0 and 23)|Minimum hours in a single day trip for the trip to qualify for a full travel allowance; Must be greater than trip_duration_min_hours.||2005-06-21 15:51:00
+FINNISH|trip_duration_min_hours|en|Y|Trip Duration Minimum Hours (integer between 0 and 23)|Minimum hours in a single day trip for the trip to qualify for a partial travel allowance; Must be less than trip_duration_hours.||2005-06-21 15:51:00
+FINNISH|use_end_of_24hour_day_scenarios|en|Y|Use End Of 24 Hour Day Scenarios|Use logic based on end of 24 hour day||2018-01-14 01:18:00
+GENERIC|extended_trip_company_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2008-03-14 17:20:00
+GENERIC|extended_trip_days|en|Y|Extended Trip Days (integer)|The number of days over which the extended trip rules apply.||2008-03-14 17:20:00
+GENERIC|extended_trip_govt_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2008-03-14 17:20:00
+GENERIC|use_24hour_day|en|Y|Use 24 hour day|Use 24 hour day for determining the allowance amounts||2009-01-16 21:35:00
+GENERIC-TOD|extended_trip_company_factor_1|en|Y|Extended Trip Comp Factor 1 [percent]|Company percentage factor applied to meals allowance for days in an extended trip 1.||2008-11-14 21:04:00
+GENERIC-TOD|extended_trip_company_factor_2|en|Y|Extended Trip Comp Factor 2 [percent]|Company percentage factor applied to meals allowance for days in an extended trip 2.||2008-11-14 21:04:00
+GENERIC-TOD|extended_trip_company_factor_lodging_1|en|Y|Extended Trip Lodging Comp Factor 1 [percent]|Company percentage factor applied to lodging allowance for days in an extended trip 1.||2008-11-14 21:04:00
+GENERIC-TOD|extended_trip_company_factor_lodging_2|en|Y|Extended Trip Lodging Comp Factor 2 [percent]|Company percentage factor applied to lodging allowance for days in an extended trip 2.||2008-11-14 21:04:00
+GENERIC-TOD|extended_trip_count_reset_on_loc_change|en|Y|Extended trip day count reset on location change (Y/N)|Extended trip day count reset on location change||2010-07-17 07:03:00
+GENERIC-TOD|extended_trip_days_1|en|Y|Extended Trip Days 1 [integer]|The number of days over which the extended trip rules 1 apply.||2008-11-14 21:04:00
+GENERIC-TOD|extended_trip_days_2|en|Y|Extended Trip Days 2 [integer]|The number of days over which the extended trip rules 2 apply.||2008-11-14 21:04:00
+GENERIC-TOD|extended_trip_govt_factor_1|en|Y|Extended Trip Govt Factor 1 [percent]|Percentage factor applied to meals allowance for days in an extended trip 1.||2008-11-14 21:04:00
+GENERIC-TOD|extended_trip_govt_factor_2|en|Y|Extended Trip Govt Factor 2 [percent]|Percentage factor applied to meals allowance for days in an extended trip 2.||2008-11-14 21:04:00
+GENERIC-TOD|extended_trip_govt_factor_lodging_1|en|Y|Extended Trip Lodging Govt Factor 1 [percent]|Percentage factor applied to lodging allowance for days in an extended trip 1.||2008-11-14 21:04:00
+GENERIC-TOD|extended_trip_govt_factor_lodging_2|en|Y|Extended Trip Lodging Govt Factor 2 [percent]|Percentage factor applied to lodging allowance for days in an extended trip 2.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_D|en|Y|Departure Day Govt Factor [percent]|Government percentage factor applied to meals allowance for departure before time 1.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_D1|en|Y|Departure Day Govt Factor 1 [percent]|Government percentage factor applied to meals allowance for departure between time 1 and time 2.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_D1_company|en|Y|Departure Day Company Factor 1 [percent]|Company percentage factor applied to meals allowance for departure between time 1 and time 2.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_D2|en|Y|Departure Day Govt Factor 2 [percent]|Government percentage factor applied to meals allowance for departure after time 2.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_D2_company|en|Y|Departure Day Company Factor 2 [percent]|Company percentage factor applied to meals allowance for departure after time 2.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_D_company|en|Y|Departure Day Company Factor [percent]|Company percentage factor applied to meals allowance for departure before time 1.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_R|en|Y|Return Day Govt Factor [percent]|Government percentage factor applied to meals allowance for return before time 1.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_R1|en|Y|Return Day Govt Factor 1 [percent]|Government percentage factor applied to meals allowance for return between time 1 and time 2.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_R1_company|en|Y|Return Day Company Factor 1 [percent]|Company percentage factor applied to meals allowance for return between time 1 and time 2.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_R2|en|Y|Return Day Govt Factor 2 [percent]|Government percentage factor applied to meals allowance for return after time 2.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_R2_company|en|Y|Return Day Company Factor 2 [percent]|Company percentage factor applied to meals allowance for return after time 2.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_R_company|en|Y|Return Day Company Factor [percent]|Company percentage factor applied to meals allowance for return before time 1.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_S|en|Y|Single Day Govt Factor [percent]|Government percentage factor applied to meals allowance for single day.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_S1|en|Y|Single Day Govt Factor 1 [percent]|Government percentage factor applied to meals allowance for single day 1.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_S1_company|en|Y|Single Day Company Factor 1 [percent]|Company percentage factor applied to meals allowance for single day 1.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_S2|en|Y|Single Day Govt Factor 2 [percent]|Government percentage factor applied to meals allowance for single day 2.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_S2_company|en|Y|Single Day Company Factor 2 [percent]|Company percentage factor applied to meals allowance for single day 2.||2008-11-14 21:04:00
+GENERIC-TOD|meals_allowance_factor_S_company|en|Y|Single Day Company Factor [percent]|Company percentage factor applied to meals allowance for single day.||2008-11-14 21:04:00
+GENERIC-TOD|partial_day_time_1|en|Y|Partial Day Time 1 [hhmm]|Earlier time of departure/arrival for partial day calculations.||2008-11-14 21:04:00
+GENERIC-TOD|partial_day_time_2|en|Y|Partial Day Time 2 [hhmm]|Later time of departure/arrival for partial day calculations.||2008-11-14 21:04:00
+GENERIC-TOD|pay_single_day_trip_allowance|en|Y|Pay Single Day Trip Allowance [Y/N]|Pay the authorized single day trip allowance.||2008-11-14 21:04:00
+GENERIC-TOD2|extended_trip_company_factor_1|en|Y|Extended Trip Comp Factor 1 [percent]|Company percentage factor applied to meals allowance for days in an extended trip 1.||2012-02-10 14:33:00
+GENERIC-TOD2|extended_trip_company_factor_2|en|Y|Extended Trip Comp Factor 2 [percent]|Company percentage factor applied to meals allowance for days in an extended trip 2.||2012-02-10 14:33:00
+GENERIC-TOD2|extended_trip_company_factor_lodging_1|en|Y|Extended Trip Lodging Comp Factor 1 [percent]|Company percentage factor applied to lodging allowance for days in an extended trip 1.||2012-02-10 14:33:00
+GENERIC-TOD2|extended_trip_company_factor_lodging_2|en|Y|Extended Trip Lodging Comp Factor 2 [percent]|Company percentage factor applied to lodging allowance for days in an extended trip 2.||2012-02-10 14:33:00
+GENERIC-TOD2|extended_trip_count_reset_on_loc_change|en|Y|Extended trip day count reset on location change (Y/N)|Extended trip day count reset on location change||2012-02-10 14:33:00
+GENERIC-TOD2|extended_trip_days_1|en|Y|Extended Trip Days 1 [integer]|The number of days over which the extended trip rules 1 apply.||2012-02-10 14:33:00
+GENERIC-TOD2|extended_trip_days_2|en|Y|Extended Trip Days 2 [integer]|The number of days over which the extended trip rules 2 apply.||2012-02-10 14:33:00
+GENERIC-TOD2|extended_trip_govt_factor_1|en|Y|Extended Trip Govt Factor 1 [percent]|Percentage factor applied to meals allowance for days in an extended trip 1.||2012-02-10 14:33:00
+GENERIC-TOD2|extended_trip_govt_factor_2|en|Y|Extended Trip Govt Factor 2 [percent]|Percentage factor applied to meals allowance for days in an extended trip 2.||2012-02-10 14:33:00
+GENERIC-TOD2|extended_trip_govt_factor_lodging_1|en|Y|Extended Trip Lodging Govt Factor 1 [percent]|Percentage factor applied to lodging allowance for days in an extended trip 1.||2012-02-10 14:33:00
+GENERIC-TOD2|extended_trip_govt_factor_lodging_2|en|Y|Extended Trip Lodging Govt Factor 2 [percent]|Percentage factor applied to lodging allowance for days in an extended trip 2.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_D|en|Y|Departure Day Govt Factor [percent]|Government percentage factor applied to meals allowance for departure before time 1.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_D1|en|Y|Departure Day Govt Factor 1 [percent]|Government percentage factor applied to meals allowance for departure between time 1 and time 2.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_D1_company|en|Y|Departure Day Company Factor 1 [percent]|Company percentage factor applied to meals allowance for departure between time 1 and time 2.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_D2|en|Y|Departure Day Govt Factor 2 [percent]|Government percentage factor applied to meals allowance for departure after time 2.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_D2_company|en|Y|Departure Day Company Factor 2 [percent]|Company percentage factor applied to meals allowance for departure after time 2.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_D_company|en|Y|Departure Day Company Factor [percent]|Company percentage factor applied to meals allowance for departure before time 1.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_R|en|Y|Return Day Govt Factor [percent]|Government percentage factor applied to meals allowance for return before time 1.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_R1|en|Y|Return Day Govt Factor 1 [percent]|Government percentage factor applied to meals allowance for return between time 1 and time 2.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_R1_company|en|Y|Return Day Company Factor 1 [percent]|Company percentage factor applied to meals allowance for return between time 1 and time 2.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_R2|en|Y|Return Day Govt Factor 2 [percent]|Government percentage factor applied to meals allowance for return after time 2.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_R2_company|en|Y|Return Day Company Factor 2 [percent]|Company percentage factor applied to meals allowance for return after time 2.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_R_company|en|Y|Return Day Company Factor [percent]|Company percentage factor applied to meals allowance for return before time 1.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_S|en|Y|Single Day Govt Factor [percent]|Government percentage factor applied to meals allowance for single day.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_S1|en|Y|Single Day Govt Factor 1 [percent]|Government percentage factor applied to meals allowance for single day 1.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_S1_company|en|Y|Single Day Company Factor 1 [percent]|Company percentage factor applied to meals allowance for single day 1.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_S2|en|Y|Single Day Govt Factor 2 [percent]|Government percentage factor applied to meals allowance for single day 2.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_S2_company|en|Y|Single Day Company Factor 2 [percent]|Company percentage factor applied to meals allowance for single day 2.||2012-02-10 14:33:00
+GENERIC-TOD2|meals_allowance_factor_S_company|en|Y|Single Day Company Factor [percent]|Company percentage factor applied to meals allowance for single day.||2012-02-10 14:33:00
+GENERIC-TOD2|partial_day_time_1|en|Y|Partial Day Time 1 [hhmm]|Earlier time of departure/arrival for partial day calculations.||2012-02-10 14:33:00
+GENERIC-TOD2|partial_day_time_2|en|Y|Partial Day Time 2 [hhmm]|Later time of departure/arrival for partial day calculations.||2012-02-10 14:33:00
+GENERIC-TOD2|pay_single_day_trip_allowance|en|Y|Pay Single Day Trip Allowance [Y/N]|Pay the authorized single day trip allowance.||2012-02-10 14:33:00
+GENERIC-TOD3|extended_trip_company_factor_1|en|Y|Extended Trip Comp Factor 1 [percent]|Company percentage factor applied to meals allowance for days in an extended trip 1.||2012-02-10 14:33:00
+GENERIC-TOD3|extended_trip_company_factor_2|en|Y|Extended Trip Comp Factor 2 [percent]|Company percentage factor applied to meals allowance for days in an extended trip 2.||2012-02-10 14:33:00
+GENERIC-TOD3|extended_trip_company_factor_lodging_1|en|Y|Extended Trip Lodging Comp Factor 1 [percent]|Company percentage factor applied to lodging allowance for days in an extended trip 1.||2012-02-10 14:33:00
+GENERIC-TOD3|extended_trip_company_factor_lodging_2|en|Y|Extended Trip Lodging Comp Factor 2 [percent]|Company percentage factor applied to lodging allowance for days in an extended trip 2.||2012-02-10 14:33:00
+GENERIC-TOD3|extended_trip_count_reset_on_loc_change|en|Y|Extended trip day count reset on location change (Y/N)|Extended trip day count reset on location change||2012-02-10 14:33:00
+GENERIC-TOD3|extended_trip_days_1|en|Y|Extended Trip Days 1 [integer]|The number of days over which the extended trip rules 1 apply.||2012-02-10 14:33:00
+GENERIC-TOD3|extended_trip_days_2|en|Y|Extended Trip Days 2 [integer]|The number of days over which the extended trip rules 2 apply.||2012-02-10 14:33:00
+GENERIC-TOD3|extended_trip_govt_factor_1|en|Y|Extended Trip Govt Factor 1 [percent]|Percentage factor applied to meals allowance for days in an extended trip 1.||2012-02-10 14:33:00
+GENERIC-TOD3|extended_trip_govt_factor_2|en|Y|Extended Trip Govt Factor 2 [percent]|Percentage factor applied to meals allowance for days in an extended trip 2.||2012-02-10 14:33:00
+GENERIC-TOD3|extended_trip_govt_factor_lodging_1|en|Y|Extended Trip Lodging Govt Factor 1 [percent]|Percentage factor applied to lodging allowance for days in an extended trip 1.||2012-02-10 14:33:00
+GENERIC-TOD3|extended_trip_govt_factor_lodging_2|en|Y|Extended Trip Lodging Govt Factor 2 [percent]|Percentage factor applied to lodging allowance for days in an extended trip 2.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_D|en|Y|Departure Day Govt Factor [percent]|Government percentage factor applied to meals allowance for departure before time 1.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_D1|en|Y|Departure Day Govt Factor 1 [percent]|Government percentage factor applied to meals allowance for departure between time 1 and time 2.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_D1_company|en|Y|Departure Day Company Factor 1 [percent]|Company percentage factor applied to meals allowance for departure between time 1 and time 2.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_D2|en|Y|Departure Day Govt Factor 2 [percent]|Government percentage factor applied to meals allowance for departure after time 2.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_D2_company|en|Y|Departure Day Company Factor 2 [percent]|Company percentage factor applied to meals allowance for departure after time 2.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_D_company|en|Y|Departure Day Company Factor [percent]|Company percentage factor applied to meals allowance for departure before time 1.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_R|en|Y|Return Day Govt Factor [percent]|Government percentage factor applied to meals allowance for return before time 1.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_R1|en|Y|Return Day Govt Factor 1 [percent]|Government percentage factor applied to meals allowance for return between time 1 and time 2.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_R1_company|en|Y|Return Day Company Factor 1 [percent]|Company percentage factor applied to meals allowance for return between time 1 and time 2.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_R2|en|Y|Return Day Govt Factor 2 [percent]|Government percentage factor applied to meals allowance for return after time 2.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_R2_company|en|Y|Return Day Company Factor 2 [percent]|Company percentage factor applied to meals allowance for return after time 2.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_R_company|en|Y|Return Day Company Factor [percent]|Company percentage factor applied to meals allowance for return before time 1.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_S|en|Y|Single Day Govt Factor [percent]|Government percentage factor applied to meals allowance for single day.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_S1|en|Y|Single Day Govt Factor 1 [percent]|Government percentage factor applied to meals allowance for single day 1.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_S1_company|en|Y|Single Day Company Factor 1 [percent]|Company percentage factor applied to meals allowance for single day 1.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_S2|en|Y|Single Day Govt Factor 2 [percent]|Government percentage factor applied to meals allowance for single day 2.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_S2_company|en|Y|Single Day Company Factor 2 [percent]|Company percentage factor applied to meals allowance for single day 2.||2012-02-10 14:33:00
+GENERIC-TOD3|meals_allowance_factor_S_company|en|Y|Single Day Company Factor [percent]|Company percentage factor applied to meals allowance for single day.||2012-02-10 14:33:00
+GENERIC-TOD3|partial_day_time_1|en|Y|Partial Day Time 1 [hhmm]|Earlier time of departure/arrival for partial day calculations.||2012-02-10 14:33:00
+GENERIC-TOD3|partial_day_time_2|en|Y|Partial Day Time 2 [hhmm]|Later time of departure/arrival for partial day calculations.||2012-02-10 14:33:00
+GENERIC-TOD3|pay_single_day_trip_allowance|en|Y|Pay Single Day Trip Allowance [Y/N]|Pay the authorized single day trip allowance.||2012-02-10 14:33:00
+GERMAN|add_overnight_after_deductions|en|Y|Add Overnight After Meal Deductions (Y/N)|If Y then the Overnight amount is added after meal deductions.  If N then the Overnight amount is added before meal deductions.||2014-07-12 03:26:00
+GERMAN|ctrycode_for_multiday_leg|en|Y|Country Code during Transit|Country code to use as Rate Location while in transit for entire day.||2006-07-21 16:58:00
+GERMAN|domestic_partial_day_flat_minute_rate|en|Y|Domestic Multi-day Trip minutes to use for Partial Days [minutes]|Domestic Multi-day Trip minutes to use for Partial Days.||2013-11-09 03:11:00
+GERMAN|extended_trip_company_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2008-03-14 17:20:00
+GERMAN|extended_trip_days|en|Y|Extended Trip Days (integer)|The number of days over which the extended trip rules apply.||2008-03-14 17:20:00
+GERMAN|extended_trip_govt_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2008-03-14 17:20:00
+GERMAN|foreign_partial_day_flat_minute_rate|en|Y|Foreign Multi-day Trip minutes to use for Partial Days [minutes]|Foreign Multi-day Trip minutes to use for Partial Days.||2013-11-09 03:11:00
+GERMAN|use_prorated_deductions|en|Y|Use prorated meal deductions [Y/N]|Reduce the meal deduction amounts by the same factor that the meal amounts are reduced.||2011-08-13 01:27:00
+ITALIAN|meals_minimum_day_hours|en|Y|Minimum day hours for meals allowance|Minimum day hours for meals allowance||2008-10-17 20:22:00
+NORWEGIAN|allow_negative_allowance|en|Y|Provided Meals Adjustment (Y/N)|If the system is configured to prevent negative allowances, then the resulting meals allowance is checked.  If the provided meals calculations (above) brings the rate amount below zero, the system resets the rate to zero.||2013-02-23 03:55:00
+NORWEGIAN|domestic_high_hours|en|Y|Domestic High Hours (integer between 0 and 23)|Minimum hours for a single day at a domestic location to qualify for the high meals allowance; Must be greater than domestic_low_hours.||2005-06-21 15:51:00
+NORWEGIAN|domestic_high_meals_rate|en|Y|Domestic High Meals Rate NOK)|The high meals rate for domestic locations specified in Norwegian Krone (NOK).||2005-06-21 15:51:00
+NORWEGIAN|domestic_high_meals_rate_govt|en|Y|Domestic tax free high meals rate (NOK)|Domestic tax free high meals rate for single day domestic trip.||2019-03-15 22:25:00
+NORWEGIAN|domestic_low_hours|en|Y|Domestic Low Hours (integer between 0 and 23)|Minimum hours for a single day at a domestic location to qualify for the low meals allowance; Must be less than domestic_high_hours.||2005-06-21 15:51:00
+NORWEGIAN|domestic_low_meals_rate|en|Y|Domestic Low Meals Rate (NOK)|The low meals rate for domestic locations specified in Norwegian Krone (NOK).||2005-06-21 15:51:00
+NORWEGIAN|domestic_low_meals_rate_govt|en|Y|Domestic tax free low meals rate (NOK)|Domestic tax free low meals rate for single day domestic trip.||2019-03-15 22:25:00
+NORWEGIAN|enable_tax_free_for_last_day|en|Y|Enable tax free for last day|Last day taxation behaves as any other day with default N takes High or Low Meals Rate GOVT||2019-03-15 22:25:00
+NORWEGIAN|extended_trip_company_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2008-04-14 21:47:00
+NORWEGIAN|extended_trip_days|en|Y|Extended Trip Days (integer)|The number of days over which the extended trip rules apply.||2005-06-21 15:51:00
+NORWEGIAN|extended_trip_domestic_comp_amount|en|Y|Extended Trip Domestic Comp Amount (NOK)|This amount will be picked as meals allowances for days in domestic extended trip.||2018-10-30 22:45:00
+NORWEGIAN|extended_trip_domestic_govt_amount|en|Y|Extended Trip Domestic Govt Amount (NOK)|This amount will be picked as meals allowances for days in domestic extended trip.||2018-10-30 22:45:00
+NORWEGIAN|extended_trip_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2005-06-21 15:51:00
+NORWEGIAN|extended_trip_govt_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2008-04-14 21:47:00
+NORWEGIAN|international_breakfast_limit|en|Y|International Breakfast Limit (NOK)|The maximum breakfast deduction amount for international locations specified in Norwegian Krone (NOK).||2005-06-21 15:51:00
+NORWEGIAN|intl_high_hours|en|Y|International High Hours (integer between 0 and 23)|Minimum hours for a partial day at an international location to qualify for a full travel allowance; Must be greater than intl_low_hours.||2005-06-21 15:51:00
+NORWEGIAN|intl_high_meals_rate_govt|en|Y|International tax free high meals rate (NOK)|International tax free high meals rate for single day international trip.||2019-03-15 22:25:00
+NORWEGIAN|intl_low_hours|en|Y|International Low Hours (integer between 0 and 23)|Minimum hours for a partial day at an international location to qualify for a partial travel allowance; Must be less than intl_high_hours.||2005-06-21 15:51:00
+NORWEGIAN|intl_low_meals_rate_govt|en|Y|International tax free low meals rate (NOK)|International tax free low meals rate for single day international trip.||2019-03-15 22:25:00
+NORWEGIAN|intl_meals_factor|en|Y|International Partial Allowance Factor (percent)|Percentage factor applied to meals allowance for a partial day at an international location.||2005-06-21 15:51:00
+NORWEGIAN|multi_day_partial_day_threshold|en|Y|Multi-day partial trip hours (integer between 0 and 23)|Partial days of travel for multi-day trip.  When travel hours are are equal to or greater than this value the days allowance is 100%||2007-06-19 18:32:00
+NORWEGIAN|multiday_partial_trip_new_rules|en|Y|Use Domestic low meals rate and high meals rate for last day parial trips|For multiday last day partial day trip allowance should be calculated based on properties value as per new norway rules.||2018-09-13 00:27:00
+NORWEGIAN|pay_partial_day_incidental|en|Y|Pay Partial Day Incidental (Y/N)|Pay the incidental amount on a partial day when all meals are provided.||2009-09-18 20:16:00
+NORWEGIAN|single_day_breakfast_deduction|en|Y|Single Day Trip Breakfast Deduction (NOK)|Domestic Single Day Trip Breakfast Deduction (NOK)||2009-06-19 20:36:00
+NORWEGIAN|single_day_dinner_deduction|en|Y|Single Day Trip Dinner Deduction (NOK)|Domestic Single Day Trip Dinner Deduction (NOK)||2009-06-19 20:36:00
+NORWEGIAN|single_day_high_hours|en|Y|Domestic Single Day High Hours (integer between 0 and 23)|Minimum hours for a single day at a domestic location to qualify for the high meals allowance; Must be greater than single_day_mid_hours.||2005-06-21 15:51:00
+NORWEGIAN|single_day_high_meals_rate|en|Y|Domestic Single Day High Meals Rate NOK)|The single day high meals rate for domestic locations specified in Norwegian Krone (NOK).||2005-06-21 15:51:00
+NORWEGIAN|single_day_low_hours|en|Y|Domestic Single Day Low Hours (integer between 0 and 23)|Minimum hours for a single day at a domestic location to qualify for the low meals allowance; Must be less than single_day_mid_hours.||2005-06-21 15:51:00
+NORWEGIAN|single_day_low_meals_rate|en|Y|Domestic Single Day Low Meals Rate (NOK)|The single day low meals rate for domestic locations specified in Norwegian Krone (NOK).||2005-06-21 15:51:00
+NORWEGIAN|single_day_lunch_deduction|en|Y|Single Day Trip Lunch Deduction (NOK)|Domestic Single Day Trip Lunch Deduction (NOK)||2009-06-19 20:36:00
+NORWEGIAN|single_day_mid_hours|en|Y|Domestic Single Day Mid Hours (integer between 0 and 23)|Minimum hours for a single day at a domestic location to qualify for the mid meals allowance; Must be greater than single_day_low_hours and less than single_day_high_hours.||2005-06-21 15:51:00
+NORWEGIAN|single_day_mid_meals_rate|en|Y|Domestic Single Day Mid Meals Rate (NOK)|The single day mid meals rate for domestic locations specified in Norwegian Krone (NOK).||2005-06-21 15:51:00
+NORWEGIAN|single_day_trip_uses_time_bands|en|Y|Use Time Bands for Single Day Trip|Use time band rates for single day trips||2010-04-16 20:15:00
+NORWEGIAN|use_prorated_deductions|en|Y|Use prorated meal deductions for international location|For international location, reduce the meal deduction amounts by the same factor that the meal amounts are reduced.||2015-06-13 03:11:00
+NORWEGIAN|use_prorated_deductions_domestic|en|Y|Use prorated meal deductions for domestic location|For domestic location, reduce the meal deduction amounts by the same factor that the meal amounts are reduced.||2015-06-13 03:11:00
+NORWEGIAN|use_single_day_deduction_constants|en|Y|Use Single Day Trip meal deduction constants|Use Domestic Single Day Trip meal deduction constants||2009-06-19 20:36:00
+NORWEGIAN|use_trip_type_entry_field|en|Y|Use Trip Type Entry Field|Use custom entry field to store trip type (and field is part of account code heirarchy)||2008-08-14 16:11:00
+POLISH|disable_domestic_merge_for_24_hour_day_separation|en|Y|Disable domestic merge for the 24hr day separation enhancement|If Y then domestic merge does not take place.||2018-03-18 00:11:00
+POLISH|domestic_combined_lunch_dinner_deduction_factor|en|Y|Domestic combined lunch and dinner factor|Maximum Domestic percentage at which provided lunch and dinner can be deducted, combined||2008-10-17 20:22:00
+POLISH|domestic_extended_trip_factor|en|Y|Domestic Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended domestic trip.||2007-05-11 01:24:00
+POLISH|domestic_extended_trip_factor_company|en|Y|Domestic Extended Trip Company Factor (percent)|Company specific percentage factor applied to meals and lodging allowance for days in an extended domestic trip||2008-10-17 20:22:00
+POLISH|domestic_extended_trip_limit|en|Y|Domestic Extended Trip Days (integer)|The number of days over which the domestic extended trip rules apply.||2007-05-11 01:24:00
+POLISH|domestic_meals_percent|en|Y|Low Meals Rate (percent)|Percentage factor applied to the low meals rate for domestic locations specified.||2006-08-18 04:33:00
+POLISH|domestic_use_prorated_deductions|en|Y|For Domestic Trips Use Prorated Deductions (Y/N)|For Domestic Trips Use Prorated Deductions||2013-09-21 02:02:00
+POLISH|international_extended_trip_factor|en|Y|International Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended international trip||2007-05-11 01:24:00
+POLISH|international_extended_trip_factor_company|en|Y|International Extended Trip Company Factor (percent)|Company specific percentage factor applied to meals and lodging allowance for days in an extended international trip||2008-10-17 20:22:00
+POLISH|international_extended_trip_limit|en|Y|International Extended Trip Days (integer)|The number of days over which the international extended trip rules apply.||2007-05-11 01:24:00
+POLISH|intl_high_meals_percent|en|Y|International High Meals Rate (percent)|Percentage factor applied to the high meals rate for international locations specified.||2006-08-18 04:33:00
+POLISH|intl_low_meals_rate|en|Y|International Low Meals Rate (percent)|Percentage factor applied to the low meals rate for international locations specified.||2006-08-18 04:33:00
+POLISH|intl_use_prorated_deductions|en|Y|For International Trips Use Prorated Deductions (Y/N)|For International Trips Use Prorated Deductions||2010-05-15 05:55:00
+POLISH|low_hours|en|Y|Low Hours (integer between 0 and 23)|Minimum hours for a single day at a domestic/foreign location to qualify for the low meals allowance; Must be less than high_hours.||2006-08-18 04:33:00
+POLISH|use_24_hour_day_separation|en|Y|Use domestic and international trip separation for 24 hour day (Y/N)|If Y then allowance is calculated separately for domestic and international hours in a day.||2016-12-10 02:38:00
+POLISH|use_24hour_day|en|Y|Use 24 hour day|Use 24 hour day for determining the allowance amounts||2007-05-11 01:24:00
+POLISH|use_combined_lunch_dinner_deduction_cap|en|Y|Use combined lunch and dinner cap|Cap the combined percentage at which provided lunch and dinner can be deducted||2008-10-17 20:22:00
+RUSSIAN|extended_trip_company_factor|en|Y|Extended Trip Company Factor (percent)|Factor applied to government meal rate for extended trips.||2009-11-13 21:05:00
+RUSSIAN|extended_trip_days|en|Y|Extended Trip Days (integer)|Factor applied to government meal rate for single day trip over the single day hours threshold.||2009-11-13 21:05:00
+RUSSIAN|extended_trip_govt_factor|en|Y|Extended Trip Government Factor (percent)|Factor applied to government meal rate for extended trips.||2009-11-13 21:05:00
+RUSSIAN|single_day_comp_factor_1|en|Y|Single Day Company Factor 1 (percent)|Factor applied to company meal rate for single day trip under the single day hours threshold.||2009-11-13 21:05:00
+RUSSIAN|single_day_comp_factor_2|en|Y|Single Day Company Factor 2 (percent)|Factor applied to company meal rate for single day trip over the single day hours threshold.||2009-11-13 21:05:00
+RUSSIAN|single_day_govt_factor_1|en|Y|Single Day Government Factor 1 (percent)|Factor applied to government meal rate for single day trip under the single day hours threshold.||2009-11-13 21:05:00
+RUSSIAN|single_day_govt_factor_2|en|Y|Single Day Government Factor 2 (percent)|Factor applied to government meal rate for single day trip over the single day hours threshold.||2009-11-13 21:05:00
+RUSSIAN|single_day_hours|en|Y|Single Day Hours (integer between 0 and 23)|Hour threshold used in calculating meal rate for single day trips.||2009-11-13 21:05:00
+RUSSIAN|use_final_arrival_location|en|Y|Use Final Arrival Location (Y/N)|Deduct for meals provided on single day trips.||2009-11-13 21:05:00
+SPAIN|use_domestic_rates_for_single_day_trip|en|Y|Use Domestic Rates for Single Day Trip (Y/N)|If a foreign trip has no overnight stay, use the rates of the domestic location.||2012-08-18 01:53:00
+SWEDISH|ctry_code|en|Y|Country Code|The Country Code to use in the Swedish Rules TA Calculation||2007-03-16 18:01:00
+SWEDISH|early_cutoff_time|en|Y|Early Cut Off Time (hhmm)|The time that a day begins on the first day of a trip||2008-06-19 18:38:00
+SWEDISH|extended_domestic_trip_use_govt_reduction_on_comp_rate|en|Y|Use govt reduction on domestic trip company rate|Use govt reduction on domestic trip company rate||2010-03-19 20:09:00
+SWEDISH|extended_foreign_trip_use_govt_reduction_on_comp_rate|en|Y|Use govt reduction on international trip company rate|Use govt reduction on international trip company rate||2017-10-27 21:40:00
+SWEDISH|extended_trip_company_lodging_factor|en|Y|Extended Trip Factor (percent)|Company percentage factor applied to lodging allowance for days in an extended trip.||2008-08-14 16:11:00
+SWEDISH|extended_trip_company_meals_factor|en|Y|Extended Trip Factor (percent)|Company percentage factor applied to meals allowance for days in an extended trip.||2008-08-14 16:11:00
+SWEDISH|extended_trip_days|en|Y|Extended Trip Days (integer)|The number of days over which the extended trip rules apply.||2005-06-21 15:51:00
+SWEDISH|extended_trip_lodging_factor|en|Y|Extended Trip Lodging Factor (percent)|Percentage factor applied to domestic lodging allowance for days in an extended trip.||2005-06-21 15:51:00
+SWEDISH|extended_trip_meals_factor|en|Y|Extended Trip Meals Factor (percent)|Percentage factor applied to meals allowance for days in an extended trip.||2005-06-21 15:51:00
+SWEDISH|extended_trip_reset_days|en|Y|Extended Trip Reset Days (integer)|The number of days over which the extended trip reset rules apply.||2005-06-21 15:51:00
+SWEDISH|in_transit_company_rate|en|Y|In Transit Company Rate (SEK)|Company rate specified in Sweden Krona (SEK) for days in transit||2008-06-19 18:38:00
+SWEDISH|in_transit_govt_rate|en|Y|In Transit Government Rate (SEK)|Government rate specified in Sweden Krona (SEK) for days in transit||2008-06-19 18:38:00
+SWEDISH|meals_allowance_factor|en|Y|Meals Allowance Factor (percent)|Percentage factor applied to meals allowance for partial days.||2005-06-21 15:51:00
+SWEDISH|partial_day_time_1|en|Y|Partial Day Time 1 (hhmm)|Earlier time of departure/arrival for partial day calculations.||2005-06-21 15:51:00
+SWEDISH|partial_day_time_2|en|Y|Partial Day Time 2 (hhmm)|Later time of departure/arrival for partial day calculations.||2005-06-21 15:51:00
+SWEDISH|pay_single_day_trip_allowance|en|Y|Pay Single Day Trip Allowance (Y/N)|Pay the authorized single day trip allowance.||2005-06-21 15:51:00
+SWEDISH|short_distance_company_rate|en|Y|Trips Less than 50 km Company Rate (SEK)|Company rate specified in Sweden Krona (SEK) for trips less than 50 km||2008-06-19 18:38:00
+SWEDISH|short_distance_govt_rate|en|Y|Trips Less than 50 km Government Rate (SEK)|Government rate specified in Sweden Krona (SEK) for trips less than 50 km||2008-06-19 18:38:00
+SWEDISH|short_distance_trip_uses_deductions|en|Y|Short Trip Uses Deductions (Y/N)|Deduct for meals provided on short trips.||2010-04-16 20:15:00
+SWEDISH|single_day_trip_uses_deductions|en|Y|Single Day Trip Uses Deductions (Y/N)|Deduct for meals provided on single day trips.||2009-11-13 21:05:00
+SWEDISH|single_day_trip_uses_time_bands|en|Y|Use Time Bands for Single Day Trip|Use time band rates for single day trips||2008-06-19 18:38:00
+SWEDISH|update_taxable_amounts_for_fixed|en|Y|Update taxable amount fields for taxability|Updates the Taxable and Non-Taxable fields on the entry for fixed entries for these allowances and includes them in the report totals.||2010-11-13 04:09:00
+SWEDISH|use_in_transit_company_rate|en|Y|Use In Transit Company Rate|Use In Transit Company Rate for days that are in transit||2008-06-19 18:38:00
+SWEDISH|use_in_transit_govt_rate|en|Y|Use In Transit Government Rate|Use In Transit Government Rate for days that are in transit||2008-06-19 18:38:00
+SWEDISH|use_trip_type_entry_field|en|Y|Use Trip Type Entry Field|Use custom entry field to store trip type (and field is part of account code heirarchy)||2008-06-19 18:38:00
+TIMEBAND|extended_trip_company_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2008-03-14 17:20:00
+TIMEBAND|extended_trip_days|en|Y|Extended Trip Days (integer)|The number of days over which the extended trip rules apply.||2008-03-14 17:20:00
+TIMEBAND|extended_trip_govt_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2008-03-14 17:20:00
+TIMEBAND|partial_day_deduction_factor_d_breakfast|en|Y|Domestic partial day deduction factor for breakfast (percent)|Percentage factor applied to breakfast meal deduction for partial day domestic meals allowance.||2010-04-16 20:15:00
+TIMEBAND|partial_day_deduction_factor_d_dinner|en|Y|Domestic partial day deduction factor for dinner (percent)|Percentage factor applied to dinner meal deduction for partial day domestic meals allowance.||2010-04-16 20:15:00
+TIMEBAND|partial_day_deduction_factor_d_lunch|en|Y|Domestic partial day deduction factor for lunch (percent)|Percentage factor applied to lunch meal deduction for partial day domestic meals allowance.||2010-04-16 20:15:00
+TIMEBAND|partial_day_deduction_factor_f_breakfast|en|Y|Foreign partial day deduction factor for breakfast (percent)|Percentage factor applied to breakfast meal deduction for partial day foreign meals allowance.||2010-04-16 20:15:00
+TIMEBAND|partial_day_deduction_factor_f_dinner|en|Y|Foreign partial day deduction factor for dinner (percent)|Percentage factor applied to dinner meal deduction for partial day foreign meals allowance.||2010-04-16 20:15:00
+TIMEBAND|partial_day_deduction_factor_f_lunch|en|Y|Foreign partial day deduction factor for lunch (percent)|Percentage factor applied to lunch meal deduction for partial day foreign meals allowance.||2010-04-16 20:15:00
+TIMEBAND|use_24hour_day|en|Y|Use 24 hour day|Use 24 hour day for determining the allowance amounts||2009-01-16 21:35:00
+TIMEBAND|use_minutes_to_fetch_timeband|en|Y|Use exact duration in minutes to look up time band rate (Y/N)|Use exact duration in minutes to look up time band rate.||2012-02-18 03:13:00
+TIMEBAND|use_partial_day_meal_deductions|en|Y|Use partial day meal deductions [Y/N]|Use partial day meal deductions to determine the meal deduction amounts of domestic/foreign partial day travel||2010-04-16 20:15:00
+TIMEBAND2|extended_trip_company_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2012-02-10 14:32:00
+TIMEBAND2|extended_trip_days|en|Y|Extended Trip Days (integer)|The number of days over which the extended trip rules apply.||2012-02-10 14:32:00
+TIMEBAND2|extended_trip_govt_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2012-02-10 14:32:00
+TIMEBAND2|partial_day_deduction_factor_d_breakfast|en|Y|Domestic partial day deduction factor for breakfast (percent)|Percentage factor applied to breakfast meal deduction for partial day domestic meals allowance.||2012-02-10 14:32:00
+TIMEBAND2|partial_day_deduction_factor_d_dinner|en|Y|Domestic partial day deduction factor for dinner (percent)|Percentage factor applied to dinner meal deduction for partial day domestic meals allowance.||2012-02-10 14:32:00
+TIMEBAND2|partial_day_deduction_factor_d_lunch|en|Y|Domestic partial day deduction factor for lunch (percent)|Percentage factor applied to lunch meal deduction for partial day domestic meals allowance.||2012-02-10 14:32:00
+TIMEBAND2|partial_day_deduction_factor_f_breakfast|en|Y|Foreign partial day deduction factor for breakfast (percent)|Percentage factor applied to breakfast meal deduction for partial day foreign meals allowance.||2012-02-10 14:32:00
+TIMEBAND2|partial_day_deduction_factor_f_dinner|en|Y|Foreign partial day deduction factor for dinner (percent)|Percentage factor applied to dinner meal deduction for partial day foreign meals allowance.||2012-02-10 14:32:00
+TIMEBAND2|partial_day_deduction_factor_f_lunch|en|Y|Foreign partial day deduction factor for lunch (percent)|Percentage factor applied to lunch meal deduction for partial day foreign meals allowance.||2012-02-10 14:32:00
+TIMEBAND2|use_24hour_day|en|Y|Use 24 hour day|Use 24 hour day for determining the allowance amounts||2012-02-10 14:32:00
+TIMEBAND2|use_minutes_to_fetch_timeband|en|Y|Use exact duration in minutes to look up time band rate (Y/N)|Use exact duration in minutes to look up time band rate.||2016-08-01 15:40:00
+TIMEBAND2|use_partial_day_meal_deductions|en|Y|Use partial day meal deductions [Y/N]|Use partial day meal deductions to determine the meal deduction amounts of domestic/foreign partial day travel||2012-02-10 14:32:00
+TIMEBAND3|extended_trip_company_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2012-02-10 14:32:00
+TIMEBAND3|extended_trip_days|en|Y|Extended Trip Days (integer)|The number of days over which the extended trip rules apply.||2012-02-10 14:32:00
+TIMEBAND3|extended_trip_govt_factor|en|Y|Extended Trip Factor (percent)|Percentage factor applied to meals and lodging allowance for days in an extended trip.||2012-02-10 14:32:00
+TIMEBAND3|partial_day_deduction_factor_d_breakfast|en|Y|Domestic partial day deduction factor for breakfast (percent)|Percentage factor applied to breakfast meal deduction for partial day domestic meals allowance.||2012-02-10 14:32:00
+TIMEBAND3|partial_day_deduction_factor_d_dinner|en|Y|Domestic partial day deduction factor for dinner (percent)|Percentage factor applied to dinner meal deduction for partial day domestic meals allowance.||2012-02-10 14:32:00
+TIMEBAND3|partial_day_deduction_factor_d_lunch|en|Y|Domestic partial day deduction factor for lunch (percent)|Percentage factor applied to lunch meal deduction for partial day domestic meals allowance.||2012-02-10 14:32:00
+TIMEBAND3|partial_day_deduction_factor_f_breakfast|en|Y|Foreign partial day deduction factor for breakfast (percent)|Percentage factor applied to breakfast meal deduction for partial day foreign meals allowance.||2012-02-10 14:32:00
+TIMEBAND3|partial_day_deduction_factor_f_dinner|en|Y|Foreign partial day deduction factor for dinner (percent)|Percentage factor applied to dinner meal deduction for partial day foreign meals allowance.||2012-02-10 14:32:00
+TIMEBAND3|partial_day_deduction_factor_f_lunch|en|Y|Foreign partial day deduction factor for lunch (percent)|Percentage factor applied to lunch meal deduction for partial day foreign meals allowance.||2012-02-10 14:32:00
+TIMEBAND3|use_24hour_day|en|Y|Use 24 hour day|Use 24 hour day for determining the allowance amounts||2012-02-10 14:32:00
+TIMEBAND3|use_minutes_to_fetch_timeband|en|Y|Use exact duration in minutes to look up time band rate (Y/N)|Use exact duration in minutes to look up time band rate.||2016-08-01 15:41:00
+TIMEBAND3|use_partial_day_meal_deductions|en|Y|Use partial day meal deductions [Y/N]|Use partial day meal deductions to determine the meal deduction amounts of domestic/foreign partial day travel||2012-02-10 14:32:00
+USGSA|extended_trip_applies_to_lodging|en|Y|Apply extended trip to lodging (Y/N)|Apply extended trip reduction to lodging||2014-12-13 03:14:00
+USGSA|extended_trip_company_factor|en|Y|Extended Trip Company Factor (percent)|Percentage factor applied to company rate for days after extended trip limit 1.||2014-11-15 04:23:00
+USGSA|extended_trip_company_factor_2|en|Y|Extended Trip Company Factor 2 (percent)|Percentage factor applied to company rate for days after extended trip limit 2.||2014-11-15 04:23:00
+USGSA|extended_trip_count_reset_on_loc_change|en|Y|Extended trip day count reset on location change (Y/N)|Extended trip day count reset on location change||2014-11-15 04:23:00
+USGSA|extended_trip_days|en|Y|Extended Trip Days (integer)|The number of days over which the extended trip rules apply.  Use a value of 0 to disable the calculation.||2014-11-15 04:23:00
+USGSA|extended_trip_days_2|en|Y|Extended Trip Days 2 (integer)|The number of days over which a second level of extended trip rules apply.  Use a value of 0 to disable the calculation.||2014-11-15 04:23:00
+USGSA|extended_trip_govt_factor|en|Y|Extended Trip Government Factor (percent)|Percentage factor applied to government rate for days after extended trip limit 1.||2014-11-15 04:23:00
+USGSA|extended_trip_govt_factor_2|en|Y|Extended Trip Government Factor 2 (percent)|Percentage factor applied to government rate for days after extended trip limit 2.||2014-11-15 04:23:00
+USGSA|first_day_percent|en|Y|First Day Factor (percent)|Percentage factor applied to meals allowance for the first day of travel.||2005-06-21 15:51:00
+USGSA|last_day_percent|en|Y|Last Day Factor (percent)|Percentage factor applied to meals allowance for the last day of travel.||2005-06-21 15:51:00
+USGSA|lodging_comp_percent_rule_multiplier|en|Y|Company lodging multiplier(decimal)|Percentage factor applied to lodging allowance for Company rates.||2008-04-14 21:47:00
+USGSA|lodging_govt_percent_rule_multiplier|en|Y|Govt lodging multiplier(decimal)|Percentage factor applied to lodging allowance for Government rates.||2008-04-14 21:47:00
+USGSA|meals_comp_percent_rule_multiplier|en|Y|Company meals multiplier(decimal)|Percentage factor applied to meals allowance for Company rates.||2008-04-14 21:47:00
+USGSA|meals_govt_percent_rule_multiplier|en|Y|Govt meals multiplier(decimal)|Percentage factor applied to meals allowance for Government rates.||2008-04-14 21:47:00
+USGSA|trip_duration_min_hours|en|Y|Trip Duration Minimum Hours (integer between 0 and 23)|Minimum hours in a trip for the trip to qualify for travel allowance.||2005-06-21 15:51:00
+USGSA|use_arrive_loc_for_transit_days|en|Y|Use arrival location for in transit days [Y/N]|Use the arrival location for all rows with in transit state except for the last day of travel||2012-10-20 02:14:00

@@ -1,0 +1,106 @@
+002000|en|Y|Disputed|Dispute|Mark this invoice as disputed in the workflow, waiting for CR Processor and Issuer to solve the situation.||2012-01-21 02:43:00
+002001|en|Y|Pending Exception Review|Pending Exception Review|Report is pending exception review||2013-11-26 11:01:00
+002002|en|Y|Submitted and Pending Concur Audit Review|Concur Audit|Report is pending Concur Audit Review||2014-01-23 16:32:00
+002004|en|Y|Pending Travel Agency Update|Pending Travel Agency Update|Request is submitted and pending update by the Travel Agency||2015-10-12 19:18:00
+002006|en|Y|CA Issued|Cash Advance Final Check before Issue|Cash Advance Final Check before Issue||2017-09-28 05:32:00
+002007|en|Y|Invoice Checked|Invoice Checked|Invoice Checked||2017-11-23 07:04:00
+A_AAFH|en|Y|Anomaly & Fraud Check|Anomaly & Fraud Check|Report submission triggers Anomaly & Fraud Check||2013-05-18 01:39:00
+A_ACCO|en|Y|Approved & In Accounting Review|Accounting Review|Report is pending reviews||2005-11-03 19:11:00
+A_APPR|en|Y|Approved|Approve|Report has been approved||2005-06-21 15:48:00
+A_EXTV|en|Y|Pending External Validation|Pending External Validation|Report is pending external validation||2010-09-18 04:39:00
+A_FCHK|en|Y|Pending Funds Check|Pending Funds Check|Report is pending funds check||2023-03-16 23:15:00
+A_FILE|en|Y|Submitted|Submitted|Report has been submitted||2005-06-21 15:48:00
+A_FOBG|en|Y|Pending Funds Reservation|Pending Funds Reservation|Report is pending funds reservation||2023-03-16 23:15:00
+A_INTV|en|Y|Pending Internal Validation|Pending Internal Validation|Report is pending internal validation||2021-01-12 23:28:00
+A_NOTF|en|Y|Not Submitted|Not Submitted|Report has not been submitted||2005-06-21 15:48:00
+A_PBDG|en|Y|Pending Budget Approval|Pending Budget Approval|Report approval is pending Budget approval||2012-06-23 01:46:00
+A_PECO|en|Y|Pending Cost Object Approval|Pending Cost Object Approval|Report approval is pending Cost object approval||2009-01-16 21:35:00
+A_PEND|en|Y|Submitted & Pending Approval|Pending Approval|Report is pending manager approval||2005-11-03 19:11:00
+A_PFIL|en|Y|Presubmit Validation|Validate Before Submit|Validate the report prior to submit||2017-03-19 00:44:00
+A_PREC|en|Y|Recalled to Processor|Recall to Processor|Report is recalled by processor||2017-03-19 00:44:00
+A_PVAL|en|Y|Pending Validation|Pending Validation|Report is pending prepayment validation||2005-06-21 15:48:00
+A_RESU|en|Y|Sent Back to Employee|Send Back to Employee|Report needs to be resubmitted||2005-06-21 15:50:00
+A_RHLD|en|Y|Hold for Receipt Image|Hold for Receipt Image|Report submission is pending receipt images||2008-03-14 17:20:00
+A_TEXP|en|Y|Approval Time Expired|Approval Time Expired|Report expired in approval queue||2005-06-21 15:52:00
+A_TREC|en|Y|Recalled by Traveler|Recall|Report is recalled by traveler||2017-03-19 00:44:00
+C_APPR|en|Y|Approved|Approve|Cash Advance has been Approved||2005-06-21 15:48:00
+C_COMP|en|Y|Completed|Complete|Cash Advance is completed||2005-06-21 15:48:00
+C_FILE|en|Y|Filed|File|Cash Advance has been submitted||2005-06-21 15:48:00
+C_ISSU|en|Y|Issued|Issue|Cash Advance has been issued||2005-06-21 15:48:00
+C_NISU|en|Y|Not Issued|Do not Issue|Cash Advance has been cancelled||2005-06-21 15:48:00
+C_NOTF|en|Y|Not Submitted|Not Submitted|Cash Advance has not been submitted||2014-01-18 04:18:00
+C_PECA|en|Y|Pending Expense Cash Advance Administrator|Pending Expense Cash Advance Administrator|Cash Advance is pending Expense Cash Advance Administrator||2005-06-21 15:48:00
+C_PEND|en|Y|Pending Approval|Pending Approval|Cash Advance is pending manager approval||2005-06-21 15:48:00
+C_REJE|en|Y|Sent Back to Employee|Reject|Cash Advance has been Rejected||2014-01-18 04:19:00
+ET51  |en|Y|Sanctioned|Sanctioned|Vendor BPS Status is the Partner was blocked due to Trade restrictions||2023-10-05 22:53:00
+ET52  |en|Y|Passed|Passed|Vendor BPS Status is the Partner was released with Trade restrictions||2023-10-05 22:53:00
+ETOK  |en|Y|Passed|Released|Vendor BPS Status is released and can be used without restrictions||2023-09-22 07:03:00
+ETS0  |en|Y|Pending Review|Pending Review|Vendor BPS Status is pending for review||2023-10-20 16:44:00
+ETS02 |en|Y|Pending Review|Pending Review|Vendor BPS Status is pending for review||2023-10-20 16:44:00
+ETS1  |en|Y|Sanctioned|Sanctioned|Vendor BPS Status is that partners country code is on our embargo list||2023-09-22 07:03:00
+ETS2  |en|Y|Pending Review|Pending Review|Vendor BPS Status is that a hit on the sanction party list SPL11 was detected and has to be investigated||2023-12-07 19:22:00
+ETS3  |en|Y|Sanctioned|Sanctioned|Vendor BPS Status is that partner was blocked due to SAP own SPL hit||2023-09-22 07:03:00
+ETS4  |en|Y|Sanctioned|Sanctioned|Vendor BPS Status is marked as Sanctioned||2023-07-26 20:13:00
+ETS6  |en|Y|Sanctioned|Sanctioned|Vendor BPS status is the Partner was blocked due to critical country list hit||2023-10-05 22:53:00
+EX30  |en|Y|System Pending|System Pending|Vendor BPS System problem or system down||2023-12-07 19:22:00
+EX31  |en|Y|Invalid|Invalid|Vendor BPS returned with error as missing mandatory fields||2023-09-22 07:03:00
+EX32  |en|Y|Translation in progress|Translation in progress|Non latin or special characters present||2023-12-07 19:22:00
+EX33  |en|Y|End Of Business|End Of Business|Vendor BPS Status sent with EOB flag||2023-11-09 20:12:00
+P_FAIL|en|Y|Financial Posting Failed|Financial Posting Failed|Financial posting failed for the report||2016-02-20 04:18:00
+P_HOLD|en|Y|Holding Payment|Hold Payment|Report payment is on hold||2005-06-21 15:50:00
+P_NOTP|en|Y|Not Paid|Not Paid|Report has not been paid||2005-06-21 15:48:00
+P_PAID|en|Y|Sent for Payment|Pay|Report has been Sent for Payment||2011-02-25 12:20:00
+P_PAYC|en|Y|Payment Confirmed|Payment Confirmed|Some or all of the report expenses have been paid||2007-03-16 18:01:00
+P_PROC|en|Y|Processing Payment|Process Payment|Report is in process to be paid||2005-06-21 15:48:00
+Q_APPR|en|Y|Approved|Approve|Request has been approved||2010-10-16 03:56:00
+Q_CANC|en|Y|Cancelled|Cancelled|This request is cancelled||2011-10-22 01:49:00
+Q_EXTV|en|Y|Pending External Validation|Pending External Validation|Request is pending external validation||2012-06-23 01:46:00
+Q_FILE|en|Y|Submitted|Submitted|Request has been submitted||2010-08-21 08:48:00
+Q_NOTF|en|Y|Not Submitted|Not submitted|Request has not been submitted||2011-06-18 03:48:00
+Q_PBDG|en|Y|Pending Budget Approval|Pending Budget Approval|Request approval is pending Budget approval||2012-06-23 01:46:00
+Q_PEBK|en|Y|Approved - Pending Booking|Approved - Pending Booking|Resquest is approved - Pending Booking||2014-05-17 03:10:00
+Q_PECO|en|Y|Pending Cost Object Approval|Pending Cost Object Approval|Request approval is pending Cost object approval||2012-06-23 01:46:00
+Q_PEND|en|Y|Submitted & Pending Approval|Submitted & Pending Approval|Request is pending manager approval||2010-08-21 08:48:00
+Q_RESU|en|Y|Sent Back to Employee|Sent Back to Employee|Request needs to be resubmitted||2010-08-21 08:48:00
+Q_TEXP|en|Y|Approval Time Expired|Approval Time Expired|Request expired in approval queue||2010-08-21 08:48:00
+R_ACCO|en|Y|Accounting Review|Accounting Review|Payment request is pending reviews||2005-06-21 15:51:00
+R_APPR|en|Y|Approved|Approve|Payment request has been approved||2005-06-21 15:51:00
+R_CANC|en|Y|Cancelled|Request cancelled|This request is cancelled||2009-06-19 20:36:00
+R_EXTR|en|Y|Extracted|Sent for Payment|Payment request has been extracted to the payment system||2005-06-21 15:51:00
+R_FAIL|en|Y|Financial Posting Failed|Financial Posting Failed|Payment request was sent to the payment system that returned a failure||2016-02-20 04:18:00
+R_FILE|en|Y|Submitted|Submitted|Payment request has been submitted||2005-06-21 15:51:00
+R_FIXO|en|Y|Fix Owner|Fix Owner|The assigned owner of this Payment Request is incorrect||2005-06-21 15:51:00
+R_IHLD|en|Y|Require Hardcopy Receipts|Hold for Invoice HardCopy|Payment Request extract is pending Invoice HardCopy||2015-02-07 02:41:00
+R_NOTF|en|Y|Not Submitted|Not Submitted|Payment request has not been submitted||2005-06-21 15:51:00
+R_NOTP|en|Y|Not Paid|Not Paid|Payment request has not been paid||2005-06-21 15:51:00
+R_PAID|en|Y|Paid|Payment Confirmed|Payment system has returned data that confirms the vendor was paid for this payment request||2005-06-21 15:51:00
+R_PBDG|en|Y|Pending Budget Approval|Pending Budget Approval|Payment request approval is pending Budget approval||2019-01-29 23:40:00
+R_PECO|en|Y|Pending Cost Object Approval|Pending Cost Object Approval|Request approval is pending Cost object approval||2009-01-16 21:35:00
+R_PEND|en|Y|Pending Approval|Pending Approval|Payment request is pending manager approval||2005-06-21 15:51:00
+R_PROC|en|Y|Pending Payment|Pending Payment|Payment request has passed all of its validations, but has yet to be extracted to the payment system||2005-06-21 15:51:00
+R_PVAL|en|Y|Pending Validation|Pending Validation|Payment Request is pending prepayment validation||2005-06-21 15:51:00
+R_PVLF|en|Y|Pending Validation Fail|Pending Validation Fail|Pending validation step failed||2023-12-07 19:22:00
+R_RESU|en|Y|Sent Back To Employee|Send Back to Employee|Payment request needs to be resubmitted||2005-06-21 15:51:00
+R_TEXP|en|Y|Approval Time Expired|Approval Time Expired|Request expired in approval queue||2005-06-21 15:52:00
+R_VAPP|en|Y|Vendor Approval|Vendor Approval|Payment Request is pending vendor approval||2005-06-21 15:51:00
+R_VOID|en|Y|Voided|Request voided|This request is voided||2007-11-10 03:05:00
+T_APPR|en|Y|Approved|Approve|Authorization Request has been approved.||2008-03-14 17:20:00
+T_AUTH|en|Y|Authorized|Authorized|Authorization Request has been fully authorized.||2008-03-14 17:20:00
+T_FILE|en|Y|Submitted|Submitted|Authorization Request has been submitted||2008-03-14 17:20:00
+T_NOTF|en|Y|Not Submitted|Not Submitted|Authorization Request has not been submitted||2008-03-14 17:20:00
+T_PEND|en|Y|Pending Approval|Pending Approval|Authorization Request is pending manager approval||2008-03-14 17:20:00
+T_PVAL|en|Y|Pending Authorization|Pending Authorization|Authorization Request has been approved by all approvers.||2008-03-14 17:20:00
+T_RESU|en|Y|Sent Back To Employee|Send Back to Employee|Authorization Request needs to be resubmitted||2008-03-14 17:20:00
+T_REVW|en|Y|Administrator Review|Pending Authorization administrator|Authorization Request is pending Authorization administrator||2008-03-14 17:20:00
+U_ACCO|en|Y|Pending Processor Review|Pending Processor Review|Purchase request is pending processor review||2013-01-19 03:40:00
+U_APPR|en|Y|Approved|Approve|Purchase request has been approved||2013-01-19 03:40:00
+U_FILE|en|Y|Submitted|Submitted|Purchase request has been submitted||2013-01-19 03:40:00
+U_NOTF|en|Y|Not Submitted|Not Submitted|Purchase request has not been submitted||2013-01-19 03:40:00
+U_PBDG|en|Y|Pending Budget Approval|Pending Budget Approval|Purchase request approval is pending Budget approval||2019-01-29 23:40:00
+U_PECO|en|Y|Pending Cost Object Approval|Pending Cost Object Approval|Purchase Request approval is pending Cost object approval||2013-01-19 03:40:00
+U_PEND|en|Y|Pending Approval|Pending Approval|Purchase request is pending manager approval||2013-01-19 03:40:00
+U_RESU|en|Y|Sent Back To Employee|Send Back to Employee|Purchase request needs to be resubmitted||2013-01-19 03:40:00
+U_TEXP|en|Y|Approval Time Expired|Approval Time Expired|Purchase Request expired in approval queue||2013-07-20 02:10:00
+U_VAPP|en|Y|Vendor Approval|Vendor Approval|Purchase Request is pending vendor approval||2013-03-23 02:06:00
+V_INVD|en|Y|Invalid|Invalid|Vendor BPS Status is marked as Invalid||2023-07-06 20:47:00
+W_SKIP|en|Y|Auto Approved|Auto Approved|Auto Approved||2005-06-21 15:48:00

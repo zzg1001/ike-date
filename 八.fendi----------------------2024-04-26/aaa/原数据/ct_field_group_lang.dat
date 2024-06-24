@@ -1,0 +1,220 @@
+AA_HIER_RPT_FIELDS|en|Y|Authorized Approver Report Fields||2005-06-21 15:52:00
+AR_ATTENDEE_TOTALS|en|Y|Attendee Totals||2007-10-09 18:23:00
+AR_AUTH_ATN_ARE_TOTL|en|Y|Attendee Total||2008-03-14 17:20:00
+AR_AUTH_ATN_RPE_AMT|en|Y|Attendee Entry Amount||2008-04-14 21:47:00
+AR_AUTH_ATN_RPE_TOTL|en|Y|Attendee Total||2008-03-14 17:20:00
+AR_AUTH_REQ_ATTN|en|Y|Attendee||2008-03-14 17:20:00
+AR_BUDGET_AMOUNTS|en|Y|Budget Amounts||2013-01-19 03:40:00
+AR_BUDGET_SERVICE|en|Y|Budget||2017-09-29 22:37:00
+AR_CA_FIELDS|en|Y|Request Cash Advance||2013-02-15 16:02:00
+AR_EMPLOYEE_FIELDS|en|Y|Employee||2005-06-21 15:48:00
+AR_ENTRYALLOC_FIELDS|en|Y|Entry Allocation||2005-06-21 15:50:00
+AR_ENTRYGRP_FLDS|en|Y|Group of Central Reconciliation Expense Types||2012-02-18 03:14:00
+AR_ENTRY_ATTENDEE|en|Y|Entry Attendee||2005-06-21 15:48:00
+AR_ENTRY_EXP_CAT|en|Y|Expense Entry Category||2008-03-14 17:20:00
+AR_ENTRY_FIELDS|en|Y|Entry||2005-06-21 15:48:00
+AR_ENTRY_RESV_FIELDS|en|Y|Travel Reservation||2006-09-28 21:11:00
+AR_ENTRY_SPD_CAT|en|Y|Expense Entry Spend Category||2013-08-24 02:15:00
+AR_EXCEPTION_FIELDS|en|Y|Report Exception||2005-06-21 15:48:00
+AR_LI_ATN|en|Y|Line Item Attendee||2015-09-19 03:32:00
+AR_LI_ATN_TOTALS|en|Y|Attendee Totals||2015-09-19 03:32:00
+AR_REQ_AGC_FIELDS|en|Y|Agency||2012-06-23 01:46:00
+AR_REQ_ALLOC_FIELDS|en|Y|Request Allocation||2011-01-22 03:48:00
+AR_REQ_BDGT_AMOUNTS|en|Y|Budget Amounts||2013-04-05 08:58:00
+AR_REQ_ENTRY_ATN|en|Y|Request Entry Attendee||2012-05-19 01:32:00
+AR_REQ_ENTRY_ATN_TOT|en|Y|Attendee Total||2013-09-21 02:02:00
+AR_REQ_ENTRY_FIELDS|en|Y|Request Entry||2010-12-18 04:20:00
+AR_REQ_ENT_ATN_SINGL|en|Y|Attendee Total - Single Request||2018-08-01 20:47:00
+AR_REQ_EX_FIELDS|en|Y|Request Exception||2011-02-26 03:38:00
+AR_REQ_FIELDS|en|Y|Request||2010-08-21 08:48:00
+AR_REQ_SUMMARY_FLDS|en|Y|Request related Reports||2013-02-15 16:02:00
+AR_REQ_TR_RES_FIELDS|en|Y|Travel Reservation Exception||2022-11-29 20:03:00
+AR_RPT_FIELDS_SAVE|en|Y|Report||2005-06-21 15:48:00
+AR_RPT_FIELDS_SUBMIT|en|Y|Report||2005-06-21 15:48:00
+AR_RPT_SUMMARY_FLDS|en|Y|AR Related Reports||2008-03-14 17:20:00
+AR_SEGMENTGRP_FLDS|en|Y|Group of Request Segment Types||2013-02-15 16:02:00
+AR_SEGMENT_FIELDS|en|Y|Segment||2010-08-21 08:48:00
+AR_TAS_ADJUST|en|Y|Travel Allowance Service Adjustments||2022-04-05 23:53:00
+AR_TAS_ITIN|en|Y|Travel Allowance Service Itinerary||2021-11-09 23:47:00
+AR_TAS_LIMITS|en|Y|Travel Allowance Service Limits||2023-10-26 17:32:00
+AR_TA_DAY|en|Y|Travel Allowance Itinerary Day||2009-10-16 20:15:00
+AR_TA_FIXED_REIMB|en|Y|Travel Allowance Adjustments||2009-10-16 20:15:00
+AR_TA_ITIN|en|Y|Travel Allowance Itinerary||2009-10-16 20:15:00
+AR_TA_ITIN_RPT|en|Y|Travel Allowance Itinerary (on report)||2010-01-15 21:11:00
+AR_TRAVEL_ALLOWANCE|en|Y|Travel Allowance||2008-05-14 19:51:00
+AR_TR_ENTRY_FIELDS|en|Y|AR Category||2008-03-14 17:20:00
+AR_TR_FIELDS|en|Y|AR (Authorization Request)||2008-03-14 17:20:00
+AR_TR_RES_EX_FIELDS|en|Y|Travel Reservation Exception||2020-12-09 00:44:00
+AUTH_APPROV_FIELDS|en|Y|Authorized Approver Fields||2005-06-21 15:48:00
+BILLTO_FIELDS|en|Y|Bill To||2013-06-15 03:06:00
+CAR_FIELDS|en|Y|Entry Car||2011-05-21 03:42:00
+COPY_ATTENDEE_FIELDS|en|Y|Copy Down Attendee Fields||2010-10-16 03:56:00
+COPY_EMPLOYEE_FIELDS|en|Y|Copy Down Employee Fields||2005-06-21 15:48:00
+COPY_ENTRY_FIELDS|en|Y|Copy Down Entry Fields||2005-06-21 15:48:00
+COPY_PMT_HDR_FIELDS|en|Y|Request||2005-06-21 15:52:00
+COPY_PO_HDR_FIELDS|en|Y|Copy Down PO Header Fields||2012-10-20 02:14:00
+COPY_PO_LI_FIELDS|en|Y|Copy Down PO Line Item Fields||2012-10-20 02:14:00
+COPY_PUR2PO_HDR|en|Y|Copy Purchase Request Detail to Purchase Order Fields||2013-04-27 02:22:00
+COPY_PUR2PO_ITEM|en|Y|Copy Purchase Request Item to Purchase Order Fields||2013-04-27 02:22:00
+COPY_PURCHREQ_FIELDS|en|Y|Copy Down Purchase Request Detail Fields||2013-02-23 03:55:00
+COPY_PUR_ITEM2ALLOC|en|Y|Copy Purchase Request Item to Purchase Request Allocation||2016-03-19 02:27:00
+COPY_REPORT_FIELDS|en|Y|Copy Down Report Fields||2005-06-21 15:48:00
+COPY_REQALLOC_FIELDS|en|Y|Copy Down Request Allocation Fields||2011-01-22 03:48:00
+COPY_REQENTRY_FIELDS|en|Y|Copy Down Request Entry Fields||2011-04-16 04:10:00
+COPY_REQ_FIELDS|en|Y|Copy Down Request Header Fields||2010-09-18 04:39:00
+COPY_TR_FIELDS|en|Y|Copy Down Authorization Request Header Fields||2008-03-14 17:20:00
+COPY_TR_RES_FIELDS|en|Y|Copy Down Travel Reservation Fields||2020-09-22 00:33:00
+COPY_VEN2PUR_FIELDS|en|Y|Vendor to Purchase Request Item Copy Down Fields||2013-05-18 01:39:00
+CREDIT_CARD_FIELDS|en|Y| Company Card||2006-12-05 18:56:00
+EFT_EXT_BCH_FLDS|en|Y|PD Batch||2007-06-19 18:32:00
+EFT_EXT_EMP_FLDS|en|Y|Employee||2007-06-19 18:32:00
+EFT_EXT_JNL_FLDS|en|Y|PD Journal||2007-06-19 18:32:00
+EFT_EXT_PA_FLDS|en|Y|Company Bank Account||2007-06-19 18:32:00
+EFT_EXT_RPT_FLDS|en|Y|Report||2007-06-19 18:32:00
+ER_APPROV_REQ_FIELDS|en|Y|Approval Request||2005-06-21 15:50:00
+ER_APPR_REQ_FIELDS|en|Y|Approval Request||2011-03-19 02:57:00
+ER_CASHADV_FIELDS|en|Y|Cash Advance||2005-06-21 15:50:00
+ER_COM_CARD_FIELDS|en|Y|Company Card||2005-06-21 15:50:00
+ER_EMPLOYEE_FIELDS|en|Y|Employee||2005-06-21 15:50:00
+ER_ENTRY_ATTENDEE|en|Y|Entry Attendee||2005-06-21 15:53:00
+ER_ENTRY_FIELDS|en|Y|Entry||2005-06-21 15:50:00
+ER_REPORT_FIELDS|en|Y|Report||2005-06-21 15:50:00
+ER_REP_STAT_FIELDS|en|Y|Report Status||2005-06-21 15:51:00
+ER_REQ_EMP_FIELDS|en|Y|Employee||2011-03-19 02:57:00
+ER_REQ_ENTRY_ATN|en|Y|Request Entry Attendee||2012-05-19 01:32:00
+ER_REQ_ENTRY_FIELDS|en|Y|Request Entry||2011-03-19 02:57:00
+ER_REQ_FIELDS|en|Y|Request||2011-03-19 02:57:00
+ER_REQ_SEG_FIELDS|en|Y|Segment||2011-03-19 02:57:00
+ER_TRAVEL_REQ_FIELDS|en|Y|AR (Authorization Request)||2008-03-14 17:20:00
+ER_TR_ATN_FIELDS|en|Y|AR Attendee||2008-04-14 21:47:00
+EXP_ACC_EXT_ALC_FLDS|en|Y|Allocation||2005-06-21 15:53:00
+EXP_ACC_EXT_CAV_FLDS|en|Y|Cash Advance||2005-06-21 15:53:00
+EXP_ACC_EXT_CRC_FLDS|en|Y|Company Card||2007-02-02 05:02:00
+EXP_ACC_EXT_EMP_FLDS|en|Y|Employee||2005-06-21 15:53:00
+EXP_ACC_EXT_JNL_FLDS|en|Y|Journal||2005-06-21 15:53:00
+EXP_ACC_EXT_RPE_FLDS|en|Y|Entry||2005-06-21 15:53:00
+EXP_ACC_EXT_RPT_FLDS|en|Y|Report||2005-06-21 15:53:00
+HIER_EMPLOYEE_FIELDS|en|Y|Hierarchy Employee Fields||2005-06-21 15:50:00
+HIER_ENTRY_FIELDS|en|Y|Hierarchy Entry Fields||2005-06-21 15:50:00
+HIER_EXP_ALLOC_FLDS|en|Y|Hierarchy Expense Allocation Fields||2005-06-21 15:50:00
+HIER_REPORT_FIELDS|en|Y|Hierarchy Report Fields||2005-06-21 15:50:00
+HIER_REQ_ALLOC_FLDS|en|Y|Hierarchy Travel Req Alloc Fields||2012-06-23 01:46:00
+HIER_REQ_FIELDS|en|Y|Hierarchy Request Fields||2013-02-15 16:02:00
+LEDGER_ALLOC_FIELDS|en|Y|Ledger Allocation Fields||2005-06-21 15:50:00
+LEDGER_ENTRY_FIELDS|en|Y|Ledger Entry Fields||2005-06-21 15:48:00
+LEDGER_REPORT_FIELDS|en|Y|Ledger Report Fields||2005-06-21 15:48:00
+PF_BARCODE_FIELDS|en|Y|Bar code fields for Configurable Printed Reports||2006-04-13 19:26:00
+PF_FORMDATA_FIELDS|en|Y|Form Data fields for Configurable Printed Reports||2006-04-13 19:26:00
+PF_LISTDATA_ALLOC|en|Y|List data allocation fields for Configurable Printed Reports||2009-06-19 20:36:00
+PF_LISTDATA_FIELDS|en|Y|List data fields for Configurable Printed Reports||2006-04-13 19:26:00
+PF_LISTDATA_GROUPING|en|Y|List data grouping fields for Configurable Printed Reports||2008-09-22 21:11:00
+PF_PMTBARCODE_FLDS|en|Y|Bar code fields for Configurable Printed Payment Request||2015-11-21 04:23:00
+PF_PMTFORMDATA_FLDS|en|Y|Form Data fields for Configurable Printed Payment Request||2015-11-21 04:23:00
+PF_PMTLISTDATA_ALLOC|en|Y|List data allocation fields for Configurable Printed Payment Request||2015-11-21 04:23:00
+PF_PMTLISTDATA_FLDS|en|Y|List data fields for Configurable Printed Payment Request||2015-11-21 04:23:00
+PF_PMTLISTDATA_GRP|en|Y|List data grouping fields for Configurable  Printed Payment Request||2015-11-21 04:23:00
+PF_PMTSUMMARY_FLDS|en|Y|Summary data fields for Configurable Printed Payment Request||2015-11-21 04:23:00
+PF_RQFORMDATA_FIELDS|en|Y|Form Data fields for Configurable Printed TR Reports||2010-12-18 04:20:00
+PF_RQLISTDATA_ALLOC|en|Y|List data allocation fields for Configurable Printed TR Reports||2011-02-26 03:38:00
+PF_RQLISTDATA_CSH|en|Y|List cash fields for Configurable Printed TR Reports||2012-03-24 01:57:00
+PF_RQLISTDATA_CSHGR|en|Y|List cash grouping fields for Configurable Printed TR Reports||2012-03-24 01:57:00
+PF_RQLISTDATA_EXC|en|Y|List exception fields for Configurable Printed TR Reports||2011-12-17 05:38:00
+PF_RQLISTDATA_EXCGR|en|Y|List exception grouping fields for Configurable Printed TR Reports||2011-12-17 05:38:00
+PF_RQLISTDATA_FIELDS|en|Y|List Data fields for Configurable Printed TR Reports||2010-12-18 04:20:00
+PF_RQLISTDATA_GROUP|en|Y|List data grouping fields for Configurable Printed TR Reports||2011-11-19 02:34:00
+PF_RQLISTSEG_FIELDS|en|Y|List Segment fields for Configurable Printed TR Reports||2010-12-18 04:20:00
+PF_SUMMARYDAT_FIELDS|en|Y|Summary data fields for Configurable Printed Reports||2008-09-22 21:11:00
+PMT_ACC_EXT_ALC_FLDS|en|Y|Detail Allocation||2005-06-21 15:53:00
+PMT_ACC_EXT_EMP_FLDS|en|Y|Employee||2005-06-21 15:53:00
+PMT_ACC_EXT_JNL_FLDS|en|Y|Journal||2005-06-21 15:53:00
+PMT_ACC_EXT_REQ_FLDS|en|Y|Request||2005-06-21 15:53:00
+PMT_ACC_EXT_RLI_FLDS|en|Y|Detail||2005-06-21 15:53:00
+PMT_ALLOC_FIELDS|en|Y|Detail Allocation||2005-06-21 15:52:00
+PMT_CAV|en|Y|Company Address||2005-06-21 15:53:00
+PMT_CAV_SHIP_TO|en|Y|Company Ship To Address||2005-11-03 19:11:00
+PMT_EMP_FIELDS|en|Y|Employee||2005-06-21 15:52:00
+PMT_EXCEPT_FIELDS|en|Y|Request Exception||2005-06-21 15:52:00
+PMT_HDR_FIELDS|en|Y|Request||2005-06-21 15:52:00
+PMT_HIER_ALLO_FIELDS|en|Y|Payment Request Detail Allocation Fields||2005-06-21 15:52:00
+PMT_HIER_LINE_FIELDS|en|Y|Payment Request Detail Fields||2005-06-21 15:52:00
+PMT_HIER_PO_ALLO_FLD|en|Y|Purchase Order Allocation Fields||2011-06-18 03:48:00
+PMT_HIER_PO_FIELDS|en|Y|Purchase Order Fields||2011-05-21 03:42:00
+PMT_HIER_PO_LI_FLDS|en|Y|Purchase Order Line Item Fields||2011-05-21 03:42:00
+PMT_HIER_PR_ALLO_FLD|en|Y|Purchase Request Distribution Fields||2013-01-19 03:40:00
+PMT_HIER_PUR_REQ_FLD|en|Y|Purchase Request Fields||2013-01-19 03:40:00
+PMT_HIER_REQ_FIELDS|en|Y|Payment Request Fields||2005-06-21 15:52:00
+PMT_INVLIT_FIELDS|en|Y|Detail||2005-06-21 15:52:00
+PMT_POLI_RCT_LTD_MCH|en|Y|Purchase Order Line Item Receipt Life to Date||2015-07-11 03:08:00
+PMT_POLI_RCT_MCH|en|Y|Purchase Order Line Item Receipt Matching||2015-07-11 03:08:00
+PMT_PO_HDR_MTCH|en|Y|Purchase Order||2011-05-21 03:42:00
+PMT_PO_LI_MTCH|en|Y|Line Item||2011-05-21 03:42:00
+PMT_PO_LTD_HDR_MTCH|en|Y|Purchase Order Life to Date||2011-05-21 03:42:00
+PMT_PO_LTD_LI_MTCH|en|Y|Purchase Order Line Item Life to Date||2011-05-21 03:42:00
+PMT_PO_VEN_MTCH|en|Y|Vendor||2011-05-21 03:42:00
+PMT_PRLI_RCT_LTD_MCH|en|Y|Payment Request Line Item Receipt Life to Date||2015-07-11 03:08:00
+PMT_PRLI_RCT_MCH|en|Y|Payment Request Line Item Receipt Matching||2015-07-11 03:08:00
+PMT_PR_HDR_MTCH|en|Y|Payment Request||2011-05-21 03:42:00
+PMT_PR_LI_MTCH|en|Y|Line Item||2011-05-21 03:42:00
+PMT_PR_LTD_HDR_MTCH|en|Y|Payment Request Life to Date||2011-05-21 03:42:00
+PMT_PR_LTD_LI_MTCH|en|Y|Payment Request Line Item Life to Date||2011-05-21 03:42:00
+PMT_PR_VEN_MTCH|en|Y|Vendor||2011-05-21 03:42:00
+PMT_VAV|en|Y|Vendor Ship From Address||2005-06-21 15:53:00
+PMT_VEN|en|Y|Vendor Remit To Address||2005-11-03 19:11:00
+PMT_VEN_ADR_FLDS|en|Y|Vendor Address Fields||2005-06-21 15:53:00
+PMT_VEN_EXT_VEN_FLDS|en|Y|Vendor Fields||2005-06-21 15:53:00
+PMT_VEN_R_FIELDS|en|Y|Vendor Remittance Address||2005-06-21 15:52:00
+PMT_VEN_S_FIELDS|en|Y|Vendor Ship From Address||2005-06-21 15:52:00
+PO_ALLOC_FIELDS|en|Y|Purchase Order Distribution||2013-06-15 03:06:00
+PO_EXT_HDR_FLDS|en|Y|PO Header||2016-05-14 02:46:00
+PO_HEADER_FIELDS|en|Y|Purchase Order||2013-06-15 03:06:00
+PO_ITEM_FIELDS|en|Y|Purchase Order Line Item||2013-06-15 03:06:00
+PROC_EMPLOYEE_FIELDS|en|Y|Employee||2005-06-21 15:48:00
+PROC_ENTRYALLOC_FLDS|en|Y|Entry Allocation||2005-06-21 15:50:00
+PROC_ENTRY_ATTENDEE|en|Y|Entry Attendee||2005-06-21 15:53:00
+PROC_ENTRY_FIELDS|en|Y|Entry||2005-06-21 15:48:00
+PROC_REPORT_FIELDS|en|Y|Report||2005-06-21 15:48:00
+PURCH_ALLOC_FIELDS|en|Y|Purchase Request Distribution||2013-03-23 02:05:00
+PURCH_DETAIL_FIELDS|en|Y|Purchase Request||2013-03-23 02:05:00
+PURCH_EXCEPT_FIELDS|en|Y|Purchase Request Exception||2014-01-18 04:19:00
+PURCH_ITEM_FIELDS|en|Y|Purchase Request Item||2013-03-23 02:05:00
+REQ_EXT_ALC_FLDS|en|Y|Allocation||2012-06-23 01:46:00
+REQ_EXT_AR_REQ_FLDS|en|Y|Request||2012-03-24 01:57:00
+REQ_EXT_CAV_FLDS|en|Y|Cash Advance||2012-06-23 01:46:00
+REQ_EXT_EMP_FLDS|en|Y|Employee||2012-06-23 01:46:00
+REQ_EXT_ENTRY_FLDS|en|Y|Entry||2012-06-23 01:46:00
+REQ_EXT_SEG_FLDS|en|Y|Segment||2012-06-23 01:46:00
+SHIPTO_FIELDS|en|Y|Ship To||2013-06-15 03:06:00
+TRAD_ENTRY_FIELDS|en|Y|AR Category||2008-03-14 17:20:00
+TRAD_REQUEST_FIELDS|en|Y|AR (Authorization Request)||2008-03-14 17:20:00
+VALIDATION_RULE_DATA|en|Y|Field Validation||2008-06-19 18:38:00
+VALIDATION_RULE_LIST|en|Y|List Validation||2008-06-19 18:38:00
+VAT_EMPLOYEE_FIELDS|en|Y|Employee||2005-06-21 15:48:00
+VAT_ENTRY_2_FIELDS|en|Y|Entry Compare||2013-05-18 01:39:00
+VAT_ENTRY_ATTENDEE|en|Y|Entry Attendee||2005-06-21 15:48:00
+VAT_ENTRY_FIELDS|en|Y|Entry||2005-06-21 15:48:00
+VAT_ENTRY_TAX2_FLDS|en|Y|Tax compare||2013-05-18 01:39:00
+VAT_ENTRY_TAX_FIELDS|en|Y|Tax||2012-05-19 01:32:00
+VAT_REPORT_FIELDS|en|Y|Report||2005-06-21 15:48:00
+WF_AR_ENTRY_FIELDS|en|Y|Request Entry||2010-09-18 04:39:00
+WF_AR_EX_FIELDS|en|Y|Request Exception||2010-08-21 08:48:00
+WF_AR_FIELDS|en|Y|Request||2010-08-21 08:48:00
+WF_AR_SEGMENT_FIELDS|en|Y|Segment||2010-08-21 08:48:00
+WF_AUTHREQ_XCT_FLDS|en|Y|Authorization Request Exception||2009-09-18 20:16:00
+WF_AUTH_REQ_ATTN|en|Y|AR Category Attendee||2008-03-14 17:20:00
+WF_CASHADV_FIELDS|en|Y|Cash Advance||2005-06-21 15:48:00
+WF_EMPLOYEE_FIELDS|en|Y|Employee||2005-06-21 15:48:00
+WF_ENTRYALLOC_FIELDS|en|Y|Entry Allocation||2005-06-21 15:50:00
+WF_ENTRY_ATTENDEE|en|Y|Entry Attendee||2005-06-21 15:48:00
+WF_ENTRY_FIELDS|en|Y|Entry||2005-06-21 15:48:00
+WF_EXCEPTION_FIELDS|en|Y|Report Exception||2005-06-21 15:48:00
+WF_PREV_APPROVER|en|Y|Any Previous approvers||2021-02-03 23:22:00
+WF_PREV_NOADHOC_APPR|en|Y|Any Previous approvers (excluding adhoc)||2021-02-03 23:22:00
+WF_REPORT_APPROVALS|en|Y|Report Approvals||2021-02-03 23:22:00
+WF_REPORT_FIELDS|en|Y|Report||2005-06-21 15:48:00
+WF_REQ_ALLOC_FIELDS|en|Y|Request Allocation||2011-01-22 03:48:00
+WF_REQ_ENTRY_ATN|en|Y|Request Entry Attendee||2012-05-19 01:32:00
+WF_REQ_TR_RES_FIELDS|en|Y|Travel Reservation Exception||2022-11-29 20:03:00
+WF_RPT_SUMMARY_FLDS|en|Y|AR Related Reports||2008-03-14 17:20:00
+WF_TR_ENTRY_FIELDS|en|Y|AR Category||2008-03-14 17:20:00
+WF_TR_FIELDS|en|Y|AR (Authorization Request)||2008-03-14 17:20:00
+WF_TR_RES_EX_FIELDS|en|Y|Travel Reservation Exception||2020-12-09 00:44:00

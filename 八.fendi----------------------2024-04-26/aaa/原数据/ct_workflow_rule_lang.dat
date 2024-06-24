@@ -1,0 +1,451 @@
+1004|en|Y|Skip Vendor Approval if Vendor Is Approved||2005-06-21 15:52:00
+2014|en|Y|Skip Manager Approval Exceptionl Level <50||2011-02-25 12:13:00
+2097|en|Y|Skip Step if Limit Approved||2011-02-28 11:43:00
+2098|en|Y|Skip Step if Limit Approved||2011-02-28 11:42:00
+2099|en|Y|Skip Step if Limit Approved||2011-02-28 11:43:00
+2100|en|Y|Skip Step if Limit Approved||2011-02-28 11:43:00
+2166|en|Y|Skip Step if Exempt from Manager Approval = Y||2011-04-05 10:33:00
+2336|en|Y|Skip Vendor Approval if Vendor Is Approved||2011-09-24 01:36:00
+3862|en|Y|Skip Vendor Approval if Vendor Is Approved||2013-03-23 02:06:00
+4019|en|Y|Skip if Limit Approved||2013-05-23 09:09:00
+4020|en|Y|Skip Step if Exempt from Manager Approval = Y||2013-05-23 09:09:00
+4209|en|Y|Skip Vendor Approval if Vendor Is Approved||2013-07-08 18:56:00
+4211|en|Y|Skip if Limit Approved||2013-07-08 18:56:00
+4212|en|Y|Skip if Limit Approved||2013-07-08 18:56:00
+4213|en|Y|Skip if Limit Approved||2013-07-08 18:56:00
+4214|en|Y|Skip if Limit Approved||2013-07-08 18:56:00
+4215|en|Y|Skip if Limit Approved||2013-07-08 18:56:00
+4216|en|Y|Skip & Generate Exception if Limit Approved||2013-07-08 18:56:00
+4684|en|Y|Skip Vendor Approval if Vendor Is Approved||2015-08-31 05:31:00
+4685|en|Y|Skip if entirely self-booked||2015-10-12 19:24:00
+4686|en|Y|Skip if agency-booked||2015-10-12 22:36:00
+5366|en|Y|Generate Exception if Not Limit Approved||2016-04-08 22:04:00
+5367|en|Y|Create Exception if Not Limit Approved||2016-04-08 22:11:00
+5368|en|Y|Skip Vendor Approval if Vendor Is Approved||2016-04-08 22:25:00
+5369|en|Y|Skip if Limit Approved||2016-04-08 22:41:00
+5370|en|Y|Skip if Limit Approved||2016-04-08 22:41:00
+5371|en|Y|Skip if Limit Approved||2016-04-08 22:41:00
+5372|en|Y|Skip if Limit Approved||2016-04-08 22:41:00
+5373|en|Y|Skip if Limit Approved||2016-04-08 22:41:00
+5374|en|Y|Generate Exception if Not Limit Approved||2016-04-08 22:41:00
+5447|en|Y|Updated Request Amount > Approved Amount||2016-09-02 19:46:00
+5448|en|Y|Always Skip||2016-09-02 19:46:00
+5449|en|Y|Skip if agency-booked||2016-09-02 19:50:00
+5450|en|Y|Updated Request Amount > Approved Amount||2016-09-02 19:50:00
+5451|en|Y|Always Skip||2016-09-02 19:50:00
+5482|en|Y|Skip if non-HR related||2017-07-27 14:08:00
+5483|en|Y|Skip if <=50k RMB||2017-07-27 14:15:00
+5484|en|Y|Skip if Req. Total, CA Total <=50K RMB OR Domestic||2017-08-02 07:33:00
+5485|en|Y|Skip if agency-booked||2017-07-27 14:43:00
+5488|en|Y|Skip if Domestic TR and CA <= 50K||2017-11-06 11:37:00
+5490|en|Y|Skip if no Cash Advance||2017-09-17 12:20:00
+5496|en|Y|Skip Step if Company Paid <= 50K||2017-07-29 15:29:00
+5498|en|Y|CFO Approval Skip||2017-07-29 14:17:00
+5499|en|Y|Skip if no Cash Advance||2017-07-29 18:37:00
+5500|en|Y|If CA App. only||2017-07-31 03:52:00
+5521|en|Y|Skip if Department Head/Wholesale Manager/President||2017-08-14 13:05:00
+5522|en|Y|Skip If President||2017-08-14 13:05:00
+5567|en|Y|Skip If President / Department Head / Wholesale Mgr||2017-08-26 08:15:00
+5568|en|Y|Skip If President||2017-08-26 08:06:00
+5577|en|Y|CFO Approval Notification||2017-09-14 06:25:00
+5587|en|Y|Skip if Department Head/Wholesale Manager/President||2017-09-17 11:56:00
+5589|en|Y|Skip if President||2017-09-17 12:20:00
+5590|en|Y|Skip if Store Petty Cash <= 10K||2017-11-06 11:37:00
+5606|en|Y|Email Notification||2017-09-18 11:31:00
+5608|en|Y|Skip if not Department Head||2017-09-18 13:46:00
+5609|en|Y|Skip if President||2017-09-18 13:46:00
+5617|en|Y|If Cash Advance only||2017-09-21 15:34:00
+5618|en|Y|Skip if Department Head/Wholesale Manager/President||2017-09-21 15:34:00
+5619|en|Y|Skip if No Cash Advance||2017-09-21 15:34:00
+5620|en|Y|CFO Approval Notification||2017-09-21 15:34:00
+5621|en|Y|Skip if TR & CA Total <=50K RMB OR Domestic||2017-09-21 15:34:00
+5622|en|Y|Skip if Petty Cash <= 10K||2017-09-21 15:34:00
+5623|en|Y|Skip if President||2017-09-21 15:34:00
+5624|en|Y|Skip if no Cash Advance||2017-09-21 15:34:00
+5626|en|Y|If Cash Advance only||2017-09-21 16:43:00
+5627|en|Y|Skip if Department Head/Wholesale Manager/President||2017-09-21 16:43:00
+5628|en|Y|Skip if No Cash Advance||2017-09-21 16:43:00
+5629|en|Y|Skip if Employee from 66K||2017-09-21 16:45:00
+5630|en|Y|Skip if TR & CA Total <=50K RMB OR Domestic||2017-09-21 16:43:00
+5631|en|Y|Skip if Petty Cash <= 10K||2017-09-21 16:43:00
+5632|en|Y|Skip if President||2017-09-21 16:43:00
+5633|en|Y|Skip if no Cash Advance||2017-09-21 16:43:00
+5634|en|Y|Skip if Employee from Finance||2017-09-21 17:08:00
+5636|en|Y|Skip if no Cash Advance||2017-09-25 09:06:00
+5654|en|Y|Skip if Store||2017-11-03 01:43:00
+5659|en|Y|Skip If Cash Advance only||2017-10-31 05:06:00
+5660|en|Y|Skip if Department Head/Wholesale Manager/President||2017-10-31 05:06:00
+5661|en|Y|Skip if Employee from Finance||2017-10-31 05:06:00
+5662|en|Y|Skip if no Cash Advance||2017-10-31 05:06:00
+5663|en|Y|Skip if TR & CA Total <=50K RMB OR Domestic||2017-10-31 05:06:00
+5664|en|Y|Skip if Petty Cash <= 10K||2017-10-31 05:06:00
+5665|en|Y|Skip if President||2017-10-31 05:06:00
+5666|en|Y|Skip if Store & Domestic||2017-10-31 05:06:00
+5667|en|Y|Skip if no Cash Advance||2017-10-31 05:06:00
+5669|en|Y|Skip if Office Non Travel CA <= 50K||2017-11-06 11:37:00
+5671|en|Y|Skip if not CA only||2017-11-07 04:19:00
+5685|en|Y|Skip if Housing Allowance||2018-01-23 06:04:00
+5686|en|Y|Skip if Housing Allowance||2018-01-23 06:04:00
+5687|en|Y|Skip if Not Housing Allowance||2018-01-23 06:04:00
+5689|en|Y|Skip if Store <= 50K||2018-03-09 09:02:00
+5691|en|Y|Skip if not cash advance policy||2018-03-20 01:33:00
+5704|en|Y|Skip if recurring + overseas||2018-10-30 04:37:00
+5716|en|Y|Skip if non-HR related||2019-02-19 05:22:00
+5718|en|Y|Skip if Not Housing Allowance/AT||2019-12-19 01:04:00
+5719|en|Y|Skip If President / Department Head / Wholesale Mgr||2019-02-19 05:22:00
+5720|en|Y|Skip if Housing Allowance||2019-02-19 05:22:00
+5721|en|Y|Skip if Suki or vicki||2019-02-19 05:22:00
+5722|en|Y|skip if department head left office||2019-02-19 05:22:00
+5723|en|Y|change approver 1||2019-02-19 05:22:00
+5724|en|Y|change approver 2||2019-02-19 05:22:00
+5725|en|Y|Skip Step if Company Paid <= 50K||2019-02-19 05:22:00
+5726|en|Y|Skip If President||2019-02-19 05:22:00
+5727|en|Y|Skip if Store||2019-02-19 05:22:00
+5728|en|Y|Skip if Housing Allowance||2019-02-19 05:22:00
+5729|en|Y|Skip If President / Department Head / Wholesale Mgr||2019-02-19 05:40:00
+5730|en|Y|Skip if Housing Allowance/AT||2019-12-19 01:04:00
+5735|en|Y|Skip if no code = ECHAPP1||2019-02-20 01:52:00
+5737|en|Y|Skip if clone user||2019-02-19 07:27:00
+5738|en|Y|Skip if Department Head/Wholesale Manager/President||2019-02-19 08:47:00
+5739|en|Y|Skip if direct reports users||2019-02-19 08:47:00
+5740|en|Y|change approver 1||2019-02-19 08:47:00
+5741|en|Y|change approver 2||2019-02-26 07:30:00
+5742|en|Y|Skip if Department Head/Wholesale Manager/President||2019-02-19 08:47:00
+5746|en|Y|Skip if not cash advance policy||2019-02-19 08:47:00
+5747|en|Y|Skip if Employee from Finance||2019-02-19 08:47:00
+5748|en|Y|Skip if no Cash Advance||2019-02-19 08:47:00
+5749|en|Y|Skip if Domestic TR and CA <= 50K||2019-02-19 08:47:00
+5750|en|Y|Skip if Store Petty Cash <= 10K||2019-02-19 08:47:00
+5751|en|Y|Skip if President||2019-02-19 08:47:00
+5752|en|Y|Skip if Office Non Travel CA <= 50K||2019-02-19 08:47:00
+5753|en|Y|Skip if Store <= 50K||2019-02-19 08:47:00
+5754|en|Y|Skip if recurring + overseas||2019-02-19 08:47:00
+5755|en|Y|Skip if no code = RCHAPP1||2019-02-19 09:01:00
+5756|en|Y|Skip if no code = RCHAPP2||2019-02-19 09:35:00
+5761|en|Y|Skip if non-HR related||2019-02-25 00:59:00
+5762|en|Y|Email Notification||2019-02-25 00:59:00
+5763|en|Y|Skip if Not Housing Allowance||2019-02-25 00:59:00
+5764|en|Y|Skip If President / Department Head / Wholesale Mgr||2019-02-25 00:59:00
+5765|en|Y|Skip if Housing Allowance||2019-02-25 00:59:00
+5766|en|Y|Skip if Suki or vicki||2019-02-25 00:59:00
+5767|en|Y|skip if department head left office||2019-02-25 00:59:00
+5768|en|Y|change approver 1||2019-02-25 00:59:00
+5769|en|Y|change approver 2||2019-02-25 00:59:00
+5770|en|Y|Skip Step if Company Paid <= 50K||2019-02-25 00:59:00
+5771|en|Y|Skip If President||2019-02-25 00:59:00
+5772|en|Y|Skip if Store||2019-02-25 00:59:00
+5773|en|Y|Skip if Housing Allowance||2019-02-25 00:59:00
+5774|en|Y|Skip if Department Head/Wholesale Manager/President||2019-02-25 01:16:00
+5775|en|Y|Skip if direct reports users||2019-02-25 01:16:00
+5776|en|Y|change approver 1||2019-02-25 01:16:00
+5777|en|Y|change approver2||2019-02-25 01:16:00
+5778|en|Y|Skip if not cash advance policy||2019-02-25 01:16:00
+5779|en|Y|Skip if Employee from Finance||2019-02-25 01:16:00
+5780|en|Y|Skip if no Cash Advance||2019-02-25 01:16:00
+5781|en|Y|Skip if Domestic TR and CA <= 50K||2019-02-25 01:16:00
+5782|en|Y|Skip if Store Petty Cash <= 10K||2019-02-25 01:16:00
+5783|en|Y|Skip if President||2019-02-25 01:16:00
+5784|en|Y|Skip if Office Non Travel CA <= 50K||2019-02-25 01:16:00
+5785|en|Y|Skip if Store <= 50K||2019-02-25 01:16:00
+5786|en|Y|Skip if recurring + overseas||2019-02-25 01:16:00
+5803|en|Y|Skip if no code = RCHAPP3||2019-02-26 08:10:00
+5804|en|Y|Skip if no code = RCHAPP4||2019-02-26 08:10:00
+5805|en|Y|Skip if no code = RCHAPP5||2019-02-26 08:10:00
+5806|en|Y|Skip if no code = RCHAPP6||2019-02-26 08:10:00
+5815|en|Y|Skip if no code = ECHAPP3||2019-02-26 08:49:00
+5816|en|Y|Skip if no code = ECHAPP4||2019-02-26 08:49:00
+5817|en|Y|Skip if no code = ECHAPP5||2019-02-26 08:49:00
+5818|en|Y|Skip if no code = ECHAPP6||2019-02-26 08:49:00
+5826|en|Y|Skip if clone user||2019-03-21 01:59:00
+5827|en|Y|Skip if Department Head/Wholesale Manager/President||2019-03-21 02:50:00
+5828|en|Y|Change Approver 1||2019-03-21 02:50:00
+5829|en|Y|Change Approver 3 - Denis||2019-03-21 02:50:00
+5830|en|Y|Change Approver 4 - rachel.chang||2019-03-21 02:50:00
+5831|en|Y|Change Approver 5 - leo.xia||2019-03-21 02:50:00
+5832|en|Y|Change Approver 6 - kevin.shi||2019-03-21 02:50:00
+5833|en|Y|Skip if no code = RCHAPP1||2019-03-21 02:50:00
+5834|en|Y|Skip if no code = RCHAPP3||2019-03-21 02:50:00
+5835|en|Y|Skip if no code = RCHAPP4||2019-03-21 02:50:00
+5836|en|Y|Skip if no code = RCHAPP5||2019-03-21 02:50:00
+5837|en|Y|Skip if no code = RCHAPP6||2019-03-21 02:50:00
+5838|en|Y|Skip if not cash advance policy||2019-03-21 02:50:00
+5839|en|Y|Skip if Employee from Finance||2019-03-21 02:50:00
+5840|en|Y|Skip if no Cash Advance||2019-03-21 02:50:00
+5841|en|Y|Skip if Domestic TR and CA <= 50K||2019-03-21 02:50:00
+5842|en|Y|Skip if Store Petty Cash <= 10K||2019-03-21 02:50:00
+5843|en|Y|Skip if President||2019-03-21 02:50:00
+5844|en|Y|Skip if Office Non Travel CA <= 50K||2019-03-21 02:50:00
+5845|en|Y|Skip if Store <= 50K||2019-03-21 02:50:00
+5846|en|Y|Skip if recurring + overseas||2019-03-21 02:50:00
+5847|en|Y|Skip if non-HR related||2019-03-22 06:36:00
+5848|en|Y|Skip if clone user||2019-03-22 06:36:00
+5849|en|Y|Email Notification||2019-03-22 06:36:00
+5850|en|Y|Skip if Not Housing Allowance||2019-03-22 06:36:00
+5851|en|Y|Skip If President / Department Head / Wholesale Mgr||2019-03-22 06:36:00
+5852|en|Y|Skip if Housing Allowance||2019-03-22 06:36:00
+5853|en|Y|change approver 1||2019-03-22 06:36:00
+5854|en|Y|change approver 3 - Denis||2019-03-22 06:36:00
+5855|en|Y|change approver 4 - Rachel||2019-03-22 06:36:00
+5856|en|Y|change approver 5 - Leo||2019-03-22 06:36:00
+5857|en|Y|change approver 6 - Kevin||2019-03-22 06:36:00
+5858|en|Y|Skip if no code = ECHAPP1||2019-03-22 06:36:00
+5859|en|Y|Skip if no code = ECHAPP3||2019-03-22 06:36:00
+5860|en|Y|Skip if no code = ECHAPP4||2019-03-22 06:36:00
+5861|en|Y|Skip if no code = ECHAPP5||2019-03-22 06:36:00
+5862|en|Y|Skip if no code = ECHAPP6||2019-03-22 06:36:00
+5863|en|Y|Skip Step if Company Paid <= 50K||2019-03-22 06:36:00
+5864|en|Y|Skip If President||2019-03-22 06:36:00
+5865|en|Y|Skip if Store||2019-03-22 06:36:00
+5866|en|Y|Skip if Housing Allowance||2019-03-22 06:36:00
+5867|en|Y|Skip if clone user||2019-03-22 06:36:00
+5869|en|Y|Skip if CN10-0050||2019-04-10 05:01:00
+5870|en|Y|change approver to Echo CHEN||2021-08-16 00:56:00
+5872|en|Y|Skip except for Chloe Wang & Nina Li||2021-10-13 06:49:00
+5875|en|Y|Skip except for Chloe Wang & Nina Li||2021-10-13 06:48:00
+5876|en|Y|Skip if no Physical Examination||2019-04-29 08:04:00
+5897|en|Y|Skip if no VIC hospitality(16634957)||2021-02-02 06:00:00
+5898|en|Y|Skip approver herself||2021-02-02 06:00:00
+5908|en|Y|Skip if Department Head/Wholesale Manager/President||2021-08-16 00:43:00
+5909|en|Y|Skip for apple.lv@fendi.com||2021-08-16 00:43:00
+5910|en|Y|Skip execpt apple.lv@fendi.com||2021-08-16 00:43:00
+5911|en|Y|Skip if not cash advance policy||2021-08-16 00:43:00
+5912|en|Y|Skip if CN10-0050||2021-08-16 00:43:00
+5913|en|Y|change approver to vicki.li@fendi.com||2021-08-16 00:43:00
+5914|en|Y|Skip if Employee from Finance||2021-08-16 00:43:00
+5915|en|Y|Skip if no Cash Advance||2021-08-16 00:43:00
+5916|en|Y|Skip if Domestic TR and CA <= 50K||2021-08-16 00:43:00
+5917|en|Y|Skip if Store Petty Cash <= 10K||2021-08-16 00:43:00
+5918|en|Y|Skip if President||2021-08-16 00:43:00
+5919|en|Y|Skip if Office Non Travel CA <= 50K||2021-08-16 00:43:00
+5920|en|Y|Skip if Store <= 50K||2021-08-16 00:43:00
+5921|en|Y|Skip if recurring + overseas||2021-08-16 00:43:00
+5922|en|Y|Skip except Sisley Wang||2021-08-16 00:56:00
+5923|en|Y|Skip if no Physical Examination||2021-08-16 01:05:00
+5924|en|Y|Skip if non-HR related||2021-08-16 01:05:00
+5925|en|Y|Skip if no VIC hospitality(16634957)||2021-08-16 01:05:00
+5926|en|Y|Skip approver herself||2021-08-16 01:05:00
+5927|en|Y|Skip if clone user||2021-08-16 01:05:00
+5928|en|Y|Skip if Not Housing Allowance/AT||2021-08-16 01:05:00
+5929|en|Y|Skip If President / Department Head / Wholesale Mgr||2021-08-16 01:05:00
+5930|en|Y|Skip if Housing Allowance/AT||2021-08-16 01:05:00
+5931|en|Y|Skip for apple.lv@fendi.com||2021-08-16 01:05:00
+5932|en|Y|Skip except for apple.lv@fendi.com||2021-08-16 01:05:00
+5933|en|Y|Skip Step if Company Paid <= 50K||2021-08-16 01:05:00
+5934|en|Y|Skip If President||2021-08-16 01:05:00
+5935|en|Y|Skip if Store||2021-08-16 01:05:00
+5936|en|Y|Skip if Housing Allowance||2021-08-16 01:05:00
+5937|en|Y|Skip if clone user||2021-08-16 01:05:00
+5938|en|Y|Skip except for Sisley Wang||2021-08-16 01:09:00
+5940|en|Y|skip all||2021-11-11 02:51:00
+5941|en|Y|skip all||2021-11-11 02:51:00
+5942|en|Y|skip all||2021-11-11 02:53:00
+5943|en|Y|skip all||2021-11-11 02:53:00
+5944|en|Y|Skip except for William Zhao||2022-01-17 08:41:00
+5945|en|Y|Skip except for William Zhao||2022-01-17 08:50:00
+5947|en|Y|Skip except for William Zhao||2022-02-09 05:14:00
+5948|en|Y|Skip if non-HR related||2022-02-09 05:14:00
+5949|en|Y|Skip if no VIC hospitality(16634957)||2022-02-09 05:14:00
+5950|en|Y|Skip approver herself||2022-02-09 05:14:00
+5951|en|Y|Skip if clone user||2022-02-09 05:14:00
+5952|en|Y|Skip if no Physical Examination||2022-02-09 05:14:00
+5953|en|Y|Skip if Not Housing Allowance/AT||2022-02-09 05:14:00
+5954|en|Y|Skip If President / Department Head / Wholesale Mgr||2022-02-09 05:14:00
+5955|en|Y|Skip if Housing Allowance/AT||2022-02-09 05:14:00
+5956|en|Y|Skip except for Chloe Wang & Nina Li||2022-02-09 05:14:00
+5957|en|Y|skip all||2022-02-09 05:14:00
+5958|en|Y|Skip except for Sisley Wang||2022-02-09 05:14:00
+5959|en|Y|skip all||2022-02-09 05:14:00
+5960|en|Y|Skip Step if Company Paid <= 50K||2022-02-09 05:14:00
+5961|en|Y|Skip If President||2022-02-09 05:14:00
+5962|en|Y|Skip if Store||2022-02-09 05:14:00
+5963|en|Y|Skip if Housing Allowance||2022-02-09 05:14:00
+5964|en|Y|Skip if clone user||2022-02-09 05:14:00
+5967|en|Y|Skip except for William Zhao and Sabrina Wu||2022-05-05 06:59:00
+5968|en|Y|Skip if non-HR related||2022-02-21 01:51:00
+5969|en|Y|Skip if no VIC hospitality(16634957)||2022-02-21 01:51:00
+5970|en|Y|Skip approver herself||2022-02-21 01:51:00
+5971|en|Y|Skip if clone user||2022-02-21 01:51:00
+5972|en|Y|Skip if no Physical Examination||2022-02-21 01:51:00
+5973|en|Y|Skip if Not Housing Allowance/AT/Internal Communication||2022-03-04 08:00:00
+5974|en|Y|Skip If President / Department Head / Wholesale Mgr||2022-02-21 01:51:00
+5975|en|Y|Skip if Housing Allowance/AT/IC||2022-03-11 06:23:00
+5976|en|Y|Skip except for Chloe Wang & Nina Li||2022-02-21 01:51:00
+5977|en|Y|skip all||2022-02-21 01:51:00
+5978|en|Y|Skip except for Sisley Wang||2022-02-21 01:51:00
+5979|en|Y|skip all||2022-02-21 01:51:00
+5980|en|Y|Skip Step if Company Paid <= 375K||2023-05-22 07:26:00
+5981|en|Y|Skip If President||2022-02-21 01:51:00
+5983|en|Y|Skip if Housing Allowance||2022-02-21 01:51:00
+5984|en|Y|Skip if clone user||2022-02-21 01:51:00
+5985|en|Y|Skip if Simon||2022-02-21 02:57:00
+5986|en|Y|Skip if Not Housing Allowance/AT/Internal Communication||2022-03-04 08:00:00
+5987|en|Y|Skip except for William Zhao and Sabrina Wu||2022-05-05 06:56:00
+5988|en|Y|Skip if Department Head/Wholesale Manager/President||2022-02-21 05:45:00
+5989|en|Y|Skip except for Chloe Wang & Nina Li||2022-02-21 05:45:00
+5990|en|Y|skip all||2022-02-21 05:45:00
+5991|en|Y|Skip except Sisley Wang||2022-02-21 05:45:00
+5992|en|Y|skip all||2022-02-21 05:45:00
+5993|en|Y|Skip if not cash advance policy||2022-02-21 05:45:00
+5994|en|Y|Skip if CN10-0050||2022-02-21 05:45:00
+5995|en|Y|change approver to Echo CHEN||2022-02-21 05:45:00
+5996|en|Y|Skip if Employee from Finance||2022-02-21 05:45:00
+5997|en|Y|Skip if no Cash Advance||2022-02-21 05:45:00
+5998|en|Y|Skip if Domestic TR and CA <= 50K||2022-02-21 05:45:00
+5999|en|Y|Skip if Store Petty Cash <= 10K||2022-02-21 05:45:00
+6000|en|Y|Skip if President||2022-02-21 05:45:00
+6001|en|Y|Skip if Office Non Travel CA <= 50K||2022-02-21 05:45:00
+6002|en|Y|Skip if Store <= 50K||2022-02-21 05:45:00
+6004|en|Y|Skip if Simon or Manuel||2023-04-25 08:34:00
+6005|en|Y|Skip if not cash advance policy||2022-02-21 05:54:00
+6006|en|Y|Skip if CN10-0050||2022-02-21 05:54:00
+6007|en|Y|change approver to Echo CHEN||2022-02-21 05:54:00
+6008|en|Y|Skip if Not Internal Communication||2022-03-04 06:40:00
+6009|en|Y|Skip if AA Self - Joan||2022-03-04 08:22:00
+6010|en|Y|Skip if AA Self - Simon||2022-03-04 08:22:00
+6011|en|Y|Skip if NOT HR||2022-03-04 08:26:00
+6012|en|Y|Skip except for William Zhao||2022-04-02 01:11:00
+6013|en|Y|Skip if non-HR related||2022-04-02 01:11:00
+6014|en|Y|Skip if no VIC hospitality(16634957)||2022-04-02 01:11:00
+6015|en|Y|Skip approver herself||2022-04-02 01:11:00
+6016|en|Y|Skip if clone user||2022-04-02 01:11:00
+6017|en|Y|Skip if Not Internal Communication||2022-04-02 01:11:00
+6018|en|Y|Skip if no Physical Examination||2022-04-02 01:11:00
+6019|en|Y|Skip if Not Housing Allowance/AT/Internal Communication||2022-04-02 01:11:00
+6020|en|Y|Skip if AA Self - Joan||2022-04-02 01:11:00
+6021|en|Y|Skip if Simon||2022-04-02 01:11:00
+6022|en|Y|Skip if Not Housing Allowance/AT/Internal Communication||2022-04-02 01:11:00
+6023|en|Y|Skip if AA Self - Simon||2022-04-02 01:11:00
+6024|en|Y|Skip If President / Department Head / Wholesale Mgr||2022-04-02 01:11:00
+6025|en|Y|Skip if Housing Allowance/AT/IC||2022-04-02 01:11:00
+6026|en|Y|Skip except for Chloe Wang & Nina Li||2022-04-02 01:11:00
+6027|en|Y|skip all||2022-04-02 01:11:00
+6028|en|Y|Skip except for Sisley Wang||2022-04-02 01:11:00
+6029|en|Y|skip all||2022-04-02 01:11:00
+6030|en|Y|Skip Step if Company Paid <= 50K||2022-04-02 01:11:00
+6031|en|Y|Skip If President||2022-04-02 01:11:00
+6032|en|Y|Skip if Store||2022-04-02 01:11:00
+6033|en|Y|Skip if Housing Allowance||2022-04-02 01:11:00
+6034|en|Y|Skip if clone user||2022-04-02 01:11:00
+6035|en|Y|Skip All||2022-04-06 00:44:00
+6037|en|Y|skip if not Long Service Award||2022-04-22 08:13:00
+6040|en|Y|Skip if President||2022-08-15 05:02:00
+6041|en|Y|Skip if not expected users||2022-11-29 02:08:00
+6042|en|Y|Skip except for Sakura Yan||2022-08-25 07:37:00
+6043|en|Y|Skip except for Sakura Yan||2022-08-25 07:45:00
+6044|en|Y|Skip except for William Zhao and Sabrina Wu||2022-08-26 05:21:00
+6045|en|Y|Skip if Department Head/Wholesale Manager/President||2022-08-26 05:21:00
+6046|en|Y|Skip except for Sakura Yan||2022-08-26 05:21:00
+6047|en|Y|Skip except for Chloe Wang & Nina Li||2022-08-26 05:21:00
+6048|en|Y|skip all||2022-08-26 05:21:00
+6049|en|Y|Skip except Sisley Wang||2022-08-26 05:21:00
+6050|en|Y|skip all||2022-08-26 05:21:00
+6051|en|Y|Skip if not cash advance policy||2022-08-26 05:21:00
+6052|en|Y|Skip if CN10-0050||2022-08-26 05:21:00
+6053|en|Y|change approver to Echo CHEN||2022-08-26 05:21:00
+6054|en|Y|Skip if Simon||2022-08-26 05:21:00
+6055|en|Y|Skip if President||2022-08-26 05:21:00
+6056|en|Y|Skip All||2022-08-26 05:21:00
+6057|en|Y|Skip if NOT HR||2022-08-26 05:21:00
+6058|en|Y|Skip if not cash advance policy||2022-08-26 05:21:00
+6059|en|Y|Skip if CN10-0050||2022-08-26 05:21:00
+6060|en|Y|change approver to Echo CHEN||2022-08-26 05:21:00
+6061|en|Y|Skip if Employee from Finance||2022-08-26 05:21:00
+6062|en|Y|Skip if no Cash Advance||2022-08-26 05:21:00
+6063|en|Y|Skip if Domestic TR and CA <= 50K||2022-08-26 05:21:00
+6064|en|Y|Skip if Store Petty Cash <= 10K||2022-08-26 05:21:00
+6065|en|Y|Skip if President||2022-08-26 05:21:00
+6066|en|Y|Skip if Office Non Travel CA <= 50K||2022-08-26 05:21:00
+6067|en|Y|Skip if Store <= 50K||2022-08-26 05:21:00
+6068|en|Y|Skip if recurring + overseas||2022-08-26 05:21:00
+6069|en|Y|Skip if not expected users||2022-11-29 02:03:00
+6071|en|Y|Skip if not expected users||2023-05-22 01:55:00
+6072|en|Y|Skip if no VIC hospitality(16634957)||2023-05-22 01:55:00
+6073|en|Y|Skip approver herself||2023-05-22 01:55:00
+6074|en|Y|Skip if clone user||2023-05-22 01:55:00
+6075|en|Y|Skip if no Physical Examination||2023-05-22 01:55:00
+6076|en|Y|Skip if non-HR related||2023-05-22 01:55:00
+6077|en|Y|Skip if Not Internal Communication||2023-05-22 01:55:00
+6078|en|Y|skip if not Long Service Award||2023-05-22 01:55:00
+6079|en|Y|Skip if Not Housing Allowance/AT/Internal Communication||2023-05-22 01:55:00
+6080|en|Y|Skip if AA Self - Simon||2023-05-22 01:55:00
+6081|en|Y|Skip if Housing Allowance/AT/IC||2023-05-22 01:55:00
+6082|en|Y|Skip If President / Department Head / Wholesale Mgr||2023-05-22 01:55:00
+6083|en|Y|Skip except for Sakura Yan||2023-05-22 01:55:00
+6084|en|Y|Skip except for Chloe Wang & Nina Li||2023-05-22 01:55:00
+6085|en|Y|skip all||2023-05-22 01:55:00
+6086|en|Y|Skip except for Sisley Wang||2023-05-22 01:55:00
+6087|en|Y|skip all||2023-05-22 01:55:00
+6088|en|Y|Skip Step if Company Paid <= 50K||2023-05-22 01:55:00
+6089|en|Y|Skip If President||2023-05-22 01:55:00
+6090|en|Y|Skip if Store||2023-05-22 01:55:00
+6091|en|Y|Skip if Housing Allowance||2023-05-22 01:55:00
+6092|en|Y|Skip if clone user||2023-05-22 01:55:00
+6093|en|Y|Skip if not expected users||2023-05-22 05:43:00
+6094|en|Y|Skip if Department Head/Wholesale Manager/President||2023-05-22 05:43:00
+6095|en|Y|Skip except for Sakura Yan||2023-05-22 05:43:00
+6096|en|Y|Skip except for Chloe Wang & Nina Li||2023-05-22 05:43:00
+6097|en|Y|skip all||2023-05-22 05:43:00
+6098|en|Y|Skip except Sisley Wang||2023-05-22 05:43:00
+6099|en|Y|skip all||2023-05-22 05:43:00
+6100|en|Y|Skip if not cash advance policy||2023-05-22 05:43:00
+6101|en|Y|Skip if CN10-0050||2023-05-22 05:43:00
+6102|en|Y|change approver to Echo CHEN||2023-05-22 05:43:00
+6103|en|Y|Skip if Simon or Manuel||2023-05-22 05:43:00
+6104|en|Y|Skip if President||2023-05-22 05:43:00
+6105|en|Y|Skip All||2023-05-22 05:43:00
+6106|en|Y|Skip if NOT HR||2023-05-22 05:43:00
+6107|en|Y|Skip if not cash advance policy||2023-05-22 05:43:00
+6108|en|Y|Skip if CN10-0050||2023-05-22 05:43:00
+6109|en|Y|change approver to Echo CHEN||2023-05-22 05:43:00
+6110|en|Y|Skip if Employee from Finance||2023-05-22 05:43:00
+6111|en|Y|Skip if no Cash Advance||2023-05-22 05:43:00
+6112|en|Y|Skip if Domestic TR and CA <= 50K||2023-05-22 05:43:00
+6113|en|Y|Skip if Store Petty Cash <= 10K||2023-05-22 05:43:00
+6114|en|Y|Skip if President||2023-05-22 05:43:00
+6115|en|Y|Skip if Office Non Travel CA <= 50K||2023-05-22 05:43:00
+6116|en|Y|Skip if Store <= 50K||2023-05-22 05:43:00
+6117|en|Y|Skip if recurring + overseas||2023-05-22 05:43:00
+6118|en|Y|Skip if <= 50k||2023-05-22 07:26:00
+6119|en|Y|Skip if own||2023-05-22 08:00:00
+6121|en|Y|Skip if domestic <= 50k (non CA)||2023-06-07 08:19:00
+6122|en|Y|Skip if Employee from Finance||2023-05-26 01:17:00
+6124|en|Y|Skip if President||2023-05-26 02:31:00
+6125|en|Y|Skip if Store <= 50K||2023-05-26 02:31:00
+6126|en|Y|Skip non ca & >50k||2023-05-26 02:42:00
+6127|en|Y|Skip if domestic or <= 375k||2023-05-26 02:42:00
+6128|en|Y|Skip if Department Head||2023-06-08 05:21:00
+6129|en|Y|Skip if Department Head||2023-06-08 05:24:00
+6132|en|Y|Required Rin Yuan if Travel||2023-06-27 08:05:00
+6133|en|Y|Skip if not expected users||2023-06-27 08:05:00
+6134|en|Y|Skip if Department Head/Wholesale Manager/President||2023-06-27 08:05:00
+6135|en|Y|Skip except for Sakura Yan||2023-06-27 08:05:00
+6136|en|Y|Skip except for Chloe Wang & Nina Li||2023-06-27 08:05:00
+6137|en|Y|skip all||2023-06-27 08:05:00
+6138|en|Y|Skip except Sisley Wang||2023-06-27 08:05:00
+6139|en|Y|skip all||2023-06-27 08:05:00
+6140|en|Y|Skip if not cash advance policy||2023-06-27 08:05:00
+6141|en|Y|Skip if CN10-0050||2023-06-27 08:05:00
+6142|en|Y|change approver to Echo CHEN||2023-06-27 08:05:00
+6143|en|Y|Skip if Simon or Manuel||2023-06-27 08:05:00
+6144|en|Y|Skip if President||2023-06-27 08:05:00
+6145|en|Y|Skip All||2023-06-27 08:05:00
+6146|en|Y|Skip if NOT HR||2023-06-27 08:05:00
+6147|en|Y|Skip if not cash advance policy||2023-06-27 08:05:00
+6148|en|Y|Skip if CN10-0050||2023-06-27 08:05:00
+6149|en|Y|change approver to Echo CHEN||2023-06-27 08:05:00
+6150|en|Y|Skip if Employee from Finance||2023-06-27 08:05:00
+6151|en|Y|Skip if no Cash Advance||2023-06-27 08:05:00
+6152|en|Y|Skip if domestic <= 50k (non CA)||2023-06-27 08:05:00
+6153|en|Y|Skip if Employee from Finance||2023-06-27 08:05:00
+6154|en|Y|Skip if Department Head||2023-06-27 08:05:00
+6155|en|Y|Skip if Domestic TR and CA <= 50K||2023-06-27 08:05:00
+6156|en|Y|Skip if Store Petty Cash <= 10K||2023-06-27 08:05:00
+6157|en|Y|Skip if President||2023-06-27 08:05:00
+6158|en|Y|Skip if Office Non Travel CA <= 50K||2023-06-27 08:05:00
+6159|en|Y|Skip if Store <= 50K||2023-06-27 08:05:00
+6160|en|Y|Skip non ca & >50k||2023-06-27 08:05:00
+6161|en|Y|Skip if President||2023-06-27 08:05:00
+6162|en|Y|Skip if Store <= 50K||2023-06-27 08:05:00
+6163|en|Y|Skip if domestic or <= 375k||2023-06-27 08:05:00
+6164|en|Y|Change Approver for Rin||2023-08-08 06:36:00
+6165|en|Y|Skip if Zhiwen Zhang||2023-08-25 00:56:00
