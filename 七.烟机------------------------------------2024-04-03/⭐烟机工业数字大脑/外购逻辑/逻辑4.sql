@@ -98,12 +98,14 @@ with base_buy_tamp as
 		 ) a
 		 ORDER BY EINDT_MONTH
 
---1采购申请--------------------------------------------- 
+--1采购申请------------------------------------------------------------------------------------------------------------------------------------------------------ 
+
 
 	      
-TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_req;
 
-insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
+TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_req;
+
+insert into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_req
 
 	 SELECT 
 	  min_udate
@@ -111,7 +113,7 @@ insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
 	 ,BEDAT
 	 ,case when a.EBELN is not null then a.EBELN else null end EBELN
 	 ,GETDATE() etl_time
-	--into ODS_HANA.dbo.digital_brain_outbuy_step_req
+	-- into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_req
 	 from(
 		 select 
 		          b.min_udate
@@ -147,32 +149,53 @@ insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
      select
         count(1)  -- 当前数量
 	   ,sum( case when CONVERT(VARCHAR(7),BEDAT, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end )/count(case when CONVERT(VARCHAR(7),BEDAT, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),120) then EBELN else null end )
-       ,count(case when a.min_udate = CONVERT(DATE, GETDATE()) then 1 else null end ) -- 日新增数量
-       ,count(case when a.min_udate = CONVERT(DATE, GETDATE()) and day_cnt = 0 then 1 else null end )  -- 日消耗数量
-      from ODS_HANA.dbo.digital_brain_outbuy_step_req a
+       ,count(case when a.min_udate = CONVERT(DATE, GETDATE()-1) then 1 else null end ) -- 日新增数量
+       ,count(case when a.BEDAT = CONVERT(DATE, GETDATE()-1) and day_cnt = 0 then 1 else null end )  -- 日消耗数量
+      from  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_req a
 
 
 --2寻源--------------------------------------------- 
-  select * from  ODS_SRM.dbo.srm_inq_inquiry_hd a
-   where STATUS_CD_ID not in ('INQ_HD_STATUS_REVIEWED','INQ_HD_STATUS_CLOSED','INQ_HD_STATUS_DRAFT')
-    and delete_flag =0
-	and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
-    and CONVERT(DATE, a.CREATED_TS)<=CONVERT(DATE, GETDATE())  
-		 
+
+TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src;
+
+   insert into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src
+
+  select 
+         case when  STATUS_CD_ID not in ('INQ_HD_STATUS_REVIEWED','INQ_HD_STATUS_CLOSED','INQ_HD_STATUS_DRAFT') then INQUIRY_MODE else null end INQUIRY_MODE
+        ,case when  STATUS_CD_ID ='INQ_HD_STATUS_PUBLISHED' then DATEDIFF(day,CONVERT(DATE, a.start_date),CONVERT(DATE, a.end_date)) else null end day_cnt
+        ,case when  STATUS_CD_ID ='INQ_HD_STATUS_PUBLISHED' then CONVERT(DATE, a.end_date) else null end end_date
+        ,CONVERT(DATE, a.start_date) start_date
+        ,GETDATE() etl_time
+        into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src
+        from ODS_SRM.dbo.srm_inq_inquiry_hd a
+  where delete_flag =0
+    and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+    and CONVERT(DATE, a.CREATED_TS)<=CONVERT(DATE, GETDATE())
+
+    
+    
+      select count(INQUIRY_MODE)
+         ,sum( case when CONVERT(VARCHAR(7),end_date,  120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end )/count(case when CONVERT(VARCHAR(7),end_date,  120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),120) then day_cnt else null end )
+         ,count(case when start_date = CONVERT(DATE, GETDATE()-1) then 1 else null end ) -- 日新增数量
+         ,count(case when end_date = CONVERT(DATE, GETDATE()-1) then 1 else null end )   -- 日消耗数量
+    from Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src
+    
+
+
+
 --3订单执行（计划员）=================================--------------------------------------------- 
 
 
-      
-          TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_ord;
+  TRUNCATE  table  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_ord;
 
-            insert into ODS_HANA.dbo.digital_brain_outbuy_step_ord
+            insert into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_ord
               select 
                     b.id as order_item_id
                     ,DATEDIFF(day, a.CREATED_TS,c.max_updated) day_cnt
                     ,CONVERT(DATE, a.CREATED_TS) create_date    -- 订单行首次审批通过时间
                     ,CONVERT(DATE, c.max_updated) max_updated -- 订单行创建装运单时间（最晚）
                     ,GETDATE() etl_time
-                 --   into ODS_HANA.dbo.digital_brain_outbuy_step_ord
+                   -- into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_ord
                from ODS_SRM.dbo.srm_poc_order_hd a
                join ODS_SRM.dbo.srm_poc_order_item b
                  on a.ID = b.ORDER_ID 
@@ -189,28 +212,28 @@ insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
               where a.DELETE_FLAG = 0
                 and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
                 and CONVERT(DATE, a.CREATED_TS)<=CONVERT(DATE, GETDATE())  
-             )
+                
 
 
 
 -- 订单执行（计划员）
 select count(1) -- 当前数量
       ,sum(day_cnt)/count(1) -- 本月平均周期（月度？）
-      ,count(case when create_date = CONVERT(DATE, GETDATE()) then 1 else null end ) d -- 日新增数量
-      ,count(case when create_date = CONVERT(DATE, GETDATE()) and day_cnt = 0 then 1 else null end ) d -- 日消耗数量
-  from digital_brain_outbuy_step_ord
+      ,count(case when create_date = CONVERT(DATE, GETDATE()-1) then 1 else null end ) d -- 日新增数量
+      ,count(case when create_date = CONVERT(DATE, GETDATE()-1) and day_cnt = 0 then 1 else null end ) d -- 日消耗数量
+  from  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_ord
 
 -----------------------------------
 
 -- 订单配送（供应商）
-            TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_delivery;
+            TRUNCATE  table  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_delivery;
 
-                 insert into ODS_HANA.dbo.digital_brain_outbuy_step_delivery
+                 insert into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_delivery
 
                    select  case when a.DN_STATUS = 'SENT_AUDITED'   then order_item_id else null       end delivery_req
                           ,case when current_status = '点收节点/结束指令' then a.CREATED_TS  else null   end create_date
                           ,case when current_status = '点收节点/结束指令' then DATEDIFF(day,a.CREATED_TS,b.updated_ts)  else null   end day_cnt
-                        -- into srm_poc_delivery_note_hd
+                         -- into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_delivery
                      FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
                      join ODS_SRM.dbo.srm_poc_delivery_note_item b
                        ON a.id = b.dn_hd_id
@@ -224,7 +247,7 @@ select count(1) -- 当前数量
             ,sum( case when CONVERT(VARCHAR(7),create_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end )/count(case when CONVERT(VARCHAR(7),create_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),120) then day_cnt else null end )
             ,count(DISTINCT case when create_date = CONVERT(DATE, GETDATE()-1) then delivery_req else null end )   -- 日新增数量
             ,count(DISTINCT case when create_date = CONVERT(DATE, GETDATE()-1) and day_cnt=0 then 1 else null end ) -- 日消耗数量
-       from ODS_HANA.dbo.digital_brain_outbuy_step_delivery
+       from Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_delivery
 
 
 
@@ -233,10 +256,10 @@ select count(1) -- 当前数量
 
 -- 物流周转（仓库）
 
-              
-            TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_warehouse;
+             
+            TRUNCATE  table  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_warehouse;
 
-                 insert into ODS_HANA.dbo.digital_brain_outbuy_step_warehouse
+                 insert into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_warehouse
                 
                         SELECT 
                           case when EXISTS (
@@ -258,7 +281,7 @@ select count(1) -- 当前数量
                           ,c.chech_time 
                           ,c.migo_time 
                          ,GETDATE() etl_time
-                         -- into ODS_HANA.dbo.digital_brain_outbuy_step_warehouse						 
+                        --  into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_warehouse						 
                       FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
                       join ODS_SRM.dbo.srm_poc_delivery_note_item b
                         ON a.id = b.dn_hd_id
@@ -289,17 +312,15 @@ select count(1) -- 当前数量
                 ,sum(case when CONVERT(VARCHAR(7),chech_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)/count(case when CONVERT(VARCHAR(7),chech_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)
                 ,count(distinct case when CONVERT(DATE, chech_time) = CONVERT(DATE, GETDATE()-1) then order_item_id else null end ) -- 日新增数量
                 ,count(distinct case when CONVERT(DATE, migo_time) = CONVERT(DATE, GETDATE()-1) and day_cnt =0 then order_item_id else null end )  -- 日消耗数量
-            from ODS_HANA.dbo.digital_brain_outbuy_step_warehouse
-
-
+            from Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_warehouse
 
 
 -----------------------------------
 
 -- 质检
- TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_inspection;
+    TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_inspection;
 
-                 insert into ODS_HANA.dbo.digital_brain_outbuy_step_inspection
+                 insert into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_inspection
 
                   select 
                          order_num 
@@ -308,7 +329,7 @@ select count(1) -- 当前数量
                          ,create_date_time
                          ,quantity
 						 ,GETDATE() etl_time
-						-- into ODS_HANA.dbo.digital_brain_outbuy_step_inspection
+					--	into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_inspection
                    from  (
                           select  order_num 
                                  ,order_item_num
@@ -343,17 +364,16 @@ select count(1) -- 当前数量
              ,sum(case when CONVERT(VARCHAR(7),create_date_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)/count(case when CONVERT(VARCHAR(7),create_date_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then quantity else null end)
              ,count(distinct case when CONVERT(DATE,create_date_time) = CONVERT(DATE, GETDATE()-1) then order_item_num else null end )  -- 日新增数量
              ,count(distinct case when CONVERT(DATE,create_date_time) = CONVERT(DATE, GETDATE()-1) and day_cnt =0 then order_item_num else null end )  -- 日消耗数量
-       from  ODS_HANA.dbo.digital_brain_outbuy_step_inspection
+       from  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_inspection
        
-
 
 
 -----------------------------------
 
 -- 开票
-TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_md;
+  TRUNCATE  table  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_md;
 
-                 insert into ODS_HANA.dbo.digital_brain_outbuy_step_md
+                 insert into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_md
 
 				   
 				select 
@@ -363,7 +383,7 @@ TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_md;
 				,md_eq_cnt
 				, DATEDIFF(day,md_create_date,md_max_date) as day_cnt
 				,GETDATE() etl_time
-				-- into ODS_HANA.dbo.digital_brain_outbuy_step_md
+				-- into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_md
 				from(
 					SELECT 
 							CASE when  b.INVOICE_QTY<> b.QTY then order_item_id else null end as md_ne
@@ -383,7 +403,9 @@ TRUNCATE  table ODS_HANA.dbo.digital_brain_outbuy_step_md;
              ,sum(case when CONVERT(VARCHAR(7),md_max_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)/count(case when CONVERT(VARCHAR(7),md_max_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then md_eq_cnt else null end)
              ,count(distinct case when CONVERT(DATE,md_create_date) = CONVERT(DATE, GETDATE()-1) then 1 else null end )  -- 日新增数量
              ,count(distinct case when CONVERT(DATE,md_create_date) = CONVERT(DATE, GETDATE()-1) and day_cnt=0 then 1 else null end )  -- 日消耗数量
-       from ODS_HANA.dbo.digital_brain_outbuy_step_md
+       from  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_md
+
+
 
 
 

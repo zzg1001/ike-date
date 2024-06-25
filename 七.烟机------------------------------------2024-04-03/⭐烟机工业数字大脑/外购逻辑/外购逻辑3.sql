@@ -149,9 +149,16 @@ insert into ODS_HANA.dbo.digital_brain_outbuy_step_req
 
 			 
 --2寻源--------------------------------------------- 
-  select * from  ODS_SRM.dbo.srm_inq_inquiry_hd 
-   where STATUS_CD_ID not in ('INQ_HD_STATUS_REVIEWED','INQ_HD_STATUS_CLOSED','INQ_HD_STATUS_DRAFT')
-    and delete_flag =0
+select 
+         case when  STATUS_CD_ID not in ('INQ_HD_STATUS_REVIEWED','INQ_HD_STATUS_CLOSED','INQ_HD_STATUS_DRAFT') then INQUIRY_MODE else null end 
+        ,case when  STATUS_CD_ID ='INQ_HD_STATUS_PUBLISHED' then DATEDIFF(day,CONVERT(DATE, a.start_date),CONVERT(DATE, a.end_date)) else null end day_cnt
+        ,case when  STATUS_CD_ID ='INQ_HD_STATUS_PUBLISHED' then CONVERT(DATE, a.end_date) else null end end_date
+        ,case when  STATUS_CD_ID ='INQ_HD_STATUS_PUBLISHED' then CONVERT(DATE, a.start_date) else null end start_date
+        from ODS_SRM.dbo.srm_inq_inquiry_hd a
+  where delete_flag =0
+    and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+    and CONVERT(DATE, a.CREATED_TS)<=CONVERT(DATE, GETDATE())
+
 
 		 
 --3订单执行（计划员）=================================--------------------------------------------- 
