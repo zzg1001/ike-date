@@ -111,17 +111,17 @@ TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index_m
 
 	      
 
-TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_req;
+TRUNCATE  table Digital_Brain_Quality.dbo.digital_brain_outbuy_step_req;
 
-insert into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_req
+insert into Digital_Brain_Quality.dbo.digital_brain_outbuy_step_req
 
 	 SELECT 
-	  min_udate
+	 case when a.EBELN is  null then min_udate else null end min_udate
 	 ,DATEDIFF(day,min_udate,BEDAT) day_cnt
 	 ,BEDAT
 	 ,case when a.EBELN is not null then a.EBELN else null end EBELN
 	 ,GETDATE() etl_time
-	-- into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_req
+	-- into Digital_Brain_Quality.dbo.digital_brain_outbuy_step_req
 	 from(
 		 select 
 		          b.min_udate
@@ -155,18 +155,18 @@ insert into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_req
 
 
      select
-        count(1)  -- 当前数量
+        count(min_udate)  -- 当前数量
 	   ,sum( case when CONVERT(VARCHAR(7),BEDAT, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end )/count(case when CONVERT(VARCHAR(7),BEDAT, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),120) then EBELN else null end )
        ,count(case when a.min_udate = CONVERT(DATE, GETDATE()-1) then 1 else null end ) -- 日新增数量
        ,count(case when a.BEDAT = CONVERT(DATE, GETDATE()-1) and day_cnt = 0 then 1 else null end )  -- 日消耗数量
-      from  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_req a
+      from  Digital_Brain_Quality.dbo.digital_brain_outbuy_step_req a
 
 
 --2寻源--------------------------------------------- 
 
-TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src;
+TRUNCATE  table Digital_Brain_Quality.dbo.digital_brain_outbuy_step_src;
 
-   insert into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src
+   insert into Digital_Brain_Quality.dbo.digital_brain_outbuy_step_src
 
   select 
          case when  STATUS_CD_ID not in ('INQ_HD_STATUS_REVIEWED','INQ_HD_STATUS_CLOSED','INQ_HD_STATUS_DRAFT') then INQUIRY_MODE else null end INQUIRY_MODE
@@ -174,7 +174,7 @@ TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src;
         ,case when  STATUS_CD_ID ='INQ_HD_STATUS_PUBLISHED' then CONVERT(DATE, a.end_date) else null end end_date
         ,CONVERT(DATE, a.start_date) start_date
         ,GETDATE() etl_time
-        into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src
+        into Digital_Brain_Quality.dbo.digital_brain_outbuy_step_src
         from ODS_SRM.dbo.srm_inq_inquiry_hd a
   where delete_flag =0
     and CONVERT(DATE, a.CREATED_TS) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
@@ -186,7 +186,7 @@ TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src;
          ,sum( case when CONVERT(VARCHAR(7),end_date,  120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end )/count(case when CONVERT(VARCHAR(7),end_date,  120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),120) then day_cnt else null end )
          ,count(case when start_date = CONVERT(DATE, GETDATE()-1) then 1 else null end ) -- 日新增数量
          ,count(case when end_date = CONVERT(DATE, GETDATE()-1) then 1 else null end )   -- 日消耗数量
-    from Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src
+    from Digital_Brain_Quality.dbo.digital_brain_outbuy_step_src
     
 
 
@@ -194,16 +194,16 @@ TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src;
 --3订单执行（计划员）=================================--------------------------------------------- 
 
 
-  TRUNCATE  table  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_ord;
+  TRUNCATE  table  Digital_Brain_Quality.dbo.digital_brain_outbuy_step_ord;
 
-            insert into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_ord
+            insert into  Digital_Brain_Quality.dbo.digital_brain_outbuy_step_ord
               select 
-                    b.id as order_item_id
+                    case when c.order_item_id is null then b.id else null end as order_item_id
                     ,DATEDIFF(day, a.CREATED_TS,c.max_updated) day_cnt
                     ,CONVERT(DATE, a.CREATED_TS) create_date    -- 订单行首次审批通过时间
                     ,CONVERT(DATE, c.max_updated) max_updated -- 订单行创建装运单时间（最晚）
                     ,GETDATE() etl_time
-                   -- into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_ord
+                   -- into Digital_Brain_Quality.dbo.digital_brain_outbuy_step_ord
                from ODS_SRM.dbo.srm_poc_order_hd a
                join ODS_SRM.dbo.srm_poc_order_item b
                  on a.ID = b.ORDER_ID 
@@ -225,23 +225,23 @@ TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_src;
 
 
 -- 订单执行（计划员）
-select count(1) -- 当前数量
+select count(order_item_id) -- 当前数量
       ,sum(day_cnt)/count(1) -- 本月平均周期（月度？）
       ,count(case when create_date = CONVERT(DATE, GETDATE()-1) then 1 else null end ) d -- 日新增数量
       ,count(case when create_date = CONVERT(DATE, GETDATE()-1) and day_cnt = 0 then 1 else null end ) d -- 日消耗数量
-  from  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_ord
+  from  Digital_Brain_Quality.dbo.digital_brain_outbuy_step_ord
 
 -----------------------------------
 
 -- 订单配送（供应商）
-            TRUNCATE  table  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_delivery;
+            TRUNCATE  table  Digital_Brain_Quality.dbo.digital_brain_outbuy_step_delivery;
 
-                 insert into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_delivery
+                 insert into  Digital_Brain_Quality.dbo.digital_brain_outbuy_step_delivery
 
-                   select  case when a.DN_STATUS = 'SENT_AUDITED'   then order_item_id else null       end delivery_req
+                   select  case when a.DN_STATUS = 'SENT_AUDITED' and current_status is null  then order_item_id else null       end delivery_req
                           ,case when current_status = '点收节点/结束指令' then a.CREATED_TS  else null   end create_date
                           ,case when current_status = '点收节点/结束指令' then DATEDIFF(day,a.CREATED_TS,b.updated_ts)  else null   end day_cnt
-                         -- into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_delivery
+                         -- into Digital_Brain_Quality.dbo.digital_brain_outbuy_step_delivery
                      FROM ODS_SRM.dbo.srm_poc_delivery_note_hd a
                      join ODS_SRM.dbo.srm_poc_delivery_note_item b
                        ON a.id = b.dn_hd_id
@@ -255,7 +255,7 @@ select count(1) -- 当前数量
             ,sum( case when CONVERT(VARCHAR(7),create_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end )/count(case when CONVERT(VARCHAR(7),create_date, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),120) then day_cnt else null end )
             ,count(DISTINCT case when create_date = CONVERT(DATE, GETDATE()-1) then delivery_req else null end )   -- 日新增数量
             ,count(DISTINCT case when create_date = CONVERT(DATE, GETDATE()-1) and day_cnt=0 then 1 else null end ) -- 日消耗数量
-       from Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_delivery
+       from Digital_Brain_Quality.dbo.digital_brain_outbuy_step_delivery
 
 
 
@@ -265,9 +265,9 @@ select count(1) -- 当前数量
 -- 物流周转（仓库）
 
              
-            TRUNCATE  table  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_warehouse;
+            TRUNCATE  table  Digital_Brain_Quality.dbo.digital_brain_outbuy_step_warehouse;
 
-                 insert into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_warehouse
+                 insert into  Digital_Brain_Quality.dbo.digital_brain_outbuy_step_warehouse
                 
                         SELECT 
                           case when EXISTS (
@@ -320,15 +320,15 @@ select count(1) -- 当前数量
                 ,sum(case when CONVERT(VARCHAR(7),chech_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)/count(case when CONVERT(VARCHAR(7),chech_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)
                 ,count(distinct case when CONVERT(DATE, chech_time) = CONVERT(DATE, GETDATE()-1) then order_item_id else null end ) -- 日新增数量
                 ,count(distinct case when CONVERT(DATE, migo_time) = CONVERT(DATE, GETDATE()-1) and day_cnt =0 then order_item_id else null end )  -- 日消耗数量
-            from Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_warehouse
+            from Digital_Brain_Quality.dbo.digital_brain_outbuy_step_warehouse
 
 
 -----------------------------------
 
 -- 质检
-    TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_inspection;
+    TRUNCATE  table Digital_Brain_Quality.dbo.digital_brain_outbuy_step_inspection;
 
-                 insert into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_inspection
+                 insert into Digital_Brain_Quality.dbo.digital_brain_outbuy_step_inspection
 
                   select 
                          order_num 
@@ -337,7 +337,7 @@ select count(1) -- 当前数量
                          ,create_date_time
                          ,quantity
 						 ,GETDATE() etl_time
-					--	into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_inspection
+					--	into Digital_Brain_Quality.dbo.digital_brain_outbuy_step_inspection
                    from  (
                           select  order_num 
                                  ,order_item_num
@@ -372,16 +372,16 @@ select count(1) -- 当前数量
              ,sum(case when CONVERT(VARCHAR(7),create_date_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then day_cnt else null end)/count(case when CONVERT(VARCHAR(7),create_date_time, 120) = CONVERT(VARCHAR(7),CONVERT(DATE, GETDATE()),  120) then quantity else null end)
              ,count(distinct case when CONVERT(DATE,create_date_time) = CONVERT(DATE, GETDATE()-1) then order_item_num else null end )  -- 日新增数量
              ,count(distinct case when CONVERT(DATE,create_date_time) = CONVERT(DATE, GETDATE()-1) and day_cnt =0 then order_item_num else null end )  -- 日消耗数量
-       from  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_inspection
+       from  Digital_Brain_Quality.dbo.digital_brain_outbuy_step_inspection
        
 
 
 -----------------------------------
 
 -- 开票
-  TRUNCATE  table  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_md;
+  TRUNCATE  table  Digital_Brain_Quality.dbo.digital_brain_outbuy_step_md;
 
-                 insert into Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_md
+                 insert into Digital_Brain_Quality.dbo.digital_brain_outbuy_step_md
 
 				   
 				select 
@@ -391,7 +391,7 @@ select count(1) -- 当前数量
 				,md_eq_cnt
 				, DATEDIFF(day,md_create_date,md_max_date) as day_cnt
 				,GETDATE() etl_time
-				-- into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_step_md
+				-- into  Digital_Brain_Quality.dbo.digital_brain_outbuy_step_md
 				from(
 					SELECT 
 							CASE when  b.INVOICE_QTY<> b.QTY then order_item_id else null end as md_ne

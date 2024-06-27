@@ -66,7 +66,7 @@ from (
 				      select 
 						    CASE  WHEN MATNR LIKE '%.%' THEN REPLACE(MATNR, '\.[0-9]+$', '' ) ELSE MATNR end part_code
 						    ,lplpr  sap_price
-						    from ODS_HANA.dbo.MBEW
+						    from ODS_HANA.dbo.MBEW where bwkey =2000
 				         ) bb 
 				        on a.MATNR = bb.part_code
 				 left join ODS_HANA.dbo.MARC c 
@@ -129,7 +129,7 @@ left join (
 									,item_classification_code  -- '项目分类'
 									,description           -- 'description'
 									,'' Windchill_sample  --  '样本（即时要求低的从数据中台抽）'		
-							from DWD_WINDCHILL.dbo.dws_pdm_part_info 
+							from DWD_WINDCHILL.dbo.dws_pdm_part_info where is_new = 1
 							)a
                         ) b
        on a.part_code = b.part_code
