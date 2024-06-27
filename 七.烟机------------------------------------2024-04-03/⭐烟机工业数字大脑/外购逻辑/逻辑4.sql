@@ -52,7 +52,8 @@ with base_buy_tamp as
 
 	------------------------------------------------------- 
 	  
-	  TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index_month;
+
+TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index_month;
 	  with base_buy_tamp as
                 (
 					select ADPRI
@@ -64,6 +65,8 @@ with base_buy_tamp as
 						,overdue_or_not
 						,BUDAT
 						,purchase_flag
+             ,NAME1  factory_name
+						 ,is_qualified
 					from Outsourcing_Dashboard.dbo.sap_base_buy_field_wide
 					where  (LOEKZ <>'L' or LOEKZ is null)
 					and BUKRS='2000' and FRGKE='S'
@@ -72,7 +75,7 @@ with base_buy_tamp as
 
                )
 			   
-  	INSERT INTO  Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index_month	 
+ 	INSERT INTO  Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index_month	 
 		select 
 		    EINDT_MONTH
            ,od_cont           -- 当月新增订单
@@ -80,21 +83,26 @@ with base_buy_tamp as
            ,an_finish_cnt     -- 当月按时订单	
            ,an_j_finish_cnt	  -- 当月按时完成紧急订单	
            ,j_cnt		      -- 当月紧急订单
-		   ,purchase_flag
-		   ,GETDATE() etl_time
-	     -- into digital_brain_outbuy_dashboard_index_month
+		      ,purchase_flag
+           ,factory_name
+           ,qualified_cnt
+		      ,GETDATE() etl_time
+	    -- into Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index_month
      from(		   
          select  EINDT_MONTH
 		        ,count(1) as od_cont
-				,count(case when finish_or_not = '完成'   and overdue_or_not = '逾期' and BUDAT<=LastDayOfMonth then 1 else null end ) as overdue_f_od_cnt   -- 逾期完成订单行数
+				,count(case when finish_or_not = '完成'   and overdue_or_not = '逾期' and BUDAT<=LastDayOfMonth then 1 else null end ) as overdue_f_od_cnt  -- 逾期完成订单行数
 		    	,count(case when finish_or_not = '完成' and overdue_or_not ='按时' then 1 else null end )                              as an_finish_cnt      -- 按时完成订单行数
 				,count(case when finish_or_not = '未完成' and overdue_or_not = '逾期' then 1 else null end )                           as nf_overdue_od_cnt  -- 未完成已未逾期
 				,count(case when finish_or_not = '完成' and overdue_or_not ='按时' and ADPRI = 'J' then 1 else null end )              as an_j_finish_cnt    -- 按时完成紧急订单行数
-				,count(case when ADPRI = 'J' then 1 else null end )                                                                    as j_cnt              -- 紧急订单行数 
+				,count(case when ADPRI = 'J' then 1 else null end )                                                                  as j_cnt              -- 紧急订单行数 
+		    	,count(case when is_qualified ='合格' then 1 else null end )                                                          as qualified_cnt      -- 按时完成订单行数
 				,purchase_flag
+				,factory_name
 			from base_buy_tamp
 			group by EINDT_MONTH
 			        ,purchase_flag
+              ,factory_name 
 		 ) a
 		 ORDER BY EINDT_MONTH
 

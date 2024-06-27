@@ -5,7 +5,7 @@ import logging
 import time
 
 # 配置日志记录器
-log_file = 'C:\\Users\\22492\\Desktop\\aaa\\err.log'
+log_file = '/Users/zhangzuogong/Desktop/sss/err.log'
 logging.basicConfig(filename=log_file, level=logging.ERROR, format='%(asctime)s - %(message)s')
 
 # SQL Server连接配置
@@ -22,7 +22,7 @@ password = 'Password.1'  # 密码
 driver = '{ODBC Driver 17 for SQL Server}'
 
 # 原始目录路径和文件扩展名
-source_directory = 'C:\\Users\\22492\\Desktop\\aaa\\原数据'
+source_directory = '/Users/zhangzuogong/Desktop/sss'
 extension = '.dat'
 
 # 建立数据库连接
