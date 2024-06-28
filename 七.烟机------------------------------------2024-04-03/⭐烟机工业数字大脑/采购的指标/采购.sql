@@ -1,9 +1,9 @@
 
 -----------------年度采购总金额-------------------
-SELECT SUM(contract_amount) as contract_amount
-  FROM LeanProduction_Dashboard.dbo.purchase_dashboard_base_contract_info
-  where sponsor_dept_code = '59TKR0X9'
-and contract_year = year(GETDATE())
+  SELECT SUM(contract_amount) as contract_amount
+    FROM LeanProduction_Dashboard.dbo.purchase_dashboard_base_contract_info
+    where sponsor_dept_code = '59TKR0X9'
+  and contract_year = year(GETDATE())
 
 -------------采购计划完成率-------------------------------------
 SELECT aaa.计划编号,bbb.dept_name 部门,aaa.金额,aaa.执行类型 FROM 
@@ -203,9 +203,10 @@ insert INTO  ODS_HANA.dbo.digital_brain_purchase_department_amount_index
 
 
 
-TRUNCATE table Outsourcing_Dashboard.dbo.digital_brain_purchase_plan_amount;
 
-INSERT  into  Outsourcing_Dashboard.dbo.digital_brain_purchase_plan_amount
+TRUNCATE table Digital_Brain_Quality.dbo.digital_brain_purchase_plan_amount;
+
+INSERT  into  Digital_Brain_Quality.dbo.digital_brain_purchase_plan_amount
        
 select A.id                                          as contract_id
                ,contract_code_perfix + contract_serial_number as contract_code
@@ -234,10 +235,8 @@ select A.id                                          as contract_id
            ,g.supplier_level
            ,g.SUPPLIER_ID
            ,g.supplier_created_date
-           ,e.category_type pur_type_name
-           ,e.category_type_name
            ,GETDATE() etl_time
-       -- into  Outsourcing_Dashboard.dbo.digital_brain_purchase_plan_amount
+       into  Digital_Brain_Quality.dbo.digital_brain_purchase_plan_amount
        from ODS_SRM.dbo.ct_contract A
   left join ODS_SRM.dbo.ct_contract_type B 
          on A.contract_type_id = B.id
@@ -251,14 +250,7 @@ select A.id                                          as contract_id
         and d.is_deleted = 0
   left join ODS_SRM.dbo.srm_purch_catalog m 
          on d.pur_category_id = m.id
-  left join (select distinct purchase_category_num
-                   ,category_type_name 
-                   ,plan_department 
-                   ,category_type
-              from ODS_SRM.dbo.purchase_plan_department_category_mapping
-              ) e
-         on e.purchase_category_num = d.pur_category_code 
-        and e.plan_department =  d.organizing_dept_name
+
   left join ODS_SRM.dbo.srm_md_suppliercode f 
          on a.vendor = f.compcode_cd 
         and f.REF_SYS = 'SAP02'
@@ -290,5 +282,149 @@ select A.id                                          as contract_id
 
 
 
+TRUNCATE table Digital_Brain_Quality.dbo.digital_brain_purchase_plan_amount_category;
 
+INSERT  into  Digital_Brain_Quality.dbo.digital_brain_purchase_plan_amount_category
+select A.id                                          as contract_id
+               ,contract_code_perfix + contract_serial_number as contract_code
+           ,a.contract_year
+           ,a.contract_amount                             as contract_amount
+           ,sponsor_dept_code
+           ,sponsor_dept_name                             as sponsor_dept_desc
+           ,vendor                                        as vendor_code
+           ,vendor_name                                   as vendor_desc
+           ,B.type_name                                   as contract_type_desc
+           ,contract_state                                as contract_state_code
+           ,case contract_state
+               when 0 then '草稿'
+               when 1 then '审批中'
+               when 2 then '审批通过'
+               when 3 then '已废弃' end                     as contract_state_desc
+           ,chargs                                        as batch_code
+           ,order_nums                                    as order_no_list
+           ,A.create_user_name                            as create_user_code
+           
+           ,A.create_user_cn_name                         as create_user_name
+           ,A.create_date_time
+           ,delivery_date                                 as delivery_date_time
+           ,CONVERT(DATE, approved_date)                  as approved_date_time
+           ,c.contract_amount                             as plan_contract_amount -- 合同计划金额
+           ,e.category_type pur_type_name
+           ,e.category_type_name
+           ,GETDATE() etl_time
+          --  into Digital_Brain_Quality.dbo.digital_brain_purchase_plan_amount_category
+       from ODS_SRM.dbo.ct_contract A
+  left join ODS_SRM.dbo.ct_contract_type B 
+         on A.contract_type_id = B.id
+        and B.is_deleted = 0
+       join ODS_SRM.dbo.ct_contract_purchase_plan c 
+         on c.contract_id = a.id
+        and c.is_deleted = 0
+       join ODS_SRM.dbo.srm_purch_plan_item d
+         on c.plan_code = d.pur_plan_item_code
+        and d.is_modified = 0
+        and d.is_deleted = 0
+  left join (select distinct purchase_category_num
+                   ,category_type_name 
+                   ,plan_department 
+                   ,category_type
+              from ODS_SRM.dbo.purchase_plan_department_category_mapping
+              ) e
+         on e.purchase_category_num = d.pur_category_code 
+        and e.plan_department =  d.organizing_dept_name
+
+
+
+
+
+
+
+
+
+
+TRUNCATE table Digital_Brain_Quality.dbo.digital_brain_purchase_plan_amount;
+
+INSERT  into  Digital_Brain_Quality.dbo.digital_brain_purchase_plan_amount
+       
+select A.id                                          as contract_id
+               ,contract_code_perfix + contract_serial_number as contract_code
+           ,a.contract_year
+           ,a.contract_amount                             as contract_amount
+           ,sponsor_dept_code
+           ,sponsor_dept_name                             as sponsor_dept_desc
+           ,vendor                                        as vendor_code
+           ,vendor_name                                   as vendor_desc
+           ,B.type_name                                   as contract_type_desc
+           ,contract_state                                as contract_state_code
+           ,case contract_state
+               when 0 then '草稿'
+               when 1 then '审批中'
+               when 2 then '审批通过'
+               when 3 then '已废弃' end                     as contract_state_desc
+           ,chargs                                        as batch_code
+           ,order_nums                                    as order_no_list
+           ,A.create_user_name                            as create_user_code
+           
+           ,A.create_user_cn_name                         as create_user_name
+           ,A.create_date_time
+           ,delivery_date                                 as delivery_date_time
+           ,CONVERT(DATE, approved_date)                  as approved_date_time
+           ,c.contract_amount                             as plan_contract_amount -- 合同计划金额
+           ,g.supplier_level
+           ,g.SUPPLIER_ID
+           ,g.supplier_created_date
+           ,e.category_type pur_type_name
+           ,e.category_type_name
+           ,GETDATE() etl_time
+     -- into  Digital_Brain_Quality.dbo.digital_brain_purchase_plan_amount
+       from ODS_SRM.dbo.ct_contract A
+  left join ODS_SRM.dbo.ct_contract_type B 
+         on A.contract_type_id = B.id
+        and B.is_deleted = 0
+       join ODS_SRM.dbo.ct_contract_purchase_plan c 
+         on c.contract_id = a.id
+        and c.is_deleted = 0
+       join ODS_SRM.dbo.srm_purch_plan_item d
+         on c.plan_code = d.pur_plan_item_code
+        and d.is_modified = 0
+        and d.is_deleted = 0
+  left join ODS_SRM.dbo.srm_purch_catalog m 
+         on d.pur_category_id = m.id
+  left join (select distinct purchase_category_num
+                   ,category_type_name 
+                   ,plan_department 
+                   ,category_type
+                   ,purchase_category_plan_num
+              from ODS_SRM.dbo.purchase_plan_department_category_mapping
+              ) e
+         on e.purchase_category_num = d.pur_category_code 
+        and e.plan_department =  d.organizing_dept_name
+        and e.purchase_category_plan_num = d.pur_plan_item_code
+
+  left join ODS_SRM.dbo.srm_md_suppliercode f 
+         on a.vendor = f.compcode_cd 
+        and f.REF_SYS = 'SAP02'
+  left join (
+                      select SUPPLIER_ID
+                            ,CONVERT(DATE, created_ts) supplier_created_date
+                            ,CASE
+                                 WHEN CHARINDEX('(', supplier_level) > 0
+                                 THEN SUBSTRING(supplier_level, 1, CHARINDEX('(', supplier_level) - 1)
+                             ELSE supplier_level
+                             END AS supplier_level      
+                       from ODS_SRM.dbo.srm_mgt_access a
+                      where supplier_level is not null 
+                        and purchaser_id = 'BUYER0000000001'
+                        and supplier_type like '%外%'
+                      GROUP by SUPPLIER_ID
+                             ,CASE
+                                   WHEN CHARINDEX('(', supplier_level) > 0
+                                   THEN SUBSTRING(supplier_level, 1, CHARINDEX('(', supplier_level) - 1)
+                              ELSE supplier_level END
+                             ,CONVERT(DATE, created_ts)
+             ) g
+         on f.SRM_COMP_ID = g.SUPPLIER_ID
+      where a.purchaser_cd = '2000'
+        and A.is_deleted = 0
+     
 
