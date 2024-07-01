@@ -5,6 +5,21 @@
     where sponsor_dept_code = '59TKR0X9'
   and contract_year = year(GETDATE())
 
+
+Purchase_Office_Dashboard.dbo.ads_purchase_contract_info----------> Purchase_Office_Dashboard.dbo.base_purchase_plan_info-------------->ODS_SRM.dbo.srm_purch_plan_item
+ exec_time_from     -> exec_start_date_time
+ exec_time_to       -> exec_start_date_time
+  year_contract_amt -> contract_amount
+  cumulative_amt    -> cumulative_amount
+
+
+  ads_company_contract_info------------>Purchase_Office_Dashboard.dbo.base_contract_info------------------------------->ODS_SRM.dbo.ct_contract
+                               -------->Purchase_Office_Dashboard.dbo.base_contract_purchase_plan_relation------------->ODS_SRM.dbo.ct_contract_purchase_plan ----->contract_amount
+
+
+
+
+
 -------------采购计划完成率-------------------------------------
 SELECT aaa.计划编号,bbb.dept_name 部门,aaa.金额,aaa.执行类型 FROM 
 (
@@ -24,18 +39,27 @@ ON a.purchase_plan_code=b.purchase_plan_code AND a.exec_dept_code=b.sponsor_dept
 
 UNION
 
-(SELECT a.purchase_plan_code 计划编号,a.exec_dept_code 部门,(a.jhje-ISNULL(b.zxje, 0))/10000 金额,'未执行' 执行类型 FROM
-((SELECT purchase_plan_code,exec_dept_code,SUM(contract_amount) jhje FROM ads_purchase_contract_info
-WHERE 1=1
-${if(or(len(jbksrq)=0,len(jbjsrq)=0),"","AND exec_start_date_time>='"+date(year(jbksrq),1,1)+"' AND exec_end_date_time<='"+date(year(jbksrq),12,31)+"'")}
-GROUP BY purchase_plan_code,exec_dept_code) a
-LEFT JOIN
-(SELECT purchase_plan_code,sponsor_dept_code,SUM(contract_amount) zxje FROM ads_company_contract_info
-WHERE 1=1
-${if(len(jbspzt)=0,"AND contract_state_desc IN ('审批通过','审批中')","AND contract_state_desc='审批通过'")}
-${if(or(len(jbksrq)=0,len(jbjsrq)=0),"","AND create_date_time BETWEEN '"+jbksrq+"' AND '"+jbjsrq+"' AND contract_year='"+year(jbksrq)+"'")}
-GROUP BY purchase_plan_code,sponsor_dept_code) b
-ON a.purchase_plan_code=b.purchase_plan_code AND a.exec_dept_code=b.sponsor_dept_code))
+      (
+              SELECT a.purchase_plan_code 计划编号,a.exec_dept_code 部门,(a.jhje-ISNULL(b.zxje, 0))/10000 金额,'未执行' 执行类型 FROM
+            (
+                    (
+                      SELECT purchase_plan_code,exec_dept_code,SUM(contract_amount) jhje FROM ads_purchase_contract_info
+                      WHERE 1=1
+                     ${if(or(len(jbksrq)=0,len(jbjsrq)=0),"","AND exec_start_date_time>='"+date(year(jbksrq),1,1)+"' AND exec_end_date_time<='"+date(year(jbksrq),12,31)+"'")}
+                    GROUP BY purchase_plan_code,exec_dept_code
+                  ) a
+                  LEFT JOIN
+                  (
+                    SELECT purchase_plan_code,sponsor_dept_code,SUM(contract_amount) zxje FROM ads_company_contract_info
+                  WHERE 1=1
+                  ${if(len(jbspzt)=0,"AND contract_state_desc IN ('审批通过','审批中')","AND contract_state_desc='审批通过'")}
+                  ${if(or(len(jbksrq)=0,len(jbjsrq)=0),"","AND create_date_time BETWEEN '"+jbksrq+"' AND '"+jbjsrq+"' AND contract_year='"+year(jbksrq)+"'")}
+                  GROUP BY purchase_plan_code,sponsor_dept_code
+                  ) b
+                  ON a.purchase_plan_code=b.purchase_plan_code AND a.exec_dept_code=b.sponsor_dept_code
+            )
+
+      )
 ) aaa
 LEFT JOIN 
 ads_purchase_dept_mapping bbb
@@ -236,7 +260,7 @@ select A.id                                          as contract_id
            ,g.SUPPLIER_ID
            ,g.supplier_created_date
            ,GETDATE() etl_time
-       into  Digital_Brain_Quality.dbo.digital_brain_purchase_plan_amount
+     --  into  Digital_Brain_Quality.dbo.digital_brain_purchase_plan_amount
        from ODS_SRM.dbo.ct_contract A
   left join ODS_SRM.dbo.ct_contract_type B 
          on A.contract_type_id = B.id
@@ -370,6 +394,8 @@ select A.id                                          as contract_id
            ,delivery_date                                 as delivery_date_time
            ,CONVERT(DATE, approved_date)                  as approved_date_time
            ,c.contract_amount                             as plan_contract_amount -- 合同计划金额
+           ,d.pur_plan_item_code
+           ,d.cumulative_amt
            ,g.supplier_level
            ,g.SUPPLIER_ID
            ,g.supplier_created_date
