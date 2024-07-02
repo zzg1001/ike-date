@@ -313,9 +313,9 @@
       <description/>
       <type>SQL</type>
       <attributes/>
-      <sql>     TRUNCATE table ODS_HANA.dbo.base_preparation_supplier_enter_info ;
+      <sql>     TRUNCATE table Digital_Brain_Quality.dbo.base_preparation_supplier_enter_info ;
     
-     INSERT into ODS_HANA.dbo.base_preparation_supplier_enter_info          
+     INSERT into Digital_Brain_Quality.dbo.base_preparation_supplier_enter_info        
      
      select SUPPLIER_ID
             ,CONVERT(DATE, created_ts) supplier_created_date
@@ -324,7 +324,7 @@
                  THEN SUBSTRING(supplier_level, 1, CHARINDEX('(', supplier_level) - 1)
              ELSE supplier_level
              END AS supplier_level    
-            -- into base_preparation_supplier_enter_info
+            -- into Digital_Brain_Quality.dbo.base_preparation_supplier_enter_info
        from ODS_SRM.dbo.srm_mgt_access a
       where supplier_level is not null 
         and purchaser_id = 'BUYER0000000001'

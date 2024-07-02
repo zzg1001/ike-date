@@ -12,11 +12,11 @@
   <parameters>
     </parameters>
   <connection>
-    <name>Outsourcing_Dashboard</name>
+    <name>ODS_HANA</name>
     <server>172.16.31.42</server>
     <type>MSSQL</type>
     <access>Native</access>
-    <database>Outsourcing_Dashboard</database>
+    <database>ODS_HANA</database>
     <port>1433</port>
     <username>dw</username>
     <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2abcd</password>
@@ -24,6 +24,10 @@
     <data_tablespace/>
     <index_tablespace/>
     <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_MSSQL.zeroDateTimeBehavior</code>
+        <attribute>convertToNull</attribute>
+      </attribute>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
         <attribute>N</attribute>
@@ -368,7 +372,7 @@
       <description/>
       <type>SQL</type>
       <attributes/>
-      <sql>TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index;
+      <sql>TRUNCATE  table Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index;
 
 with base_buy_tamp as
                 (
@@ -404,7 +408,7 @@ with base_buy_tamp as
 				and overdue_or_not = '逾期' and finish_or_not = '未完成'
                )
 			   
-        INSERT INTO  Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index
+        INSERT INTO  Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index
          select 
 				 count(1)                                                                                                             as total_od_cnt                 -- 总订单数
 				,count(case when finish_or_not = '完成'   and completion_date&lt;=EINDT  then 1 else null end )                          as an_finish_od_cnt             -- 按时完成订单行数
@@ -416,14 +420,14 @@ with base_buy_tamp as
 				,count(case when finish_or_not &lt;&gt; '完成' then 1 else null end )                                                       as total_nf_od_cnt              -- 现有订单总行数  
                 ,purchase_flag
 			    ,GETDATE() etl_time
-			--	into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index
+			--	into  Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index
 			from base_buy_tamp
 		   group by purchase_flag</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>
       <sendOneStatement>F</sendOneStatement>
-      <connection>Outsourcing_Dashboard</connection>
+      <connection>ODS_HANA</connection>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
