@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+*.swp
+*.swo
+
+# Xcode
+*.pbxproj
+*.xcodeproj/
+*.xcworkspace/
