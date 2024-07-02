@@ -130,7 +130,7 @@ if __name__ == "__main__":
     exc1('2015-09-01')
 
     start_date = datetime.date(2015, 10, 1)
-    end_date = datetime.date(2024, 5, 1)
+    end_date = datetime.date(2024, 8, 1)
 
     result = get_all_months(start_date, end_date)
 

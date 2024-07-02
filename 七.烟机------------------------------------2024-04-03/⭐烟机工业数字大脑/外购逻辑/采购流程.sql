@@ -1,4 +1,4 @@
-TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index;
+TRUNCATE  table Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index;
 
 with base_buy_tamp as
                 (
@@ -34,7 +34,7 @@ with base_buy_tamp as
 				and overdue_or_not = '逾期' and finish_or_not = '未完成'
                )
 			   
-        INSERT INTO  Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index
+        INSERT INTO  Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index
          select 
 				 count(1)                                                                                                             as total_od_cnt                 -- 总订单数
 				,count(case when finish_or_not = '完成'   and completion_date<=EINDT  then 1 else null end )                          as an_finish_od_cnt             -- 按时完成订单行数
@@ -46,7 +46,7 @@ with base_buy_tamp as
 				,count(case when finish_or_not <> '完成' then 1 else null end )                                                       as total_nf_od_cnt              -- 现有订单总行数  
                 ,purchase_flag
 			    ,GETDATE() etl_time
-			--	into  Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index
+			--	into  Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index
 			from base_buy_tamp
 		   group by purchase_flag
 
