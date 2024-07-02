@@ -384,91 +384,58 @@
       <description/>
       <type>SQL</type>
       <attributes/>
-      <sql>
+      <sql>TRUNCATE  table Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index_month;
+	  with base_buy_tamp as
+                (
+					select ADPRI
+						,finish_or_not
+						,completion_date
+						,CONVERT(VARCHAR(7),CONVERT(date, EINDT, 112), 120) EINDT_MONTH
+						,DATEADD(DAY, -1, DATEADD(MONTH, DATEDIFF(MONTH, 0, CONVERT(VARCHAR(10),CONVERT(date, EINDT, 112), 120) ) + 1, 0)) AS LastDayOfMonth
+						,delivery_days_30
+						,overdue_or_not
+						,BUDAT
+						,purchase_flag
+             ,NAME1  factory_name
+						 ,is_qualified
+					from Outsourcing_Dashboard.dbo.sap_base_buy_field_wide
+					where  (LOEKZ &lt;&gt;'L' or LOEKZ is null)
+					and BUKRS='2000' and FRGKE='S'
+					and CONVERT(date, EINDT, 112) >=CAST(YEAR(GETDATE()) AS VARCHAR(4)) + '-01-01'  
+					and CONVERT(date, EINDT, 112) &lt;=CONVERT(DATE, GETDATE())  
 
-TRUNCATE table Outsourcing_Dashboard.dbo.digital_brain_purchase_plan_amount;
-
-INSERT  into  Outsourcing_Dashboard.dbo.digital_brain_purchase_plan_amount
-	     
-select A.id                                          as contract_id
-               ,contract_code_perfix + contract_serial_number as contract_code
-		       ,a.contract_year
-		       ,a.contract_amount                             as contract_amount
-		       ,sponsor_dept_code
-		       ,sponsor_dept_name                             as sponsor_dept_desc
-		       ,vendor                                        as vendor_code
-		       ,vendor_name                                   as vendor_desc
-		       ,B.type_name                                   as contract_type_desc
-		       ,contract_state                                as contract_state_code
-		       ,case contract_state
-		           when 0 then '草稿'
-		           when 1 then '审批中'
-		           when 2 then '审批通过'
-		           when 3 then '已废弃' end                     as contract_state_desc
-		       ,chargs                                        as batch_code
-		       ,order_nums                                    as order_no_list
-		       ,A.create_user_name                            as create_user_code
-		       
-		       ,A.create_user_cn_name                         as create_user_name
-		       ,A.create_date_time
-		       ,delivery_date                                 as delivery_date_time
-		       ,CONVERT(DATE, approved_date)                  as approved_date_time
-		       ,c.contract_amount                             as plan_contract_amount -- 合同计划金额
-		       ,g.supplier_level
-		       ,g.SUPPLIER_ID
-		       ,g.supplier_created_date
-		       ,e.category_type pur_type_name
-		       ,e.category_type_name
-		       ,GETDATE() etl_time
-		   -- into  Outsourcing_Dashboard.dbo.digital_brain_purchase_plan_amount
-       from ODS_SRM.dbo.ct_contract A
-  left join ODS_SRM.dbo.ct_contract_type B 
-         on A.contract_type_id = B.id
-        and B.is_deleted = 0
-       join ODS_SRM.dbo.ct_contract_purchase_plan c 
-         on c.contract_id = a.id
-        and c.is_deleted = 0
-       join ODS_SRM.dbo.srm_purch_plan_item d
-         on c.plan_code = d.pur_plan_item_code
-        and d.is_modified = 0
-        and d.is_deleted = 0
-  left join ODS_SRM.dbo.srm_purch_catalog m 
-         on d.pur_category_id = m.id
-  left join (select distinct purchase_category_num
-                   ,category_type_name 
-                   ,plan_department 
-                   ,category_type
-              from ODS_SRM.dbo.purchase_plan_department_category_mapping
-              ) e
-         on e.purchase_category_num = d.pur_category_code 
-        and e.plan_department =  d.organizing_dept_name
-  left join ODS_SRM.dbo.srm_md_suppliercode f 
-         on a.vendor = f.compcode_cd 
-        and f.REF_SYS = 'SAP02'
-  left join (
-                      select SUPPLIER_ID
-                            ,CONVERT(DATE, created_ts) supplier_created_date
-                            ,CASE
-                                 WHEN CHARINDEX('(', supplier_level) > 0
-                                 THEN SUBSTRING(supplier_level, 1, CHARINDEX('(', supplier_level) - 1)
-                             ELSE supplier_level
-                             END AS supplier_level      
-                       from ODS_SRM.dbo.srm_mgt_access a
-                      where supplier_level is not null 
-                        and purchaser_id = 'BUYER0000000001'
-                        and supplier_type like '%外%'
-                      GROUP by SUPPLIER_ID
-                             ,CASE
-                                   WHEN CHARINDEX('(', supplier_level) > 0
-                                   THEN SUBSTRING(supplier_level, 1, CHARINDEX('(', supplier_level) - 1)
-                              ELSE supplier_level END
-                             ,CONVERT(DATE, created_ts)
-             ) g
-         on f.SRM_COMP_ID = g.SUPPLIER_ID
-      where a.purchaser_cd = '2000'
-        and A.is_deleted = 0
-          AND contract_year=YEAR( GETDATE())
-         </sql>
+               )
+			   
+ 	INSERT INTO  Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index_month	 
+		select 
+		    EINDT_MONTH
+           ,od_cont           -- 当月新增订单
+           ,overdue_f_od_cnt  -- 逾期完成订单行数	 
+           ,an_finish_cnt     -- 当月按时订单	
+           ,an_j_finish_cnt	  -- 当月按时完成紧急订单	
+           ,j_cnt		      -- 当月紧急订单
+		      ,purchase_flag
+           ,factory_name
+           ,qualified_cnt
+		      ,GETDATE() etl_time
+	    -- into Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index_month
+     from(		   
+         select  EINDT_MONTH
+		        ,count(1) as od_cont
+				,count(case when finish_or_not = '完成'   and overdue_or_not = '逾期' and BUDAT&lt;=LastDayOfMonth then 1 else null end ) as overdue_f_od_cnt  -- 逾期完成订单行数
+		    	,count(case when finish_or_not = '完成' and overdue_or_not ='按时' then 1 else null end )                              as an_finish_cnt      -- 按时完成订单行数
+				,count(case when finish_or_not = '未完成' and overdue_or_not = '逾期' then 1 else null end )                           as nf_overdue_od_cnt  -- 未完成已未逾期
+				,count(case when finish_or_not = '完成' and overdue_or_not ='按时' and ADPRI = 'J' then 1 else null end )              as an_j_finish_cnt    -- 按时完成紧急订单行数
+				,count(case when ADPRI = 'J' then 1 else null end )                                                                  as j_cnt              -- 紧急订单行数 
+		    	,count(case when is_qualified ='合格' then 1 else null end )                                                          as qualified_cnt      -- 按时完成订单行数
+				,purchase_flag
+				,factory_name
+			from base_buy_tamp
+			group by EINDT_MONTH
+			        ,purchase_flag
+              ,factory_name 
+		 ) a
+		 ORDER BY EINDT_MONTH</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>

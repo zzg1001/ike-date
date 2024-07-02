@@ -53,7 +53,7 @@ with base_buy_tamp as
 	------------------------------------------------------- 
 	  
 
-TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index_month;
+TRUNCATE  table Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index_month;
 	  with base_buy_tamp as
                 (
 					select ADPRI
@@ -75,7 +75,7 @@ TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index_m
 
                )
 			   
- 	INSERT INTO  Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index_month	 
+ 	INSERT INTO  Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index_month	 
 		select 
 		    EINDT_MONTH
            ,od_cont           -- 当月新增订单
@@ -87,7 +87,7 @@ TRUNCATE  table Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index_m
            ,factory_name
            ,qualified_cnt
 		      ,GETDATE() etl_time
-	    -- into Outsourcing_Dashboard.dbo.digital_brain_outbuy_dashboard_index_month
+	    -- into Digital_Brain_Quality.dbo.digital_brain_outbuy_dashboard_index_month
      from(		   
          select  EINDT_MONTH
 		        ,count(1) as od_cont
