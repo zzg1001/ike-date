@@ -31,7 +31,7 @@ def search_keyword_in_files(directory, keyword):
 
 # 指定目录和关键词
 directory = r'/Users/zhangzuogong/IdeaProjects/ike-date/八.fendi/aaa/原数据'
-keyword = '|71397|'
+keyword = '丽'
 # 指定结果文件路径
 result_file_path = r'/Users/zhangzuogong/IdeaProjects/ike-date/八.fendi/aaa/rs.txt'
 
