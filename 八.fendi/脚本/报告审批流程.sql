@@ -230,7 +230,7 @@ select *from fendi.dbo.ct_workflow_process_instance cwpi  where PROCESS_KEY ='20
                 ,c.SEQUENCE_ORDER;
 
 ---------------------------------------------------------
-     select     a.REPORT_ID '报告ID'
+    select     a.REPORT_ID '报告ID'
             ,a.name  '报告名称'
             ,a.rpt_key '报告key'
         --  ,a.APS_KEY
@@ -254,6 +254,7 @@ select *from fendi.dbo.ct_workflow_process_instance cwpi  where PROCESS_KEY ='20
             ,isnull(se.EMAIL_ADDRESS,'system')  '审批人邮件'
             ,d.name '审批流程'
             ,m.name  '审批流程状态'
+            ,c.LAST_MODIFIED '审批时间'
          --   ,a.COMPANY_TO_CREDIT_CARDS_AMOUNT
             ,a.COMPANY_TO_EMPLOYEE_AMOUNT '公司到员工的金额'
             ,a.CREATION_DATE '报告创建时间'
@@ -290,6 +291,9 @@ select *from fendi.dbo.ct_workflow_process_instance cwpi  where PROCESS_KEY ='20
           and l.rn=1
    left join fendi.dbo.ct_status_lang m
          on m.stat_key = c.FINAL_STAT_KEY
-     --  where  REPORT_ID='80F856D1FA4E40C69AA6'
        order by a.REPORT_ID
-                ,c.SEQUENCE_ORDER;
+                ,c.SEQUENCE_ORDER;		
+               
+               
+		
+		
