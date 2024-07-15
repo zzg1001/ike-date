@@ -1,0 +1,12 @@
+select 
+       a.EMP_KEY
+      ,a.EMP_ID
+      ,a.last_name +','+ a.first_name as '员工姓名'
+      ,b.ROLE_CODE '权限code'
+      ,c.NAME      '权限名称' 
+      ,c.DESCRIPTION '权限描述'
+from fendi.dbo.ct_employee a
+left join fendi.dbo.ct_employee_role_map b 
+       on a.EMP_KEY = b.EMP_KEY 
+left join fendi.dbo.ct_role_lang c 
+       on b.ROLE_code = c.ROLE_CODE 

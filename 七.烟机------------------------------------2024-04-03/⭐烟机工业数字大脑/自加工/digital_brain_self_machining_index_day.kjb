@@ -12,11 +12,11 @@
   <parameters>
     </parameters>
   <connection>
-    <name>Outsourcing_Dashboard</name>
+    <name>ODS_HANA</name>
     <server>172.16.31.42</server>
     <type>MSSQL</type>
     <access>Native</access>
-    <database>Outsourcing_Dashboard</database>
+    <database>ODS_HANA</database>
     <port>1433</port>
     <username>dw</username>
     <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2abcd</password>
@@ -24,6 +24,10 @@
     <data_tablespace/>
     <index_tablespace/>
     <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_MSSQL.zeroDateTimeBehavior</code>
+        <attribute>convertToNull</attribute>
+      </attribute>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
         <attribute>N</attribute>
@@ -368,7 +372,7 @@
       <description/>
       <type>SQL</type>
       <attributes/>
-      <sql>digital_brain_self_machining_index_day DELETE from digital_brain_self_machining_index_day where dt= DATEADD(day, -1,CONVERT(DATE, GETDATE()));
+      <sql>DELETE from Digital_Brain_Quality.dbo.digital_brain_self_machining_index_day where dt= DATEADD(day, -1,CONVERT(DATE, GETDATE()));
                   INSERT into digital_brain_self_machining_index_day
                         select sum(bbb.in_time_cp_dlv)      as an_finish_od       -- 按时完成
 						  ,sum(bbb.overdue_cp_dlv)      as overdue_finish_od  -- 逾期完成
@@ -380,7 +384,7 @@
 					      ,sum(case when emergent=1 then bbb.overdue_cp_dlv else 0 end) as overdue_j_finish_cnt -- 紧急逾期订单完成
                           ,GETDATE() etl_time
 						  ,DATEADD(day, -1,CONVERT(DATE, GETDATE()))  dt
-                        -- into digital_brain_self_machining_index_day
+                        -- into Digital_Brain_Quality.dbo.digital_brain_self_machining_index_day
 					
 					from (
 								 select prod_order_no
@@ -438,7 +442,7 @@
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>
       <sendOneStatement>F</sendOneStatement>
-      <connection>Outsourcing_Dashboard</connection>
+      <connection>ODS_HANA</connection>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
