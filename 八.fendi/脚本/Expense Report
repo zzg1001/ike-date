@@ -26,11 +26,14 @@
                 ,''                               as '商务用途'
                 ,''                               as '供应商'
                 ,j.NAME                           as '城市'
+                ,ad.FROM_LOCATION                 as 'from 城市'
+                ,ad.TO_LOCATION                   as 'to 城市'
                 ,k.name                           as '付款类型'
                 ,ad.APPROVED_AMOUNT               as '金额'
-               ,n.TRANSACTION_AMOUNT             as '预支现金使用金额（Cash Advance）'
+               ,a.CA_UTILIZED_AMOUNT             as '预支现金使用金额（Cash Advance）'
                 ,a.CA_RETURNS_AMOUNT              as '员工应付到公司卡的金额'
                 ,a.TOTAL_PERSONAL_AMOUNT           as '由员工支付的总额'
+                ,a.CUSTOM7                       as 'Comment'
             from fendi.dbo.ct_report a 
        left join fendi.dbo.ct_report_entry ad 
               on a.RPT_KEY = ad.RPT_KEY 
@@ -60,6 +63,4 @@
           on a.CTRY_SUB_CODE = j.CTRY_SUB_CODE
     left join ct_payment_type_lang k 
           on k.PAT_KEY = ad.PAT_KEY
-     left join ct_cash_advance_entry n 
-          on n.RPE_KEY = ad.RPE_KEY
           

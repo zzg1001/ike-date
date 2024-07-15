@@ -43,3 +43,50 @@
    left join fendi.dbo.ct_policy_lang i
           on i.POL_KEY = a.POL_KEY 
           where ar.REQUEST_ID ='433L'
+
+
+------2----------------------------------
+  select 
+         ar.REQUEST_ID         as '申请ID'
+        ,a.FIRST_SUBMIT_DATE   as '最小出发日期'
+        ,ar.IS_USER_REVIEWED   as '审批状态'
+        ,b.last_name +','+ b.first_name as '员工姓名'
+        ,b.email_address   as '电子邮件'
+        ,c.name            as '居住国/地区'
+        ,d.VALUE           as 'Org Unit 1 - Country'
+        ,e.VALUE           as 'Org Unit 2 - Company'
+        ,f.VALUE           as 'Org Unit 3 - Department'
+        ,g.VALUE           as 'Org Unit 4 - Cost Center'
+        ,ar.start_date      as '开始时间'
+        ,ar.end_date        as '结束时间'
+        ,i.name             as '申请策略'
+        ,ar.PURPOSE         as '目的'
+        ,exp_type.name      as '费用类型'
+        ,ay.APPROVED_AMOUNT as '金额'
+        ,h.name             as '币种'
+        ,ar.AUTHORIZED_DATE as '日期'
+        from fendi.dbo.ct_authorization_request ar 
+  left join fendi.dbo.ct_report_ar_map ap 
+        on ap.AR_KEY = ar.AR_KEY
+   left join fendi.dbo.ct_report a
+          on a.RPT_KEY = ap.RPT_KEY          
+   left join fendi.dbo.ct_report_entry ay
+          on a.RPT_KEY = ay.RPT_KEY
+   left join fendi.dbo.ct_expense_type_lang exp_type
+          on exp_type.exp_key = ay.exp_key
+   left join fendi.dbo.ct_employee b 
+          on ar.EMP_KEY = b.EMP_KEY
+   left join fendi.dbo.ct_country_lang  c
+          on c.CTRY_CODE = b.CTRY_CODE          
+   left join fendi.dbo.ct_list_item_lang d 
+          on a.ORG_UNIT_1 = d.LI_KEY
+   left join fendi.dbo.ct_list_item_lang e 
+          on a.ORG_UNIT_2 = e.LI_KEY
+   left join fendi.dbo.ct_list_item_lang f 
+          on a.ORG_UNIT_3 = f.LI_KEY
+   left join fendi.dbo.ct_list_item_lang g 
+          on a.ORG_UNIT_4 = g.LI_KEY
+   left join  fendi.dbo.ct_currency_lang h 
+          on a.CRN_KEY = h.CRN_KEY  
+   left join fendi.dbo.ct_policy_lang i
+          on i.POL_KEY = ar.POL_KEY 
