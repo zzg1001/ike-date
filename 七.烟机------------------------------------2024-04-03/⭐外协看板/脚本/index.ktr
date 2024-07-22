@@ -430,7 +430,7 @@
     <created_date>2024/04/01 13:20:23.890</created_date>
     <modified_user>-</modified_user>
     <modified_date>2024/04/01 13:20:23.890</modified_date>
-    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -462,7 +462,7 @@
       </attribute>
       <attribute>
         <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
-        <attribute>Y</attribute>
+        <attribute>N</attribute>
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
@@ -973,7 +973,7 @@ SET ARITHIGNORE ON;
 		  ,count(case when ADPRI !='J' or ADPRI is null  then 1 else null end )                                  regular_od_num            -- 常规订单数量
 		  ,count(case when adpri= 'J'then 1 else null end )                                                      j_h_od_num                -- 紧急订单行数  
 		  ,count(case when adpri= 'J' and finish_or_not = '完成' and overdue_or_not = '按时' then 1 else null end )  an_j_h_od_num             --  按时紧急订单行数  
-		  ,count(case when finish_or_not = '完成'   and completion_date&lt;=EINDT then 1 else null end )              finish_od_cnt              -- 按时完成订单行数
+		  ,count(case when finish_or_not = '完成'   and overdue_or_not ='按时'  then 1 else null end )              finish_od_cnt              -- 按时完成订单行数
 		  ,count(case when finish_or_not = '完成'   and overdue_or_not = '逾期' and BUDAT&lt; DATEADD(month, 1, year_month+'-01')  then 1 else null end )  overdue_f_od_num          -- 按时完成订单行数
 		  ,count(case when is_qualified ='不合格' then 1 else null end)                                              not_qualified_cnt          -- 合格数         
 		  ,count(case when finish_or_not ='完成' and overdue_or_not ='按时'  then 1 else null end)                   an_qualified_finish
@@ -1029,7 +1029,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1052,7 +1052,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1075,7 +1075,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1098,7 +1098,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1121,7 +1121,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1144,7 +1144,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1167,7 +1167,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1190,7 +1190,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1213,7 +1213,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1236,7 +1236,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1259,7 +1259,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1282,7 +1282,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1305,7 +1305,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1328,7 +1328,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1351,7 +1351,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1374,7 +1374,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1397,7 +1397,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1420,7 +1420,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1443,7 +1443,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1466,7 +1466,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1489,7 +1489,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1512,7 +1512,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1535,7 +1535,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1558,7 +1558,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1581,7 +1581,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1604,7 +1604,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
@@ -1627,7 +1627,7 @@ SET ARITHIGNORE ON;
         <output_padding>N</output_padding>
         <date_format_lenient>N</date_format_lenient>
         <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <date_format_timezone>Asia/Irkutsk</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
     </row-meta>
