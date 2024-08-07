@@ -40,18 +40,18 @@
 
                  
      
-      select 
+ select 
                ar.REQUEST_ID         as '申请ID'
 		       ,b.name                as '策略'
 		       ,''                   as '预支现金名称'  -- CT_CASH_ADVANCE
 		       ,c.LAST_NAME+','+FIRST_NAME as '员工'
 		       ,c.EMP_ID             as '员工ID'
 		       ,ad.Description       as 'Description 描述'
-		       ,a.START_DATE         as '开始时间'
-		       ,a.END_DATE           as '结束时间'
+		       ,ar.START_DATE         as '开始时间'
+		       ,ar.END_DATE           as '结束时间'
 		       ,ar.PURPOSE           as '目的'
 		       ,e.name               as '币种'
-		       ,a.CA_UTILIZED_AMOUNT as '金额'
+		       ,ar.TOTAL_POSTED_AMOUNT as '金额'
 		       ,f.COMMENT_PARAMS     as '预支现金备注'
 		       ,a.PROCESSING_PAYMENT_DATE as '发放日期'
 		       ,ad.EXCHANGE_RATE     as '汇率'
@@ -72,6 +72,7 @@
                   on ar.CRN_KEY = e.CRN_KEY  
            left join ct_expense_comment f 
                  on f.RPE_KEY = ad.RPE_KEY
+
                  
 
                                 

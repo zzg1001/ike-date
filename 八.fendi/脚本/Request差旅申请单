@@ -95,8 +95,7 @@
 
 ------------3--------------------------------
 
-
-            select 
+     select 
          ar.REQUEST_ID         as '申请ID'
         ,ar.FIRST_SUBMIT_DATE   as '最小出发日期'
         ,ar.IS_USER_REVIEWED   as '审批状态'
@@ -125,15 +124,15 @@
    left join fendi.dbo.ct_country_lang  c
           on c.CTRY_CODE = b.CTRY_CODE          
    left join fendi.dbo.ct_list_item_lang d 
-          on a.ORG_UNIT_1 = d.LI_KEY
+          on b.ORG_UNIT_1 = d.LI_KEY
    left join fendi.dbo.ct_list_item_lang e 
-          on a.ORG_UNIT_2 = e.LI_KEY
+          on b.ORG_UNIT_2 = e.LI_KEY
    left join fendi.dbo.ct_list_item_lang f 
-          on a.ORG_UNIT_3 = f.LI_KEY
+          on b.ORG_UNIT_3 = f.LI_KEY
    left join fendi.dbo.ct_list_item_lang g 
-          on a.ORG_UNIT_4 = g.LI_KEY
+          on b.ORG_UNIT_4 = g.LI_KEY
    left join  fendi.dbo.ct_currency_lang h 
-          on a.CRN_KEY = h.CRN_KEY  
+          on b.CRN_KEY = h.CRN_KEY  
    left join fendi.dbo.ct_policy_lang i
           on i.POL_KEY = ar.POL_KEY 
           order by ar.REQUEST_ID, a.ARE_KEY 

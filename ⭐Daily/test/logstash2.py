@@ -83,4 +83,4 @@ while True:
             producer.send(topic, value=data)
 
     # 暂停 1 秒
-    # time.sleep(1)
+    time.sleep(1)

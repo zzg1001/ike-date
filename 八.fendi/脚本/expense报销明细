@@ -7,7 +7,7 @@
           ,''                            as 'Report Type'
           ,a.REPORT_TYPE                 as 'Report Type Code'
           ,d.REQUEST_ID                  as 'Request ID'
-          ,e.ACCOUNT_CODE                as 'Account Code'
+         ,e.ACCOUNT_CODE                as 'Account Code'
           ,f.name                        as 'Expense Type'
           ,g.LI_SHORT_CODE               as 'Custom 5 - Name'
           ,a.START_DATE                  as 'Start Date'
@@ -40,8 +40,8 @@
             on a.RPT_KEY = c.RPT_KEY
           join fendi.dbo.ct_authorization_request d
             on c.AR_KEY = d.AR_KEY
-     left join (select distinct ACCOUNT_CODE ,EXP_KEY from ct_acct_node_exp_type_map where ACCT_CODE_TYPE = 1 )e 
-            on ay.EXP_KEY = e.EXP_KEY 
+    left join (select distinct ACCOUNT_CODE ,EXP_KEY from ct_acct_node_exp_type_map where ACCT_CODE_TYPE = 1 )e 
+           on ay.EXP_KEY = e.EXP_KEY 
      left join fendi.dbo.ct_expense_type_lang f
             on f.exp_key = ay.exp_key
      left join ct_list_item_map g 
