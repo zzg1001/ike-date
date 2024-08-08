@@ -16,3 +16,10 @@ left join ct_ledger_lang e
        on d.LEDGER_KEY = e.LEDGER_KEY 
 left join ct_ledger f 
        on d.LEDGER_KEY = f.LEDGER_KEY 
+
+
+
+
+
+
+
