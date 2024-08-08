@@ -167,5 +167,6 @@
             on a.ORG_UNIT_4 = n.LI_KEY 
      left join ct_list_item_map o 
             on a.ORG_UNIT_3 = o.LI_KEY 
+            where d.AR_TYPE_CODE<>'TRAVEL'
 						
 						
