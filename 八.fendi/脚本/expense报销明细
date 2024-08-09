@@ -108,7 +108,7 @@
           ,m.LEDGER_CODE                 as 'Ledger Code'
           ,n.LI_SHORT_CODE               as 'Employee Org Unit 4 - Code'
           ,o.LI_SHORT_CODE               as 'Employee Org Unit 3 - Code'
-					,lg.value                      as 'Travel Type name'
+					,lg.value                      as 'Travel Type Name'
           from fendi.dbo.ct_report a 
      left join fendi.dbo.ct_report_entry ay
           on a.RPT_KEY = ay.RPT_KEY
@@ -116,15 +116,15 @@
             on b.EMP_KEY = a.EMP_KEY
      left join fendi.dbo.ct_report_ar_map c  
             on a.RPT_KEY = c.RPT_KEY
-          join fendi.dbo.ct_authorization_request d
+     left  join fendi.dbo.ct_authorization_request d
             on c.AR_KEY = d.AR_KEY
 		left join ct_list_item_lang	lg 
 		        on d.CUSTOM5 = lg.li_key 
     left join (
-									select 
+									select distinct 
 									 a.EXP_KEY
 									,f.LEDGER_CODE    
-								  ,d.LEDGER_KEY	
+								       ,d.LEDGER_KEY	
 									 ,c.name           
 									 ,b.IS_DELETED    
 									 ,a.ACCOUNT_CODE   
@@ -139,6 +139,9 @@
 										 on d.LEDGER_KEY = e.LEDGER_KEY 
 							left join ct_ledger f 
 										 on d.LEDGER_KEY = f.LEDGER_KEY 
+                                                  where LEDGER_CODE is not null 
+										 and len(a.ACCOUNT_CODE)>1
+										 and b.IS_DELETED  ='N'
 					
 					)e 
            on ay.EXP_KEY = e.EXP_KEY 
@@ -167,6 +170,6 @@
             on a.ORG_UNIT_4 = n.LI_KEY 
      left join ct_list_item_map o 
             on a.ORG_UNIT_3 = o.LI_KEY 
-            where d.AR_TYPE_CODE<>'TRAVEL'
+            where (d.AR_TYPE_CODE<>'TRAVEL' or d.AR_TYPE_CODE is null or d.AR_TYPE_CODE='CASH_ADVANCE' )
 						
 						
