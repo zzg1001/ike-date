@@ -230,38 +230,35 @@ select *from fendi.dbo.ct_workflow_process_instance cwpi  where PROCESS_KEY ='20
                 ,c.SEQUENCE_ORDER;
 
 ---------------------------------------------------------
-    select     a.REPORT_ID '报告ID'
-            ,a.name  '报告名称'
-            ,a.rpt_key '报告key'
-        --  ,a.APS_KEY
-            ,i.name '审批状态'
-            ,ce.EMP_ID  '员工 ID'
-            ,isnull(ce.LAST_NAME,'') +','+isnull(ce.FIRST_NAME,'')+isnull(ce.MIDDLE_NAME,'') '员工姓名'
-        --  ,b.PROCESS_INSTANCE_KEY
-        --  ,b.PROCESS_KEY
-        --  ,c.STEP_INSTANCE_KEY
-        -- ,c.STEP_KEY 
-          
-            ,e.value country
-            ,j.NAME Currency
+       select   
+			 a.AR_KEY
+			,a.REQUEST_ID
+			,i.name '审批状态'
+			,isnull(ce.LAST_NAME,'') +','+isnull(ce.FIRST_NAME,'')+isnull(ce.MIDDLE_NAME,'') '员工姓名'
+			,ce.EMAIL_ADDRESS  '电子邮件地址'
+		     ,e.value country
             ,f.value Company 
             ,g.value Department
             ,h.value  'Cost Center'
-            ,l.name   '策略'
-            ,a.CUSTOM17 'Vendor ID'
-          -- ,c.FINAL_STAT_KEY
-            ,isnull(se.LAST_NAME,'')+','+isnull(se.FIRST_NAME,'')+isnull(se.MIDDLE_NAME,'') '审批人'
+			,l.name   '申请策略'
+			,a.START_DATE '开始日期'
+			,a.END_DATE '结束日期'
+			,isnull(se.LAST_NAME,'')+','+isnull(se.FIRST_NAME,'')+isnull(se.MIDDLE_NAME,'') '审批人'
             ,isnull(se.EMAIL_ADDRESS,'system')  '审批人邮件'
             ,d.name '审批流程'
             ,m.name  '审批流程状态'
+            ,a.PURPOSE '目的'
             ,c.LAST_MODIFIED '审批时间'
-         --   ,a.COMPANY_TO_CREDIT_CARDS_AMOUNT
-            ,a.COMPANY_TO_EMPLOYEE_AMOUNT '公司到员工的金额'
-            ,a.CREATION_DATE '报告创建时间'
-            ,SEQUENCE_ORDER '审批流程的循序'
-        from fendi.dbo.ct_report a 
+            ,a.TOTAL_POSTED_AMOUNT as '金额'
+            ,a.AR_TYPE_CODE '申请类型'
+            ,c.SEQUENCE_ORDER
+        from fendi.dbo.ct_authorization_request a 
         join fendi.dbo.ct_employee ce
           on a.EMP_KEY = ce.EMP_KEY
+	 left join fendi.dbo.ct_report_ar_map ap 
+				  on a.AR_KEY = ap.AR_KEY
+	 left join ct_report ar 
+	        on ap.rpt_key = ar.rpt_key
         join dbo.ct_workflow_process_instance b
           on a.CURRENT_WORKFLOW = b.PROCESS_INSTANCE_KEY
         join fendi.dbo.ct_workflow_step_instance c 
@@ -283,17 +280,11 @@ select *from fendi.dbo.ct_workflow_process_instance cwpi  where PROCESS_KEY ='20
           on i.stat_key = a.APS_KEY
    left join ct_currency_lang j
           on j.CRN_KEY = a.CRN_KEY
-      left join (select  * 
-               ,ROW_NUMBER()over(PARTITION  by pol_key order  by POL_KEY  )rn
-               from ct_policy_lang
-               ) l
+      left join  ct_policy_lang l
           on l.POL_KEY = a.POL_KEY  
-          and l.rn=1
    left join fendi.dbo.ct_status_lang m
          on m.stat_key = c.FINAL_STAT_KEY
-       order by a.REPORT_ID
-                ,c.SEQUENCE_ORDER;		
-               
-               
-		
-		
+      where 1=1
+			and a.IS_DELETED='N'
+       order by a.REQUEST_ID
+                ,c.SEQUENCE_ORDER;

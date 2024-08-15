@@ -1,46 +1,7 @@
 
- select 
-       b.name                as '策略'
-       ,''                   as '预支现金名称'  -- CT_CASH_ADVANCE
-       ,c.LAST_NAME+','+FIRST_NAME as '员工'
-       ,c.EMP_ID             as '员工ID'
-       ,ad.Description       as 'Description 描述'
-       ,a.START_DATE         as '开始时间'
-       ,a.END_DATE           as '结束时间'
-       ,ar.PURPOSE           as '目的'
-       ,e.name               as '币种'
-       ,a.CA_UTILIZED_AMOUNT as '金额'
-       ,f.COMMENT_PARAMS     as '预支现金备注'
-       ,a.PROCESSING_PAYMENT_DATE as '发放日期'
-       ,ad.EXCHANGE_RATE     as '汇率'
-   from fendi.dbo.ct_report a 
-            join fendi.dbo.ct_report_entry ad 
-              on a.RPT_KEY = ad.RPT_KEY 
-            join fendi.dbo.ct_cash_advance_entry ca 
-              on ad.RPE_KEY = ca.RPE_KEY
-       left join fendi.dbo.ct_expense_type_lang exp_type
-          on exp_type.exp_key = ad.exp_key
-       left join fendi.dbo.ct_policy_lang b
-             on a.POL_KEY = b.POL_KEY 
-      left join fendi.dbo.ct_employee c 
-             on c.EMP_KEY = a.EMP_KEY 
-      left join  fendi.dbo.ct_currency_lang e
-          on a.CRN_KEY = e.CRN_KEY        
-      left join fendi.dbo.ct_report_ar_map ap  
-          on a.RPT_KEY = ap.RPT_KEY
-      left join  fendi.dbo.ct_authorization_request ar 
-             on ap.AR_KEY = ar.AR_KEY
-      left join ct_expense_comment f 
-             on f.RPE_KEY = ad.RPE_KEY
-      where  a.REPORT_ID='5D7CE2B13DAC45A9A4A0'
-             
 
 
---2------------------------------------------------------------
-
-                 
-     
- select 
+         select 
                ar.REQUEST_ID         as '申请ID'
 		       ,b.name                as '策略'
 		       ,''                   as '预支现金名称'  -- CT_CASH_ADVANCE
@@ -55,69 +16,9 @@
 		       ,f.COMMENT_PARAMS     as '预支现金备注'
 		       ,a.PROCESSING_PAYMENT_DATE as '发放日期'
 		       ,ad.EXCHANGE_RATE     as '汇率'
+			  ,lg.VALUE             as 'Travel Type Name'
               from fendi.dbo.ct_authorization_request ar 
-          left join fendi.dbo.ct_report_ar_map ap 
-                 on ap.AR_KEY = ar.AR_KEY
-          left join fendi.dbo.ct_report a
-                 on a.RPT_KEY = ap.RPT_KEY
-          left join fendi.dbo.ct_report_entry ad 
-              on a.RPT_KEY = ad.RPT_KEY 
-          left join fendi.dbo.ct_cash_advance_entry ca 
-              on ad.RPE_KEY = ca.RPE_KEY
-          left join fendi.dbo.ct_employee c 
-             on c.EMP_KEY = ar.EMP_KEY 
-           left join fendi.dbo.ct_policy_lang b
-             on b.POL_KEY = ar.POL_KEY 
-           left join  fendi.dbo.ct_currency_lang e
-                  on ar.CRN_KEY = e.CRN_KEY  
-           left join ct_expense_comment f 
-                 on f.RPE_KEY = ad.RPE_KEY
-
-                 
-
-                                
-      select CRN_KEY from fendi.dbo.ct_authorization_request
-      
-      
-      
-      SELECT * from fendi.dbo.ct_authorization_request where REQUEST_ID='6D4P'
-      select * from fendi.dbo.ct_report_ar_map where AR_KEY='27546'
-      
-      
-        SELECT * from fendi.dbo.ct_authorization_request where REQUEST_ID='6D4P'
-      select * from fendi.dbo.ct_report_ar_map where AR_KEY='27546'
-      
-      
-      
-      select b.* from fendi.dbo.ct_authorization_request a 
-            left join  fendi.dbo.ct_report_ar_map b 
-                  on a.AR_KEY = b.AR_KEY
-           left join fendi.dbo.ct_report c 
-                  on b.RPT_KEY = c.RPT_KEY
-               where a.AR_TYPE_CODE='CASH_ADVANCE'
-                and REQUEST_ID='6D4P'
-
-
--------3----------------------------------------------------------------------------------------
-
-                				 select 
-               ar.REQUEST_ID         as '申请ID'
-		       ,b.name                as '策略'
-		       ,''                   as '预支现金名称'  -- CT_CASH_ADVANCE
-		       ,c.LAST_NAME+','+FIRST_NAME as '员工'
-		       ,c.EMP_ID             as '员工ID'
-		       ,ad.Description       as 'Description 描述'
-		       ,ar.START_DATE         as '开始时间'
-		       ,ar.END_DATE           as '结束时间'
-		       ,ar.PURPOSE           as '目的'
-		       ,e.name               as '币种'
-		       ,ar.TOTAL_POSTED_AMOUNT as '金额'
-		       ,f.COMMENT_PARAMS     as '预支现金备注'
-		       ,a.PROCESSING_PAYMENT_DATE as '发放日期'
-		       ,ad.EXCHANGE_RATE     as '汇率'
-					 ,lg.VALUE             as 'Travel Type Name'
-              from fendi.dbo.ct_authorization_request ar 
-					left join ct_list_item_lang	lg 
+		left join ct_list_item_lang	lg 
 		        on ar.CUSTOM5 = lg.li_key 
           left join fendi.dbo.ct_report_ar_map ap 
                  on ap.AR_KEY = ar.AR_KEY
@@ -135,3 +36,6 @@
                   on ar.CRN_KEY = e.CRN_KEY  
            left join ct_expense_comment f 
                  on f.RPE_KEY = ad.RPE_KEY
+		where ar.AR_TYPE_CODE='CASH_ADVANCE'
+		
+								 

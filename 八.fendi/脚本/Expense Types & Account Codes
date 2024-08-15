@@ -1,4 +1,5 @@
 select 
+   distinct 
     e.NAME           as 'Ledger Name'
     ,f.LEDGER_CODE     as 'Ledger Code'
      ,c.exp_key        as 'Expense Type Code'
@@ -16,7 +17,6 @@ left join ct_ledger_lang e
        on d.LEDGER_KEY = e.LEDGER_KEY 
 left join ct_ledger f 
        on d.LEDGER_KEY = f.LEDGER_KEY 
-
 
 
 

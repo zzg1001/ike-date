@@ -1,0 +1,1384 @@
+关键词 "CT_CASH_ADVANCE" 在以下文件中找到了 461 条匹配项：
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：4962|2017-12-03 10:49:00|N|2402|cashadvance.status.change|#Sun Dec 03 02:49:26 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|69|489|EXP|A_NOTF|C_FILE||2017-12-03 10:49:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：573|2017-10-11 04:22:00|N|2337|cashadvance.status.change|#Tue Oct 10 21:22:00 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|14|489|EXP|A_NOTF|C_FILE||2017-10-11 04:22:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：575|2017-10-11 04:22:00|N|2333|cashadvance.status.change|#Tue Oct 10 21:22:41 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|14|489|EXP|C_PECA|C_ISSU||2017-10-11 04:22:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：648|2017-10-11 07:26:00|N|2340|cashadvance.status.change|#Wed Oct 11 00:26:11 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|15|489|EXP|A_NOTF|C_FILE||2017-10-11 07:26:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：649|2017-10-11 07:26:00|N|2333|cashadvance.status.change|#Wed Oct 11 00:26:42 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|15|489|EXP|C_PECA|C_ISSU||2017-10-11 07:26:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：679|2017-10-11 08:27:00|N|2337|cashadvance.status.change|#Wed Oct 11 01:27:20 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|16|489|EXP|A_NOTF|C_FILE||2017-10-11 08:27:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：680|2017-10-11 08:27:00|N|2333|cashadvance.status.change|#Wed Oct 11 01:27:36 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|16|489|EXP|C_PECA|C_ISSU||2017-10-11 08:27:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：794|2017-10-12 07:46:00|N|2337|cashadvance.status.change|#Thu Oct 12 00:46:49 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|17|489|EXP|A_NOTF|C_FILE||2017-10-12 07:46:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：795|2017-10-12 07:47:00|N|2333|cashadvance.status.change|#Thu Oct 12 00:47:04 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|17|489|EXP|C_PECA|C_ISSU||2017-10-12 07:47:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2191|2017-10-31 05:12:00|N|2337|cashadvance.status.change|#Mon Oct 30 22:12:51 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|21|489|EXP|A_NOTF|C_FILE||2017-10-31 05:12:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2192|2017-10-31 05:16:00|N|2331|cashadvance.status.change|#Mon Oct 30 22:16:11 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|21|489|EXP|C_PECA|C_ISSU||2017-10-31 05:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2194|2017-10-31 05:18:00|N|2331|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=1031testing;comment=;|489|22|487|EXP|C_PECA|C_ISSU||2017-10-31 05:18:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2215|2017-10-31 10:33:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|23|487|EXP|C_PECA|C_ISSU||2017-10-31 10:33:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2216|2017-10-31 10:35:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|24|487|EXP|C_PECA|C_ISSU||2017-10-31 10:35:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2217|2017-10-31 10:35:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|25|487|EXP|C_PECA|C_ISSU||2017-10-31 10:35:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2218|2017-10-31 10:36:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|26|487|EXP|C_PECA|C_ISSU||2017-10-31 10:36:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2219|2017-10-31 10:36:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|27|487|EXP|C_PECA|C_ISSU||2017-10-31 10:36:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2220|2017-10-31 10:37:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|28|487|EXP|C_PECA|C_ISSU||2017-10-31 10:37:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2221|2017-10-31 10:37:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|29|487|EXP|C_PECA|C_ISSU||2017-10-31 10:37:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2222|2017-10-31 10:38:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|30|487|EXP|C_PECA|C_ISSU||2017-10-31 10:38:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2223|2017-10-31 10:38:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|31|487|EXP|C_PECA|C_ISSU||2017-10-31 10:38:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2224|2017-10-31 10:39:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|32|487|EXP|C_PECA|C_ISSU||2017-10-31 10:39:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2225|2017-10-31 10:39:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|33|487|EXP|C_PECA|C_ISSU||2017-10-31 10:39:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2226|2017-10-31 10:39:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|34|487|EXP|C_PECA|C_ISSU||2017-10-31 10:39:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2227|2017-10-31 10:40:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|35|487|EXP|C_PECA|C_ISSU||2017-10-31 10:40:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2228|2017-10-31 10:40:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|36|487|EXP|C_PECA|C_ISSU||2017-10-31 10:40:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2229|2017-10-31 10:41:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|37|487|EXP|C_PECA|C_ISSU||2017-10-31 10:41:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2230|2017-10-31 10:41:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|38|487|EXP|C_PECA|C_ISSU||2017-10-31 10:41:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2231|2017-10-31 10:42:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|39|487|EXP|C_PECA|C_ISSU||2017-10-31 10:42:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2232|2017-10-31 10:42:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|40|487|EXP|C_PECA|C_ISSU||2017-10-31 10:42:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2233|2017-10-31 10:43:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|41|487|EXP|C_PECA|C_ISSU||2017-10-31 10:43:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2234|2017-10-31 10:43:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|42|487|EXP|C_PECA|C_ISSU||2017-10-31 10:43:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2235|2017-10-31 10:43:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|43|487|EXP|C_PECA|C_ISSU||2017-10-31 10:43:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2236|2017-10-31 10:44:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|44|487|EXP|C_PECA|C_ISSU||2017-10-31 10:44:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2237|2017-10-31 10:44:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|45|487|EXP|C_PECA|C_ISSU||2017-10-31 10:44:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2238|2017-10-31 10:45:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|46|487|EXP|C_PECA|C_ISSU||2017-10-31 10:45:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2239|2017-10-31 10:45:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|47|487|EXP|C_PECA|C_ISSU||2017-10-31 10:45:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：2240|2017-10-31 10:45:00|N|2421|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|48|487|EXP|C_PECA|C_ISSU||2017-10-31 10:45:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：309616|2023-01-26 01:57:00|N|4608|cashadvance.status.change|#Thu Jan 26 01:57:07 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|275|489|EXP|C_PECA|C_ISSU||2023-01-26 01:57:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：309617|2023-01-26 01:57:00|N|4608|cashadvance.status.change|#Thu Jan 26 01:57:38 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|274|489|EXP|C_PECA|C_ISSU||2023-01-26 01:57:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：309618|2023-01-26 01:57:00|N|4608|cashadvance.status.change|#Thu Jan 26 01:57:42 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|276|489|EXP|C_PECA|C_ISSU||2023-01-26 01:57:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：5296|2017-12-05 06:39:00|N|2423|cashadvance.status.change|#Mon Dec 04 22:39:21 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|55|489|EXP|C_PECA|C_ISSU||2017-12-05 06:39:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：5699|2017-12-07 07:48:00|N|2333|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=test1207;comment=;|489|75|487|EXP|C_PECA|C_ISSU||2017-12-07 07:48:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：5742|2017-12-07 09:55:00|N|2446|cashadvance.status.change|#Thu Dec 07 01:55:25 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|76|489|EXP|A_NOTF|C_FILE||2017-12-07 09:55:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：5793|2017-12-08 02:47:00|N|2437|cashadvance.status.change|#Thu Dec 07 18:47:55 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|72|489|EXP|A_NOTF|C_FILE||2017-12-08 02:47:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：5905|2017-12-08 11:13:00|N|2440|cashadvance.status.change|#Fri Dec 08 03:13:31 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|73|489|EXP|A_NOTF|C_FILE||2017-12-08 11:13:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：916|2017-10-16 02:40:00|N|2337|cashadvance.status.change|#Sun Oct 15 19:40:41 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|18|489|EXP|A_NOTF|C_FILE||2017-10-16 02:40:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：918|2017-10-16 02:41:00|N|2333|cashadvance.status.change|#Sun Oct 15 19:41:40 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|18|489|EXP|C_PECA|C_ISSU||2017-10-16 02:41:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：1126|2017-10-17 08:00:00|N|2337|cashadvance.status.change|#Tue Oct 17 01:00:34 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|19|489|EXP|A_NOTF|C_FILE||2017-10-17 08:00:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：1127|2017-10-17 08:00:00|N|2333|cashadvance.status.change|#Tue Oct 17 01:00:52 PDT 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|19|489|EXP|C_PECA|C_ISSU||2017-10-17 08:00:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：3216|2017-11-09 08:44:00|N|2400|cashadvance.status.change|#Thu Nov 09 00:44:06 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|50|489|EXP|A_NOTF|C_FILE||2017-11-09 08:44:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：3593|2017-11-15 11:32:00|N|2402|cashadvance.status.change|#Wed Nov 15 03:32:37 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|55|489|EXP|A_NOTF|C_FILE||2017-11-15 11:32:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：3914|2017-11-22 06:45:00|N|2423|cashadvance.status.change|#Tue Nov 21 22:45:33 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|50|489|EXP|C_PECA|C_ISSU||2017-11-22 06:45:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：4100|2017-11-23 02:34:00|N|2416|cashadvance.status.change|#Wed Nov 22 18:34:36 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|68|489|EXP|A_NOTF|C_FILE||2017-11-23 02:34:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：6144|2017-12-12 06:25:00|N|2423|cashadvance.status.change|#Mon Dec 11 22:25:19 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|68|489|EXP|C_PECA|C_ISSU||2017-12-12 06:25:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：6145|2017-12-12 06:25:00|N|2423|cashadvance.status.change|#Mon Dec 11 22:25:26 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|69|489|EXP|C_PECA|C_ISSU||2017-12-12 06:25:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：310135|2023-01-31 08:15:00|N|2446|cashadvance.status.change|#Tue Jan 31 08:15:46 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|278|489|EXP|A_NOTF|C_FILE||2023-01-31 08:15:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：6683|2017-12-14 09:24:00|N|2438|cashadvance.status.change|#Thu Dec 14 01:24:24 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|79|489|EXP|A_NOTF|C_FILE||2017-12-14 09:24:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：6922|2017-12-15 08:47:00|N|2423|cashadvance.status.change|#Fri Dec 15 00:47:39 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|76|489|EXP|C_PECA|C_ISSU||2017-12-15 08:47:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：6923|2017-12-15 08:47:00|N|2423|cashadvance.status.change|#Fri Dec 15 00:47:45 PST 2017;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|72|489|EXP|C_PECA|C_ISSU||2017-12-15 08:47:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：26019|2018-04-04 09:13:00|N|2439|cashadvance.status.change|#Wed Apr 04 02:13:39 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|98|489|EXP|A_NOTF|C_FILE||2018-04-04 09:13:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：94865|2019-03-26 07:38:00|N|2424|cashadvance.status.change|#Tue Mar 26 00:38:52 PDT 2019;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_REJE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=\u65E0\u9700cash advance;|487|159|489|EXP|C_PECA|C_REJE||2019-03-26 07:38:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：94929|2019-03-26 08:03:00|N|2439|cashadvance.status.change|#Tue Mar 26 01:03:13 PDT 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|162|489|EXP|A_NOTF|C_FILE||2019-03-26 08:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：10841|2018-01-16 06:19:00|N|2423|cashadvance.status.change|#Mon Jan 15 22:19:59 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|73|489|EXP|C_PECA|C_ISSU||2018-01-16 06:19:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：10842|2018-01-16 06:20:00|N|2423|cashadvance.status.change|#Mon Jan 15 22:20:18 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|79|489|EXP|C_PECA|C_ISSU||2018-01-16 06:20:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：11251|2018-01-19 13:01:00|N|2402|cashadvance.status.change|#Fri Jan 19 05:01:24 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|82|489|EXP|A_NOTF|C_FILE||2018-01-19 13:01:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：9582|2018-01-03 10:43:00|N|2412|cashadvance.status.change|#Wed Jan 03 02:43:59 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|80|489|EXP|A_NOTF|C_FILE||2018-01-03 10:43:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：9588|2018-01-03 10:47:00|N|2402|cashadvance.status.change|#Wed Jan 03 02:47:32 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|81|489|EXP|A_NOTF|C_FILE||2018-01-03 10:47:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：12032|2018-01-29 11:01:00|N|2446|cashadvance.status.change|#Mon Jan 29 03:01:09 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|84|489|EXP|A_NOTF|C_FILE||2018-01-29 11:01:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：12286|2018-01-31 07:46:00|N|2423|cashadvance.status.change|#Tue Jan 30 23:46:24 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|82|489|EXP|C_PECA|C_ISSU||2018-01-31 07:46:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：12287|2018-01-31 07:47:00|N|2423|cashadvance.status.change|#Tue Jan 30 23:47:14 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|80|489|EXP|C_PECA|C_ISSU||2018-01-31 07:47:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：14350|2018-02-07 10:05:00|N|2402|cashadvance.status.change|#Wed Feb 07 02:05:20 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|85|489|EXP|A_NOTF|C_FILE||2018-02-07 10:05:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：14409|2018-02-07 13:06:00|N|2445|cashadvance.status.change|#Wed Feb 07 05:06:21 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|86|489|EXP|A_NOTF|C_FILE||2018-02-07 13:06:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：14676|2018-02-08 14:31:00|N|2366|cashadvance.status.change|#Thu Feb 08 06:31:48 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|83|489|EXP|A_NOTF|C_FILE||2018-02-08 14:31:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：15002|2018-02-12 05:23:00|N|2423|cashadvance.status.change|#Sun Feb 11 21:23:40 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|86|489|EXP|C_PECA|C_ISSU||2018-02-12 05:23:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：15003|2018-02-12 05:23:00|N|2423|cashadvance.status.change|#Sun Feb 11 21:23:46 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|85|489|EXP|C_PECA|C_ISSU||2018-02-12 05:23:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：15004|2018-02-12 05:23:00|N|2423|cashadvance.status.change|#Sun Feb 11 21:23:51 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|84|489|EXP|C_PECA|C_ISSU||2018-02-12 05:23:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：15364|2018-02-14 03:47:00|N|2423|cashadvance.status.change|#Tue Feb 13 19:47:15 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|83|489|EXP|C_PECA|C_ISSU||2018-02-14 03:47:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：97942|2019-04-09 04:38:00|N|2446|cashadvance.status.change|#Mon Apr 08 21:38:43 PDT 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|163|489|EXP|A_NOTF|C_FILE||2019-04-09 04:38:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：129069|2019-09-10 07:50:00|N|2439|cashadvance.status.change|#Tue Sep 10 00:50:41 PDT 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|170|489|EXP|A_NOTF|C_FILE||2019-09-10 07:50:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：18442|2018-03-08 07:11:00|N|2402|cashadvance.status.change|#Wed Mar 07 23:11:32 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|88|489|EXP|A_NOTF|C_FILE||2018-03-08 07:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：18537|2018-03-08 11:36:00|N|2399|cashadvance.status.change|#Thu Mar 08 03:36:44 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|90|489|EXP|A_NOTF|C_FILE||2018-03-08 11:36:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：18845|2018-03-09 11:52:00|N|2352|cashadvance.status.change|#Fri Mar 09 03:52:55 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|91|489|EXP|A_NOTF|C_FILE||2018-03-09 11:52:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：47523|2018-07-17 10:31:00|N|2439|cashadvance.status.change|#Tue Jul 17 03:31:10 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|110|489|EXP|A_NOTF|C_FILE||2018-07-17 10:31:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：26784|2018-04-11 02:35:00|N|2423|cashadvance.status.change|#Tue Apr 10 19:35:59 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|98|489|EXP|C_PECA|C_ISSU||2018-04-11 02:35:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：22062|2018-03-20 06:03:00|N|2423|cashadvance.status.change|#Mon Mar 19 23:03:10 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|90|489|EXP|C_PECA|C_ISSU||2018-03-20 06:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：22063|2018-03-20 06:03:00|N|2423|cashadvance.status.change|#Mon Mar 19 23:03:35 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|88|489|EXP|C_PECA|C_ISSU||2018-03-20 06:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：23494|2018-03-28 09:37:00|N|2423|cashadvance.status.change|#Wed Mar 28 02:37:05 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|91|489|EXP|C_PECA|C_ISSU||2018-03-28 09:37:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：48827|2018-07-26 04:56:00|N|2438|cashadvance.status.change|#Wed Jul 25 21:56:16 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|111|489|EXP|A_NOTF|C_FILE||2018-07-26 04:56:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：31023|2018-05-03 10:43:00|N|2433|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Store PettyCash;comment=;|489|102|487|EXP|C_PECA|C_ISSU||2018-05-03 10:43:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：31024|2018-05-03 10:44:00|N|2433|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Store PettyCash;comment=;|489|103|487|EXP|C_PECA|C_ISSU||2018-05-03 10:44:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：31025|2018-05-03 10:44:00|N|2433|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Store PettyCash;comment=;|489|104|487|EXP|C_PECA|C_ISSU||2018-05-03 10:44:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：40535|2018-06-08 08:21:00|N|2439|cashadvance.status.change|#Fri Jun 08 01:21:10 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|106|489|EXP|A_NOTF|C_FILE||2018-06-08 08:21:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：43467|2018-06-28 02:58:00|N|2424|cashadvance.status.change|#Wed Jun 27 19:58:48 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|106|489|EXP|C_PECA|C_ISSU||2018-06-28 02:58:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：104010|2019-05-07 03:37:00|N|3476|cashadvance.status.change|#Mon May 06 20:37:18 PDT 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|166|489|EXP|A_NOTF|C_FILE||2019-05-07 03:37:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：54072|2018-08-30 04:44:00|N|2439|cashadvance.status.change|#Wed Aug 29 21:44:40 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|115|489|EXP|A_NOTF|C_FILE||2018-08-30 04:44:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：104305|2019-05-09 09:51:00|N|2424|cashadvance.status.change|#Thu May 09 02:51:54 PDT 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|166|489|EXP|C_PECA|C_ISSU||2019-05-09 09:51:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：104306|2019-05-09 09:52:00|N|2424|cashadvance.status.change|#Thu May 09 02:52:44 PDT 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|163|489|EXP|C_PECA|C_ISSU||2019-05-09 09:52:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：54487|2018-09-03 03:18:00|N|2424|cashadvance.status.change|#Sun Sep 02 20:18:01 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|115|489|EXP|C_PECA|C_ISSU||2018-09-03 03:18:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：54488|2018-09-03 03:18:00|N|2424|cashadvance.status.change|#Sun Sep 02 20:18:06 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|110|489|EXP|C_PECA|C_ISSU||2018-09-03 03:18:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：58609|2018-09-27 08:47:00|N|3480|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=GTM Petty Cash;comment=;|489|119|487|EXP|C_PECA|C_ISSU||2018-09-27 08:47:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：61802|2018-10-12 03:42:00|N|3481|cashadvance.status.change|#Thu Oct 11 20:42:12 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|126|489|EXP|A_NOTF|C_FILE||2018-10-12 03:42:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：61807|2018-10-12 03:42:00|N|2438|cashadvance.status.change|#Thu Oct 11 20:42:30 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|122|489|EXP|A_NOTF|C_FILE||2018-10-12 03:42:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：61836|2018-10-12 04:19:00|N|2424|cashadvance.status.change|#Thu Oct 11 21:19:48 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|126|489|EXP|C_PECA|C_ISSU||2018-10-12 04:19:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：63183|2018-10-23 09:21:00|N|2348|cashadvance.status.change|#Tue Oct 23 02:21:42 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|135|489|EXP|A_NOTF|C_FILE||2018-10-23 09:21:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：62898|2018-10-22 04:31:00|N|4486|cashadvance.status.change|#Sun Oct 21 21:31:19 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|132|489|EXP|A_NOTF|C_FILE||2018-10-22 04:31:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：63269|2018-10-24 02:49:00|N|2362|cashadvance.status.change|#Tue Oct 23 19:49:25 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|124|489|EXP|A_NOTF|C_FILE||2018-10-24 02:49:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：63270|2018-10-24 02:53:00|N|2424|cashadvance.status.change|#Tue Oct 23 19:53:25 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|132|489|EXP|C_PECA|C_ISSU||2018-10-24 02:53:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：63479|2018-10-25 03:50:00|N|2424|cashadvance.status.change|#Wed Oct 24 20:50:41 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|135|489|EXP|C_PECA|C_ISSU||2018-10-25 03:50:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：63723|2018-10-26 10:23:00|N|2365|cashadvance.status.change|#Fri Oct 26 03:23:55 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|136|489|EXP|A_NOTF|C_FILE||2018-10-26 10:23:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：63726|2018-10-26 10:24:00|N|2348|cashadvance.status.change|#Fri Oct 26 03:24:15 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|134|489|EXP|A_NOTF|C_FILE||2018-10-26 10:24:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：64900|2018-10-29 07:34:00|N|2424|cashadvance.status.change|#Mon Oct 29 00:34:10 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|136|489|EXP|C_PECA|C_ISSU||2018-10-29 07:34:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：64901|2018-10-29 07:34:00|N|2424|cashadvance.status.change|#Mon Oct 29 00:34:24 PDT 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|134|489|EXP|C_PECA|C_ISSU||2018-10-29 07:34:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：138856|2019-11-08 08:38:00|N|4551|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|176|487|EXP|C_PECA|C_ISSU||2019-11-08 08:38:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：73408|2018-11-28 09:57:00|N|2456|cashadvance.status.change|#Wed Nov 28 01:57:16 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|140|489|EXP|A_NOTF|C_FILE||2018-11-28 09:57:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：76706|2018-12-06 09:25:00|N|2446|cashadvance.status.change|#Thu Dec 06 01:25:21 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|142|489|EXP|A_NOTF|C_FILE||2018-12-06 09:25:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：76436|2018-12-05 10:46:00|N|4490|cashadvance.status.change|#Wed Dec 05 02:46:56 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|143|489|EXP|A_NOTF|C_FILE||2018-12-05 10:46:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：76485|2018-12-06 02:20:00|N|2424|cashadvance.status.change|#Wed Dec 05 18:20:43 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|143|489|EXP|C_PECA|C_ISSU||2018-12-06 02:20:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：76486|2018-12-06 02:20:00|N|2424|cashadvance.status.change|#Wed Dec 05 18:20:50 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|140|489|EXP|C_PECA|C_ISSU||2018-12-06 02:20:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：77148|2018-12-10 08:02:00|N|4496|cashadvance.status.change|#Mon Dec 10 00:02:22 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|144|489|EXP|A_NOTF|C_FILE||2018-12-10 08:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：77291|2018-12-11 12:40:00|N|2424|cashadvance.status.change|#Tue Dec 11 04:40:58 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|142|489|EXP|C_PECA|C_ISSU||2018-12-11 12:40:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：77995|2018-12-17 02:33:00|N|2424|cashadvance.status.change|#Sun Dec 16 18:33:07 PST 2018;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|144|489|EXP|C_PECA|C_ISSU||2018-12-17 02:33:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：142117|2019-12-05 08:20:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|178|487|EXP|C_NOTF|C_ISSU||2019-12-05 08:20:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：84841|2019-01-23 03:01:00|N|2439|cashadvance.status.change|#Tue Jan 22 19:01:23 PST 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|147|489|EXP|A_NOTF|C_FILE||2019-01-23 03:01:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：85735|2019-01-30 09:09:00|N|4496|cashadvance.status.change|#Wed Jan 30 01:09:23 PST 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|146|489|EXP|A_NOTF|C_FILE||2019-01-30 09:09:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：85752|2019-01-30 10:19:00|N|2445|cashadvance.status.change|#Wed Jan 30 02:19:07 PST 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|148|489|EXP|A_NOTF|C_FILE||2019-01-30 10:19:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：85846|2019-01-31 07:20:00|N|2424|cashadvance.status.change|#Wed Jan 30 23:20:00 PST 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|147|489|EXP|C_PECA|C_ISSU||2019-01-31 07:20:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：85847|2019-01-31 07:20:00|N|2424|cashadvance.status.change|#Wed Jan 30 23:20:08 PST 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|148|489|EXP|C_PECA|C_ISSU||2019-01-31 07:20:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：86571|2019-02-14 03:57:00|N|3480|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|149|487|EXP|C_PECA|C_ISSU||2019-02-14 03:57:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：86572|2019-02-14 03:58:00|N|3480|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|150|487|EXP|C_PECA|C_ISSU||2019-02-14 03:58:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：86829|2019-02-18 08:22:00|N|3480|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|152|487|EXP|C_PECA|C_ISSU||2019-02-18 08:22:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：88236|2019-02-25 04:10:00|N|2351|cashadvance.status.change|#Sun Feb 24 20:10:23 PST 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|151|489|EXP|A_NOTF|C_FILE||2019-02-25 04:10:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：88305|2019-02-25 08:11:00|N|2421|cashadvance.status.change|#Mon Feb 25 00:11:32 PST 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|151|489|EXP|C_PECA|C_ISSU||2019-02-25 08:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：91532|2019-03-06 04:14:00|N|4499|cashadvance.status.change|#Tue Mar 05 20:14:13 PST 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|159|489|EXP|A_NOTF|C_FILE||2019-03-06 04:14:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：91839|2019-03-08 03:03:00|N|4499|cashadvance.status.change|#Thu Mar 07 19:03:09 PST 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|157|489|EXP|A_NOTF|C_FILE||2019-03-08 03:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：91852|2019-03-08 03:03:00|N|3475|cashadvance.status.change|#Thu Mar 07 19:03:56 PST 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|158|489|EXP|A_NOTF|C_FILE||2019-03-08 03:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：92049|2019-03-08 11:52:00|N|3480|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Setup;comment=;|489|160|487|EXP|C_PECA|C_ISSU||2019-03-08 11:52:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：111786|2019-06-10 09:15:00|N|2424|cashadvance.status.change|#Mon Jun 10 02:15:30 PDT 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_PECA;comment=;|487|162|489|EXP|C_PECA|C_ISSU||2019-06-10 09:15:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：113375|2019-06-17 02:52:00|N|3480|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|168|487|EXP|C_PECA|C_ISSU||2019-06-17 02:52:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：114381|2019-06-21 09:34:00|N|2439|cashadvance.status.change|#Fri Jun 21 02:34:05 PDT 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|169|489|EXP|A_NOTF|C_FILE||2019-06-21 09:34:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：136469|2019-11-01 02:23:00|N|4546|cashadvance.status.change|# ;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|175|487|EXP|C_PECA|C_ISSU||2019-11-01 02:23:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：130636|2019-09-27 10:17:00|N|2439|cashadvance.status.change|#Fri Sep 27 03:17:22 PDT 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|172|489|EXP|A_NOTF|C_FILE||2019-09-27 10:17:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：130640|2019-09-27 10:17:00|N|2439|cashadvance.status.change|#Fri Sep 27 03:17:35 PDT 2019;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|171|489|EXP|A_NOTF|C_FILE||2019-09-27 10:17:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：150085|2020-01-15 06:46:00|N|2445|cashadvance.status.change|#Tue Jan 14 22:46:10 PST 2020;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|180|489|EXP|A_NOTF|C_FILE||2020-01-15 06:46:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：157768|2020-05-07 07:17:00|N|3476|cashadvance.status.change|#Thu May 07 00:17:43 PDT 2020;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|183|489|EXP|A_NOTF|C_FILE||2020-05-07 07:17:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：170002|2020-08-14 07:23:00|N|4538|cashadvance.status.change|#Fri Aug 14 00:23:44 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|188|489|EXP|A_NOTF|C_FILE||2020-08-14 07:23:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：164441|2020-07-10 08:55:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|185|487|EXP|C_NOTF|C_ISSU||2020-07-10 08:55:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：217795|2021-06-21 03:24:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial petty cash;comment=;|489|226|487|EXP|C_NOTF|C_ISSU||2021-06-21 03:24:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：147838|2020-01-06 10:21:00|N|4493|cashadvance.status.change|#Mon Jan 06 02:21:55 PST 2020;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_FILE;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;comment=;|487|179|489|EXP|A_NOTF|C_FILE||2020-01-06 10:21:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：165092|2020-07-16 07:08:00|N|4546|cashadvance.status.change|#Thu Jul 16 00:08:35 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|183|489|EXP|C_PECA|C_ISSU||2020-07-16 07:08:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：176769|2020-10-12 02:15:00|N|4561|cashadvance.status.change|#Sun Oct 11 19:15:28 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|193|489|EXP|C_PECA|C_ISSU||2020-10-12 02:15:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：170465|2020-08-19 08:27:00|N|2381|cashadvance.status.change|#Wed Aug 19 01:27:59 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|191|489|EXP|A_NOTF|C_FILE||2020-08-19 08:27:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：184024|2020-11-18 07:09:00|N|3476|cashadvance.status.change|#Tue Nov 17 23:09:17 PST 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|208|489|EXP|A_NOTF|C_FILE||2020-11-18 07:09:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：172138|2020-09-08 01:46:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=PettyCash Initial Setup;comment=;|489|192|487|EXP|C_NOTF|C_ISSU||2020-09-08 01:46:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：173494|2020-09-21 03:23:00|N|2381|cashadvance.status.change|#Sun Sep 20 20:23:58 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|193|489|EXP|A_NOTF|C_FILE||2020-09-21 03:23:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：184185|2020-11-20 09:17:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|209|487|EXP|C_NOTF|C_ISSU||2020-11-20 09:17:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：172220|2020-09-08 07:55:00|N|4561|cashadvance.status.change|#Tue Sep 08 00:55:25 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|188|489|EXP|C_PECA|C_ISSU||2020-09-08 07:55:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：172221|2020-09-08 07:55:00|N|4561|cashadvance.status.change|#Tue Sep 08 00:55:52 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|191|489|EXP|C_PECA|C_ISSU||2020-09-08 07:55:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：333323|2023-04-10 03:51:00|N|4608|cashadvance.status.change|#Mon Apr 10 03:51:36 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|286|489|EXP|C_PECA|C_ISSU||2023-04-10 03:51:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：174765|2020-10-02 12:51:00|N|4508|cashadvance.status.change|#Fri Oct 02 05:51:08 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|195|489|EXP|A_NOTF|C_FILE||2020-10-02 12:51:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：174777|2020-10-02 12:53:00|N|4508|cashadvance.status.change|#Fri Oct 02 05:53:45 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|196|489|EXP|A_NOTF|C_FILE||2020-10-02 12:53:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：174780|2020-10-02 13:11:00|N|4575|cashadvance.status.change|#Fri Oct 02 06:11:21 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|195|489|EXP|C_PECA|C_ISSU||2020-10-02 13:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：174781|2020-10-02 13:11:00|N|4575|cashadvance.status.change|#Fri Oct 02 06:11:27 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|196|489|EXP|C_PECA|C_ISSU||2020-10-02 13:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：174872|2020-10-02 14:09:00|N|4508|cashadvance.status.change|#Fri Oct 02 07:09:45 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|197|489|EXP|A_NOTF|C_FILE||2020-10-02 14:09:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：174879|2020-10-02 14:11:00|N|4508|cashadvance.status.change|#Fri Oct 02 07:11:00 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|199|489|EXP|A_NOTF|C_FILE||2020-10-02 14:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：174885|2020-10-02 14:14:00|N|4575|cashadvance.status.change|#Fri Oct 02 07:14:26 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|197|489|EXP|C_PECA|C_ISSU||2020-10-02 14:14:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：174886|2020-10-02 14:14:00|N|4575|cashadvance.status.change|#Fri Oct 02 07:14:37 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|199|489|EXP|C_PECA|C_ISSU||2020-10-02 14:14:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：175052|2020-10-03 12:22:00|N|4508|cashadvance.status.change|#Sat Oct 03 05:22:00 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|200|489|EXP|A_NOTF|C_FILE||2020-10-03 12:22:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：175074|2020-10-03 12:25:00|N|4508|cashadvance.status.change|#Sat Oct 03 05:25:12 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|201|489|EXP|A_NOTF|C_FILE||2020-10-03 12:25:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：175077|2020-10-03 12:28:00|N|4575|cashadvance.status.change|#Sat Oct 03 05:28:35 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|200|489|EXP|C_PECA|C_ISSU||2020-10-03 12:28:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：175078|2020-10-03 12:28:00|N|4575|cashadvance.status.change|#Sat Oct 03 05:28:43 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|201|489|EXP|C_PECA|C_ISSU||2020-10-03 12:28:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：175106|2020-10-03 12:39:00|N|4508|cashadvance.status.change|#Sat Oct 03 05:39:07 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|202|489|EXP|A_NOTF|C_FILE||2020-10-03 12:39:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：175107|2020-10-03 12:39:00|N|4575|cashadvance.status.change|#Sat Oct 03 05:39:24 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|202|489|EXP|C_PECA|C_ISSU||2020-10-03 12:39:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：175143|2020-10-03 12:48:00|N|4508|cashadvance.status.change|#Sat Oct 03 05:48:21 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|203|489|EXP|A_NOTF|C_FILE||2020-10-03 12:48:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：175144|2020-10-03 12:48:00|N|4575|cashadvance.status.change|#Sat Oct 03 05:48:41 PDT 2020;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|203|489|EXP|C_PECA|C_ISSU||2020-10-03 12:48:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：275337|2022-06-15 08:28:00|N|4538|cashadvance.status.change|#Wed Jun 15 01:28:01 PDT 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|253|489|EXP|A_NOTF|C_FILE||2022-06-15 08:28:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：212570|2021-05-18 09:03:00|N|2446|cashadvance.status.change|#Tue May 18 02:03:56 PDT 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|222|489|EXP|A_NOTF|C_FILE||2021-05-18 09:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：202434|2021-03-17 10:59:00|N|2446|cashadvance.status.change|#Wed Mar 17 03:59:42 PDT 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|212|489|EXP|A_NOTF|C_FILE||2021-03-17 10:59:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：202626|2021-03-18 10:14:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Petty Cash;comment=;|489|213|487|EXP|C_NOTF|C_ISSU||2021-03-18 10:14:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：202627|2021-03-18 10:15:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Petty Cash;comment=;|489|214|487|EXP|C_NOTF|C_ISSU||2021-03-18 10:15:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：202628|2021-03-18 10:16:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial petty cash;comment=;|489|215|487|EXP|C_NOTF|C_ISSU||2021-03-18 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：202629|2021-03-18 10:17:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Petty Cash;comment=;|489|216|487|EXP|C_NOTF|C_ISSU||2021-03-18 10:17:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：202630|2021-03-18 10:19:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Petty Cash;comment=;|489|217|487|EXP|C_NOTF|C_ISSU||2021-03-18 10:19:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：202631|2021-03-18 10:19:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Petty Cash;comment=;|489|218|487|EXP|C_NOTF|C_ISSU||2021-03-18 10:19:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：202632|2021-03-18 10:20:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Petty Cash;comment=;|489|219|487|EXP|C_NOTF|C_ISSU||2021-03-18 10:20:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：202633|2021-03-18 10:20:00|N|4546|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Petty Cash;comment=;|489|220|487|EXP|C_NOTF|C_ISSU||2021-03-18 10:20:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：196863|2021-02-05 02:46:00|N|2445|cashadvance.status.change|#Thu Feb 04 18:46:35 PST 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|210|489|EXP|A_NOTF|C_FILE||2021-02-05 02:46:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：197049|2021-02-09 03:33:00|N|4532|cashadvance.status.change|#Mon Feb 08 19:33:43 PST 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|211|489|EXP|A_NOTF|C_FILE||2021-02-09 03:33:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：197050|2021-02-09 03:36:00|N|4561|cashadvance.status.change|#Mon Feb 08 19:36:38 PST 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|210|489|EXP|C_PECA|C_ISSU||2021-02-09 03:36:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：198827|2021-02-24 02:03:00|N|4561|cashadvance.status.change|#Tue Feb 23 18:03:56 PST 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|211|489|EXP|C_PECA|C_ISSU||2021-02-24 02:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：203102|2021-03-25 08:14:00|N|4585|cashadvance.status.change|#Thu Mar 25 01:14:19 PDT 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|212|489|EXP|C_PECA|C_ISSU||2021-03-25 08:14:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：213025|2021-05-20 06:45:00|N|4532|cashadvance.status.change|#Wed May 19 23:45:44 PDT 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|223|489|EXP|A_NOTF|C_FILE||2021-05-20 06:45:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：209746|2021-05-10 02:59:00|N|3476|cashadvance.status.change|#Sun May 09 19:59:37 PDT 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|221|489|EXP|A_NOTF|C_FILE||2021-05-10 02:59:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：333987|2023-04-11 03:20:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=PettyCash Initial Setup;comment=;|489|288|487|EXP|C_NOTF|C_ISSU||2023-04-11 03:20:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：213594|2021-05-25 03:47:00|N|4585|cashadvance.status.change|#Mon May 24 20:47:29 PDT 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|222|489|EXP|C_PECA|C_ISSU||2021-05-25 03:47:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：214698|2021-05-30 06:16:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Petty Cash;comment=;|489|224|487|EXP|C_NOTF|C_ISSU||2021-05-30 06:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：219031|2021-06-28 04:14:00|N|4577|cashadvance.status.change|#Sun Jun 27 21:14:55 PDT 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|227|489|EXP|A_NOTF|C_FILE||2021-06-28 04:14:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：242474|2021-11-10 05:59:00|N|4586|cashadvance.status.change|#Tue Nov 09 21:59:33 PST 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|235|489|EXP|C_PECA|C_ISSU||2021-11-10 05:59:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：240590|2021-10-27 13:50:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash;comment=;|489|232|487|EXP|C_NOTF|C_ISSU||2021-10-27 13:50:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：301504|2022-12-13 10:14:00|N|2446|cashadvance.status.change|#Tue Dec 13 10:14:44 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|270|489|EXP|A_NOTF|C_FILE||2022-12-13 10:14:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：223860|2021-07-16 09:23:00|N|4602|cashadvance.status.change|#Fri Jul 16 02:23:44 PDT 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|228|489|EXP|A_NOTF|C_FILE||2021-07-16 09:23:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：313176|2023-02-16 02:10:00|N|4608|cashadvance.status.change|#Thu Feb 16 02:10:47 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|278|489|EXP|C_PECA|C_ISSU||2023-02-16 02:10:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：313177|2023-02-16 02:10:00|N|4608|cashadvance.status.change|#Thu Feb 16 02:10:59 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|271|489|EXP|C_PECA|C_ISSU||2023-02-16 02:10:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：232863|2021-09-08 09:31:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|230|487|EXP|C_NOTF|C_ISSU||2021-09-08 09:31:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：232934|2021-09-09 03:25:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|231|487|EXP|C_NOTF|C_ISSU||2021-09-09 03:25:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：232976|2021-09-09 07:07:00|N|4586|cashadvance.manual.return|# ;comment.type=LOC_STRING;columnName=CA_KEY;tableName=[91mCT_CASH_ADVANCE[0m;auditAction=created;transactionAmount=10000.00000000;crnCode=CNY;comment=;|487|45|487|EXP||10000.00 CNY||2021-09-09 07:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：241935|2021-11-08 07:37:00|N|2394|cashadvance.status.change|#Sun Nov 07 23:37:59 PST 2021;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|235|489|EXP|A_NOTF|C_FILE||2021-11-08 07:37:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：238462|2021-10-14 09:59:00|N|4586|cashadvance.manual.return|# ;comment.type=LOC_STRING;columnName=CA_KEY;tableName=[91mCT_CASH_ADVANCE[0m;auditAction=created;transactionAmount=5000.00000000;crnCode=CNY;comment=The actual initial petty cash is 10000;|487|230|487|EXP||5000.00 CNY||2021-10-14 09:59:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：258680|2022-01-30 12:32:00|N|2455|cashadvance.status.change|#Sun Jan 30 04:32:18 PST 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|238|489|EXP|A_NOTF|C_FILE||2022-01-30 12:32:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：266668|2022-04-01 09:17:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|241|487|EXP|C_NOTF|C_ISSU||2022-04-01 09:17:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：259686|2022-02-11 03:51:00|N|4613|cashadvance.status.change|#Thu Feb 10 19:51:53 PST 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|239|489|EXP|A_NOTF|C_FILE||2022-02-11 03:51:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：253525|2022-01-07 09:11:00|N|2430|cashadvance.status.change|#Fri Jan 07 01:11:39 PST 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|236|489|EXP|A_NOTF|C_FILE||2022-01-07 09:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：272215|2022-05-20 09:02:00|N|4627|cashadvance.status.change|#Fri May 20 02:02:42 PDT 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|251|489|EXP|A_NOTF|C_FILE||2022-05-20 09:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：279132|2022-07-15 10:58:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|256|487|EXP|C_NOTF|C_ISSU||2022-07-15 10:58:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：279133|2022-07-15 10:59:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|257|487|EXP|C_NOTF|C_ISSU||2022-07-15 10:59:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：313560|2023-02-16 06:36:00|N|2440|cashadvance.status.change|#Thu Feb 16 06:36:04 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|279|489|EXP|A_NOTF|C_FILE||2023-02-16 06:36:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：313583|2023-02-16 06:50:00|N|4580|cashadvance.status.change|#Thu Feb 16 06:50:10 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|280|489|EXP|A_NOTF|C_FILE||2023-02-16 06:50:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：314411|2023-02-20 09:51:00|N|4608|cashadvance.status.change|#Mon Feb 20 09:51:00 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|280|489|EXP|C_PECA|C_ISSU||2023-02-20 09:51:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：314412|2023-02-20 09:51:00|N|4608|cashadvance.status.change|#Mon Feb 20 09:51:09 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|279|489|EXP|C_PECA|C_ISSU||2023-02-20 09:51:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：307495|2023-01-09 04:24:00|N|4627|cashadvance.status.change|#Mon Jan 09 04:24:51 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|271|489|EXP|A_NOTF|C_FILE||2023-01-09 04:24:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：282376|2022-08-10 06:19:00|N|4608|cashadvance.status.change|#Wed Aug 10 06:19:55 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|253|489|EXP|C_PECA|C_ISSU||2022-08-10 06:19:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：282520|2022-08-10 09:53:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Initial Petty Cash;comment=;|489|258|487|EXP|C_NOTF|C_ISSU||2022-08-10 09:53:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：288619|2022-09-14 07:43:00|N|2445|cashadvance.status.change|#Wed Sep 14 07:43:08 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|263|489|EXP|A_NOTF|C_FILE||2022-09-14 07:43:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：316627|2023-02-27 05:49:00|N|2446|cashadvance.status.change|#Mon Feb 27 05:49:51 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|282|489|EXP|A_NOTF|C_FILE||2023-02-27 05:49:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：303592|2022-12-19 08:42:00|N|4608|cashadvance.status.change|#Mon Dec 19 08:42:20 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|270|489|EXP|C_PECA|C_ISSU||2022-12-19 08:42:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：294600|2022-10-29 12:53:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|264|487|EXP|C_NOTF|C_ISSU||2022-10-29 12:53:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：294601|2022-10-29 12:54:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=Store Petty Cash Initial Setup;comment=;|489|265|487|EXP|C_NOTF|C_ISSU||2022-10-29 12:54:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：294884|2022-11-02 03:02:00|N|4608|cashadvance.status.change|#Wed Nov 02 03:02:28 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|263|489|EXP|C_PECA|C_ISSU||2022-11-02 03:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：294905|2022-11-02 03:17:00|N|4608|cashadvance.status.change|#Wed Nov 02 03:17:05 UTC 2022;oldvalue.type=STATUS_KEY;newvalue=C_REJE;comment=\u672A\u53D1\u653E;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|180|489|EXP|C_PECA|C_REJE||2022-11-02 03:17:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：296830|2022-11-14 10:53:00|N|2445|cashadvance.status.change|#Mon Nov 14 10:53:55 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|266|489|EXP|A_NOTF|C_FILE||2022-11-14 10:53:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：307879|2023-01-10 03:19:00|N|2446|cashadvance.status.change|#Tue Jan 10 03:19:02 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|275|489|EXP|A_NOTF|C_FILE||2023-01-10 03:19:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：299100|2022-11-28 06:29:00|N|2446|cashadvance.status.change|#Mon Nov 28 06:29:32 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|268|489|EXP|A_NOTF|C_FILE||2022-11-28 06:29:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：299103|2022-11-28 06:29:00|N|2446|cashadvance.status.change|#Mon Nov 28 06:29:42 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|267|489|EXP|A_NOTF|C_FILE||2022-11-28 06:29:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：299104|2022-11-28 08:40:00|N|4608|cashadvance.status.change|#Mon Nov 28 08:40:39 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|266|489|EXP|C_PECA|C_ISSU||2022-11-28 08:40:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：299233|2022-11-30 06:42:00|N|4608|cashadvance.status.change|#Wed Nov 30 06:42:29 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|267|489|EXP|C_PECA|C_ISSU||2022-11-30 06:42:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：299234|2022-11-30 06:42:00|N|4608|cashadvance.status.change|#Wed Nov 30 06:42:34 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|268|489|EXP|C_PECA|C_ISSU||2022-11-30 06:42:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：299278|2022-11-30 07:35:00|N|2445|cashadvance.status.change|#Wed Nov 30 07:35:20 UTC 2022;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|269|489|EXP|A_NOTF|C_FILE||2022-11-30 07:35:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：305308|2023-01-01 08:07:00|N|4608|cashadvance.status.change|#Sun Jan 01 08:07:28 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|269|489|EXP|C_PECA|C_ISSU||2023-01-01 08:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：306854|2023-01-05 03:39:00|N|2445|cashadvance.status.change|#Thu Jan 05 03:39:01 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|274|489|EXP|A_NOTF|C_FILE||2023-01-05 03:39:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：316521|2023-02-25 08:03:00|N|2446|cashadvance.status.change|#Sat Feb 25 08:03:48 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|281|489|EXP|A_NOTF|C_FILE||2023-02-25 08:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：309230|2023-01-19 04:42:00|N|2445|cashadvance.status.change|#Thu Jan 19 04:42:44 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|276|489|EXP|A_NOTF|C_FILE||2023-01-19 04:42:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：319329|2023-03-07 04:07:00|N|4608|cashadvance.status.change|#Tue Mar 07 04:07:42 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|282|489|EXP|C_PECA|C_ISSU||2023-03-07 04:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：319330|2023-03-07 04:07:00|N|4608|cashadvance.status.change|#Tue Mar 07 04:07:52 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|281|489|EXP|C_PECA|C_ISSU||2023-03-07 04:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：324411|2023-03-20 09:01:00|N|4608|cashadvance.status.change|#Mon Mar 20 09:01:57 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|284|489|EXP|C_PECA|C_ISSU||2023-03-20 09:01:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：319817|2023-03-09 06:33:00|N|2446|cashadvance.status.change|#Thu Mar 09 06:33:59 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|284|489|EXP|A_NOTF|C_FILE||2023-03-09 06:33:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：342317|2023-05-05 11:50:00|N|2446|cashadvance.status.change|#Fri May 05 11:50:37 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|290|489|EXP|A_NOTF|C_FILE||2023-05-05 11:50:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：322621|2023-03-17 08:02:00|N|2458|cashadvance.status.change|#Fri Mar 17 08:02:56 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|285|489|EXP|A_NOTF|C_FILE||2023-03-17 08:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：342441|2023-05-06 08:50:00|N|4600|cashadvance.status.change|#Sat May 06 08:50:03 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|289|489|EXP|A_NOTF|C_FILE||2023-05-06 08:50:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：328343|2023-03-29 03:49:00|N|4608|cashadvance.status.change|#Wed Mar 29 03:49:16 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|285|489|EXP|C_PECA|C_ISSU||2023-03-29 03:49:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：328723|2023-03-30 06:07:00|N|2458|cashadvance.status.change|#Thu Mar 30 06:07:48 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|287|489|EXP|A_NOTF|C_FILE||2023-03-30 06:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：328756|2023-03-30 06:16:00|N|4608|cashadvance.status.change|#Thu Mar 30 06:16:50 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|287|489|EXP|C_PECA|C_ISSU||2023-03-30 06:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：328996|2023-03-31 01:39:00|N|4613|cashadvance.status.change|#Fri Mar 31 01:39:42 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|286|489|EXP|A_NOTF|C_FILE||2023-03-31 01:39:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：344444|2023-05-10 06:11:00|N|2446|cashadvance.status.change|#Wed May 10 06:11:45 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|292|489|EXP|A_NOTF|C_FILE||2023-05-10 06:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：344447|2023-05-10 06:11:00|N|2446|cashadvance.status.change|#Wed May 10 06:11:59 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|291|489|EXP|A_NOTF|C_FILE||2023-05-10 06:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：344450|2023-05-10 06:12:00|N|2446|cashadvance.status.change|#Wed May 10 06:12:14 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|293|489|EXP|A_NOTF|C_FILE||2023-05-10 06:12:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：345488|2023-05-12 01:57:00|N|2446|cashadvance.status.change|#Fri May 12 01:57:22 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|294|489|EXP|A_NOTF|C_FILE||2023-05-12 01:57:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：347599|2023-05-19 06:26:00|N|2446|cashadvance.status.change|#Fri May 19 06:26:48 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|295|489|EXP|A_NOTF|C_FILE||2023-05-19 06:26:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：347628|2023-05-19 07:26:00|N|4608|cashadvance.status.change|#Fri May 19 07:26:24 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|290|489|EXP|C_PECA|C_ISSU||2023-05-19 07:26:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：347629|2023-05-19 07:26:00|N|4608|cashadvance.status.change|#Fri May 19 07:26:30 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|289|489|EXP|C_PECA|C_ISSU||2023-05-19 07:26:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：347630|2023-05-19 07:26:00|N|4608|cashadvance.status.change|#Fri May 19 07:26:44 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|291|489|EXP|C_PECA|C_ISSU||2023-05-19 07:26:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：347631|2023-05-19 07:26:00|N|4608|cashadvance.status.change|#Fri May 19 07:26:51 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|292|489|EXP|C_PECA|C_ISSU||2023-05-19 07:26:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：347632|2023-05-19 07:26:00|N|4608|cashadvance.status.change|#Fri May 19 07:26:57 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|293|489|EXP|C_PECA|C_ISSU||2023-05-19 07:26:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：347633|2023-05-19 07:27:00|N|4608|cashadvance.status.change|#Fri May 19 07:27:02 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|294|489|EXP|C_PECA|C_ISSU||2023-05-19 07:27:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：347634|2023-05-19 07:27:00|N|4608|cashadvance.status.change|#Fri May 19 07:27:11 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|295|489|EXP|C_PECA|C_ISSU||2023-05-19 07:27:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：353305|2023-06-05 04:31:00|N|2446|cashadvance.status.change|#Mon Jun 05 04:31:05 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|300|489|EXP|A_NOTF|C_FILE||2023-06-05 04:31:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：354575|2023-06-07 07:55:00|N|4586|cashadvance.status.change|#;comment.type=LOC_STRING;columnName=STAT_KEY;tableName=[91mCT_CASH_ADVANCE[0m;newvalue=C_ISSU;oldvalue.type=STATUS_KEY;newvalue.type=STATUS_KEY;oldvalue=C_FILE;auditAction=updated;objectName=store Petty Cash Initial Setup;comment=;|489|302|487|EXP|C_NOTF|C_ISSU||2023-06-07 07:55:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：354946|2023-06-08 03:37:00|N|2440|cashadvance.status.change|#Thu Jun 08 03:37:36 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|301|489|EXP|A_NOTF|C_FILE||2023-06-08 03:37:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：357209|2023-06-15 03:18:00|N|4608|cashadvance.status.change|#Thu Jun 15 03:18:51 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|300|489|EXP|C_PECA|C_ISSU||2023-06-15 03:18:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：357210|2023-06-15 03:18:00|N|4608|cashadvance.status.change|#Thu Jun 15 03:18:56 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|301|489|EXP|C_PECA|C_ISSU||2023-06-15 03:18:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：361473|2023-06-30 10:38:00|N|2446|cashadvance.status.change|#Fri Jun 30 10:38:37 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|303|489|EXP|A_NOTF|C_FILE||2023-06-30 10:38:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：363726|2023-07-07 10:09:00|N|4608|cashadvance.status.change|#Fri Jul 07 10:09:19 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_ISSU;comment=;newvalue.type=STATUS_KEY;oldvalue=C_PECA;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|303|489|EXP|C_PECA|C_ISSU||2023-07-07 10:09:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_audit.dat
+匹配行：377584|2023-08-29 06:37:00|N|2440|cashadvance.status.change|#Tue Aug 29 06:37:44 UTC 2023;comment.type=LOC_STRING;oldvalue.type=STATUS_KEY;newvalue=C_FILE;comment=;newvalue.type=STATUS_KEY;oldvalue=A_NOTF;tableName=[91mCT_CASH_ADVANCE[0m;columnName=STAT_KEY;|487|305|489|EXP|A_NOTF|C_FILE||2023-08-29 06:37:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：6643|N|N|[91mCT_CASH_ADVANCE[0m|DAILY_LIMIT|N|MONEY|23|N||||2013-04-27 02:22:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：6776|N|Y|[91mCT_CASH_ADVANCE[0m|REQUESTED_DISBURSEMENT_DATE|N|TIMESTAMP||N||||2013-09-21 02:02:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：6777|N|Y|[91mCT_CASH_ADVANCE[0m|TRAVEL_START_DATE|N|TIMESTAMP||N||||2013-09-21 02:02:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：6778|N|Y|[91mCT_CASH_ADVANCE[0m|TRAVEL_END_DATE|N|TIMESTAMP||N||||2013-09-21 02:02:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：6779|N|Y|[91mCT_CASH_ADVANCE[0m|LN_KEY|Y|INTEGER||N||||2013-09-21 02:02:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：6780|N|Y|[91mCT_CASH_ADVANCE[0m|PURPOSE|N|VARCHAR|2000|N||Y||2013-09-21 02:02:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：6809|N|Y|[91mCT_CASH_ADVANCE[0m_ENTRY|TRANSACTION_AMOUNT|N|MONEY|23|N||||2013-12-14 05:13:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：7169|N|Y|[91mCT_CASH_ADVANCE[0m|CASH_ADVANCE_ID|N|BINARY|16|Y||||2015-04-11 03:33:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：7170|N|Y|[91mCT_CASH_ADVANCE[0m|RECEIPT_IMAGE_AVAIL|N|BOOLEANCHAR|1|Y||N||2015-04-11 03:33:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：6480|N|Y|[91mCT_CASH_ADVANCE[0m|MATCH_REQUEST_CRN_ONLY|N|BOOLEANCHAR|1|N||N||2013-02-23 03:54:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：7279|N|Y|[91mCT_CASH_ADVANCE[0m|FI_ENABLED|N|BOOLEANCHAR|1|N||N||2015-12-12 04:35:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：7280|N|Y|[91mCT_CASH_ADVANCE[0m|FI_STATUS|N|CHAR|7|N||N||2015-12-12 04:35:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：7281|N|Y|[91mCT_CASH_ADVANCE[0m|DOCUMENT_ACCOUNT_NUMBER|N|VARCHAR|32|N||N||2015-12-12 04:35:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：487|N|Y|[91mCT_CASH_ADVANCE[0m|CA_KEY|N|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：488|N|Y|[91mCT_CASH_ADVANCE[0m|EMP_KEY|Y|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：489|N|Y|[91mCT_CASH_ADVANCE[0m|STAT_KEY|Y|CHAR|6|Y||N||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：490|N|Y|[91mCT_CASH_ADVANCE[0m|CRN_KEY|Y|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：491|N|Y|[91mCT_CASH_ADVANCE[0m|CAN_CARRY_OVER|N|BOOLEANCHAR|1|Y||N||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：492|N|Y|[91mCT_CASH_ADVANCE[0m|REQUEST_DATE|N|TIMESTAMP||Y||||2014-04-12 04:21:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：493|N|Y|[91mCT_CASH_ADVANCE[0m|REQUEST_AMOUNT|N|MONEY|23|Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：494|N|Y|[91mCT_CASH_ADVANCE[0m|REQUEST_CRN_KEY|Y|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：495|N|Y|[91mCT_CASH_ADVANCE[0m|PAT_KEY|Y|CHAR|4|Y||N||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：496|N|Y|[91mCT_CASH_ADVANCE[0m|HIER_NODE_KEY|Y|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：497|N|Y|[91mCT_CASH_ADVANCE[0m|BI_HIER_NODE_KEY|Y|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：498|N|Y|[91mCT_CASH_ADVANCE[0m|NAME|N|VARCHAR|40|Y|CI|Y||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：499|N|Y|[91mCT_CASH_ADVANCE[0m|IS_OFFLINE|N|BOOLEANCHAR|1|Y||N||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：500|N|Y|[91mCT_CASH_ADVANCE[0m|CURRENT_WORKFLOW|Y|INTEGER||N||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：501|N|Y|[91mCT_CASH_ADVANCE[0m|ACCOUNT_CODE|N|VARCHAR|48|N||N||2010-03-19 20:08:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：502|N|Y|[91mCT_CASH_ADVANCE[0m|ISSUED_DATE|N|TIMESTAMP||N||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：503|N|Y|[91mCT_CASH_ADVANCE[0m|EXCHANGE_RATE|N|NUMERIC|23|N||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：504|N|Y|[91mCT_CASH_ADVANCE[0m|SUBMITTED_BALANCE|N|MONEY|23|N||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：505|N|Y|[91mCT_CASH_ADVANCE[0m|UNSUBMITTED_BALANCE|N|MONEY|23|N||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：506|N|Y|[91mCT_CASH_ADVANCE[0m_COMMENT|CA_KEY|Y|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：507|N|Y|[91mCT_CASH_ADVANCE[0m_COMMENT|EMP_KEY|Y|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：508|N|Y|[91mCT_CASH_ADVANCE[0m_COMMENT|COMMENT_DATE|N|TIMESTAMP||Y||||2014-04-12 04:21:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：509|N|Y|[91mCT_CASH_ADVANCE[0m_COMMENT|TEXT|N|VARCHAR|2000|Y||Y||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：510|N|Y|[91mCT_CASH_ADVANCE[0m_ENTRY|CAE_KEY|N|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：511|N|Y|[91mCT_CASH_ADVANCE[0m_ENTRY|CA_KEY|Y|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：512|N|Y|[91mCT_CASH_ADVANCE[0m_ENTRY|RPT_KEY|Y|INTEGER||N||||2012-07-14 02:04:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：513|N|Y|[91mCT_CASH_ADVANCE[0m_ENTRY|RPE_KEY|Y|INTEGER||N||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：514|N|Y|[91mCT_CASH_ADVANCE[0m_ENTRY|UTILIZED_AMOUNT|N|MONEY|23|Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：515|N|Y|[91mCT_CASH_ADVANCE[0m_REPORT_MAP|CA_KEY|Y|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：516|N|Y|[91mCT_CASH_ADVANCE[0m_REPORT_MAP|RPT_KEY|Y|INTEGER||Y||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：517|N|Y|[91mCT_CASH_ADVANCE[0m_REPORT_MAP|REBUILD|N|BOOLEANCHAR|1|Y||N||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：518|N|Y|[91mCT_CASH_ADVANCE[0m_REPORT_MAP|RPT_SEQUENCE|N|INTEGER||N||||2005-06-21 15:47:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：2382|N|N|[91mCT_CASH_ADVANCE[0m|STARTING_BALANCE|N|MONEY|23|N||||2005-06-21 15:48:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：5846|N|Y|[91mCT_CASH_ADVANCE[0m|AR_KEY|Y|INTEGER||N||||2011-11-19 02:33:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：5847|N|Y|[91mCT_CASH_ADVANCE[0m|CA_FORM_KEY|Y|INTEGER||N||||2013-10-19 03:34:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_column_metadata.dat
+匹配行：5853|N|N|[91mCT_CASH_ADVANCE[0m|HAS_TRAVEL_REQUEST|N|BOOLEANCHAR|1|N||||2011-11-19 02:34:00|
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|23|339|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|24|340|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|25|341|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|26|342|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|27|343|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|28|344|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|29|345|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|30|346|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|31|347|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|32|348|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|33|349|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|34|350|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|35|351|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|36|352|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|37|353|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|38|354|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|39|355|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|40|356|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|41|357|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|42|358|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|43|359|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|44|360|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|45|361|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|46|362|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|47|363|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：448|2186|48|364|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-01 10:16:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：723|2186|50|1197|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-11-22 11:12:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：892|2186|55|3401|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-12-05 11:14:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：983|2186|68|5239|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-12-12 11:12:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：983|2186|69|5240|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-12-12 11:12:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：1024|2186|72|6443|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-12-15 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：1024|2186|76|6442|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2017-12-15 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：1444|2186|73|14197|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-01-16 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：1444|2186|79|14198|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-01-16 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：1639|2186|80|16606|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-01-31 11:08:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：1639|2186|82|16605|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-01-31 11:08:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：73585|2186|271|269342|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-02-16 11:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：73585|2186|278|269341|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-02-16 11:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：73637|2186|279|274448|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-02-20 11:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：73637|2186|280|274447|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-02-20 11:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：2782|2186|84|19893|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-02-12 11:06:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：2782|2186|85|19892|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-02-12 11:06:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：2782|2186|86|19891|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-02-12 11:06:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：2810|2186|83|20248|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-02-14 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：5266|2186|88|27763|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-03-20 10:13:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：5266|2186|90|27762|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-03-20 10:13:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：5378|2186|91|29299|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-03-28 10:08:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：5569|2186|98|32001|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-04-11 10:09:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：5869|2186|102|35329|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-05-04 10:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：5869|2186|103|35330|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-05-04 10:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：5869|2186|104|35331|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-05-04 10:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：9546|2186|106|46560|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-06-28 10:14:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：12393|2186|110|57249|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-09-03 10:20:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：12393|2186|115|57248|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-09-03 10:20:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：13681|2186|119|60796|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-09-27 10:10:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：15850|2186|126|64097|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-10-12 10:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：16006|2186|132|65462|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-10-24 10:10:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：16020|2186|135|65616|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-10-25 10:08:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：17062|2186|134|66844|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-10-29 16:43:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：17062|2186|136|66843|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-10-29 16:43:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：18560|2186|140|71902|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-12-06 11:10:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：18560|2186|143|71901|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-12-06 11:10:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：18637|2186|142|72724|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-12-12 11:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：18697|2186|144|73179|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2018-12-17 11:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：20226|2186|147|80053|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-01-31 11:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：20226|2186|148|80054|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-01-31 11:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：20394|2186|149|80802|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-02-14 11:09:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：20394|2186|150|80803|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-02-14 11:09:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：20442|2186|152|80971|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-02-18 11:10:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：20526|2186|151|81353|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-02-25 11:10:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：21661|2186|160|83900|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-03-09 11:17:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：23403|2186|163|93638|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-05-09 10:05:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：23403|2186|166|93637|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-05-09 10:05:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：25763|2186|162|99160|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-06-10 10:06:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：25847|2186|168|100199|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-06-17 10:08:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：59775|2186|230|195502|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-09-08 10:04:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：59788|2186|45|195583|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-09-09 10:04:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：59788|2186|231|195542|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-09-09 10:04:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74274|2186|286|286494|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-04-10 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74287|2186|288|286684|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-04-11 10:01:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：58748|2186|226|185844|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-06-21 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：30456|2186|175|117773|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-11-01 10:08:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：31528|2186|176|119946|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-11-08 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：31852|2186|178|121586|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2019-12-05 11:11:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：41400|2186|185|138866|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2020-07-10 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：41478|2186|183|139322|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2020-07-16 10:05:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：44158|2186|188|146181|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2020-09-08 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：44158|2186|191|146182|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2020-09-08 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：44158|2186|192|146056|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2020-09-08 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：57410|2186|222|183133|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-05-25 10:05:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：46574|2186|193|149958|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2020-10-12 10:05:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：54560|2186|213|175346|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-03-18 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：54560|2186|214|175347|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-03-18 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：54560|2186|215|175348|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-03-18 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：54560|2186|216|175349|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-03-18 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：54560|2186|217|175350|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-03-18 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：54560|2186|218|175351|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-03-18 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：54560|2186|219|175352|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-03-18 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：54560|2186|220|175353|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-03-18 11:07:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：54643|2186|212|175750|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-03-25 10:05:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：52095|2186|210|172677|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-02-09 11:04:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：53277|2186|211|173407|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-02-24 11:04:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：48078|2186|209|159778|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2020-11-20 11:05:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：57475|2186|224|183998|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-05-30 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：61242|2186|230|198480|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-10-14 10:04:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：62424|2186|232|199780|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-10-28 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：62593|2186|235|202399|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2021-11-10 11:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：72812|2186|270|260303|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-12-19 11:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：72981|2186|269|264119|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-01-01 11:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：68423|2186|241|227636|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-04-01 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：70788|2186|256|237813|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-07-16 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：70788|2186|257|237814|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-07-16 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：71113|2186|253|240144|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-08-10 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：71113|2186|258|240247|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-08-10 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：72164|2186|264|251336|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-10-30 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：72164|2186|265|251337|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-10-30 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：72203|2186|263|255090|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-11-02 10:04:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：72539|2186|266|257842|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-11-28 11:04:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：72565|2186|267|257895|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-11-30 11:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：72565|2186|268|257896|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2022-11-30 11:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：73312|2186|274|267380|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-01-26 11:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：73312|2186|275|267379|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-01-26 11:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：73312|2186|276|267381|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-01-26 11:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：73832|2186|281|276506|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-03-07 11:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：73832|2186|282|276505|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-03-07 11:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74001|2186|284|279814|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-03-20 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74118|2186|285|281480|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-03-29 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74131|2186|287|281662|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-03-30 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74781|2186|289|291045|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-05-19 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74781|2186|290|291044|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-05-19 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74781|2186|291|291046|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-05-19 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74781|2186|292|291047|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-05-19 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74781|2186|293|291048|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-05-19 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74781|2186|294|291049|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-05-19 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：74781|2186|295|291050|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-05-19 10:03:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：75028|2186|302|295172|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-06-07 10:04:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：75132|2186|300|296353|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-06-15 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：75132|2186|301|296354|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-06-15 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_extract_result.dat
+匹配行：75431|2186|303|299296|[91mCT_CASH_ADVANCE[0m|CT_JOURNAL||2023-07-08 10:02:00
+
+文件：D://work//project//ike-date//八.fendi//aaa\原数据\ct_workflow_subject.dat
+匹配行：CASH_ADVANCE|EXP|[91mCT_CASH_ADVANCE[0m|CaKey|com.concur.om.CtCashAdvancePeer|screens/desktop/cashadv-updates.vm|screens/desktop/cashadv-approvals.vm|Y|N|0||2017-09-15 08:18:00|N|N
+

@@ -30,10 +30,10 @@ def search_keyword_in_files(directory, keyword):
     return result, total_count
 
 # 指定目录和关键词
-directory = r'/Users/zhangzuogong/IdeaProjects/ike-date/八.fendi/aaa/原数据'
-keyword = 'AR_TYPE_CODE'
+directory = r'D://work//project//ike-date//八.fendi//aaa'
+keyword = 'CT_CASH_ADVANCE'
 # 指定结果文件路径
-result_file_path = r'/Users/zhangzuogong/IdeaProjects/ike-date/八.fendi/aaa/rs.txt'
+result_file_path = r'D://work//project//ike-date//八.fendi//aaa//rs.txt'
 
 # 在目录中搜索关键词（不区分大小写）
 search_results, total_results = search_keyword_in_files(directory, keyword)
