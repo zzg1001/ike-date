@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 server = '139.196.89.86'
 database = 'fendi'
 username = 'fendi'
-password = 'Password.1'
+password = 'Password.123!@#'
 driver = 'ODBC Driver 17 for SQL Server'
 
 # 创建数据库连接引擎

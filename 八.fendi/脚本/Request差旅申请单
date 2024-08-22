@@ -16,10 +16,10 @@
               ,i.name             as '申请策略'
               ,ar.PURPOSE         as '目的'
               ,exp_type.name      as '费用类型'
-              ,a.POSTED_AMOUNT   as '金额'
+              ,a.POSTED_AMOUNT   as 'Actual amount'
               ,h.name             as '币种'
               ,ar.AUTHORIZED_DATE as '日期'
-                                   ,lg .VALUE          as 'Travel Type Name'
+              ,lg .VALUE          as 'Travel Type Name'
               from fendi.dbo.ct_authorization_request ar 
               left join ct_list_item_lang  lg 
                      on ar.CUSTOM5 = lg.li_key

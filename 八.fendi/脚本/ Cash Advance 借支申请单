@@ -37,5 +37,106 @@
            left join ct_expense_comment f 
                  on f.RPE_KEY = ad.RPE_KEY
 		where ar.AR_TYPE_CODE='CASH_ADVANCE'
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+                    select 
+							 ar.REQUEST_ID         as '申请ID'
+							,b.last_name +','+ b.first_name as '员工姓名'
+							,b.email_address   as '电子邮件'
+							,c.name            as '居住国/地区'
+                            ,d.VALUE           as 'Org Unit 1 - Country'
+							,e.VALUE           as 'Org Unit 2 - Company'
+							,f.VALUE           as 'Org Unit 3 - Department'
+							,g.VALUE                as 'Org Unit 4 - Cost Center'
+							,ar.start_date          as '开始时间'
+                            ,ar.end_date            as '结束时间'
+							,i.name                 as '申请策略'
+							,ar.PURPOSE             as '目的'
+							,h.TOTAL_POSTED_AMOUNT  as 'Actual amount'
+							,ii.name               as '审批状态'
+							,b.last_name +','+ b.first_name+'('+dd.LAST_MODIFIED +'): ' +hh.descs   as '备注'
+							,ar.AR_TYPE_CODE       as 'AR_TYPE_CODE'
+                            from fendi.dbo.ct_authorization_request ar 
+                         left join(    
+							   select h.AR_KEY ,j.*
+							    from fendi.dbo.ct_report_ar_map h 
+								join fendi.dbo.ct_report j 
+									  on j.RPT_KEY = h.RPT_KEY
+									 and j.APS_KEY<>'A_NOTF'
+									 and h.RPT_KEY <> '12241'
+							 ) h 
+				               on h.AR_KEY = ar.AR_KEY
+				       left join fendi.dbo.ct_list_item_lang  lg 
+				              on ar.CUSTOM5 = lg.li_key
+				       left join fendi.dbo.ct_ar_entry a 
+				              on ar.AR_KEY  = a.AR_KEY 
+				       left join fendi.dbo.ct_employee b 
+				              on ar.EMP_KEY = b.EMP_KEY
+				       left join fendi.dbo.ct_country_lang  c
+				              on c.CTRY_CODE = b.CTRY_CODE          
+				       left join fendi.dbo.ct_list_item_lang d 
+				              on b.ORG_UNIT_1 = d.LI_KEY
+				       left join fendi.dbo.ct_list_item_lang e 
+				              on b.ORG_UNIT_2 = e.LI_KEY
+				       left join fendi.dbo.ct_list_item_lang f 
+				              on b.ORG_UNIT_3 = f.LI_KEY
+				       left join fendi.dbo.ct_list_item_lang g 
+				              on b.ORG_UNIT_4 = g.LI_KEY 
+				       left join fendi.dbo.ct_policy_lang i
+				              on i.POL_KEY = ar.POL_KEY 
+					left join fendi.dbo.ct_status_lang ii
+				          on ii.stat_key = ar.APS_KEY
+				  left join  (
+							    select 
+									 RPT_KEY
+									,STRING_AGG(cast(('(RMB'+CONVERT(varchar(100),  CAST(POSTED_AMOUNT AS DECIMAL(10, 2)))+')'+DESCRIPTION ) as VARCHAR(MAX)) ,',') descs
+							from fendi.dbo.ct_report_entry
+							group by RPT_KEY
+			
+				             )hh
+							  on hh.RPT_KEY = h.RPT_KEY
+				 left join  (		  
+							     SELECT
+									   REQUEST_ID
+									   ,CONVERT(varchar(100),CAST(LAST_MODIFIED AS date) )  LAST_MODIFIED
+									from(
+										     select   
+												a.REQUEST_ID
+									            ,c.LAST_MODIFIED  LAST_MODIFIED
+									            ,c.SEQUENCE_ORDER rn
+									        from fendi.dbo.ct_authorization_request a 
+									        join fendi.dbo.ct_employee ce
+									          on a.EMP_KEY = ce.EMP_KEY
+										 left join fendi.dbo.ct_report_ar_map ap 
+												on a.AR_KEY = ap.AR_KEY
+										 left join ct_report ar 
+										        on ap.rpt_key = ar.rpt_key
+									        join dbo.ct_workflow_process_instance b
+									          on a.CURRENT_WORKFLOW = b.PROCESS_INSTANCE_KEY
+									        join fendi.dbo.ct_workflow_step_instance c 
+									          on c.PROCESS_INSTANCE_KEY = b.PROCESS_INSTANCE_KEY 
+									         and c.IS_DELETED = 'N'
+									       where a.IS_DELETED='N'
+									         and ar.APS_KEY<>'A_NOTF'
+									         and a.AR_TYPE_CODE ='CASH_ADVANCE' 
+									         and ap.RPT_KEY <> '12241'
+								
+							         ) a
+							      where rn = 1	 
+				          ) dd 
+				        on  ar.REQUEST_ID =  dd.REQUEST_ID
+				 where ar.AR_TYPE_CODE ='CASH_ADVANCE' 
+				  order by ar.REQUEST_ID 
 		
 								 
