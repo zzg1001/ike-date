@@ -3,6 +3,7 @@
            b.LAST_NAME+','+b.FIRST_NAME  as 'Employee'
           ,b.EMP_ID                      as 'Employee ID'
           ,a.REPORT_ID                   as 'Report ID'
+          ,,a.rpt_key                    as 'Report key'
           ,a.name                        as 'Report Name'
           ,''                            as 'Report Type'
           ,a.REPORT_TYPE                 as 'Report Type Code'

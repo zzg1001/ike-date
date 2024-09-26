@@ -170,7 +170,7 @@ select *from fendi.dbo.ct_workflow_process_instance cwpi  where PROCESS_KEY ='20
                                            
 
 
-                                                select     a.REPORT_ID '报告ID'
+   select     a.REPORT_ID '报告ID'
             ,a.name  '报告名称'
             ,a.rpt_key '报告key'
         --  ,a.APS_KEY

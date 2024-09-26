@@ -1,8 +1,6 @@
 
 
-
-			
-						  SELECT 
+			  SELECT 
 				a.name                as '费用报告名称 '
 				,b.name               as '策略'
 				,a.report_id          as '费用报告 ID'
@@ -22,7 +20,7 @@
                 ,a.COMPANY_TO_EMPLOYEE_AMOUNT     as '应付给员工的金额'
                 ,a.COMPANY_TO_CREDIT_CARDS_AMOUNT as '应付给公司卡的金额'
                 ,a.TOTAL_POSTED_AMOUNT            as '由公司支付的总额'
-                ,a.CURRENT_WORKFLOW               as '费用报告键'
+                ,a.rpt_key                        as '费用报告键'
                 ,a.CUSTOM12                       as 'Travel Start Date'
                 ,a.CUSTOM13                       as 'Travel End Date'
                 ,ad.TRANSACTION_DATE              as '交易日期'
@@ -70,5 +68,3 @@
           on a.CTRY_SUB_CODE = j.CTRY_SUB_CODE
     left join ct_payment_type_lang k 
           on k.PAT_KEY = ad.PAT_KEY
-          
-						
