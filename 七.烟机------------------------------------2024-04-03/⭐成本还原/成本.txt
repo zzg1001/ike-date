@@ -1,0 +1,39 @@
+SELECT A.MATNR,
+       CASE A.SHKZG
+         WHEN 'S' THEN Isnull(A.MENGE * Isnull(C.STPRS, B.STPRS), A.DMBTR)
+         ELSE -1 * Isnull(A.MENGE * Isnull(C.STPRS, B.STPRS), A.DMBTR)
+       END AS STPRS
+FROM   [ODS_HANA].[dbo].[MSEG] A
+       LEFT JOIN [ODS_HANA].[dbo].[MBEWH] B
+              ON A.MATNR = B.MATNR
+                 AND ( A.SOBKZ <> 'Q'
+                        OR A.SOBKZ IS NULL )
+                 AND A.WERKS = B.BWKEY
+                 AND LEFT(A.BUDAT_MKPF, 4) = B.LFGJA
+                 AND Substring(A.BUDAT_MKPF, 5, 2) = B.LFMON
+       LEFT JOIN [ODS_HANA].[dbo].[QBEWH] C
+              ON A.MATNR = C.MATNR
+                 AND A.SOBKZ = 'Q'
+                 AND A.WERKS = C.BWKEY
+                 AND LEFT(A.BUDAT_MKPF, 4) = C.LFGJA
+                 AND Substring(A.BUDAT_MKPF, 5, 2) = C.LFMON
+WHERE  A.AUFNR = '020000253843' 
+
+
+
+
+
+SELECT *
+FROM   [ODS_HANA].[dbo].[MSEG]
+WHERE  AUFNR = '010000010160'
+
+SELECT *
+FROM   [ODS_HANA].[dbo].[MSEG]
+WHERE  MATNR = 'ZB41620300SJ'
+       AND CHARG = '2011250001'
+       AND BWART = '101' 
+
+
+SELECT *
+FROM   [ODS_HANA].[dbo].[MSEG]
+WHERE  AUFNR = '010000010103'
