@@ -1,6 +1,0 @@
-  美孚数据库:   
-        'USER': 'weizhengbo',
-        'PASSWORD': 'Password.1',
-        'HOST': '139.224.197.121',
-        'PORT': '63306',
-        ,db:iot 
