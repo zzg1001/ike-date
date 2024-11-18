@@ -1,14 +1,3 @@
---刷新平台数据
---172.16.31.120:8080/MSS
---admin
---123456
---ods_redmine           刷新工时
---redmine_dashboard     移动端看板
-
-
-
-
-
 with tmp as (
 select 
 distinct
@@ -17,7 +6,6 @@ g.spent_on,
 null as create_date,
 g.tweek,
 i.lastname+i.firstname as assign_user_name,
---e.lastname+e.firstname as assign_user_name,
 c.lastname+c.firstname as user_name,
 h.name as content_name,
 cast(a.id as nvarchar(50))+':'+a.subject as subject,
@@ -38,10 +26,8 @@ left join ODS_REDMINE.dbo.time_entries g on a.id=g.issue_id and a.project_id=g.p
 left join ODS_REDMINE.dbo.users c on g.user_id=c.id
 left join ODS_REDMINE.dbo.enumerations h on g.activity_id=h.id
 left join ODS_REDMINE.dbo.users i on a.author_id=i.auth_source_id
-where DATEADD(day, -33, getdate())<=g.spent_on   --时间段
+where g.spent_on>='2024-01-01' and g.spent_on<='2024-11-18'
 )
 select * from tmp 
 where  user_name like '%yk%' 
 order by spent_on
-
-
