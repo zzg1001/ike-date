@@ -7,10 +7,10 @@ https://docs.qq.com/sheet/DT2lEUUpJ Vmpqd0pU?tab=BB08J2
 http://172.16.56.13/gaea#/login?redirect=%2F
 
 测试平台网址	http://172.16.56.13/gaea#/login?redirect=%2F	租户	数据开发引擎	密码
-宜氪租户管理员	yk_admin	                                  yk_tenant	Sqlserver	
-卡奥斯租户管理员 kas_admin	                                  kas_tenant	hive	
-帆软租户管理员	fr_admin	                                  fr_tenant	hive	
-烟机租户管理员	shyj_admin	                                  shyj_tenant	sqlserver,hive	shyjadmin@1234
+宜氪租户管理员	yk_admin	                                  yk_tenant	    Sqlserver	
+卡奥斯租户管理员 kas_admin	                                  kas_tenant	 hive	
+帆软租户管理员	fr_admin	                                  fr_tenant  	 hive	
+烟机租户管理员	shyj_admin	                                  shyj_tenant	 sqlserver,   hive	shyjadmin@1234
 
 vpn账号
 https://116.228.159.166:4433
