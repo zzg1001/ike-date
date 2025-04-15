@@ -9,6 +9,7 @@ zhangzuogong/ Zzg20240219
 
 
 https://signin.aliyun.com/1697509993371899.onaliyun.com/login.htm
+zuogong.zhang@1697509993371899.onaliyun.com
 w}@7iePDxjRa)nR37s(DTKMRmYUFpp4v
 ssh 63022
 itadmin
@@ -23,3 +24,9 @@ server = '139.196.89.86'
 database = 'yanji_备料'
 username = 'yanji_bl'
 password = 'Password.1'
+
+小程序服务器
+8.153.198.194
+ssh 端口 63022
+root
+Zjbb690!@#
