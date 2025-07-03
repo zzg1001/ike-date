@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>job_reportMrp_mrp_consolidate_table</name>
+  <description/>
+  <extended_description/>
+  <job_version/>
+  <directory>/</directory>
+  <created_user>-</created_user>
+  <created_date>2025/06/28 19:45:27.150</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2025/06/28 19:45:27.150</modified_date>
+  <parameters>
+    </parameters>
+  <connection>
+    <name>ODS_HANA</name>
+    <server>172.16.31.42</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>ODS_HANA</database>
+    <port>1433</port>
+    <username>dw</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2abcd</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <slaveservers>
+    </slaveservers>
+  <job-log-table>
+    <connection/>
+    <schema/>
+    <table/>
+    <size_limit_lines/>
+    <interval/>
+    <timeout_days/>
+    <field>
+      <id>ID_JOB</id>
+      <enabled>Y</enabled>
+      <name>ID_JOB</name>
+    </field>
+    <field>
+      <id>CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>JOBNAME</id>
+      <enabled>Y</enabled>
+      <name>JOBNAME</name>
+    </field>
+    <field>
+      <id>STATUS</id>
+      <enabled>Y</enabled>
+      <name>STATUS</name>
+    </field>
+    <field>
+      <id>LINES_READ</id>
+      <enabled>Y</enabled>
+      <name>LINES_READ</name>
+    </field>
+    <field>
+      <id>LINES_WRITTEN</id>
+      <enabled>Y</enabled>
+      <name>LINES_WRITTEN</name>
+    </field>
+    <field>
+      <id>LINES_UPDATED</id>
+      <enabled>Y</enabled>
+      <name>LINES_UPDATED</name>
+    </field>
+    <field>
+      <id>LINES_INPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_INPUT</name>
+    </field>
+    <field>
+      <id>LINES_OUTPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_OUTPUT</name>
+    </field>
+    <field>
+      <id>LINES_REJECTED</id>
+      <enabled>Y</enabled>
+      <name>LINES_REJECTED</name>
+    </field>
+    <field>
+      <id>ERRORS</id>
+      <enabled>Y</enabled>
+      <name>ERRORS</name>
+    </field>
+    <field>
+      <id>STARTDATE</id>
+      <enabled>Y</enabled>
+      <name>STARTDATE</name>
+    </field>
+    <field>
+      <id>ENDDATE</id>
+      <enabled>Y</enabled>
+      <name>ENDDATE</name>
+    </field>
+    <field>
+      <id>LOGDATE</id>
+      <enabled>Y</enabled>
+      <name>LOGDATE</name>
+    </field>
+    <field>
+      <id>DEPDATE</id>
+      <enabled>Y</enabled>
+      <name>DEPDATE</name>
+    </field>
+    <field>
+      <id>REPLAYDATE</id>
+      <enabled>Y</enabled>
+      <name>REPLAYDATE</name>
+    </field>
+    <field>
+      <id>LOG_FIELD</id>
+      <enabled>Y</enabled>
+      <name>LOG_FIELD</name>
+    </field>
+    <field>
+      <id>EXECUTING_SERVER</id>
+      <enabled>N</enabled>
+      <name>EXECUTING_SERVER</name>
+    </field>
+    <field>
+      <id>EXECUTING_USER</id>
+      <enabled>N</enabled>
+      <name>EXECUTING_USER</name>
+    </field>
+    <field>
+      <id>START_JOB_ENTRY</id>
+      <enabled>N</enabled>
+      <name>START_JOB_ENTRY</name>
+    </field>
+    <field>
+      <id>CLIENT</id>
+      <enabled>N</enabled>
+      <name>CLIENT</name>
+    </field>
+  </job-log-table>
+  <jobentry-log-table>
+    <connection/>
+    <schema/>
+    <table/>
+    <timeout_days/>
+    <field>
+      <id>ID_BATCH</id>
+      <enabled>Y</enabled>
+      <name>ID_BATCH</name>
+    </field>
+    <field>
+      <id>CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>LOG_DATE</id>
+      <enabled>Y</enabled>
+      <name>LOG_DATE</name>
+    </field>
+    <field>
+      <id>JOBNAME</id>
+      <enabled>Y</enabled>
+      <name>TRANSNAME</name>
+    </field>
+    <field>
+      <id>JOBENTRYNAME</id>
+      <enabled>Y</enabled>
+      <name>STEPNAME</name>
+    </field>
+    <field>
+      <id>LINES_READ</id>
+      <enabled>Y</enabled>
+      <name>LINES_READ</name>
+    </field>
+    <field>
+      <id>LINES_WRITTEN</id>
+      <enabled>Y</enabled>
+      <name>LINES_WRITTEN</name>
+    </field>
+    <field>
+      <id>LINES_UPDATED</id>
+      <enabled>Y</enabled>
+      <name>LINES_UPDATED</name>
+    </field>
+    <field>
+      <id>LINES_INPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_INPUT</name>
+    </field>
+    <field>
+      <id>LINES_OUTPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_OUTPUT</name>
+    </field>
+    <field>
+      <id>LINES_REJECTED</id>
+      <enabled>Y</enabled>
+      <name>LINES_REJECTED</name>
+    </field>
+    <field>
+      <id>ERRORS</id>
+      <enabled>Y</enabled>
+      <name>ERRORS</name>
+    </field>
+    <field>
+      <id>RESULT</id>
+      <enabled>Y</enabled>
+      <name>RESULT</name>
+    </field>
+    <field>
+      <id>NR_RESULT_ROWS</id>
+      <enabled>Y</enabled>
+      <name>NR_RESULT_ROWS</name>
+    </field>
+    <field>
+      <id>NR_RESULT_FILES</id>
+      <enabled>Y</enabled>
+      <name>NR_RESULT_FILES</name>
+    </field>
+    <field>
+      <id>LOG_FIELD</id>
+      <enabled>N</enabled>
+      <name>LOG_FIELD</name>
+    </field>
+    <field>
+      <id>COPY_NR</id>
+      <enabled>N</enabled>
+      <name>COPY_NR</name>
+    </field>
+  </jobentry-log-table>
+  <channel-log-table>
+    <connection/>
+    <schema/>
+    <table/>
+    <timeout_days/>
+    <field>
+      <id>ID_BATCH</id>
+      <enabled>Y</enabled>
+      <name>ID_BATCH</name>
+    </field>
+    <field>
+      <id>CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>LOG_DATE</id>
+      <enabled>Y</enabled>
+      <name>LOG_DATE</name>
+    </field>
+    <field>
+      <id>LOGGING_OBJECT_TYPE</id>
+      <enabled>Y</enabled>
+      <name>LOGGING_OBJECT_TYPE</name>
+    </field>
+    <field>
+      <id>OBJECT_NAME</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_NAME</name>
+    </field>
+    <field>
+      <id>OBJECT_COPY</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_COPY</name>
+    </field>
+    <field>
+      <id>REPOSITORY_DIRECTORY</id>
+      <enabled>Y</enabled>
+      <name>REPOSITORY_DIRECTORY</name>
+    </field>
+    <field>
+      <id>FILENAME</id>
+      <enabled>Y</enabled>
+      <name>FILENAME</name>
+    </field>
+    <field>
+      <id>OBJECT_ID</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_ID</name>
+    </field>
+    <field>
+      <id>OBJECT_REVISION</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_REVISION</name>
+    </field>
+    <field>
+      <id>PARENT_CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>PARENT_CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>ROOT_CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>ROOT_CHANNEL_ID</name>
+    </field>
+  </channel-log-table>
+  <pass_batchid>N</pass_batchid>
+  <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>Start</name>
+      <description/>
+      <type>SPECIAL</type>
+      <attributes/>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>352</xloc>
+      <yloc>272</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>成功</name>
+      <description/>
+      <type>SUCCESS</type>
+      <attributes/>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>688</xloc>
+      <yloc>288</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>mrp明细报表</name>
+      <description/>
+      <type>SQL</type>
+      <attributes/>
+      <sql>truncate table Report_Mrp.dbo.mrp_consolidate_table  
+
+
+------------------老逻辑-------------------------------------
+TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_consolidate_table_all_node_status;
+INSERT INTO Report_Mrp.dbo.tmp_mrp_consolidate_table_all_node_status
+   select  a.order_num
+	      ,a.order_item_num
+	      ,b.node_status
+	 from [ods_srm].[dbo].[srm_poc_order_item] as a,
+	      [ods_srm].[dbo].[srm_poc_order_item_extra] as b
+    where a.id = b.order_item_id 
+	  and b.node_status is not null
+    group by a.order_num
+            ,a.order_item_num
+            ,b.node_status;
+--------------------老逻辑-----------------------------------
+TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_consolidate_table_all_5;
+INSERT INTO Report_Mrp.dbo.tmp_mrp_consolidate_table_all_5
+	 select
+			a.DELNR2  as supply_no
+		   ,a.DELPS2  as supply_line
+		   ,a.DELNR1  as require_no                 -- 预留号                
+		   ,a.DELPS1  as require_line               -- 预留号行号      
+	   from ODS_HANA.dbo.mrp_ww  a
+	where  a.DELKZ2  like '5%';
+		
+
+-------------------------------------------------------
+
+
+ insert into Report_Mrp.dbo.mrp_consolidate_table      
+       select
+				 a.require_no
+				,a.require_line
+				,a.wbs_code
+				,a.wbs_desc
+				,a.wbs_category_code
+				,a.wbs_category_desc
+				,a.order_type_code
+				,a.purchase_group_code
+				,a.purchase_group_desc
+				,a.purchase_group_code_desc
+				,a.material_code
+				,a.material_desc
+				,a.figure_no
+				,a.purchase_type_code
+				,a.is_manuf
+				,a.is_purchase
+				,a.is_other
+				,a.require_quantity
+				,a.delivery_quantity
+				,a.assemble_order_code
+				,a.parent_material_code
+				,a.zp_ltxt
+				,a.sort_string
+				,a.delivery_date
+				,a.prod_order_supply_quantity
+				,a.prod_order_no
+				,a.prod_order_delivery_date
+				,a.prod_order_current_point
+				,a.[prod_order_current_key_dept_desc ]
+				,a.purchase_order_supply_quantity
+				,a.purchase_order_no
+				,a.purchase_order_line
+				,a.purchase_order_no_line
+				,a.purchase_order_no_line_h
+				,a.purchase_order_deliery_date
+				,a.purchase_order_current_point
+				,a.purchase_order_vendor_desc
+				,a.insp_supply_quantity
+				,a.insp_no
+				,a.insp_purc_order_no
+				,a.insp_purc_order_line
+				,a.insp_current_point
+				,a.insp_vendor_desc
+				,a.purchase_request_supply_quantity
+				,a.purchase_request_no
+				,a.purchase_request_delievery_date
+				,a.stock_supply_quantity
+				,a.stock_supply_flag
+				,a.other_supply_quantity
+				,a.stock_quantity
+				,a.update_date
+				,a.purchase_order_order_priority
+				,a.inv_quantity_1005
+				,a.zd_code
+				,a.commit_purchase_order_deliery_date
+				,a.order_sync_date
+				,a.receive_status
+				,a.insp_status
+				,a.insp_receive_status
+				,a.insp_insp_status
+			    ,b.note
+			    ,cast(insp_purc_order_no as varchar) + '/' + cast(insp_purc_order_line as varchar) as 对应采购订单_行号
+			    ,a.inquiry_status 
+			    ,d.node_status
+			    ,a.qty
+				,a.project_qty  -- 项目库存
+			    ,f.supply_no   as 计划协议号
+			    ,f.supply_line as 计划行号
+			    ,g.MATNR
+				,g.RSNUM
+				,g.RSPOS
+				,g.MNG01
+				,g.DELNR
+				,g.DELPS
+				,g.DELET
+				,g.EINDT
+			    ,g.STOCK_QTY
+			    ,g.ebeln
+				,g.ebelp
+				,g.etenr
+				,g.fixkz
+			    ,g.SORTL as NAME1
+				,g.current_node_name         -- 物流节点
+				,g.update_date_time          -- 当前节点时间
+				,a.n45_current_node_status  -- 物流状态
+				,a.n45_update_date_time     -- 当前节点时间
+				,g.CREATED_TS               -- 计划协议交货行同步时间
+				,a.NAME1 AS FD_NAME
+				,a.rep_type
+				,GETDATE()  etl_time
+		   from Report_Mrp.dbo.mrp_temp_base a
+	  left join report0624.dbo.r24_temp_note b
+			 on a.require_line = b.require_line
+			and a.require_no   = b.require_no
+	  left join Report_Mrp.dbo.tmp_mrp_consolidate_table_all_node_status d
+			 on a.purchase_order_no   = d.order_num 
+			and a.purchase_order_line = d.order_item_num
+	  left join Report_Mrp.dbo.tmp_mrp_consolidate_table_all_5 f
+             on a.require_no   = f.require_no
+			and a.require_line = f.require_line
+	  left join Report_Mrp.dbo.mrp_plan_protocol_order_detail g
+			 on a.require_no   = g.rsnum
+			and a.require_line = g.rspos
+			and g.rep_type = a.rep_type; 
+
+
+			</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>ODS_HANA</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>528</xloc>
+      <yloc>288</yloc>
+      <attributes_kjc/>
+    </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>Start</from>
+      <to>mrp明细报表</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>mrp明细报表</from>
+      <to>成功</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+  <attributes/>
+</job>

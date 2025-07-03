@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>job_reportMrp_mrp_temp_base</name>
+  <description/>
+  <extended_description/>
+  <job_version/>
+  <directory>/</directory>
+  <created_user>-</created_user>
+  <created_date>2025/06/28 19:43:50.415</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2025/06/28 19:43:50.415</modified_date>
+  <parameters>
+    </parameters>
+  <connection>
+    <name>ODS_HANA</name>
+    <server>172.16.31.42</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>ODS_HANA</database>
+    <port>1433</port>
+    <username>dw</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2abcd</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <slaveservers>
+    </slaveservers>
+  <job-log-table>
+    <connection/>
+    <schema/>
+    <table/>
+    <size_limit_lines/>
+    <interval/>
+    <timeout_days/>
+    <field>
+      <id>ID_JOB</id>
+      <enabled>Y</enabled>
+      <name>ID_JOB</name>
+    </field>
+    <field>
+      <id>CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>JOBNAME</id>
+      <enabled>Y</enabled>
+      <name>JOBNAME</name>
+    </field>
+    <field>
+      <id>STATUS</id>
+      <enabled>Y</enabled>
+      <name>STATUS</name>
+    </field>
+    <field>
+      <id>LINES_READ</id>
+      <enabled>Y</enabled>
+      <name>LINES_READ</name>
+    </field>
+    <field>
+      <id>LINES_WRITTEN</id>
+      <enabled>Y</enabled>
+      <name>LINES_WRITTEN</name>
+    </field>
+    <field>
+      <id>LINES_UPDATED</id>
+      <enabled>Y</enabled>
+      <name>LINES_UPDATED</name>
+    </field>
+    <field>
+      <id>LINES_INPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_INPUT</name>
+    </field>
+    <field>
+      <id>LINES_OUTPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_OUTPUT</name>
+    </field>
+    <field>
+      <id>LINES_REJECTED</id>
+      <enabled>Y</enabled>
+      <name>LINES_REJECTED</name>
+    </field>
+    <field>
+      <id>ERRORS</id>
+      <enabled>Y</enabled>
+      <name>ERRORS</name>
+    </field>
+    <field>
+      <id>STARTDATE</id>
+      <enabled>Y</enabled>
+      <name>STARTDATE</name>
+    </field>
+    <field>
+      <id>ENDDATE</id>
+      <enabled>Y</enabled>
+      <name>ENDDATE</name>
+    </field>
+    <field>
+      <id>LOGDATE</id>
+      <enabled>Y</enabled>
+      <name>LOGDATE</name>
+    </field>
+    <field>
+      <id>DEPDATE</id>
+      <enabled>Y</enabled>
+      <name>DEPDATE</name>
+    </field>
+    <field>
+      <id>REPLAYDATE</id>
+      <enabled>Y</enabled>
+      <name>REPLAYDATE</name>
+    </field>
+    <field>
+      <id>LOG_FIELD</id>
+      <enabled>Y</enabled>
+      <name>LOG_FIELD</name>
+    </field>
+    <field>
+      <id>EXECUTING_SERVER</id>
+      <enabled>N</enabled>
+      <name>EXECUTING_SERVER</name>
+    </field>
+    <field>
+      <id>EXECUTING_USER</id>
+      <enabled>N</enabled>
+      <name>EXECUTING_USER</name>
+    </field>
+    <field>
+      <id>START_JOB_ENTRY</id>
+      <enabled>N</enabled>
+      <name>START_JOB_ENTRY</name>
+    </field>
+    <field>
+      <id>CLIENT</id>
+      <enabled>N</enabled>
+      <name>CLIENT</name>
+    </field>
+  </job-log-table>
+  <jobentry-log-table>
+    <connection/>
+    <schema/>
+    <table/>
+    <timeout_days/>
+    <field>
+      <id>ID_BATCH</id>
+      <enabled>Y</enabled>
+      <name>ID_BATCH</name>
+    </field>
+    <field>
+      <id>CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>LOG_DATE</id>
+      <enabled>Y</enabled>
+      <name>LOG_DATE</name>
+    </field>
+    <field>
+      <id>JOBNAME</id>
+      <enabled>Y</enabled>
+      <name>TRANSNAME</name>
+    </field>
+    <field>
+      <id>JOBENTRYNAME</id>
+      <enabled>Y</enabled>
+      <name>STEPNAME</name>
+    </field>
+    <field>
+      <id>LINES_READ</id>
+      <enabled>Y</enabled>
+      <name>LINES_READ</name>
+    </field>
+    <field>
+      <id>LINES_WRITTEN</id>
+      <enabled>Y</enabled>
+      <name>LINES_WRITTEN</name>
+    </field>
+    <field>
+      <id>LINES_UPDATED</id>
+      <enabled>Y</enabled>
+      <name>LINES_UPDATED</name>
+    </field>
+    <field>
+      <id>LINES_INPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_INPUT</name>
+    </field>
+    <field>
+      <id>LINES_OUTPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_OUTPUT</name>
+    </field>
+    <field>
+      <id>LINES_REJECTED</id>
+      <enabled>Y</enabled>
+      <name>LINES_REJECTED</name>
+    </field>
+    <field>
+      <id>ERRORS</id>
+      <enabled>Y</enabled>
+      <name>ERRORS</name>
+    </field>
+    <field>
+      <id>RESULT</id>
+      <enabled>Y</enabled>
+      <name>RESULT</name>
+    </field>
+    <field>
+      <id>NR_RESULT_ROWS</id>
+      <enabled>Y</enabled>
+      <name>NR_RESULT_ROWS</name>
+    </field>
+    <field>
+      <id>NR_RESULT_FILES</id>
+      <enabled>Y</enabled>
+      <name>NR_RESULT_FILES</name>
+    </field>
+    <field>
+      <id>LOG_FIELD</id>
+      <enabled>N</enabled>
+      <name>LOG_FIELD</name>
+    </field>
+    <field>
+      <id>COPY_NR</id>
+      <enabled>N</enabled>
+      <name>COPY_NR</name>
+    </field>
+  </jobentry-log-table>
+  <channel-log-table>
+    <connection/>
+    <schema/>
+    <table/>
+    <timeout_days/>
+    <field>
+      <id>ID_BATCH</id>
+      <enabled>Y</enabled>
+      <name>ID_BATCH</name>
+    </field>
+    <field>
+      <id>CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>LOG_DATE</id>
+      <enabled>Y</enabled>
+      <name>LOG_DATE</name>
+    </field>
+    <field>
+      <id>LOGGING_OBJECT_TYPE</id>
+      <enabled>Y</enabled>
+      <name>LOGGING_OBJECT_TYPE</name>
+    </field>
+    <field>
+      <id>OBJECT_NAME</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_NAME</name>
+    </field>
+    <field>
+      <id>OBJECT_COPY</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_COPY</name>
+    </field>
+    <field>
+      <id>REPOSITORY_DIRECTORY</id>
+      <enabled>Y</enabled>
+      <name>REPOSITORY_DIRECTORY</name>
+    </field>
+    <field>
+      <id>FILENAME</id>
+      <enabled>Y</enabled>
+      <name>FILENAME</name>
+    </field>
+    <field>
+      <id>OBJECT_ID</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_ID</name>
+    </field>
+    <field>
+      <id>OBJECT_REVISION</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_REVISION</name>
+    </field>
+    <field>
+      <id>PARENT_CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>PARENT_CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>ROOT_CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>ROOT_CHANNEL_ID</name>
+    </field>
+  </channel-log-table>
+  <pass_batchid>N</pass_batchid>
+  <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>Start</name>
+      <description/>
+      <type>SPECIAL</type>
+      <attributes/>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>247</xloc>
+      <yloc>169</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>mrp供需报表</name>
+      <description/>
+      <type>SQL</type>
+      <attributes/>
+      <sql>truncate table Report_Mrp.dbo.mrp_temp_base;
+
+
+--------------老逻辑没用--------------------------------
+TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_temp_base_all_wb;
+INSERT INTO Report_Mrp.dbo.tmp_mrp_temp_base_all_wb
+
+ select DELNR1 as require_no         -- 预留号                
+	   ,DELPS1 as require_line       -- 预留号行号  
+	   ,MNG012 as supply_quantity
+ from ODS_HANA.dbo.mrp_ww a
+where DELKZ2 = 'WB'
+  and MNG012 > 0;
+
+--------------老逻辑没用--------------------------------
+TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_temp_base_all_qm;
+INSERT INTO Report_Mrp.dbo.tmp_mrp_temp_base_all_qm
+	select a.DELNR1    as require_no         -- 预留号                
+		  ,a.DELPS1    as require_line       -- 预留号行号  
+		  ,a.MNG012    as supply_quantity
+		  ,a.DELNR2    as supply_no
+		  ,b.purchase_order_no
+		  ,b.vendor_desc
+		  ,b.purchase_order_line
+		  ,b.insp_status
+	  from ODS_HANA.dbo.mrp_ww a
+ left join Report0624.dbo.r24_insp_lot_detail b
+		on a.DELNR2 = b.insp_no
+	 where a.DELKZ2 = 'QM'
+	   and a.MNG012 >  0;
+
+--------------老逻辑没用--------------------------------
+
+TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_temp_base_all_pb_pa;
+INSERT INTO Report_Mrp.dbo.tmp_mrp_temp_base_all_pb_pa
+select  a.DELNR1      as require_no         -- 预留号                
+	   ,a.DELPS1      as require_line       -- 预留号行号  
+	   ,sum(a.MNG012) as supply_quantity    -- 匹配数量
+  from ODS_HANA.dbo.mrp_ww a
+ where a.DELKZ2 in ('PB', 'PA')
+   and a.MNG012 > 0
+ group by a.DELNR1
+         ,a.DELPS1;
+
+-----------------------生产报表-----------------------
+
+     insert into Report_Mrp.dbo.mrp_temp_base
+          select
+                  a.require_no                                                       as require_no                       -- 预留号
+                 ,a.require_line                                                     as require_line                     -- 预留号行号
+                 ,a.POSKI                                                            as wbs_code                         -- 替换 n.wbs_code WBS
+                 ,a.wbs_desc                                                         as wbs_desc                         -- WBS描述  
+                 ,a.wbs_category_code                                                as wbs_category_code
+                 ,a.wbs_category_desc                                                as wbs_category_desc
+                 ,a.order_type_code                                                  as order_type_code
+                 ,a.purchase_group_code                                              as purchase_group_code
+                 ,a.purchase_group_desc                                              as purchase_group_desc
+                 ,a.purchase_group_code_desc                                         as purchase_group_code_desc
+                 ,a.material_code                                                    as material_code                    -- 物料编码
+                 ,a.material_desc                                                    as material_desc                    -- 物料名称
+                 ,a.figure_no                                                        as figure_no                        -- 图号
+                 ,a.purchase_type_code                                               as purchase_type_code               -- 类型
+                 ,a.is_manuf                                                         as is_manuf                         -- 自制
+                 ,a.is_purchase                                                      as is_purchase                      -- 外协
+                 ,a.is_other                                                         as is_other                         -- 其他
+                 ,a.require_quantity                                                 as require_quantity                 -- 需求数量
+                 ,a.delivery_quantity                                                as delivery_quantity                -- 已发数量
+                 ,a.assemble_order_no                                                as assemble_order_code              -- 装配订单号   -- 替换 h.assemble_order_no 
+                 ,a.parent_material_code                                             as parent_material_code             -- 父项物料编码 -- 替换 n.material_code 
+                 ,a.zp_ltxt                                                          as zp_ltxt                          -- 订单长文本
+                 ,a.sort_string                                                      as sort_string                      -- 排序字符串
+                 ,a.delivery_date                                                    as delivery_date                    -- 订单交货期    -- 替换 n.schedule_date 
+                 ,d.supply_quantity                                                  as prod_order_supply_quantity       -- 生产订单匹配数-- FE_quantity
+                 ,d.supply_no                                                        as prod_order_no                    -- 生产订单号    -- 替换 DELNR2
+                 ,d.schedule_date                                                    as prod_order_delivery_date         -- 生产交货期
+	             ,d.prod_order_current_point                                         as prod_order_current_point         -- 当前节点
+                 ,d.current_key_dept_desc                                            as prod_order_current_key_dept_desc -- 管理部门
+                 ,c.supply_quantity                                                  as purchase_order_supply_quantity   -- 采购订单匹配数-- BE_quantity
+	             ,c.supply_no 														 as purchase_order_no                -- 采购订单号
+	             ,c.purchase_order_line 											 as purchase_order_line              -- 采购订单行号
+                 ,c.purchase_order_NoLine                                            as purchase_order_no_line           -- 采购订单号    -- 替换 DELNR2
+				 ,c.purchase_order_NoLine_h                                          as purchase_order_no_line_h         -- 采购订单行    -- 新 替换 DELPS2
+                 ,c.schedule_date                                                    as purchase_order_deliery_date      -- 采购交货期
+                 ,c.purchase_order_current_point                                     as purchase_order_current_point     -- 当前指针
+                 ,c.vendor_desc                                                      as purchase_order_vendor_desc       -- 供应商
+                 ,f.supply_quantity                                                  as insp_supply_quantity             -- 检验批匹配数-- QM_quantity
+                 ,f.supply_no                                                        as insp_no                          -- 检验批号
+                 ,f.purchase_order_no                                                as insp_purc_order_no               -- 对应采购订单
+	             ,f.purchase_order_line											     as insp_purc_order_line             --对应采供订单行
+                 ,f.vendor_desc                                                      as insp_vendor_desc                 --加工方
+	             ,f.insp_status													     as insp_current_point               --检验当前节点
+                 ,e.supply_quantity                                                  as purchase_request_supply_quantity --采购申请匹配数-- BA_quantity
+                 ,e.supply_no                                                        as purchase_request_no              --采购申请号
+                 ,e.supply_date                                                      as purchase_request_delievery_date  --采购申请交货期
+                 ,e.inquiry_status                                                   as inquiry_status                   -- 询价状态
+				 ,b.supply_quantity                                                  as stock_supply_quantity            --库存匹配数-- WB_quantity
+                 ,case when a.require_quantity = b.supply_quantity then 1 else 0 end as stock_supply_flag                --stock_supply
+                 ,g.supply_quantity                                                  as other_supply_quantity            --其他匹配数-- PA，PB_quantity
+                 ,i.total_qty                                                        as stock_quantity                   --库存数
+	             ,getdate()                                                          as update_date
+	             ,c.order_priority 	                                                 as purchase_order_order_priority     -- 订单优先级
+	             ,i.total_qty                                                        as total_qty                         -- sap库存
+				 ,i.inv_quantity                                                     as inv_quantity_1005                 -- 1005库存
+	             ,CASE WHEN a.rep_type='ALL' THEN i.qty_1099 else i.qty end          as qty                               -- 199/1050库存
+				 ,p.project_qty                                                      as project_qty                       -- 项目库存
+				 ,a.zd_code                                                          as zd_code
+                 ,c.SUPPLIER_DATE                                                    as commit_purchase_order_deliery_date -- 替换 SUPPLIER_DATE 承诺交货期 
+                 ,c.order_sync_date                                                  as order_sync_date                    --采购订单：订单同步时间
+                 ,c.receive_status                                                   as receive_status                     --采购订单：收货状态
+                 ,c.insp_status                                                      as insp_status                        --采购订单：质检状态
+                 ,c.receive_status                                                   as insp_receive_status                -- 检验批：收货状态
+                 ,c.insp_status                                                      as insp_insp_status                   -- 检验批：质检状态
+			     ,c.n45_current_node_status                                          as n45_current_node_status            -- 物流状态
+				 ,c.n45_update_date_time                                             as n45_update_date_time               -- 当前节点时间
+				 ,a.rep_type
+				 ,case when a.POSKI ='Z-2000_XSCB004' then '上海中臣烟草机械配件有限责任公司' else  a.NAME1 end NAME1      -- 售达方
+			     ,GETDATE()  etl_time
+			 from Report_Mrp.dbo.mrp_requirement_order_detail a
+        left join Report_Mrp.dbo.mrp_purchase_order_noLine_h_detail c          
+               on a.require_no          = c.require_no
+              and a.require_line        = c.require_line
+        left join Report_Mrp.dbo.mrp_production_order_supply_no_detail d         
+               on a.require_no          = d.require_no
+              and a.require_line        = d.require_line
+        left join Report_Mrp.dbo.mrp_purchase_request_order_noLine_h_detail e        
+               on a.require_no          = e.require_no
+              and a.require_line        = e.require_line
+		left join  Report_Mrp.dbo.tmp_mrp_temp_base_all_wb b          
+               on a.require_no          = b.require_no
+              and a.require_line        = b.require_line
+        left join Report_Mrp.dbo.tmp_mrp_temp_base_all_qm f       
+               on a.require_no          = f.require_no
+              and a.require_line        = f.require_line
+        left join Report_Mrp.dbo.tmp_mrp_temp_base_all_pb_pa g
+               on a.require_no          = g.require_no
+              and a.require_line        = g.require_line
+        left join Report0624.dbo.r24_stock_detail  stock
+               on a.req_material_code   = stock.material_code
+		left join Report_Mrp.dbo.mrp_stock i 
+			   on i.material_code = a.req_material_code
+		left join (  
+		            select 
+						  MATNR as material_code 
+						 ,sum(PRLAB) project_qty
+					 from ODS_HANA.dbo.MSPR 
+					WHERE WERKS = '2000' 
+					GROUP by MATNR
+				   ) p
+		       on a.req_material_code   = p.material_code
+
+select 1;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>ODS_HANA</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>503</xloc>
+      <yloc>201</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>成功</name>
+      <description/>
+      <type>SUCCESS</type>
+      <attributes/>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>727</xloc>
+      <yloc>201</yloc>
+      <attributes_kjc/>
+    </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>Start</from>
+      <to>mrp供需报表</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>mrp供需报表</from>
+      <to>成功</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+  <attributes/>
+</job>

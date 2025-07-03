@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>job_reportMrp_mrp_plan_protocol_order_detail</name>
+  <description/>
+  <extended_description/>
+  <job_version/>
+  <directory>/</directory>
+  <created_user>-</created_user>
+  <created_date>2025/06/27 15:00:32.459</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2025/06/27 15:00:32.459</modified_date>
+  <parameters>
+    </parameters>
+  <connection>
+    <name>ODS_HANA</name>
+    <server>172.16.31.42</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>ODS_HANA</database>
+    <port>1433</port>
+    <username>dw</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2abcd</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <slaveservers>
+    </slaveservers>
+  <job-log-table>
+    <connection/>
+    <schema/>
+    <table/>
+    <size_limit_lines/>
+    <interval/>
+    <timeout_days/>
+    <field>
+      <id>ID_JOB</id>
+      <enabled>Y</enabled>
+      <name>ID_JOB</name>
+    </field>
+    <field>
+      <id>CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>JOBNAME</id>
+      <enabled>Y</enabled>
+      <name>JOBNAME</name>
+    </field>
+    <field>
+      <id>STATUS</id>
+      <enabled>Y</enabled>
+      <name>STATUS</name>
+    </field>
+    <field>
+      <id>LINES_READ</id>
+      <enabled>Y</enabled>
+      <name>LINES_READ</name>
+    </field>
+    <field>
+      <id>LINES_WRITTEN</id>
+      <enabled>Y</enabled>
+      <name>LINES_WRITTEN</name>
+    </field>
+    <field>
+      <id>LINES_UPDATED</id>
+      <enabled>Y</enabled>
+      <name>LINES_UPDATED</name>
+    </field>
+    <field>
+      <id>LINES_INPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_INPUT</name>
+    </field>
+    <field>
+      <id>LINES_OUTPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_OUTPUT</name>
+    </field>
+    <field>
+      <id>LINES_REJECTED</id>
+      <enabled>Y</enabled>
+      <name>LINES_REJECTED</name>
+    </field>
+    <field>
+      <id>ERRORS</id>
+      <enabled>Y</enabled>
+      <name>ERRORS</name>
+    </field>
+    <field>
+      <id>STARTDATE</id>
+      <enabled>Y</enabled>
+      <name>STARTDATE</name>
+    </field>
+    <field>
+      <id>ENDDATE</id>
+      <enabled>Y</enabled>
+      <name>ENDDATE</name>
+    </field>
+    <field>
+      <id>LOGDATE</id>
+      <enabled>Y</enabled>
+      <name>LOGDATE</name>
+    </field>
+    <field>
+      <id>DEPDATE</id>
+      <enabled>Y</enabled>
+      <name>DEPDATE</name>
+    </field>
+    <field>
+      <id>REPLAYDATE</id>
+      <enabled>Y</enabled>
+      <name>REPLAYDATE</name>
+    </field>
+    <field>
+      <id>LOG_FIELD</id>
+      <enabled>Y</enabled>
+      <name>LOG_FIELD</name>
+    </field>
+    <field>
+      <id>EXECUTING_SERVER</id>
+      <enabled>N</enabled>
+      <name>EXECUTING_SERVER</name>
+    </field>
+    <field>
+      <id>EXECUTING_USER</id>
+      <enabled>N</enabled>
+      <name>EXECUTING_USER</name>
+    </field>
+    <field>
+      <id>START_JOB_ENTRY</id>
+      <enabled>N</enabled>
+      <name>START_JOB_ENTRY</name>
+    </field>
+    <field>
+      <id>CLIENT</id>
+      <enabled>N</enabled>
+      <name>CLIENT</name>
+    </field>
+  </job-log-table>
+  <jobentry-log-table>
+    <connection/>
+    <schema/>
+    <table/>
+    <timeout_days/>
+    <field>
+      <id>ID_BATCH</id>
+      <enabled>Y</enabled>
+      <name>ID_BATCH</name>
+    </field>
+    <field>
+      <id>CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>LOG_DATE</id>
+      <enabled>Y</enabled>
+      <name>LOG_DATE</name>
+    </field>
+    <field>
+      <id>JOBNAME</id>
+      <enabled>Y</enabled>
+      <name>TRANSNAME</name>
+    </field>
+    <field>
+      <id>JOBENTRYNAME</id>
+      <enabled>Y</enabled>
+      <name>STEPNAME</name>
+    </field>
+    <field>
+      <id>LINES_READ</id>
+      <enabled>Y</enabled>
+      <name>LINES_READ</name>
+    </field>
+    <field>
+      <id>LINES_WRITTEN</id>
+      <enabled>Y</enabled>
+      <name>LINES_WRITTEN</name>
+    </field>
+    <field>
+      <id>LINES_UPDATED</id>
+      <enabled>Y</enabled>
+      <name>LINES_UPDATED</name>
+    </field>
+    <field>
+      <id>LINES_INPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_INPUT</name>
+    </field>
+    <field>
+      <id>LINES_OUTPUT</id>
+      <enabled>Y</enabled>
+      <name>LINES_OUTPUT</name>
+    </field>
+    <field>
+      <id>LINES_REJECTED</id>
+      <enabled>Y</enabled>
+      <name>LINES_REJECTED</name>
+    </field>
+    <field>
+      <id>ERRORS</id>
+      <enabled>Y</enabled>
+      <name>ERRORS</name>
+    </field>
+    <field>
+      <id>RESULT</id>
+      <enabled>Y</enabled>
+      <name>RESULT</name>
+    </field>
+    <field>
+      <id>NR_RESULT_ROWS</id>
+      <enabled>Y</enabled>
+      <name>NR_RESULT_ROWS</name>
+    </field>
+    <field>
+      <id>NR_RESULT_FILES</id>
+      <enabled>Y</enabled>
+      <name>NR_RESULT_FILES</name>
+    </field>
+    <field>
+      <id>LOG_FIELD</id>
+      <enabled>N</enabled>
+      <name>LOG_FIELD</name>
+    </field>
+    <field>
+      <id>COPY_NR</id>
+      <enabled>N</enabled>
+      <name>COPY_NR</name>
+    </field>
+  </jobentry-log-table>
+  <channel-log-table>
+    <connection/>
+    <schema/>
+    <table/>
+    <timeout_days/>
+    <field>
+      <id>ID_BATCH</id>
+      <enabled>Y</enabled>
+      <name>ID_BATCH</name>
+    </field>
+    <field>
+      <id>CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>LOG_DATE</id>
+      <enabled>Y</enabled>
+      <name>LOG_DATE</name>
+    </field>
+    <field>
+      <id>LOGGING_OBJECT_TYPE</id>
+      <enabled>Y</enabled>
+      <name>LOGGING_OBJECT_TYPE</name>
+    </field>
+    <field>
+      <id>OBJECT_NAME</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_NAME</name>
+    </field>
+    <field>
+      <id>OBJECT_COPY</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_COPY</name>
+    </field>
+    <field>
+      <id>REPOSITORY_DIRECTORY</id>
+      <enabled>Y</enabled>
+      <name>REPOSITORY_DIRECTORY</name>
+    </field>
+    <field>
+      <id>FILENAME</id>
+      <enabled>Y</enabled>
+      <name>FILENAME</name>
+    </field>
+    <field>
+      <id>OBJECT_ID</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_ID</name>
+    </field>
+    <field>
+      <id>OBJECT_REVISION</id>
+      <enabled>Y</enabled>
+      <name>OBJECT_REVISION</name>
+    </field>
+    <field>
+      <id>PARENT_CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>PARENT_CHANNEL_ID</name>
+    </field>
+    <field>
+      <id>ROOT_CHANNEL_ID</id>
+      <enabled>Y</enabled>
+      <name>ROOT_CHANNEL_ID</name>
+    </field>
+  </channel-log-table>
+  <pass_batchid>N</pass_batchid>
+  <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>Start</name>
+      <description/>
+      <type>SPECIAL</type>
+      <attributes/>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>160</xloc>
+      <yloc>240</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>协议订单明细</name>
+      <description/>
+      <type>SQL</type>
+      <attributes/>
+      <sql>----------------------------------------------------------------
+-----------------------计划协议---------------------------------
+----------------------------------------------------------------
+
+TRUNCATE TABLE Report_Mrp.dbo.mrp_plan_protocol_order_detail;	  
+---供货商库存  
+
+TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_stock;
+INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_stock  
+  select  A.ORDER_NUM  
+		 ,B.ORDER_ITEM_NUM
+	     ,SUM(B.STOCK_QTY) STOCK_QTY_SM --供货商库存
+	from ODS_SRM.dbo.srm_poc_order_hd A
+	join ODS_SRM.dbo.srm_poc_order_item B 
+	on A.ID = B.ORDER_ID
+   where A.DELETE_FLAG = 0
+	 and B.DELETE_FLAG = 0
+	 and A.REF_PURCHASER_CD = '2000'
+	 and B.STOCK_QTY > 0
+   group by A.ORDER_NUM  
+		   ,B.ORDER_ITEM_NUM;  
+----计划协议：已下达
+			TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_DistinctData_ar;
+			INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_DistinctData_ar 
+             SELECT DISTINCT
+					a.MATNR AS MATNR,  -- 物料编号
+					a.DELNR1 AS rsnum, -- 预留号
+					a.DELPS1 AS rspos, -- 预留号行号
+					CAST(a.MNG012 AS FLOAT) AS MNG01, -- 将 MNG012 转换为数值类型
+					a.DELNR2 AS DELNR, -- 计划协议号
+					a.DELPS2 AS DELPS, -- 计划协议明细行号
+					a.DELET2 AS DELET,
+					a.DAT01 AS EINDT -- 计划协议交货行交货时间
+			   FROM ODS_HANA.dbo.mrp_ww a
+	      left join ( 
+					  select 
+							COALESCE(SUBSTRING(A.POSID,1,1), 'NA')+ '-' + COALESCE(RTRIM(LTRIM(SUBSTRING(A.POSID,2,50))), 'NA') as POSKI 
+						   ,PSPNR
+						from ODS_HANA.dbo.PRPS A
+			       ) b
+		         on a.PSPNR = b.PSPNR
+			WHERE a.DELKZ1 = 'AR'
+			    AND (b.POSKI &lt;&gt;'Z-2000_XSCB004' or b.POSKI is null)
+			    AND a.DELNR2 LIKE '55%';
+			   
+            TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_CumulativeData_ar;
+			INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_CumulativeData_ar 
+					SELECT
+						d.MATNR,
+						d.rsnum,
+						d.rspos,
+						d.MNG01,
+						d.DELNR,
+						d.DELPS,
+						d.DELET,
+						d.EINDT,
+						(
+						   SELECT SUM(d2.MNG01)
+							 FROM Report_Mrp.dbo.tmp_mrp_plan_DistinctData_ar d2
+							WHERE d2.DELNR = d.DELNR
+							  AND d2.DELPS = d.DELPS
+							  AND d2.EINDT &lt;= d.EINDT
+						) AS Cumulative_MNG01
+					from Report_Mrp.dbo.tmp_mrp_plan_DistinctData_ar d;
+				
+			TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_55_ar;
+			INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_55_ar		
+			 select a.MATNR
+					,a.rsnum
+					,a.rspos
+					,a.MNG01
+					,a.DELNR
+					,a.DELPS
+					,a.DELET
+					,a.EINDT
+					,case when b.STOCK_QTY_SM >= Cumulative_MNG01 then MNG01 else 0 end STOCK_QTY
+			  from Report_Mrp.dbo.tmp_mrp_plan_CumulativeData_ar  a
+		 left join Report_Mrp.dbo.tmp_mrp_plan_stock b
+				on b.ORDER_NUM      = a.DELNR 
+		       and b.ORDER_ITEM_NUM = a.DELPS;
+----- 计划协议：未下达
+	        TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_DistinctData_sb;
+			INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_DistinctData_sb 
+             SELECT DISTINCT
+					a.MATNR AS MATNR,  -- 物料编号
+					a.DELNR1 AS rsnum, -- 预留号
+					a.DELPS1 AS rspos, -- 预留号行号
+					CAST(a.MNG012 AS FLOAT) AS MNG01, -- 将 MNG012 转换为数值类型
+					a.DELNR2 AS DELNR, -- 计划协议号
+					a.DELPS2 AS DELPS, -- 计划协议明细行号
+					a.DELET2 AS DELET,
+					a.DAT01 AS EINDT -- 计划协议交货行交货时间
+			   FROM ODS_HANA.dbo.mrp_ww a
+			  WHERE a.DELKZ1 = 'SB'
+			    AND a.DELNR2 LIKE '55%';
+			   
+            TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_CumulativeData_sb;
+			INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_CumulativeData_sb 
+					SELECT
+						d.MATNR,
+						d.rsnum,
+						d.rspos,
+						d.MNG01,
+						d.DELNR,
+						d.DELPS,
+						d.DELET,
+						d.EINDT,
+						(
+						   SELECT SUM(d2.MNG01)
+							 FROM Report_Mrp.dbo.tmp_mrp_plan_DistinctData_sb d2
+							WHERE d2.DELNR = d.DELNR
+							  AND d2.DELPS = d.DELPS
+							  AND d2.EINDT &lt;= d.EINDT
+						) AS Cumulative_MNG01
+					from Report_Mrp.dbo.tmp_mrp_plan_DistinctData_sb d;
+				
+			TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_55_sb;
+			INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_55_sb		
+			 select a.MATNR
+					,a.rsnum
+					,a.rspos
+					,a.MNG01
+					,a.DELNR
+					,a.DELPS
+					,a.DELET
+					,a.EINDT
+					,case when b.STOCK_QTY_SM >= Cumulative_MNG01 then MNG01 else 0 end STOCK_QTY
+			  from Report_Mrp.dbo.tmp_mrp_plan_CumulativeData_sb  a
+		 left join Report_Mrp.dbo.tmp_mrp_plan_stock b
+				on b.ORDER_NUM      = a.DELNR 
+		       and b.ORDER_ITEM_NUM = a.DELPS;
+------计划协议:销售
+	  TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_DistinctData_all;
+			INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_DistinctData_all 
+             SELECT DISTINCT
+					a.MATNR AS MATNR,  -- 物料编号
+					a.DELNR1 AS rsnum, -- 预留号
+					a.DELPS1 AS rspos, -- 预留号行号
+					CAST(a.MNG012 AS FLOAT) AS MNG01, -- 将 MNG012 转换为数值类型
+					a.DELNR2 AS DELNR, -- 计划协议号
+					a.DELPS2 AS DELPS, -- 计划协议明细行号
+					a.DELET2 AS DELET,
+					a.DAT01 AS EINDT -- 计划协议交货行交货时间
+			   FROM ODS_HANA.dbo.mrp_ww a
+		 left join ( 
+					  select 
+							COALESCE(SUBSTRING(A.POSID,1,1), 'NA')+ '-' + COALESCE(RTRIM(LTRIM(SUBSTRING(A.POSID,2,50))), 'NA') as POSKI 
+						   ,PSPNR
+						from ODS_HANA.dbo.PRPS A
+	                ) b
+		         on a.PSPNR = b.PSPNR
+			  where (
+					DELKZ1 IN ('VC', 'VJ')OR (DELKZ1 = 'AR' AND b.POSKI = 'Z-2000_XSCB004')
+					)
+			   and a.DELNR2 LIKE '55%'; -- 计划协议
+			   
+			   
+            TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_CumulativeData_all;
+			INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_CumulativeData_all 
+					SELECT
+						d.MATNR,
+						d.rsnum,
+						d.rspos,
+						d.MNG01,
+						d.DELNR,
+						d.DELPS,
+						d.DELET,
+						d.EINDT,
+						(
+						   SELECT SUM(d2.MNG01)
+							 FROM Report_Mrp.dbo.tmp_mrp_plan_DistinctData_all d2
+							WHERE d2.DELNR = d.DELNR
+							  AND d2.DELPS = d.DELPS
+							  AND d2.EINDT &lt;= d.EINDT
+						) AS Cumulative_MNG01
+					from Report_Mrp.dbo.tmp_mrp_plan_DistinctData_all d;
+				
+			TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_55_all;
+			INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_55_all		
+			 select a.MATNR
+					,a.rsnum
+					,a.rspos
+					,a.MNG01
+					,a.DELNR
+					,a.DELPS
+					,a.DELET
+					,a.EINDT
+					,case when b.STOCK_QTY_SM >= Cumulative_MNG01 then MNG01 else 0 end STOCK_QTY
+			  from Report_Mrp.dbo.tmp_mrp_plan_CumulativeData_all  a
+		 left join Report_Mrp.dbo.tmp_mrp_plan_stock b
+				on b.ORDER_NUM      = a.DELNR 
+		       and b.ORDER_ITEM_NUM = a.DELPS;
+			   
+  --------计划协议 节点和状态
+        TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_node_status;
+		INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_node_status	
+		 SELECT 
+				 order_num              -- 订单号			
+				,order_line_num         -- 行号			
+				,plan_item_num          -- 如果是协议订单，就是计划需求行号			
+				,current_node_code
+				,current_node_name      -- 节点code和名称	
+				,n45_current_node_status
+				,update_date_time
+				,update_date_time as n45_update_date_time -- 当前节点时间 采购
+		 from (
+				 SELECT			
+						order_num              -- 订单号			
+						,order_line_num        -- 行号			
+						,plan_item_num         -- 如果是协议订单，就是计划需求行号			
+						,current_node_code
+						,current_node_name      -- 节点code和名称					
+						,case when current_node_status=3 THEN '结束'			
+							  when current_node_status=2 THEN '异常'			
+							  when current_node_status=1 THEN '开始'			
+							  else 'X' end	n45_current_node_status		
+						,CONVERT(VARCHAR(19), CAST(update_date_time AS DATETIME), 120) update_date_time				  
+						,row_number()over(PARTITION by order_num ,order_line_num ,plan_item_num order by update_date_time desc  ) rn
+				  FROM  ODS_LPS.dbo.t_logistical_task_pur_migo		
+				 WHERE task_status!=3 		
+			)a
+		where rn = 1;
+		
+  -----计划协同步时间
+		TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_syn_date;
+		INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_syn_date	
+			  SELECT
+					  ORDER_NUM
+					 ,ORDER_ITEM_NUM
+					 ,DELIVERY_ITEM_NUM
+					 ,max(UPDATED_TS) CREATED_TS --计划协同步时间
+				FROM ODS_SRM.dbo.srm_poc_delivery_plan 
+			   where DELETE_FLAG =0
+				 and AUDIT_FLAG = 1
+			   group by ORDER_NUM
+					,ORDER_ITEM_NUM
+					,DELIVERY_ITEM_NUM;
+					
+----------判断是否审批		
+        TRUNCATE TABLE Report_Mrp.dbo.tmp_mrp_plan_sap_lp;
+		INSERT INTO Report_Mrp.dbo.tmp_mrp_plan_sap_lp
+		 select distinct 
+				 ebeln
+				,ebelp
+				,etenr
+				,fixkz
+		   from [report0624].[dbo].[sap_lp];
+		   
+
+		
+
+		INSERT INTO Report_Mrp.dbo.mrp_plan_protocol_order_detail	
+			select 
+				  a.MATNR
+				 ,a.rsnum   -- 预留号
+				 ,a.rspos   -- 预留号行号
+				 ,a.MNG01   -- fixkz='X':待交货数量,fixkz='未审批'：待审批数量
+				 ,a.DELNR   -- 计划协议号
+				 ,a.DELPS   -- 计划行号
+				 ,a.DELET   -- 计划协议交货行行号
+				 ,a.EINDT   -- 计划协议交货行交货时间
+				 ,a.STOCK_QTY -- 供应商库存总数
+				 ,b.current_node_name -- 物流节点
+				 ,b.update_date_time  -- 当前节点时间
+				 ,p.CREATED_TS        -- 计划协议交货行同步时间
+				 ,h.ebeln
+				 ,h.ebelp
+				 ,h.etenr
+				 ,h.fixkz
+				 ,k.SORTL             -- 供应商简称
+				 ,a.rep_type
+				 ,GETDATE() etl_time  -- 调度时间
+			 from (
+			       select 	  
+						  MATNR
+						 ,rsnum   -- 预留号
+						 ,rspos   -- 预留号行号
+						 ,MNG01   -- fixkz='X':待交货数量,fixkz='未审批'：待审批数量
+						 ,DELNR   -- 计划协议号
+						 ,DELPS   -- 计划行号
+						 ,DELET   -- 计划协议交货行行号
+						 ,EINDT   -- 计划协议交货行交货时间
+						 ,STOCK_QTY -- 供应商库存总数
+						 ,'AR' rep_type
+					from Report_Mrp.dbo.tmp_mrp_plan_55_ar 
+				   union all 
+				   select MATNR
+						 ,rsnum   -- 预留号
+						 ,rspos   -- 预留号行号
+						 ,MNG01   -- fixkz='X':待交货数量,fixkz='未审批'：待审批数量
+						 ,DELNR   -- 计划协议号
+						 ,DELPS   -- 计划行号
+						 ,DELET   -- 计划协议交货行行号
+						 ,EINDT   -- 计划协议交货行交货时间
+						 ,STOCK_QTY -- 供应商库存总数from #delnr_55_sb
+						 ,'SB' rep_type
+					from Report_Mrp.dbo.tmp_mrp_plan_55_sb
+				   union all 
+				   select MATNR
+						 ,rsnum   -- 预留号
+						 ,rspos   -- 预留号行号
+						 ,MNG01   -- fixkz='X':待交货数量,fixkz='未审批'：待审批数量
+						 ,DELNR   -- 计划协议号
+						 ,DELPS   -- 计划行号
+						 ,DELET   -- 计划协议交货行行号
+						 ,EINDT   -- 计划协议交货行交货时间
+						 ,STOCK_QTY -- 供应商库存总数 from #delnr_55_all
+						 ,'ALL' rep_type
+					from Report_Mrp.dbo.tmp_mrp_plan_55_all
+			      )a 
+		left join Report_Mrp.dbo.tmp_mrp_plan_node_status b
+			   on b.order_num      =  a.DELNR
+			  and b.order_line_num =  SUBSTRING(a.DELPS, 2, LEN(a.DELPS))
+			  and b.plan_item_num =CAST(CAST( a.DELET  AS INT) AS VARCHAR(50))
+		left join Report_Mrp.dbo.tmp_mrp_plan_syn_date p
+	           on p.ORDER_NUM         = a.DELNR
+			  and p.ORDER_ITEM_NUM    = CAST(CAST(a.DELPS AS INT) AS NVARCHAR)
+			  and p.DELIVERY_ITEM_NUM  = CAST(CAST(a.DELET AS INT) AS NVARCHAR)
+        left join Report_Mrp.dbo.tmp_mrp_plan_sap_lp h 
+			   on h.ebeln = a.delnr
+			  and h.ebelp = stuff(ltrim(a.delps), 1, 1, '')
+			  and h.etenr = a.delet
+	    left join ods_hana.dbo.ekko j
+			   on j.ebeln = h.ebeln
+	    left join ods_hana.dbo.lfa1 k
+			   on j.lifnr = k.lifnr;
+			  
+</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>ODS_HANA</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>336</xloc>
+      <yloc>304</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>成功</name>
+      <description/>
+      <type>SUCCESS</type>
+      <attributes/>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>608</xloc>
+      <yloc>384</yloc>
+      <attributes_kjc/>
+    </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>Start</from>
+      <to>协议订单明细</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>协议订单明细</from>
+      <to>成功</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+  <attributes/>
+</job>
