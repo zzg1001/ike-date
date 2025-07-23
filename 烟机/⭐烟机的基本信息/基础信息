@@ -15,7 +15,7 @@ http://172.16.56.13/gaea#/login?redirect=%2F
 vpn账号
 https://116.228.159.166:4433
 vpn账号：yk-zzg
-密码:ledi1234!@#
+密码:ledi12345!@#
 
 http://itpm.sh-ctmc.com/redmine/login?back_url=http%3A%2F%2Fitpm.sh-ctmc.com%2Fredmine%2F
 yk-zzg
@@ -52,6 +52,7 @@ yk_zhangzuogong/ykZhangzuogong@123
 堡垒机账号：https://172.16.37.60/index.php/
 host:172.16.37.60
 fr-lgc/Abcde@12345
+Abcdef@123456
 
 烟机工时：
 yk-zzg
@@ -62,6 +63,12 @@ CTMC@ykzzg
 yanji_bl
 Password.1
 yanji_备料
+
+
+自能bi
+http://172.16.23.251:1080/webroot/decision
+admin
+Abcde@12345
 
 
 虚拟机账号：https://172.16.101.2
