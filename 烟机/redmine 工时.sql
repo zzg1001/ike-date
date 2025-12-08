@@ -40,8 +40,8 @@ left join ODS_REDMINE.dbo.users i
 left join  ODS_REDMINE.dbo.custom_values j 
        on g.id = j.customized_id
 		  and custom_field_id =9
-where g.spent_on>='2025-01-01' and g.spent_on<='2025-01-31'
+where g.spent_on>='2025-01-01' 
 )
 select * from tmp 
-where  user_name like '%yk%'
+where  user_name like '%yk%' or user_name like '%秦帅鹏%'
 order by spent_on
